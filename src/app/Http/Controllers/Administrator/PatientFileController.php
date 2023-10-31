@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\PatientFile\StorePatientFileRequest;
 use App\Http\Requests\PatientFile\UpdatePatientFileForm1Request;
 use App\Http\Requests\PatientFile\UpdatePatientFileForm2Request;
+use App\Http\Requests\PatientFile\UpdatePatientFileForm3Request;
 use App\Models\PatientFile as Model;
 use App\Packages\JsonResponse;
 use App\Services\PatientFileService;
@@ -83,6 +84,40 @@ class PatientFileController extends Controller
             $request->time_interval,
             $request->referal_history,
             $request->treatment_history
+        ));
+    }
+
+    public function updateForm3(Model $model, UpdatePatientFileForm3Request $request): HttpJsonResponse
+    {
+        return $this->onUpdate($this->service->updateForm3(
+            $model,
+            $request->systemic_disease_history,
+            $request->item_8_description,
+            $request->item_15_description,
+            $request->item_16_description,
+            $request->item_17_description,
+            $request->item_20_description,
+            $request->item_21_description,
+            $request->item_25_1_description,
+            $request->item_25_2_description,
+            $request->item_25_3_description,
+            $request->item_30_description,
+            $request->item_32_description,
+            $request->item_34_description,
+            $request->tobacco_use,
+            $request->use_tobacco_duration,
+            $request->use_tobacco_type,
+            $request->drug_use,
+            $request->use_drug_duration,
+            $request->use_drug_type,
+            $request->alcohol,
+            $request->pulse,
+            $request->body_temp,
+            $request->blood_pressure,
+            $request->resporate,
+            $request->weight,
+            $request->height,
+            $request->bmi,
         ));
     }
 }

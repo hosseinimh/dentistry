@@ -149,6 +149,68 @@ class PatientFileService
         return $model->update($data);
     }
 
+    public function updateForm3(
+        Model $model,
+        ?string $systemicDiseaseHistory,
+        ?string $item8Description,
+        ?string $item15Description,
+        ?string $item16Description,
+        ?string $item17Description,
+        ?string $item20Description,
+        ?string $item21Description,
+        ?string $item25_1Description,
+        ?string $item25_2Description,
+        ?string $item25_3Description,
+        ?string $item30Description,
+        ?string $item32Description,
+        ?string $item34Description,
+        int $tobaccoUse,
+        ?string $useTobaccoDuration,
+        ?string $useTobaccoType,
+        int $drugUse,
+        ?string $useDrugDuration,
+        ?string $useDrugType,
+        int $alcohol,
+        ?string $pulse,
+        ?string $bodyTemp,
+        ?string $bloodPressure,
+        ?string $resporate,
+        ?string $weight,
+        ?string $height,
+        ?string $bmi,
+    ): mixed {
+        $data = [
+            'systemic_disease_history' => $systemicDiseaseHistory,
+            'item_8_description' => $item8Description ?? '',
+            'item_15_description' => $item15Description ?? '',
+            'item_16_description' => $item16Description ?? '',
+            'item_17_description' => $item17Description ?? '',
+            'item_20_description' => $item20Description ?? '',
+            'item_21_description' => $item21Description ?? '',
+            'item_25_1_description' => $item25_1Description ?? '',
+            'item_25_2_description' => $item25_2Description ?? '',
+            'item_25_3_description' => $item25_3Description ?? '',
+            'item_30_description' => $item30Description ?? '',
+            'item_32_description' => $item32Description ?? '',
+            'item_34_description' => $item34Description ?? '',
+            'tobacco_use' => $tobaccoUse,
+            'use_tobacco_duration' => $useTobaccoDuration ?? '',
+            'use_tobacco_type' => $useTobaccoType ?? '',
+            'drug_use' => $drugUse,
+            'use_drug_duration' => $useDrugDuration ?? '',
+            'use_drug_type' => $useDrugType ?? '',
+            'alcohol' => $alcohol,
+            'pulse' => $pulse ?? '',
+            'body_temp' => $bodyTemp ?? '',
+            'blood_pressure' => $bloodPressure ?? '',
+            'resporate' => $resporate ?? '',
+            'weight' => $weight ?? '',
+            'height' => $height ?? '',
+            'bmi' => $bmi ?? '',
+        ];
+        return $model->update($data);
+    }
+
     public function count(?string $fileNo, ?string $name, ?string $family): int
     {
         return Model::where('file_no', 'LIKE', '%' . $fileNo . '%')->where('name', 'LIKE', '%' . $name . '%')->where('family', 'LIKE', '%' . $family . '%')->count();

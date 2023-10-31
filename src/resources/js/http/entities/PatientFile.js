@@ -141,4 +141,68 @@ export class PatientFile extends Entity {
             }
         );
     }
+
+    async updateForm3(
+        id,
+        systemicDiseaseHistory,
+        item8Description,
+        item15Description,
+        item16Description,
+        item17Description,
+        item20Description,
+        item21Description,
+        item25_1Description,
+        item25_2Description,
+        item25_3Description,
+        item30Description,
+        item32Description,
+        item34Description,
+        tobaccoUse,
+        useTobaccoDuration,
+        useTobaccoType,
+        drugUse,
+        useDrugDuration,
+        useDrugType,
+        alcohol,
+        pulse,
+        bodyTemp,
+        bloodPressure,
+        resporate,
+        weight,
+        height,
+        bmi
+    ) {
+        return await this.handlePost(
+            `${BASE_URL}/a/p_files/update_form_3/${id}`,
+            {
+                systemic_disease_history: systemicDiseaseHistory,
+                item_8_description: item8Description,
+                item_15_description: item15Description,
+                item_16_description: item16Description,
+                item_17_description: item17Description,
+                item_20_description: item20Description,
+                item_21_description: item21Description,
+                item_25_1_description: item25_1Description,
+                item_25_2_description: item25_2Description,
+                item_25_3_description: item25_3Description,
+                item_30_description: item30Description,
+                item_32_description: item32Description,
+                item_34_description: item34Description,
+                tobacco_use: tobaccoUse,
+                use_tobacco_duration: useTobaccoDuration,
+                use_tobacco_type: useTobaccoType,
+                drug_use: drugUse,
+                use_drug_duration: useDrugDuration,
+                use_drug_type: useDrugType,
+                alcohol,
+                pulse,
+                body_temp: bodyTemp,
+                blood_pressure: bloodPressure,
+                resporate,
+                weight,
+                height,
+                bmi,
+            }
+        );
+    }
 }

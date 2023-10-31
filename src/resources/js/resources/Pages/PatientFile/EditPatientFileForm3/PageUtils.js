@@ -3,7 +3,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 
 import { PatientFile as Entity } from "../../../../http/entities";
 import { BasePageUtils } from "../../../../utils/BasePageUtils";
-import { BASE_PATH } from "../../../../constants";
+import { BASE_PATH, SYSTEMIC_DISEASE_HISTORY } from "../../../../constants";
 import { setLoadingAction } from "../../../../state/layout/layoutActions";
 import { editPatientFileForm3Schema as schema } from "../../../validations";
 import { editPatientFileForm3 as strings } from "../../../../constants/strings/fa";
@@ -64,8 +64,8 @@ export class PageUtils extends BasePageUtils {
             )
         );
         this.useForm.setValue(
-            "lesionClassification",
-            result.item.lesionClassification
+            "systemicDiseaseHistory",
+            result.item.systemicDiseaseHistory
         );
         this.useForm.setValue("patientReferal", result.item.patientReferal);
         this.useForm.setValue(
@@ -89,16 +89,71 @@ export class PageUtils extends BasePageUtils {
     }
 
     async onSubmit(data) {
-        const promise = this.entity.updateForm2(
+        let systemicDiseaseHistory =
+            data.systemicDiseaseHistory?.length > 0
+                ? data.systemicDiseaseHistory.filter(
+                      (item) => item in SYSTEMIC_DISEASE_HISTORY
+                  )
+                : null;
+        systemicDiseaseHistory =
+            systemicDiseaseHistory?.length > 0
+                ? systemicDiseaseHistory
+                      .map((item) => SYSTEMIC_DISEASE_HISTORY[item])
+                      .join("|")
+                : null;
+        const promise = this.entity.updateForm3(
             this.pageState.params.patientFileId,
-            data.lesionClassification,
-            data.patientReferal,
-            data.specialLesionClassification,
-            data.chiefCompliant,
-            data.chiefCompliantHistory,
-            data.timeInterval,
-            data.referalHistory,
-            data.treatmentHistory
+            systemicDiseaseHistory,
+            systemicDiseaseHistory?.includes("item_8")
+                ? data.item8Description
+                : "",
+            systemicDiseaseHistory?.includes("item_15")
+                ? data.item15Description
+                : "",
+            systemicDiseaseHistory?.includes("item_16")
+                ? data.item16Description
+                : "",
+            systemicDiseaseHistory?.includes("item_17")
+                ? data.item17Description
+                : "",
+            systemicDiseaseHistory?.includes("item_20")
+                ? data.item20Description
+                : "",
+            systemicDiseaseHistory?.includes("item_21")
+                ? data.item21Description
+                : "",
+            systemicDiseaseHistory?.includes("item_25")
+                ? data.item25_1Description
+                : "",
+            systemicDiseaseHistory?.includes("item_25")
+                ? data.item25_2Description
+                : "",
+            systemicDiseaseHistory?.includes("item_25")
+                ? data.item25_3Description
+                : "",
+            systemicDiseaseHistory?.includes("item_30")
+                ? data.item30Description
+                : "",
+            systemicDiseaseHistory?.includes("item_32")
+                ? data.item32Description
+                : "",
+            systemicDiseaseHistory?.includes("item_34")
+                ? data.item34Description
+                : "",
+            data.tobaccoUse ? 1 : 0,
+            data.tobaccoUse ? data.useTobaccoDuration : "",
+            data.tobaccoUse ? data.useTobaccoType : "",
+            data.drugUse ? 1 : 0,
+            data.drugUse ? data.useDrugDuration : "",
+            data.drugUse ? data.useDrugType : "",
+            data.alcohol ? 1 : 0,
+            data.pulse,
+            data.bodyTemp,
+            data.bloodPressure,
+            data.resporate,
+            data.weight,
+            data.height,
+            data.bmi
         );
         super.onModifySubmit(promise);
     }

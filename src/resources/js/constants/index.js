@@ -13,6 +13,7 @@ import { MARITIAL_STATUSES } from "./maritialStatuses";
 import { GENDER_TYPES } from "./genderTypes";
 import { LESION_CLASSIFICATION } from "./lesionClassification";
 import { SPECIAL_LESION_CLASSIFICATION } from "./specialLesionClassification";
+import { SYSTEMIC_DISEASE_HISTORY } from "./systemicDiseaseHistory";
 import {
     BASE_PATH,
     ASSETS_PATH,
@@ -48,4 +49,5 @@ export {
     GENDER_TYPES,
     LESION_CLASSIFICATION,
     SPECIAL_LESION_CLASSIFICATION,
+    SYSTEMIC_DISEASE_HISTORY,
 };

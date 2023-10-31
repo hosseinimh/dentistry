@@ -4509,28 +4509,29 @@ var GENDER_TYPES = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ASSETS_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_15__.ASSETS_PATH),
-/* harmony export */   "BASE_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_15__.BASE_PATH),
+/* harmony export */   "ASSETS_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_16__.ASSETS_PATH),
+/* harmony export */   "BASE_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_16__.BASE_PATH),
 /* harmony export */   "BASE_URL": () => (/* binding */ BASE_URL),
 /* harmony export */   "EDUCATION_TYPES": () => (/* reexport safe */ _educationTypes__WEBPACK_IMPORTED_MODULE_10__.EDUCATION_TYPES),
 /* harmony export */   "ETHNICITY_TYPES": () => (/* reexport safe */ _ethnicityTypes__WEBPACK_IMPORTED_MODULE_9__.ETHNICITY_TYPES),
 /* harmony export */   "FILE_FORMS": () => (/* reexport safe */ _fileForms__WEBPACK_IMPORTED_MODULE_8__.FILE_FORMS),
 /* harmony export */   "GENDER_TYPES": () => (/* reexport safe */ _genderTypes__WEBPACK_IMPORTED_MODULE_12__.GENDER_TYPES),
-/* harmony export */   "IMAGES_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_15__.IMAGES_PATH),
+/* harmony export */   "IMAGES_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_16__.IMAGES_PATH),
 /* harmony export */   "LESION_CLASSIFICATION": () => (/* reexport safe */ _lesionClassification__WEBPACK_IMPORTED_MODULE_13__.LESION_CLASSIFICATION),
 /* harmony export */   "MARITIAL_STATUSES": () => (/* reexport safe */ _maritialStatuses__WEBPACK_IMPORTED_MODULE_11__.MARITIAL_STATUSES),
 /* harmony export */   "MESSAGE_CODES": () => (/* reexport safe */ _messageCodes__WEBPACK_IMPORTED_MODULE_2__.MESSAGE_CODES),
 /* harmony export */   "MESSAGE_TYPES": () => (/* reexport safe */ _messageTypes__WEBPACK_IMPORTED_MODULE_1__.MESSAGE_TYPES),
 /* harmony export */   "NOTIFICATION_CATEGORIES": () => (/* reexport safe */ _notificationCategories__WEBPACK_IMPORTED_MODULE_5__.NOTIFICATION_CATEGORIES),
 /* harmony export */   "NOTIFICATION_SUB_CATEGORIES": () => (/* reexport safe */ _notificationSubCategories__WEBPACK_IMPORTED_MODULE_6__.NOTIFICATION_SUB_CATEGORIES),
-/* harmony export */   "PAGE_ITEMS": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_15__.PAGE_ITEMS),
+/* harmony export */   "PAGE_ITEMS": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_16__.PAGE_ITEMS),
 /* harmony export */   "SPECIAL_LESION_CLASSIFICATION": () => (/* reexport safe */ _specialLesionClassification__WEBPACK_IMPORTED_MODULE_14__.SPECIAL_LESION_CLASSIFICATION),
-/* harmony export */   "STORAGE_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_15__.STORAGE_PATH),
-/* harmony export */   "THEMES": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_15__.THEMES),
+/* harmony export */   "STORAGE_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_16__.STORAGE_PATH),
+/* harmony export */   "SYSTEMIC_DISEASE_HISTORY": () => (/* reexport safe */ _systemicDiseaseHistory__WEBPACK_IMPORTED_MODULE_15__.SYSTEMIC_DISEASE_HISTORY),
+/* harmony export */   "THEMES": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_16__.THEMES),
 /* harmony export */   "UPLOADED_FILE": () => (/* reexport safe */ _UploadedFile__WEBPACK_IMPORTED_MODULE_3__.UPLOADED_FILE),
 /* harmony export */   "USER_ROLES": () => (/* reexport safe */ _userRoles__WEBPACK_IMPORTED_MODULE_4__.USER_ROLES),
 /* harmony export */   "USER_VERIFICATION_REJECT_REASON": () => (/* reexport safe */ _userVerificationRejectReason__WEBPACK_IMPORTED_MODULE_7__.USER_VERIFICATION_REJECT_REASON),
-/* harmony export */   "themes": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_15__.themes)
+/* harmony export */   "themes": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_16__.themes)
 /* harmony export */ });
 /* harmony import */ var _server_config_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../server-config.json */ "./server-config.json");
 /* harmony import */ var _messageTypes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./messageTypes */ "./resources/js/constants/messageTypes.js");
@@ -4547,7 +4548,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _genderTypes__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./genderTypes */ "./resources/js/constants/genderTypes.js");
 /* harmony import */ var _lesionClassification__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./lesionClassification */ "./resources/js/constants/lesionClassification.js");
 /* harmony import */ var _specialLesionClassification__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./specialLesionClassification */ "./resources/js/constants/specialLesionClassification.js");
-/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./theme */ "./resources/js/constants/theme.js");
+/* harmony import */ var _systemicDiseaseHistory__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./systemicDiseaseHistory */ "./resources/js/constants/systemicDiseaseHistory.js");
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./theme */ "./resources/js/constants/theme.js");
+
 
 
 
@@ -5322,8 +5325,7 @@ var systemicDiseaseHistory = {
   item30: "آیا در بدن خود وسیله مصنوعی دارید؟ (مفصل، دریچه، باطری قلبی، ...)",
   item31: "آیا دچار دندان قروچه یا تنفس دهانی هستید؟",
   item32: "وضعیت خواب شما چطور است؟",
-  item33: "آیا برای زندگی روزمره نیاز به کمک و همراهی فرد دیگری دارید؟",
-  item16: ""
+  item33: "آیا برای زندگی روزمره نیاز به کمک و همراهی فرد دیگری دارید؟"
 };
 var notificationsPage = {
   _title: "اعلان‌ها",
@@ -5478,19 +5480,28 @@ var editPatientFileForm3 = {
   _title: "پرونده بیمار - فرم سه",
   _subTitle: "پرونده بیمار را ویرایش کنید.",
   systemicDiseaseHistory: "در کادر زیر، بیماری‌های سیستمیک را مشخص نمایید:",
+  item8Description: "نوع",
   item8DescriptionPlaceholder: "نوع",
+  item15Description: "علت و نتیجه بستری",
   item15DescriptionPlaceholder: "علت و نتیجه بستری",
   item16Description: "در صورتی که دارویی را به طور مداوم استفاده می‌کنید نام ببرید.",
   item16DescriptionPlaceholder: "در صورتی که دارویی را به طور مداوم استفاده می‌کنید نام ببرید.",
   item17Description: "چنانچه دارویی را به صورت هفتگی و یا ماهانه در فرم خوراکی یا تزریقی مصرف می‌کنید، نام ببرید. (داروهایی نظیر داروهای اصلاح‌کننده ضربان قلب، استخوان‌ساز یا آمپول‌های تقویتی)",
   item17DescriptionPlaceholder: "چنانچه دارویی را به صورت هفتگی و یا ماهانه در فرم خوراکی یا تزریقی مصرف می‌کنید، نام ببرید.",
+  item20Description: "نوع",
   item20DescriptionPlaceholder: "نوع",
+  item21Description: "محل تابش اشعه",
   item21DescriptionPlaceholder: "محل تابش اشعه",
   item25Description: "بارداری",
+  item25_1Description: "هفته",
   item25_1DescriptionPlaceholder: "هفته",
+  item25_2Description: "فرزند",
   item25_2DescriptionPlaceholder: "فرزند",
+  item25_3Description: "رتبه",
   item25_3DescriptionPlaceholder: "رتبه",
+  item30Description: "توضیح",
   item30DescriptionPlaceholder: "توضیح",
+  item32Description: "وضعیت خواب شما چطور است؟",
   item32DescriptionPlaceholder: "وضعیت خواب شما چطور است؟",
   item34Description: "ظرفیت عملکردی بیمار (تکمیل توسط پزشک)",
   item34DescriptionPlaceholder: "ظرفیت عملکردی بیمار (تکمیل توسط پزشک)",
@@ -5511,8 +5522,8 @@ var editPatientFileForm3 = {
   pulsePlaceholder: "نبض (ضربان / دقیقه)",
   bodyTemp: "درجه حرارت بدن",
   bodyTempPlaceholder: "درجه حرارت بدن",
-  bloodPressure: "فشار خون (mmHg):",
-  bloodPressurePlaceholder: "فشار خون (mmHg):",
+  bloodPressure: "فشار خون (mmHg)",
+  bloodPressurePlaceholder: "فشار خون (mmHg)",
   resporate: "سرعت تنفس (دقیقه)",
   resporatePlaceholder: "سرعت تنفس (دقیقه)",
   weight: "وزن (کیلوگرم)",
@@ -5522,6 +5533,55 @@ var editPatientFileForm3 = {
   bmi: "شاخص BMI",
   bmiPlaceholder: "شاخص BMI",
   submitted: "ویرایش اطلاعات بیمار با موفقیت انجام شد."
+};
+
+/***/ }),
+
+/***/ "./resources/js/constants/systemicDiseaseHistory.js":
+/*!**********************************************************!*\
+  !*** ./resources/js/constants/systemicDiseaseHistory.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SYSTEMIC_DISEASE_HISTORY": () => (/* binding */ SYSTEMIC_DISEASE_HISTORY)
+/* harmony export */ });
+var SYSTEMIC_DISEASE_HISTORY = {
+  item1: "item_1",
+  item2: "item_2",
+  item3: "item_3",
+  item4: "item_4",
+  item5: "item_5",
+  item6: "item_6",
+  item7: "item_7",
+  item8: "item_8",
+  item9: "item_9",
+  item10: "item_10",
+  item11: "item_11",
+  item12: "item_12",
+  item13: "item_13",
+  item14: "item_14",
+  item15: "item_15",
+  item16: "item_16",
+  item17: "item_17",
+  item18: "item_18",
+  item19: "item_19",
+  item20: "item_20",
+  item21: "item_21",
+  item22: "item_22",
+  item23: "item_23",
+  item24: "item_24",
+  item25: "item_25",
+  item26: "item_26",
+  item27: "item_27",
+  item28: "item_28",
+  item29: "item_29",
+  item30: "item_30",
+  item31: "item_31",
+  item32: "item_32",
+  item33: "item_33"
 };
 
 /***/ }),
@@ -6429,6 +6489,56 @@ var PatientFile = /*#__PURE__*/function (_Entity) {
         return _updateForm2.apply(this, arguments);
       }
       return updateForm2;
+    }()
+  }, {
+    key: "updateForm3",
+    value: function () {
+      var _updateForm3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6(id, systemicDiseaseHistory, item8Description, item15Description, item16Description, item17Description, item20Description, item21Description, item25_1Description, item25_2Description, item25_3Description, item30Description, item32Description, item34Description, tobaccoUse, useTobaccoDuration, useTobaccoType, drugUse, useDrugDuration, useDrugType, alcohol, pulse, bodyTemp, bloodPressure, resporate, weight, height, bmi) {
+        return _regeneratorRuntime().wrap(function _callee6$(_context6) {
+          while (1) switch (_context6.prev = _context6.next) {
+            case 0:
+              _context6.next = 2;
+              return this.handlePost("".concat(_constants__WEBPACK_IMPORTED_MODULE_0__.BASE_URL, "/a/p_files/update_form_3/").concat(id), {
+                systemic_disease_history: systemicDiseaseHistory,
+                item_8_description: item8Description,
+                item_15_description: item15Description,
+                item_16_description: item16Description,
+                item_17_description: item17Description,
+                item_20_description: item20Description,
+                item_21_description: item21Description,
+                item_25_1_description: item25_1Description,
+                item_25_2_description: item25_2Description,
+                item_25_3_description: item25_3Description,
+                item_30_description: item30Description,
+                item_32_description: item32Description,
+                item_34_description: item34Description,
+                tobacco_use: tobaccoUse,
+                use_tobacco_duration: useTobaccoDuration,
+                use_tobacco_type: useTobaccoType,
+                drug_use: drugUse,
+                use_drug_duration: useDrugDuration,
+                use_drug_type: useDrugType,
+                alcohol: alcohol,
+                pulse: pulse,
+                body_temp: bodyTemp,
+                blood_pressure: bloodPressure,
+                resporate: resporate,
+                weight: weight,
+                height: height,
+                bmi: bmi
+              });
+            case 2:
+              return _context6.abrupt("return", _context6.sent);
+            case 3:
+            case "end":
+              return _context6.stop();
+          }
+        }, _callee6, this);
+      }));
+      function updateForm3(_x55, _x56, _x57, _x58, _x59, _x60, _x61, _x62, _x63, _x64, _x65, _x66, _x67, _x68, _x69, _x70, _x71, _x72, _x73, _x74, _x75, _x76, _x77, _x78, _x79, _x80, _x81, _x82) {
+        return _updateForm3.apply(this, arguments);
+      }
+      return updateForm3;
     }()
   }]);
   return PatientFile;
@@ -8956,7 +9066,7 @@ var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
         item: result.item
       }));
       this.dispatch((0,_state_page_pageActions__WEBPACK_IMPORTED_MODULE_7__.setPageTitleAction)("".concat(_constants_strings_fa__WEBPACK_IMPORTED_MODULE_6__.editPatientFileForm3._title, " [ ").concat(result.item.name, " ").concat(result.item.family, " - ").concat(result.item.fileNo, " ]"), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_6__.editPatientFileForm3._subTitle));
-      this.useForm.setValue("lesionClassification", result.item.lesionClassification);
+      this.useForm.setValue("systemicDiseaseHistory", result.item.systemicDiseaseHistory);
       this.useForm.setValue("patientReferal", result.item.patientReferal);
       this.useForm.setValue("specialLesionClassification", result.item.specialLesionClassification);
       this.useForm.setValue("chiefCompliant", result.item.chiefCompliant);
@@ -8977,13 +9087,20 @@ var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
     key: "onSubmit",
     value: function () {
       var _onSubmit = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(data) {
-        var promise;
+        var _data$systemicDisease, _systemicDiseaseHisto, _systemicDiseaseHisto2, _systemicDiseaseHisto3, _systemicDiseaseHisto4, _systemicDiseaseHisto5, _systemicDiseaseHisto6, _systemicDiseaseHisto7, _systemicDiseaseHisto8, _systemicDiseaseHisto9, _systemicDiseaseHisto10, _systemicDiseaseHisto11, _systemicDiseaseHisto12, _systemicDiseaseHisto13;
+        var systemicDiseaseHistory, promise;
         return _regeneratorRuntime().wrap(function _callee3$(_context3) {
           while (1) switch (_context3.prev = _context3.next) {
             case 0:
-              promise = this.entity.updateForm2(this.pageState.params.patientFileId, data.lesionClassification, data.patientReferal, data.specialLesionClassification, data.chiefCompliant, data.chiefCompliantHistory, data.timeInterval, data.referalHistory, data.treatmentHistory);
+              systemicDiseaseHistory = ((_data$systemicDisease = data.systemicDiseaseHistory) === null || _data$systemicDisease === void 0 ? void 0 : _data$systemicDisease.length) > 0 ? data.systemicDiseaseHistory.filter(function (item) {
+                return item in _constants__WEBPACK_IMPORTED_MODULE_3__.SYSTEMIC_DISEASE_HISTORY;
+              }) : null;
+              systemicDiseaseHistory = ((_systemicDiseaseHisto = systemicDiseaseHistory) === null || _systemicDiseaseHisto === void 0 ? void 0 : _systemicDiseaseHisto.length) > 0 ? systemicDiseaseHistory.map(function (item) {
+                return _constants__WEBPACK_IMPORTED_MODULE_3__.SYSTEMIC_DISEASE_HISTORY[item];
+              }).join("|") : null;
+              promise = this.entity.updateForm3(this.pageState.params.patientFileId, systemicDiseaseHistory, (_systemicDiseaseHisto2 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto2 !== void 0 && _systemicDiseaseHisto2.includes("item_8") ? data.item8Description : "", (_systemicDiseaseHisto3 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto3 !== void 0 && _systemicDiseaseHisto3.includes("item_15") ? data.item15Description : "", (_systemicDiseaseHisto4 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto4 !== void 0 && _systemicDiseaseHisto4.includes("item_16") ? data.item16Description : "", (_systemicDiseaseHisto5 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto5 !== void 0 && _systemicDiseaseHisto5.includes("item_17") ? data.item17Description : "", (_systemicDiseaseHisto6 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto6 !== void 0 && _systemicDiseaseHisto6.includes("item_20") ? data.item20Description : "", (_systemicDiseaseHisto7 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto7 !== void 0 && _systemicDiseaseHisto7.includes("item_21") ? data.item21Description : "", (_systemicDiseaseHisto8 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto8 !== void 0 && _systemicDiseaseHisto8.includes("item_25") ? data.item25_1Description : "", (_systemicDiseaseHisto9 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto9 !== void 0 && _systemicDiseaseHisto9.includes("item_25") ? data.item25_2Description : "", (_systemicDiseaseHisto10 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto10 !== void 0 && _systemicDiseaseHisto10.includes("item_25") ? data.item25_3Description : "", (_systemicDiseaseHisto11 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto11 !== void 0 && _systemicDiseaseHisto11.includes("item_30") ? data.item30Description : "", (_systemicDiseaseHisto12 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto12 !== void 0 && _systemicDiseaseHisto12.includes("item_32") ? data.item32Description : "", (_systemicDiseaseHisto13 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto13 !== void 0 && _systemicDiseaseHisto13.includes("item_34") ? data.item34Description : "", data.tobaccoUse ? 1 : 0, data.tobaccoUse ? data.useTobaccoDuration : "", data.tobaccoUse ? data.useTobaccoType : "", data.drugUse ? 1 : 0, data.drugUse ? data.useDrugDuration : "", data.drugUse ? data.useDrugType : "", data.alcohol ? 1 : 0, data.pulse, data.bodyTemp, data.bloodPressure, data.resporate, data.weight, data.height, data.bmi);
               _get(_getPrototypeOf(PageUtils.prototype), "onModifySubmit", this).call(this, promise);
-            case 2:
+            case 4:
             case "end":
               return _context3.stop();
           }
@@ -15794,6 +15911,36 @@ var asciiValidator = function asciiValidator(schema, field) {
 
 /***/ }),
 
+/***/ "./resources/js/resources/validations/CommonValidators/conditionalStringValidator.js":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/resources/validations/CommonValidators/conditionalStringValidator.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _stringValidator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./stringValidator */ "./resources/js/resources/validations/CommonValidators/stringValidator.js");
+
+var conditionalStringValidator = function conditionalStringValidator(yup, field, baseField, condition) {
+  var min = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : null;
+  var max = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : null;
+  var required = arguments.length > 6 && arguments[6] !== undefined ? arguments[6] : true;
+  return yup.string().when(baseField, function (baseField) {
+    var _baseField$;
+    if ((baseField === null || baseField === void 0 ? void 0 : baseField.length) > 0 && ((_baseField$ = baseField[0]) === null || _baseField$ === void 0 ? void 0 : _baseField$.length) > 0 && baseField[0].find(function (item) {
+      return item === condition;
+    })) {
+      return (0,_stringValidator__WEBPACK_IMPORTED_MODULE_0__["default"])(yup.string(), field, min, max, required);
+    }
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (conditionalStringValidator);
+
+/***/ }),
+
 /***/ "./resources/js/resources/validations/CommonValidators/dateValidator.js":
 /*!******************************************************************************!*\
   !*** ./resources/js/resources/validations/CommonValidators/dateValidator.js ***!
@@ -15903,15 +16050,16 @@ var fileValidator = function fileValidator(schema, field) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "asciiValidator": () => (/* reexport safe */ _asciiValidator__WEBPACK_IMPORTED_MODULE_0__["default"]),
+/* harmony export */   "conditionalStringValidator": () => (/* reexport safe */ _conditionalStringValidator__WEBPACK_IMPORTED_MODULE_8__["default"]),
 /* harmony export */   "dateValidator": () => (/* reexport safe */ _dateValidator__WEBPACK_IMPORTED_MODULE_1__["default"]),
 /* harmony export */   "emailValidator": () => (/* reexport safe */ _emailValidator__WEBPACK_IMPORTED_MODULE_2__["default"]),
-/* harmony export */   "fileValidator": () => (/* reexport safe */ _fileValidator__WEBPACK_IMPORTED_MODULE_9__["default"]),
+/* harmony export */   "fileValidator": () => (/* reexport safe */ _fileValidator__WEBPACK_IMPORTED_MODULE_10__["default"]),
 /* harmony export */   "mobileValidator": () => (/* reexport safe */ _mobileValidator__WEBPACK_IMPORTED_MODULE_3__["default"]),
 /* harmony export */   "nameValidator": () => (/* reexport safe */ _nameValidator__WEBPACK_IMPORTED_MODULE_4__["default"]),
 /* harmony export */   "nationalNoValidator": () => (/* reexport safe */ _nationalNoValidator__WEBPACK_IMPORTED_MODULE_5__["default"]),
 /* harmony export */   "numberValidator": () => (/* reexport safe */ _numberValidator__WEBPACK_IMPORTED_MODULE_6__["default"]),
 /* harmony export */   "stringValidator": () => (/* reexport safe */ _stringValidator__WEBPACK_IMPORTED_MODULE_7__["default"]),
-/* harmony export */   "telValidator": () => (/* reexport safe */ _telValidator__WEBPACK_IMPORTED_MODULE_8__["default"])
+/* harmony export */   "telValidator": () => (/* reexport safe */ _telValidator__WEBPACK_IMPORTED_MODULE_9__["default"])
 /* harmony export */ });
 /* harmony import */ var _asciiValidator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./asciiValidator */ "./resources/js/resources/validations/CommonValidators/asciiValidator.js");
 /* harmony import */ var _dateValidator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dateValidator */ "./resources/js/resources/validations/CommonValidators/dateValidator.js");
@@ -15921,8 +16069,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _nationalNoValidator__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./nationalNoValidator */ "./resources/js/resources/validations/CommonValidators/nationalNoValidator.js");
 /* harmony import */ var _numberValidator__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./numberValidator */ "./resources/js/resources/validations/CommonValidators/numberValidator.js");
 /* harmony import */ var _stringValidator__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./stringValidator */ "./resources/js/resources/validations/CommonValidators/stringValidator.js");
-/* harmony import */ var _telValidator__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./telValidator */ "./resources/js/resources/validations/CommonValidators/telValidator.js");
-/* harmony import */ var _fileValidator__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./fileValidator */ "./resources/js/resources/validations/CommonValidators/fileValidator.js");
+/* harmony import */ var _conditionalStringValidator__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./conditionalStringValidator */ "./resources/js/resources/validations/CommonValidators/conditionalStringValidator.js");
+/* harmony import */ var _telValidator__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./telValidator */ "./resources/js/resources/validations/CommonValidators/telValidator.js");
+/* harmony import */ var _fileValidator__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./fileValidator */ "./resources/js/resources/validations/CommonValidators/fileValidator.js");
+
 
 
 
@@ -16236,7 +16386,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var editPatientFileForm3Schema = yup__WEBPACK_IMPORTED_MODULE_0__.object().shape({
-  patientReferal: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.patientReferal, null, 50)
+  item8Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item8Description, "systemicDiseaseHistory", "item8", null, 200),
+  item15Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item15Description, "systemicDiseaseHistory", "item15", null, 200),
+  item16Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item16Description, "systemicDiseaseHistory", "item16", null, 200),
+  item17Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item17Description, "systemicDiseaseHistory", "item17", null, 200),
+  item20Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item20Description, "systemicDiseaseHistory", "item20", null, 200),
+  item21Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item21Description, "systemicDiseaseHistory", "item21", null, 200),
+  item25_1Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item25_1Description, "systemicDiseaseHistory", "item25", null, 200),
+  item25_2Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item25_2Description, "systemicDiseaseHistory", "item25", null, 200),
+  item25_3Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item25_3Description, "systemicDiseaseHistory", "item25", null, 200),
+  item30Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item30Description, "systemicDiseaseHistory", "item30", null, 200),
+  item32Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item32Description, "systemicDiseaseHistory", "item32", null, 200),
+  item34Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item34Description, "systemicDiseaseHistory", "item34", null, 200),
+  useTobaccoDuration: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.useTobaccoDuration, "tobaccoUse", "tobaccoUse", null, 200),
+  useTobaccoType: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.useTobaccoType, "tobaccoUse", "tobaccoUse", null, 200),
+  useDrugDuration: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.useDrugDuration, "drugUse", "drugUse", null, 200),
+  useDrugType: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.useDrugType, "drugUse", "drugUse", null, 200),
+  pulse: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.pulse, null, 200, false),
+  bodyTemp: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.bodyTemp, null, 200, false),
+  bloodPressure: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.bloodPressure, null, 200, false),
+  resporate: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.resporate, null, 200, false),
+  weight: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.weight, null, 200, false),
+  height: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.height, null, 200, false),
+  bmi: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.bmi, null, 200, false)
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (editPatientFileForm3Schema);
 

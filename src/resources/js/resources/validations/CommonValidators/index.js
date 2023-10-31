@@ -6,18 +6,20 @@ import nameValidator from "./nameValidator";
 import nationalNoValidator from "./nationalNoValidator";
 import numberValidator from "./numberValidator";
 import stringValidator from "./stringValidator";
+import conditionalStringValidator from "./conditionalStringValidator";
 import telValidator from "./telValidator";
 import fileValidator from "./fileValidator";
 
 export {
-  asciiValidator,
-  dateValidator,
-  emailValidator,
-  mobileValidator,
-  nameValidator,
-  nationalNoValidator,
-  numberValidator,
-  stringValidator,
-  telValidator,
-  fileValidator,
+    asciiValidator,
+    dateValidator,
+    emailValidator,
+    mobileValidator,
+    nameValidator,
+    nationalNoValidator,
+    numberValidator,
+    stringValidator,
+    conditionalStringValidator,
+    telValidator,
+    fileValidator,
 };
