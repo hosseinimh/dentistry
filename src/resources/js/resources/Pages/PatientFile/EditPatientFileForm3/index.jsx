@@ -13,6 +13,7 @@ import PatientFileHeader from "../components/PatientFileHeader";
 import {
     systemicDiseaseHistory,
     editPatientFileForm3 as strings,
+    familialHistory,
 } from "../../../../constants/strings/fa";
 import PatientFileFooter from "../components/PatientFileFooter";
 
@@ -447,6 +448,57 @@ const EditPatientFileForm3 = () => {
                         <InputTextColumn field="height" showLabel />
                         <InputTextColumn field="bmi" showLabel />
                     </InputRow>
+                    <div className="block-border"></div>
+                    <h3 className="text mb-30">{strings.familialHistory}</h3>
+                    <h4 className="mb-30">
+                        {strings.familialHistoryDescription}
+                    </h4>
+                    <InputCheckboxContainer>
+                        <InputCheckboxColumn
+                            name="familialHistory"
+                            field="tb"
+                            strings={familialHistory}
+                        />
+                        <InputCheckboxColumn
+                            name="familialHistory"
+                            field="fdb"
+                            strings={familialHistory}
+                        />
+                        <InputCheckboxColumn
+                            name="familialHistory"
+                            field="fhp"
+                            strings={familialHistory}
+                        />
+                        <InputCheckboxColumn
+                            name="familialHistory"
+                            field="fhbp"
+                            strings={familialHistory}
+                        />
+                    </InputCheckboxContainer>
+                    <InputCheckboxContainer>
+                        <InputCheckboxColumn
+                            name="familialHistory"
+                            field="fca"
+                            strings={familialHistory}
+                            onChange={(e) =>
+                                pageUtils.onSetItem(
+                                    e.target.id,
+                                    e.target.checked
+                                )
+                            }
+                        />
+                        {pageState?.props?.fca && (
+                            <InputTextColumn
+                                componentContainerClassName="grow-1"
+                                inputContainerClassName="mb-0"
+                                field="fcaType"
+                                fullRow={false}
+                            />
+                        )}
+                        <div className="d-flex d-flex-column xs-grow-1">
+                            <div className="input-text input-bg mb-0"></div>
+                        </div>
+                    </InputCheckboxContainer>
                     <div className="block-border"></div>
                     <PatientFileFooter pageUtils={pageUtils} />
                 </div>

@@ -8,6 +8,7 @@ import addPatientFileSchema from "./PatientFile/AddPatientFileSchema";
 import editPatientFileForm1Schema from "./PatientFile/EditPatientFileForm1Schema";
 import editPatientFileForm2Schema from "./PatientFile/EditPatientFileForm2Schema";
 import editPatientFileForm3Schema from "./PatientFile/EditPatientFileForm3Schema";
+import editPatientFileForm4Schema from "./PatientFile/EditPatientFileForm4Schema";
 
 export {
     loginUserSchema,
@@ -20,4 +21,5 @@ export {
     editPatientFileForm1Schema,
     editPatientFileForm2Schema,
     editPatientFileForm3Schema,
+    editPatientFileForm4Schema,
 };

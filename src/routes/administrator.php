@@ -22,4 +22,5 @@ Route::middleware(['auth:sanctum', 'auth.administrator'])->group(function () {
     Route::post('p_files/update_form_1/{model}', [PatientFileController::class, 'updateForm1']);
     Route::post('p_files/update_form_2/{model}', [PatientFileController::class, 'updateForm2']);
     Route::post('p_files/update_form_3/{model}', [PatientFileController::class, 'updateForm3']);
+    Route::post('p_files/update_form_4/{model}', [PatientFileController::class, 'updateForm4']);
 });

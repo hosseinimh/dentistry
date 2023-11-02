@@ -46,6 +46,10 @@ const renderAuthRoutes = () => (
             path={`${BASE_PATH}/p_files/edit/form3/:patientFileId`}
             element={<Pages.EditPatientFileForm3 />}
         />
+        <Route
+            path={`${BASE_PATH}/p_files/edit/form4/:patientFileId`}
+            element={<Pages.EditPatientFileForm4 />}
+        />
         <Route path={`${BASE_PATH}/p_files`} element={<Pages.PatientFiles />} />
         <Route path={`${BASE_PATH}`} element={<Pages.Dashboard />} />
         <Route path="*" element={<Navigate to={BASE_PATH} />} />

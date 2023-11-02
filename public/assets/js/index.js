@@ -4460,6 +4460,27 @@ var ETHNICITY_TYPES = {
 
 /***/ }),
 
+/***/ "./resources/js/constants/familialHistory.js":
+/*!***************************************************!*\
+  !*** ./resources/js/constants/familialHistory.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "FAMILIAL_HISTORY": () => (/* binding */ FAMILIAL_HISTORY)
+/* harmony export */ });
+var FAMILIAL_HISTORY = {
+  tb: "tb",
+  fdb: "fdb",
+  fhp: "fhp",
+  fhbp: "fhbp",
+  fca: "fca"
+};
+
+/***/ }),
+
 /***/ "./resources/js/constants/fileForms.js":
 /*!*********************************************!*\
   !*** ./resources/js/constants/fileForms.js ***!
@@ -4509,29 +4530,31 @@ var GENDER_TYPES = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ASSETS_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_16__.ASSETS_PATH),
-/* harmony export */   "BASE_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_16__.BASE_PATH),
+/* harmony export */   "ASSETS_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_18__.ASSETS_PATH),
+/* harmony export */   "BASE_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_18__.BASE_PATH),
 /* harmony export */   "BASE_URL": () => (/* binding */ BASE_URL),
 /* harmony export */   "EDUCATION_TYPES": () => (/* reexport safe */ _educationTypes__WEBPACK_IMPORTED_MODULE_10__.EDUCATION_TYPES),
 /* harmony export */   "ETHNICITY_TYPES": () => (/* reexport safe */ _ethnicityTypes__WEBPACK_IMPORTED_MODULE_9__.ETHNICITY_TYPES),
+/* harmony export */   "FAMILIAL_HISTORY": () => (/* reexport safe */ _familialHistory__WEBPACK_IMPORTED_MODULE_16__.FAMILIAL_HISTORY),
 /* harmony export */   "FILE_FORMS": () => (/* reexport safe */ _fileForms__WEBPACK_IMPORTED_MODULE_8__.FILE_FORMS),
 /* harmony export */   "GENDER_TYPES": () => (/* reexport safe */ _genderTypes__WEBPACK_IMPORTED_MODULE_12__.GENDER_TYPES),
-/* harmony export */   "IMAGES_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_16__.IMAGES_PATH),
+/* harmony export */   "IMAGES_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_18__.IMAGES_PATH),
 /* harmony export */   "LESION_CLASSIFICATION": () => (/* reexport safe */ _lesionClassification__WEBPACK_IMPORTED_MODULE_13__.LESION_CLASSIFICATION),
 /* harmony export */   "MARITIAL_STATUSES": () => (/* reexport safe */ _maritialStatuses__WEBPACK_IMPORTED_MODULE_11__.MARITIAL_STATUSES),
 /* harmony export */   "MESSAGE_CODES": () => (/* reexport safe */ _messageCodes__WEBPACK_IMPORTED_MODULE_2__.MESSAGE_CODES),
 /* harmony export */   "MESSAGE_TYPES": () => (/* reexport safe */ _messageTypes__WEBPACK_IMPORTED_MODULE_1__.MESSAGE_TYPES),
 /* harmony export */   "NOTIFICATION_CATEGORIES": () => (/* reexport safe */ _notificationCategories__WEBPACK_IMPORTED_MODULE_5__.NOTIFICATION_CATEGORIES),
 /* harmony export */   "NOTIFICATION_SUB_CATEGORIES": () => (/* reexport safe */ _notificationSubCategories__WEBPACK_IMPORTED_MODULE_6__.NOTIFICATION_SUB_CATEGORIES),
-/* harmony export */   "PAGE_ITEMS": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_16__.PAGE_ITEMS),
+/* harmony export */   "PAGE_ITEMS": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_18__.PAGE_ITEMS),
 /* harmony export */   "SPECIAL_LESION_CLASSIFICATION": () => (/* reexport safe */ _specialLesionClassification__WEBPACK_IMPORTED_MODULE_14__.SPECIAL_LESION_CLASSIFICATION),
-/* harmony export */   "STORAGE_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_16__.STORAGE_PATH),
+/* harmony export */   "STORAGE_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_18__.STORAGE_PATH),
 /* harmony export */   "SYSTEMIC_DISEASE_HISTORY": () => (/* reexport safe */ _systemicDiseaseHistory__WEBPACK_IMPORTED_MODULE_15__.SYSTEMIC_DISEASE_HISTORY),
-/* harmony export */   "THEMES": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_16__.THEMES),
+/* harmony export */   "THEMES": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_18__.THEMES),
+/* harmony export */   "TOMPOROMANDIBULAR_JOINT": () => (/* reexport safe */ _tomporomandibularJoint__WEBPACK_IMPORTED_MODULE_17__.TOMPOROMANDIBULAR_JOINT),
 /* harmony export */   "UPLOADED_FILE": () => (/* reexport safe */ _UploadedFile__WEBPACK_IMPORTED_MODULE_3__.UPLOADED_FILE),
 /* harmony export */   "USER_ROLES": () => (/* reexport safe */ _userRoles__WEBPACK_IMPORTED_MODULE_4__.USER_ROLES),
 /* harmony export */   "USER_VERIFICATION_REJECT_REASON": () => (/* reexport safe */ _userVerificationRejectReason__WEBPACK_IMPORTED_MODULE_7__.USER_VERIFICATION_REJECT_REASON),
-/* harmony export */   "themes": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_16__.themes)
+/* harmony export */   "themes": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_18__.themes)
 /* harmony export */ });
 /* harmony import */ var _server_config_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../server-config.json */ "./server-config.json");
 /* harmony import */ var _messageTypes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./messageTypes */ "./resources/js/constants/messageTypes.js");
@@ -4549,7 +4572,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lesionClassification__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./lesionClassification */ "./resources/js/constants/lesionClassification.js");
 /* harmony import */ var _specialLesionClassification__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./specialLesionClassification */ "./resources/js/constants/specialLesionClassification.js");
 /* harmony import */ var _systemicDiseaseHistory__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./systemicDiseaseHistory */ "./resources/js/constants/systemicDiseaseHistory.js");
-/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./theme */ "./resources/js/constants/theme.js");
+/* harmony import */ var _familialHistory__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./familialHistory */ "./resources/js/constants/familialHistory.js");
+/* harmony import */ var _tomporomandibularJoint__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./tomporomandibularJoint */ "./resources/js/constants/tomporomandibularJoint.js");
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./theme */ "./resources/js/constants/theme.js");
+
+
 
 
 
@@ -4975,11 +5002,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "editPatientFileForm1": () => (/* binding */ editPatientFileForm1),
 /* harmony export */   "editPatientFileForm2": () => (/* binding */ editPatientFileForm2),
 /* harmony export */   "editPatientFileForm3": () => (/* binding */ editPatientFileForm3),
+/* harmony export */   "editPatientFileForm4": () => (/* binding */ editPatientFileForm4),
 /* harmony export */   "editProfilePage": () => (/* binding */ editProfilePage),
 /* harmony export */   "editUserPage": () => (/* binding */ editUserPage),
 /* harmony export */   "educationTypes": () => (/* binding */ educationTypes),
 /* harmony export */   "errorsPage": () => (/* binding */ errorsPage),
 /* harmony export */   "ethnicityTypes": () => (/* binding */ ethnicityTypes),
+/* harmony export */   "familialHistory": () => (/* binding */ familialHistory),
 /* harmony export */   "footer": () => (/* binding */ footer),
 /* harmony export */   "genderTypes": () => (/* binding */ genderTypes),
 /* harmony export */   "general": () => (/* binding */ general),
@@ -4998,6 +5027,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "sidebar": () => (/* binding */ sidebar),
 /* harmony export */   "specialLesionClassification": () => (/* binding */ specialLesionClassification),
 /* harmony export */   "systemicDiseaseHistory": () => (/* binding */ systemicDiseaseHistory),
+/* harmony export */   "tomporomandibularJoint": () => (/* binding */ tomporomandibularJoint),
 /* harmony export */   "usersPage": () => (/* binding */ usersPage),
 /* harmony export */   "utils": () => (/* binding */ utils),
 /* harmony export */   "validation": () => (/* binding */ validation)
@@ -5327,6 +5357,13 @@ var systemicDiseaseHistory = {
   item32: "وضعیت خواب شما چطور است؟",
   item33: "آیا برای زندگی روزمره نیاز به کمک و همراهی فرد دیگری دارید؟"
 };
+var familialHistory = {
+  tb: "سل",
+  fdb: "دیابت (مرض قند)",
+  fhp: "هپاتیت",
+  fhbp: "بالا بودن فشار خون",
+  fca: "سرطان"
+};
 var notificationsPage = {
   _title: "اعلان‌ها",
   _subTitle: "فهرست اعلان‌ها",
@@ -5367,6 +5404,12 @@ var patientFilesPage = {
   familyPlaceholder: "نام خانوادگی",
   nameFamily: "نام و نام خانوادگی",
   add: "ثبت پرونده"
+};
+var tomporomandibularJoint = {
+  restrictionInOpening: "محدودیت در باز کردن دهان",
+  painOrDeviation: "درد یا انحراف فک حین باز کردن دهان",
+  jointSound: "صدای مفصل",
+  otherSignsTMJ: "سایر علائم"
 };
 var addPatientFilePage = {
   _title: "پرونده بیمار - فرم یک",
@@ -5470,10 +5513,10 @@ var editPatientFileForm2 = {
   patientReferal: "فرد ارجاع‌دهنده بیمار",
   specializationType: "نوع تخصص",
   chiefCompliant: "شکایت اصلی بیمار",
-  chiefCompliantHistory: "تاریخ‌چه شکایت اصلی بیمار",
+  chiefCompliantHistory: "تاریخچه شکایت اصلی بیمار",
   timeInterval: "فاصله زمانی بین توجه به مشکل و اولین مراجعه به پزشک / دندانپزشک",
-  referalHistory: "تاریخ‌چه ارجاع به پزشکان / دندانپزشکان همراه با شرح تخصص آن‌ها",
-  treatmentHistory: "تاریخ‌چه اقدامات درمانی انجام‌شده",
+  referalHistory: "تاریخچه ارجاع به پزشکان / دندانپزشکان همراه با شرح تخصص آن‌ها",
+  treatmentHistory: "تاریخچه اقدامات درمانی انجام‌شده",
   submitted: "ویرایش اطلاعات بیمار با موفقیت انجام شد."
 };
 var editPatientFileForm3 = {
@@ -5532,6 +5575,59 @@ var editPatientFileForm3 = {
   heightPlaceholder: "قد (متر)",
   bmi: "شاخص BMI",
   bmiPlaceholder: "شاخص BMI",
+  familialHistory: "تاریخچه خانوادگی بیمار",
+  familialHistoryDescription: "آیا بستگان درجه یک شما به بیماری‌های زیر مبتلا شده‌اند؟",
+  fcaType: "نوع",
+  fcaTypePlaceholder: "نوع",
+  submitted: "ویرایش اطلاعات بیمار با موفقیت انجام شد."
+};
+var editPatientFileForm4 = {
+  _title: "پرونده بیمار - فرم چهار",
+  _subTitle: "پرونده بیمار را ویرایش کنید.",
+  extraOralExamination: "معاینات خارج دهانی",
+  face: "صورت",
+  faceAssymetry: "آسیمتری",
+  faceAssymetryPlaceholder: "آسیمتری",
+  facePigmentation: "پیگمانتاسیون",
+  facePigmentationPlaceholder: "پیگمانتاسیون",
+  faceOtherPathalogical: "تغییرات پاتولوژیک دیگر",
+  faceOtherPathalogicalPlaceholder: "تغییرات پاتولوژیک دیگر",
+  neck: "گردن",
+  neckAssymetry: "آسیمتری",
+  neckAssymetryPlaceholder: "آسیمتری",
+  neckTyExamination: "معاینه غده تیروئید",
+  neckTyExaminationPlaceholder: "معاینه غده تیروئید",
+  lymphNodes: "معاینه گره‌های لنفاوی",
+  lymphNodesPlaceholder: "معاینه گره‌های لنفاوی",
+  tomporomandibularJoint: "مفصل گیجگاهی فکی",
+  tomporomandibularJointDescriptipn: "(حساسیت در لمس، تعیین حداکثر بازشدگی دهان، وجود انحراف و درد حین باز کردن دهان، نتیجه معاینه عضلات جونده، صدای مفصل و ...)",
+  otherSignsTMJDescription: "سایر علائم",
+  otherSignsTMJDescriptionPlaceholder: "سایر علائم",
+  intraOralExamination: "معاینه داخل دهانی (یافته‌های طبیعی و پاتولوژیک)",
+  intraOralExaminationPlaceholder: "معاینه داخل دهانی (یافته‌های طبیعی و پاتولوژیک)",
+  retromolarArea: "لب، گونه، وستیبول و ناحیه رترومولر",
+  retromolarAreaPlaceholder: "لب، گونه، وستیبول و ناحیه رترومولر",
+  gums: "لثه",
+  gumsPlaceholder: "لثه",
+  toothlessRidge: "ریج بی‌دندانی",
+  toothlessRidgePlaceholder: "ریج بی‌دندانی",
+  hardSoftPalate: "کام سخت و کام نرم",
+  hardSoftPalatePlaceholder: "کام سخت و کام نرم",
+  tongueDorsal: "سطح دورسال و کناره طرفی زبان",
+  tongueDorsalPlaceholder: "سطح دورسال و کناره طرفی زبان",
+  tongueVentral: "سطح ونترال زبان و کف دهان",
+  tongueVentralPlaceholder: "سطح ونترال زبان و کف دهان",
+  tonguePharyngeal: "سطح فارنژیال زبان",
+  tonguePharyngealPlaceholder: "سطح فارنژیال زبان",
+  neurologicalChanges: "تغییرات نورولوژیک مرتبط با ضایعه دهان، فک و صورت ( بی حسی، درد، گزگز، مورمور)",
+  neurologicalChangesPlaceholder: "تغییرات نورولوژیک مرتبط با ضایعه دهان، فک و صورت ( بی حسی، درد، گزگز، مورمور)",
+  neurologicalChangesDescription: "لطفاً وسعت تغییرات حسی به تفضیل مشخص شود.",
+  salivaryGrandExamination: "معاینه غدد بزاقی و ترشحات آن‌ها",
+  salivaryGrandExaminationPlaceholder: "معاینه غدد بزاقی و ترشحات آن‌ها",
+  salivaryGrandExaminationDescription: "اندازه‌گیری حجم بزاق غیرتحریکی و تحریکی، معاینه،milking غدد، بررسی نمای بالینی غدد مینور و",
+  dentalChangesExamination: "تغییرات دندانی",
+  dentalChangesExaminationPlaceholder: "تغییرات دندانی",
+  dentalChangesExaminationDescription: "تغییرات دندانی غیرمرتبط یا مرتبط با دهان، فک و صورت، تغییرات دندانی غیرطبیعی لقی (حتما گرید مشخص شود)، وجود اختلال در شکل، تعداد، سایز و ساختارهای مینا و عاج، تیلت، پوسیدگی، از دست‌دادن دندان و مشکلات پالپ",
   submitted: "ویرایش اطلاعات بیمار با موفقیت انجام شد."
 };
 
@@ -5686,6 +5782,26 @@ var themes = [{
   }
 }];
 
+
+/***/ }),
+
+/***/ "./resources/js/constants/tomporomandibularJoint.js":
+/*!**********************************************************!*\
+  !*** ./resources/js/constants/tomporomandibularJoint.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "TOMPOROMANDIBULAR_JOINT": () => (/* binding */ TOMPOROMANDIBULAR_JOINT)
+/* harmony export */ });
+var TOMPOROMANDIBULAR_JOINT = {
+  restrictionInOpening: "restriction_in_opening",
+  painOrDeviation: "pain_or_deviation",
+  jointSound: "joint_sound",
+  otherSignsTMJ: "other_signs_tmj"
+};
 
 /***/ }),
 
@@ -6376,7 +6492,7 @@ var PatientFile = /*#__PURE__*/function (_Entity) {
   }, {
     key: "store",
     value: function () {
-      var _store = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(fileNo, firstVisitDate, name, family, nationalNo, homeAddress, workAddress, tel, mobile, relativeMobile, birthDate, birthPlace, gender, maritialStatus, occupation, ethnicity, education, spouseOccupation, spouseRelationship, childrenNo) {
+      var _store = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(fileNo, firstVisitDate, name, family, nationalNo, birthDate, birthPlace, occupation, gender, maritialStatus, ethnicity, education, spouseOccupation, spouseRelationship, childrenNo, tel, mobile, relativeMobile, homeAddress, workAddress) {
         return _regeneratorRuntime().wrap(function _callee3$(_context3) {
           while (1) switch (_context3.prev = _context3.next) {
             case 0:
@@ -6387,21 +6503,21 @@ var PatientFile = /*#__PURE__*/function (_Entity) {
                 name: name,
                 family: family,
                 national_no: nationalNo,
-                home_address: homeAddress,
-                work_address: workAddress,
-                tel: tel,
-                mobile: mobile,
-                relative_mobile: relativeMobile,
                 birth_date: birthDate,
                 birth_place: birthPlace,
+                occupation: occupation,
                 gender: gender,
                 maritial_status: maritialStatus,
-                occupation: occupation,
                 ethnicity: ethnicity,
                 education: education,
                 spouse_occupation: spouseOccupation,
                 spouse_relationship: spouseRelationship,
-                children_no: childrenNo
+                children_no: childrenNo,
+                tel: tel,
+                mobile: mobile,
+                relative_mobile: relativeMobile,
+                home_address: homeAddress,
+                work_address: workAddress
               });
             case 2:
               return _context3.abrupt("return", _context3.sent);
@@ -6419,7 +6535,7 @@ var PatientFile = /*#__PURE__*/function (_Entity) {
   }, {
     key: "updateForm1",
     value: function () {
-      var _updateForm = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(id, fileNo, firstVisitDate, name, family, nationalNo, homeAddress, workAddress, tel, mobile, relativeMobile, birthDate, birthPlace, gender, maritialStatus, occupation, ethnicity, education, spouseOccupation, spouseRelationship, childrenNo) {
+      var _updateForm = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(id, fileNo, firstVisitDate, name, family, nationalNo, birthDate, birthPlace, occupation, gender, maritialStatus, ethnicity, education, spouseOccupation, spouseRelationship, childrenNo, tel, mobile, relativeMobile, homeAddress, workAddress) {
         return _regeneratorRuntime().wrap(function _callee4$(_context4) {
           while (1) switch (_context4.prev = _context4.next) {
             case 0:
@@ -6430,21 +6546,21 @@ var PatientFile = /*#__PURE__*/function (_Entity) {
                 name: name,
                 family: family,
                 national_no: nationalNo,
-                home_address: homeAddress,
-                work_address: workAddress,
-                tel: tel,
-                mobile: mobile,
-                relative_mobile: relativeMobile,
                 birth_date: birthDate,
                 birth_place: birthPlace,
+                occupation: occupation,
                 gender: gender,
                 maritial_status: maritialStatus,
-                occupation: occupation,
                 ethnicity: ethnicity,
                 education: education,
                 spouse_occupation: spouseOccupation,
                 spouse_relationship: spouseRelationship,
-                children_no: childrenNo
+                children_no: childrenNo,
+                tel: tel,
+                mobile: mobile,
+                relative_mobile: relativeMobile,
+                home_address: homeAddress,
+                work_address: workAddress
               });
             case 2:
               return _context4.abrupt("return", _context4.sent);
@@ -6472,7 +6588,7 @@ var PatientFile = /*#__PURE__*/function (_Entity) {
                 patient_referal: patientReferal,
                 special_lesion_classification: specialLesionClassification,
                 chief_compliant: chiefCompliant,
-                chief_compliantHistory: chiefCompliantHistory,
+                chief_compliant_history: chiefCompliantHistory,
                 time_interval: timeInterval,
                 referal_history: referalHistory,
                 treatment_history: treatmentHistory
@@ -6493,7 +6609,7 @@ var PatientFile = /*#__PURE__*/function (_Entity) {
   }, {
     key: "updateForm3",
     value: function () {
-      var _updateForm3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6(id, systemicDiseaseHistory, item8Description, item15Description, item16Description, item17Description, item20Description, item21Description, item25_1Description, item25_2Description, item25_3Description, item30Description, item32Description, item34Description, tobaccoUse, useTobaccoDuration, useTobaccoType, drugUse, useDrugDuration, useDrugType, alcohol, pulse, bodyTemp, bloodPressure, resporate, weight, height, bmi) {
+      var _updateForm3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6(id, systemicDiseaseHistory, item8Description, item15Description, item16Description, item17Description, item20Description, item21Description, item25_1Description, item25_2Description, item25_3Description, item30Description, item32Description, item34Description, tobaccoUse, useTobaccoDuration, useTobaccoType, drugUse, useDrugDuration, useDrugType, alcohol, pulse, bodyTemp, bloodPressure, resporate, weight, height, bmi, familialHistory, fcaType) {
         return _regeneratorRuntime().wrap(function _callee6$(_context6) {
           while (1) switch (_context6.prev = _context6.next) {
             case 0:
@@ -6525,7 +6641,9 @@ var PatientFile = /*#__PURE__*/function (_Entity) {
                 resporate: resporate,
                 weight: weight,
                 height: height,
-                bmi: bmi
+                bmi: bmi,
+                familial_history: familialHistory,
+                fca_type: fcaType
               });
             case 2:
               return _context6.abrupt("return", _context6.sent);
@@ -6535,10 +6653,52 @@ var PatientFile = /*#__PURE__*/function (_Entity) {
           }
         }, _callee6, this);
       }));
-      function updateForm3(_x55, _x56, _x57, _x58, _x59, _x60, _x61, _x62, _x63, _x64, _x65, _x66, _x67, _x68, _x69, _x70, _x71, _x72, _x73, _x74, _x75, _x76, _x77, _x78, _x79, _x80, _x81, _x82) {
+      function updateForm3(_x55, _x56, _x57, _x58, _x59, _x60, _x61, _x62, _x63, _x64, _x65, _x66, _x67, _x68, _x69, _x70, _x71, _x72, _x73, _x74, _x75, _x76, _x77, _x78, _x79, _x80, _x81, _x82, _x83, _x84) {
         return _updateForm3.apply(this, arguments);
       }
       return updateForm3;
+    }()
+  }, {
+    key: "updateForm4",
+    value: function () {
+      var _updateForm4 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee7(id, faceAssymetry, facePigmentation, faceOtherPathalogical, neckAssymetry, neckTyExamination, lymphNodes, tomporomandibularJoint, otherSignsTMJDescription, intraOralExamination, retromolarArea, gums, toothlessRidge, hardSoftPalate, tongueDorsal, tongueVentral, tonguePharyngeal, neurologicalChanges, salivaryGrandExamination, dentalChangesExamination) {
+        return _regeneratorRuntime().wrap(function _callee7$(_context7) {
+          while (1) switch (_context7.prev = _context7.next) {
+            case 0:
+              _context7.next = 2;
+              return this.handlePost("".concat(_constants__WEBPACK_IMPORTED_MODULE_0__.BASE_URL, "/a/p_files/update_form_4/").concat(id), {
+                face_assymetry: faceAssymetry,
+                face_pigmentation: facePigmentation,
+                face_other_pathalogical: faceOtherPathalogical,
+                neck_assymetry: neckAssymetry,
+                neck_ty_examination: neckTyExamination,
+                lymph_nodes: lymphNodes,
+                tomporomandibular_joint: tomporomandibularJoint,
+                other_signs_tmj_description: otherSignsTMJDescription,
+                intra_oral_examination: intraOralExamination,
+                retromolar_area: retromolarArea,
+                gums: gums,
+                toothless_ridge: toothlessRidge,
+                hard_soft_palate: hardSoftPalate,
+                tongue_dorsal: tongueDorsal,
+                tongue_ventral: tongueVentral,
+                tongue_pharyngeal: tonguePharyngeal,
+                neurological_changes: neurologicalChanges,
+                salivary_grand_examination: salivaryGrandExamination,
+                dental_changes_examination: dentalChangesExamination
+              });
+            case 2:
+              return _context7.abrupt("return", _context7.sent);
+            case 3:
+            case "end":
+              return _context7.stop();
+          }
+        }, _callee7, this);
+      }));
+      function updateForm4(_x85, _x86, _x87, _x88, _x89, _x90, _x91, _x92, _x93, _x94, _x95, _x96, _x97, _x98, _x99, _x100, _x101, _x102, _x103, _x104) {
+        return _updateForm4.apply(this, arguments);
+      }
+      return updateForm4;
     }()
   }]);
   return PatientFile;
@@ -8007,7 +8167,7 @@ var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
         return _regeneratorRuntime().wrap(function _callee3$(_context3) {
           while (1) switch (_context3.prev = _context3.next) {
             case 0:
-              promise = this.entity.store(data.fileNo, data.firstVisitDate.replaceAll("/", ""), data.name, data.family, data.nationalNo, data.homeAddress, data.workAddress, data.tel, data.mobile, data.relativeMobile, data.birthDate.replaceAll("/", ""), data.birthPlace, data.gender, data.maritialStatus, data.occupation, data.ethnicity, data.education, data.spouseOccupation, data.spouseRelationship, data.childrenNo);
+              promise = this.entity.store(data.fileNo, data.firstVisitDate.replaceAll("/", ""), data.name, data.family, data.nationalNo, data.birthDate.replaceAll("/", ""), data.birthPlace, data.occupation, data.gender, data.maritialStatus, data.ethnicity, data.education, data.spouseOccupation, data.spouseRelationship, data.childrenNo, data.tel, data.mobile, data.relativeMobile, data.homeAddress, data.workAddress);
               _get(_getPrototypeOf(PageUtils.prototype), "onModifySubmit", this).call(this, promise);
             case 2:
             case "end":
@@ -8347,21 +8507,21 @@ var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
       this.useForm.setValue("name", result.item.name);
       this.useForm.setValue("family", result.item.family);
       this.useForm.setValue("nationalNo", result.item.nationalNo);
-      this.useForm.setValue("homeAddress", result.item.homeAddress);
-      this.useForm.setValue("workAddress", result.item.workAddress);
-      this.useForm.setValue("workAddress", result.item.workAddress);
-      this.useForm.setValue("mobile", result.item.mobile);
-      this.useForm.setValue("relativeMobile", result.item.relativeMobile);
       this.useForm.setValue("birthDate", result.item.birthDate);
       this.useForm.setValue("birthPlace", result.item.birthPlace);
+      this.useForm.setValue("occupation", result.item.occupation);
       this.useForm.setValue("gender", result.item.gender);
       this.useForm.setValue("maritialStatus", result.item.maritialStatus);
-      this.useForm.setValue("occupation", result.item.occupation);
       this.useForm.setValue("ethnicity", result.item.ethnicity);
       this.useForm.setValue("education", result.item.education);
       this.useForm.setValue("spouseOccupation", result.item.spouseOccupation);
       this.useForm.setValue("spouseRelationship", result.item.spouseRelationship);
       this.useForm.setValue("childrenNo", result.item.childrenNo);
+      this.useForm.setValue("tel", result.item.tel);
+      this.useForm.setValue("mobile", result.item.mobile);
+      this.useForm.setValue("relativeMobile", result.item.relativeMobile);
+      this.useForm.setValue("homeAddress", result.item.homeAddress);
+      this.useForm.setValue("workAddress", result.item.workAddress);
     }
   }, {
     key: "onSubmit",
@@ -8371,7 +8531,7 @@ var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
         return _regeneratorRuntime().wrap(function _callee3$(_context3) {
           while (1) switch (_context3.prev = _context3.next) {
             case 0:
-              promise = this.entity.updateForm1(this.pageState.params.patientFileId, data.fileNo, data.firstVisitDate.replaceAll("/", ""), data.name, data.family, data.nationalNo, data.homeAddress, data.workAddress, data.tel, data.mobile, data.relativeMobile, data.birthDate.replaceAll("/", ""), data.birthPlace, data.gender, data.maritialStatus, data.occupation, data.ethnicity, data.education, data.spouseOccupation, data.spouseRelationship, data.childrenNo);
+              promise = this.entity.updateForm1(this.pageState.params.patientFileId, data.fileNo, data.firstVisitDate.replaceAll("/", ""), data.name, data.family, data.nationalNo, data.birthDate.replaceAll("/", ""), data.birthPlace, data.occupation, data.gender, data.maritialStatus, data.ethnicity, data.education, data.spouseOccupation, data.spouseRelationship, data.childrenNo, data.tel, data.mobile, data.relativeMobile, data.homeAddress, data.workAddress);
               _get(_getPrototypeOf(PageUtils.prototype), "onModifySubmit", this).call(this, promise);
             case 2:
             case "end":
@@ -9067,13 +9227,32 @@ var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
       }));
       this.dispatch((0,_state_page_pageActions__WEBPACK_IMPORTED_MODULE_7__.setPageTitleAction)("".concat(_constants_strings_fa__WEBPACK_IMPORTED_MODULE_6__.editPatientFileForm3._title, " [ ").concat(result.item.name, " ").concat(result.item.family, " - ").concat(result.item.fileNo, " ]"), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_6__.editPatientFileForm3._subTitle));
       this.useForm.setValue("systemicDiseaseHistory", result.item.systemicDiseaseHistory);
-      this.useForm.setValue("patientReferal", result.item.patientReferal);
-      this.useForm.setValue("specialLesionClassification", result.item.specialLesionClassification);
-      this.useForm.setValue("chiefCompliant", result.item.chiefCompliant);
-      this.useForm.setValue("chiefCompliantHistory", result.item.chiefCompliantHistory);
-      this.useForm.setValue("timeInterval", result.item.timeInterval);
-      this.useForm.setValue("referalHistory", result.item.referalHistory);
-      this.useForm.setValue("treatmentHistory", result.item.treatmentHistory);
+      this.useForm.setValue("item8Description", result.item.item8Description);
+      this.useForm.setValue("item15Description", result.item.item15Description);
+      this.useForm.setValue("item16Description", result.item.item16Description);
+      this.useForm.setValue("item17Description", result.item.item17Description);
+      this.useForm.setValue("item20Description", result.item.item20Description);
+      this.useForm.setValue("item21Description", result.item.item21Description);
+      this.useForm.setValue("item25_1Description", result.item.item25_1Description);
+      this.useForm.setValue("item25_2Description", result.item.item25_2Description);
+      this.useForm.setValue("item25_3Description", result.item.item25_3Description);
+      this.useForm.setValue("item30Description", result.item.item30Description);
+      this.useForm.setValue("item32Description", result.item.item32Description);
+      this.useForm.setValue("item34Description", result.item.item34Description);
+      this.useForm.setValue("tobaccoUse", result.item.tobaccoUse);
+      this.useForm.setValue("useTobaccoDuration", result.item.useTobaccoDuration);
+      this.useForm.setValue("useTobaccoType", result.item.useTobaccoType);
+      this.useForm.setValue("drugUse", result.item.drugUse);
+      this.useForm.setValue("useDrugDuration", result.item.useDrugDuration);
+      this.useForm.setValue("useDrugType", result.item.useDrugType);
+      this.useForm.setValue("alcohol", result.item.alcohol);
+      this.useForm.setValue("pulse", result.item.pulse);
+      this.useForm.setValue("bodyTemp", result.item.bodyTemp);
+      this.useForm.setValue("resporate", result.item.resporate);
+      this.useForm.setValue("weight", result.item.weight);
+      this.useForm.setValue("height", result.item.height);
+      this.useForm.setValue("bmi", result.item.bmi);
+      this.useForm.setValue("familialHistory", result.item.familialHistory);
     }
   }, {
     key: "onSetItem",
@@ -9087,8 +9266,8 @@ var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
     key: "onSubmit",
     value: function () {
       var _onSubmit = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(data) {
-        var _data$systemicDisease, _systemicDiseaseHisto, _systemicDiseaseHisto2, _systemicDiseaseHisto3, _systemicDiseaseHisto4, _systemicDiseaseHisto5, _systemicDiseaseHisto6, _systemicDiseaseHisto7, _systemicDiseaseHisto8, _systemicDiseaseHisto9, _systemicDiseaseHisto10, _systemicDiseaseHisto11, _systemicDiseaseHisto12, _systemicDiseaseHisto13;
-        var systemicDiseaseHistory, promise;
+        var _data$systemicDisease, _systemicDiseaseHisto, _data$familialHistory, _familialHistory, _systemicDiseaseHisto2, _systemicDiseaseHisto3, _systemicDiseaseHisto4, _systemicDiseaseHisto5, _systemicDiseaseHisto6, _systemicDiseaseHisto7, _systemicDiseaseHisto8, _systemicDiseaseHisto9, _systemicDiseaseHisto10, _systemicDiseaseHisto11, _systemicDiseaseHisto12, _systemicDiseaseHisto13, _familialHistory2;
+        var systemicDiseaseHistory, familialHistory, promise;
         return _regeneratorRuntime().wrap(function _callee3$(_context3) {
           while (1) switch (_context3.prev = _context3.next) {
             case 0:
@@ -9098,9 +9277,15 @@ var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
               systemicDiseaseHistory = ((_systemicDiseaseHisto = systemicDiseaseHistory) === null || _systemicDiseaseHisto === void 0 ? void 0 : _systemicDiseaseHisto.length) > 0 ? systemicDiseaseHistory.map(function (item) {
                 return _constants__WEBPACK_IMPORTED_MODULE_3__.SYSTEMIC_DISEASE_HISTORY[item];
               }).join("|") : null;
-              promise = this.entity.updateForm3(this.pageState.params.patientFileId, systemicDiseaseHistory, (_systemicDiseaseHisto2 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto2 !== void 0 && _systemicDiseaseHisto2.includes("item_8") ? data.item8Description : "", (_systemicDiseaseHisto3 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto3 !== void 0 && _systemicDiseaseHisto3.includes("item_15") ? data.item15Description : "", (_systemicDiseaseHisto4 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto4 !== void 0 && _systemicDiseaseHisto4.includes("item_16") ? data.item16Description : "", (_systemicDiseaseHisto5 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto5 !== void 0 && _systemicDiseaseHisto5.includes("item_17") ? data.item17Description : "", (_systemicDiseaseHisto6 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto6 !== void 0 && _systemicDiseaseHisto6.includes("item_20") ? data.item20Description : "", (_systemicDiseaseHisto7 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto7 !== void 0 && _systemicDiseaseHisto7.includes("item_21") ? data.item21Description : "", (_systemicDiseaseHisto8 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto8 !== void 0 && _systemicDiseaseHisto8.includes("item_25") ? data.item25_1Description : "", (_systemicDiseaseHisto9 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto9 !== void 0 && _systemicDiseaseHisto9.includes("item_25") ? data.item25_2Description : "", (_systemicDiseaseHisto10 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto10 !== void 0 && _systemicDiseaseHisto10.includes("item_25") ? data.item25_3Description : "", (_systemicDiseaseHisto11 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto11 !== void 0 && _systemicDiseaseHisto11.includes("item_30") ? data.item30Description : "", (_systemicDiseaseHisto12 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto12 !== void 0 && _systemicDiseaseHisto12.includes("item_32") ? data.item32Description : "", (_systemicDiseaseHisto13 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto13 !== void 0 && _systemicDiseaseHisto13.includes("item_34") ? data.item34Description : "", data.tobaccoUse ? 1 : 0, data.tobaccoUse ? data.useTobaccoDuration : "", data.tobaccoUse ? data.useTobaccoType : "", data.drugUse ? 1 : 0, data.drugUse ? data.useDrugDuration : "", data.drugUse ? data.useDrugType : "", data.alcohol ? 1 : 0, data.pulse, data.bodyTemp, data.bloodPressure, data.resporate, data.weight, data.height, data.bmi);
+              familialHistory = ((_data$familialHistory = data.familialHistory) === null || _data$familialHistory === void 0 ? void 0 : _data$familialHistory.length) > 0 ? data.familialHistory.filter(function (item) {
+                return item in _constants__WEBPACK_IMPORTED_MODULE_3__.FAMILIAL_HISTORY;
+              }) : null;
+              familialHistory = ((_familialHistory = familialHistory) === null || _familialHistory === void 0 ? void 0 : _familialHistory.length) > 0 ? familialHistory.map(function (item) {
+                return _constants__WEBPACK_IMPORTED_MODULE_3__.FAMILIAL_HISTORY[item];
+              }).join("|") : null;
+              promise = this.entity.updateForm3(this.pageState.params.patientFileId, systemicDiseaseHistory, (_systemicDiseaseHisto2 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto2 !== void 0 && _systemicDiseaseHisto2.includes("item_8") ? data.item8Description : "", (_systemicDiseaseHisto3 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto3 !== void 0 && _systemicDiseaseHisto3.includes("item_15") ? data.item15Description : "", (_systemicDiseaseHisto4 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto4 !== void 0 && _systemicDiseaseHisto4.includes("item_16") ? data.item16Description : "", (_systemicDiseaseHisto5 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto5 !== void 0 && _systemicDiseaseHisto5.includes("item_17") ? data.item17Description : "", (_systemicDiseaseHisto6 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto6 !== void 0 && _systemicDiseaseHisto6.includes("item_20") ? data.item20Description : "", (_systemicDiseaseHisto7 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto7 !== void 0 && _systemicDiseaseHisto7.includes("item_21") ? data.item21Description : "", (_systemicDiseaseHisto8 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto8 !== void 0 && _systemicDiseaseHisto8.includes("item_25") ? data.item25_1Description : "", (_systemicDiseaseHisto9 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto9 !== void 0 && _systemicDiseaseHisto9.includes("item_25") ? data.item25_2Description : "", (_systemicDiseaseHisto10 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto10 !== void 0 && _systemicDiseaseHisto10.includes("item_25") ? data.item25_3Description : "", (_systemicDiseaseHisto11 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto11 !== void 0 && _systemicDiseaseHisto11.includes("item_30") ? data.item30Description : "", (_systemicDiseaseHisto12 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto12 !== void 0 && _systemicDiseaseHisto12.includes("item_32") ? data.item32Description : "", (_systemicDiseaseHisto13 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto13 !== void 0 && _systemicDiseaseHisto13.includes("item_34") ? data.item34Description : "", data.tobaccoUse ? 1 : 0, data.tobaccoUse ? data.useTobaccoDuration : "", data.tobaccoUse ? data.useTobaccoType : "", data.drugUse ? 1 : 0, data.drugUse ? data.useDrugDuration : "", data.drugUse ? data.useDrugType : "", data.alcohol ? 1 : 0, data.pulse, data.bodyTemp, data.bloodPressure, data.resporate, data.weight, data.height, data.bmi, familialHistory, (_familialHistory2 = familialHistory) !== null && _familialHistory2 !== void 0 && _familialHistory2.includes("fca") ? data.fcaType : "");
               _get(_getPrototypeOf(PageUtils.prototype), "onModifySubmit", this).call(this, promise);
-            case 4:
+            case 6:
             case "end":
               return _context3.stop();
           }
@@ -9148,7 +9333,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var EditPatientFileForm3 = function EditPatientFileForm3() {
-  var _pageState$props, _pageState$props2, _pageState$props3, _pageState$props4, _pageState$props5, _pageUtils$strings, _pageState$props6, _pageState$props7, _pageState$props8, _pageState$props9;
+  var _pageState$props, _pageState$props2, _pageState$props3, _pageState$props4, _pageState$props5, _pageUtils$strings, _pageState$props6, _pageState$props7, _pageState$props8, _pageState$props9, _pageState$props10;
   var pageState = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) {
     return state.pageReducer;
   });
@@ -9548,6 +9733,51 @@ var EditPatientFileForm3 = function EditPatientFileForm3() {
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
           className: "block-border"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h3", {
+          className: "text mb-30",
+          children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm3.familialHistory
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
+          className: "mb-30",
+          children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm3.familialHistoryDescription
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
+            name: "familialHistory",
+            field: "tb",
+            strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.familialHistory
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
+            name: "familialHistory",
+            field: "fdb",
+            strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.familialHistory
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
+            name: "familialHistory",
+            field: "fhp",
+            strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.familialHistory
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
+            name: "familialHistory",
+            field: "fhbp",
+            strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.familialHistory
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
+            name: "familialHistory",
+            field: "fca",
+            strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.familialHistory,
+            onChange: function onChange(e) {
+              return pageUtils.onSetItem(e.target.id, e.target.checked);
+            }
+          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props10 = pageState.props) === null || _pageState$props10 === void 0 ? void 0 : _pageState$props10.fca) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+            componentContainerClassName: "grow-1",
+            inputContainerClassName: "mb-0",
+            field: "fcaType",
+            fullRow: false
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+            className: "d-flex d-flex-column xs-grow-1",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+              className: "input-text input-bg mb-0"
+            })
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+          className: "block-border"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_PatientFileFooter__WEBPACK_IMPORTED_MODULE_6__["default"], {
           pageUtils: pageUtils
         })]
@@ -9556,6 +9786,365 @@ var EditPatientFileForm3 = function EditPatientFileForm3() {
   });
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EditPatientFileForm3);
+
+/***/ }),
+
+/***/ "./resources/js/resources/Pages/PatientFile/EditPatientFileForm4/PageUtils.js":
+/*!************************************************************************************!*\
+  !*** ./resources/js/resources/Pages/PatientFile/EditPatientFileForm4/PageUtils.js ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PageUtils": () => (/* binding */ PageUtils)
+/* harmony export */ });
+/* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-hook-form */ "./node_modules/react-hook-form/dist/index.esm.mjs");
+/* harmony import */ var _hookform_resolvers_yup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @hookform/resolvers/yup */ "./node_modules/@hookform/resolvers/yup/dist/yup.mjs");
+/* harmony import */ var _http_entities__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../http/entities */ "./resources/js/http/entities/index.js");
+/* harmony import */ var _utils_BasePageUtils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../utils/BasePageUtils */ "./resources/js/utils/BasePageUtils.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../constants */ "./resources/js/constants/index.js");
+/* harmony import */ var _state_layout_layoutActions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../state/layout/layoutActions */ "./resources/js/state/layout/layoutActions.js");
+/* harmony import */ var _validations__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../validations */ "./resources/js/resources/validations/index.js");
+/* harmony import */ var _constants_strings_fa__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../constants/strings/fa */ "./resources/js/constants/strings/fa.js");
+/* harmony import */ var _state_page_pageActions__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../state/page/pageActions */ "./resources/js/state/page/pageActions.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function _get() { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get.bind(); } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(arguments.length < 3 ? target : receiver); } return desc.value; }; } return _get.apply(this, arguments); }
+function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+
+
+
+
+var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
+  _inherits(PageUtils, _BasePageUtils);
+  var _super = _createSuper(PageUtils);
+  function PageUtils() {
+    var _this;
+    _classCallCheck(this, PageUtils);
+    var form = (0,react_hook_form__WEBPACK_IMPORTED_MODULE_8__.useForm)({
+      resolver: (0,_hookform_resolvers_yup__WEBPACK_IMPORTED_MODULE_0__.yupResolver)(_validations__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4Schema)
+    });
+    _this = _super.call(this, "EditPatientFileForm4", _constants_strings_fa__WEBPACK_IMPORTED_MODULE_6__.editPatientFileForm4, form);
+    _this.entity = new _http_entities__WEBPACK_IMPORTED_MODULE_1__.PatientFile();
+    _this.initialPageProps = {
+      item8: false
+    };
+    _this.callbackUrl = "".concat(_constants__WEBPACK_IMPORTED_MODULE_3__.BASE_PATH, "/p_files");
+    return _this;
+  }
+  _createClass(PageUtils, [{
+    key: "onLoad",
+    value: function onLoad() {
+      this.navigateIfNotValidateParams();
+      _get(_getPrototypeOf(PageUtils.prototype), "onLoad", this).call(this);
+      this.fillForm(this.pageState.params);
+    }
+  }, {
+    key: "navigateIfNotValidateParams",
+    value: function navigateIfNotValidateParams() {
+      this.navigateIfNotValidId(this.pageState.params.patientFileId);
+    }
+  }, {
+    key: "fillForm",
+    value: function () {
+      var _fillForm = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(data) {
+        var result;
+        return _regeneratorRuntime().wrap(function _callee$(_context) {
+          while (1) switch (_context.prev = _context.next) {
+            case 0:
+              _context.prev = 0;
+              this.dispatch((0,_state_layout_layoutActions__WEBPACK_IMPORTED_MODULE_4__.setLoadingAction)(true));
+              _context.next = 4;
+              return this.fetchItem(data.patientFileId);
+            case 4:
+              result = _context.sent;
+              this.navigateIfItemNotFound(result);
+              this.handleFetchResult(result);
+              _context.next = 11;
+              break;
+            case 9:
+              _context.prev = 9;
+              _context.t0 = _context["catch"](0);
+            case 11:
+              _context.prev = 11;
+              this.dispatch((0,_state_layout_layoutActions__WEBPACK_IMPORTED_MODULE_4__.setLoadingAction)(false));
+              return _context.finish(11);
+            case 14:
+            case "end":
+              return _context.stop();
+          }
+        }, _callee, this, [[0, 9, 11, 14]]);
+      }));
+      function fillForm(_x) {
+        return _fillForm.apply(this, arguments);
+      }
+      return fillForm;
+    }()
+  }, {
+    key: "fetchItem",
+    value: function () {
+      var _fetchItem = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(id) {
+        return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+          while (1) switch (_context2.prev = _context2.next) {
+            case 0:
+              _context2.next = 2;
+              return this.entity.get(id);
+            case 2:
+              return _context2.abrupt("return", _context2.sent);
+            case 3:
+            case "end":
+              return _context2.stop();
+          }
+        }, _callee2, this);
+      }));
+      function fetchItem(_x2) {
+        return _fetchItem.apply(this, arguments);
+      }
+      return fetchItem;
+    }()
+  }, {
+    key: "handleFetchResult",
+    value: function handleFetchResult(result) {
+      this.dispatch((0,_state_page_pageActions__WEBPACK_IMPORTED_MODULE_7__.setPagePropsAction)({
+        item: result.item
+      }));
+      this.dispatch((0,_state_page_pageActions__WEBPACK_IMPORTED_MODULE_7__.setPageTitleAction)("".concat(_constants_strings_fa__WEBPACK_IMPORTED_MODULE_6__.editPatientFileForm4._title, " [ ").concat(result.item.name, " ").concat(result.item.family, " - ").concat(result.item.fileNo, " ]"), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_6__.editPatientFileForm4._subTitle));
+      this.useForm.setValue("faceAssymetry", result.item.faceAssymetry);
+      this.useForm.setValue("facePigmentation", result.item.facePigmentation);
+      this.useForm.setValue("faceOtherPathalogical", result.item.faceOtherPathalogical);
+      this.useForm.setValue("neckAssymetry", result.item.neckAssymetry);
+      this.useForm.setValue("neckTyExamination", result.item.neckTyExamination);
+      this.useForm.setValue("lymphNodes", result.item.lymphNodes);
+      this.useForm.setValue("tomporomandibularJoint", result.item.tomporomandibularJoint);
+      this.useForm.setValue("otherSignsTMJDescription", result.item.otherSignsTMJDescription);
+      this.useForm.setValue("intraOralExamination", result.item.intraOralExamination);
+      this.useForm.setValue("retromolarArea", result.item.retromolarArea);
+      this.useForm.setValue("gums", result.item.gums);
+      this.useForm.setValue("toothlessRidge", result.item.toothlessRidge);
+      this.useForm.setValue("hardSoftPalate", result.item.hardSoftPalate);
+      this.useForm.setValue("tongueDorsal", result.item.tongueDorsal);
+      this.useForm.setValue("tongueVentral", result.item.tongueVentral);
+      this.useForm.setValue("tonguePharyngeal", result.item.tonguePharyngeal);
+      this.useForm.setValue("neurologicalChanges", result.item.neurologicalChanges);
+      this.useForm.setValue("salivaryGrandExamination", result.item.salivaryGrandExamination);
+      this.useForm.setValue("dentalChangesExamination", result.item.dentalChangesExamination);
+    }
+  }, {
+    key: "onSetItem",
+    value: function onSetItem(item, value) {
+      var _this$pageState;
+      var props = (_this$pageState = this.pageState) === null || _this$pageState === void 0 ? void 0 : _this$pageState.props;
+      props[item] = value;
+      this.dispatch((0,_state_page_pageActions__WEBPACK_IMPORTED_MODULE_7__.setPagePropsAction)(props));
+    }
+  }, {
+    key: "onSubmit",
+    value: function () {
+      var _onSubmit = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(data) {
+        var _data$tomporomandibul, _tomporomandibularJoi, _tomporomandibularJoi2;
+        var tomporomandibularJoint, promise;
+        return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+          while (1) switch (_context3.prev = _context3.next) {
+            case 0:
+              tomporomandibularJoint = ((_data$tomporomandibul = data.tomporomandibularJoint) === null || _data$tomporomandibul === void 0 ? void 0 : _data$tomporomandibul.length) > 0 ? data.tomporomandibularJoint.filter(function (item) {
+                return item in _constants__WEBPACK_IMPORTED_MODULE_3__.TOMPOROMANDIBULAR_JOINT;
+              }) : null;
+              tomporomandibularJoint = ((_tomporomandibularJoi = tomporomandibularJoint) === null || _tomporomandibularJoi === void 0 ? void 0 : _tomporomandibularJoi.length) > 0 ? tomporomandibularJoint.map(function (item) {
+                return _constants__WEBPACK_IMPORTED_MODULE_3__.TOMPOROMANDIBULAR_JOINT[item];
+              }).join("|") : null;
+              promise = this.entity.updateForm4(this.pageState.params.patientFileId, data.faceAssymetry, data.facePigmentation, data.faceOtherPathalogical, data.neckAssymetry, data.neckTyExamination, data.lymphNodes, tomporomandibularJoint, (_tomporomandibularJoi2 = tomporomandibularJoint) !== null && _tomporomandibularJoi2 !== void 0 && _tomporomandibularJoi2.includes("other_signs_tmj") ? data.otherSignsTMJDescription : "", data.intraOralExamination, data.retromolarArea, data.gums, data.toothlessRidge, data.hardSoftPalate, data.tongueDorsal, data.tongueVentral, data.tonguePharyngeal, data.neurologicalChanges, data.salivaryGrandExamination, data.dentalChangesExamination);
+              _get(_getPrototypeOf(PageUtils.prototype), "onModifySubmit", this).call(this, promise);
+            case 4:
+            case "end":
+              return _context3.stop();
+          }
+        }, _callee3, this);
+      }));
+      function onSubmit(_x3) {
+        return _onSubmit.apply(this, arguments);
+      }
+      return onSubmit;
+    }()
+  }]);
+  return PageUtils;
+}(_utils_BasePageUtils__WEBPACK_IMPORTED_MODULE_2__.BasePageUtils);
+
+/***/ }),
+
+/***/ "./resources/js/resources/Pages/PatientFile/EditPatientFileForm4/index.jsx":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/resources/Pages/PatientFile/EditPatientFileForm4/index.jsx ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components */ "./resources/js/resources/components/index.js");
+/* harmony import */ var _PageUtils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./PageUtils */ "./resources/js/resources/Pages/PatientFile/EditPatientFileForm4/PageUtils.js");
+/* harmony import */ var _components_PatientFileHeader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/PatientFileHeader */ "./resources/js/resources/Pages/PatientFile/components/PatientFileHeader.jsx");
+/* harmony import */ var _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../constants/strings/fa */ "./resources/js/constants/strings/fa.js");
+/* harmony import */ var _components_PatientFileFooter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/PatientFileFooter */ "./resources/js/resources/Pages/PatientFile/components/PatientFileFooter.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+
+
+var EditPatientFileForm4 = function EditPatientFileForm4() {
+  var _pageState$props;
+  var pageState = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) {
+    return state.pageReducer;
+  });
+  var pageUtils = new _PageUtils__WEBPACK_IMPORTED_MODULE_3__.PageUtils();
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.BlankPage, {
+    pageUtils: pageUtils,
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+      className: "section fix-mr15",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_PatientFileHeader__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+        className: "block pd-30",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h3", {
+          className: "text mb-30",
+          children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.extraOralExamination
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
+          className: "mb-30",
+          children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.face
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "faceAssymetry",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "facePigmentation",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "faceOtherPathalogical",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
+          className: "mt-20 mb-30",
+          children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.neck
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "neckAssymetry",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "neckTyExamination",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "lymphNodes",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
+          className: "mt-20",
+          children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.tomporomandibularJoint
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
+          className: "mb-30",
+          children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.tomporomandibularJointDescriptipn
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
+            name: "tomporomandibularJoint",
+            field: "restrictionInOpening",
+            strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.tomporomandibularJoint
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
+            name: "tomporomandibularJoint",
+            field: "painOrDeviation",
+            strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.tomporomandibularJoint
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
+            name: "tomporomandibularJoint",
+            field: "jointSound",
+            strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.tomporomandibularJoint
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
+            name: "tomporomandibularJoint",
+            field: "otherSignsTMJ",
+            strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.tomporomandibularJoint,
+            onChange: function onChange(e) {
+              return pageUtils.onSetItem(e.target.id, e.target.checked);
+            }
+          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props = pageState.props) === null || _pageState$props === void 0 ? void 0 : _pageState$props.otherSignsTMJ) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+            componentContainerClassName: "grow-1",
+            inputContainerClassName: "mb-0",
+            field: "otherSignsTMJDescription",
+            fullRow: false
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+            className: "d-flex d-flex-column xs-grow-1",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+              className: "input-text input-bg mb-0"
+            })
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "intraOralExamination",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "retromolarArea",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "gums",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "toothlessRidge",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "hardSoftPalate",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "tongueDorsal",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "tongueVentral",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "tonguePharyngeal",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "neurologicalChanges",
+          showLabel: true,
+          subLabel: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.neurologicalChangesDescription
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "salivaryGrandExamination",
+          showLabel: true,
+          subLabel: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.salivaryGrandExaminationDescription
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "dentalChangesExamination",
+          showLabel: true,
+          subLabel: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.dentalChangesExaminationDescription
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+          className: "block-border"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_PatientFileFooter__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          pageUtils: pageUtils
+        })]
+      })]
+    })
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EditPatientFileForm4);
 
 /***/ }),
 
@@ -9853,7 +10442,7 @@ var PatientFileFooter = function PatientFileFooter(_ref) {
   });
   var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_5__.useNavigate)();
   var onPrevious = function onPrevious() {
-    var _pageState$params, _pageState$params2;
+    var _pageState$params, _pageState$params2, _pageState$params3;
     switch (pageState === null || pageState === void 0 ? void 0 : pageState.page) {
       case "EditPatientFileForm2":
         navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_3__.BASE_PATH, "/p_files/edit/form1/").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$params = pageState.params) === null || _pageState$params === void 0 ? void 0 : _pageState$params.patientFileId));
@@ -9861,18 +10450,24 @@ var PatientFileFooter = function PatientFileFooter(_ref) {
       case "EditPatientFileForm3":
         navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_3__.BASE_PATH, "/p_files/edit/form2/").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$params2 = pageState.params) === null || _pageState$params2 === void 0 ? void 0 : _pageState$params2.patientFileId));
         return;
+      case "EditPatientFileForm4":
+        navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_3__.BASE_PATH, "/p_files/edit/form3/").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$params3 = pageState.params) === null || _pageState$params3 === void 0 ? void 0 : _pageState$params3.patientFileId));
+        return;
       default:
         return;
     }
   };
   var onNext = function onNext() {
-    var _pageState$params3, _pageState$params4;
+    var _pageState$params4, _pageState$params5, _pageState$params6;
     switch (pageState === null || pageState === void 0 ? void 0 : pageState.page) {
       case "EditPatientFileForm1":
-        navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_3__.BASE_PATH, "/p_files/edit/form2/").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$params3 = pageState.params) === null || _pageState$params3 === void 0 ? void 0 : _pageState$params3.patientFileId));
+        navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_3__.BASE_PATH, "/p_files/edit/form2/").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$params4 = pageState.params) === null || _pageState$params4 === void 0 ? void 0 : _pageState$params4.patientFileId));
         return;
       case "EditPatientFileForm2":
-        navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_3__.BASE_PATH, "/p_files/edit/form3/").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$params4 = pageState.params) === null || _pageState$params4 === void 0 ? void 0 : _pageState$params4.patientFileId));
+        navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_3__.BASE_PATH, "/p_files/edit/form3/").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$params5 = pageState.params) === null || _pageState$params5 === void 0 ? void 0 : _pageState$params5.patientFileId));
+        return;
+      case "EditPatientFileForm3":
+        navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_3__.BASE_PATH, "/p_files/edit/form4/").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$params6 = pageState.params) === null || _pageState$params6 === void 0 ? void 0 : _pageState$params6.patientFileId));
         return;
       default:
         return "EditPatientFileForm1";
@@ -9958,7 +10553,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var PatientFileHeader = function PatientFileHeader() {
-  var _pageState$props9, _pageState$props10, _pageState$props10$it, _pageState$props11, _pageState$props11$it, _pageState$props12, _pageState$props12$it;
+  var _pageState$props4, _pageState$props11, _pageState$props12, _pageState$props12$it, _pageState$props13, _pageState$props13$it, _pageState$props14, _pageState$props14$it;
   var layoutState = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) {
     return state.layoutReducer;
   });
@@ -9980,12 +10575,13 @@ var PatientFileHeader = function PatientFileHeader() {
     formsSeries = _useState6[0],
     setFormsSeries = _useState6[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    var _pageState$props, _pageState$props$item, _pageState$props2, _pageState$props2$ite;
+    var _pageState$props, _pageState$props$item, _pageState$props2, _pageState$props2$ite, _pageState$props3, _pageState$props3$ite;
     var finished = 0;
     finished += pageState !== null && pageState !== void 0 && (_pageState$props = pageState.props) !== null && _pageState$props !== void 0 && (_pageState$props$item = _pageState$props.item) !== null && _pageState$props$item !== void 0 && _pageState$props$item.name ? 1 : 0;
     finished += pageState !== null && pageState !== void 0 && (_pageState$props2 = pageState.props) !== null && _pageState$props2 !== void 0 && (_pageState$props2$ite = _pageState$props2.item) !== null && _pageState$props2$ite !== void 0 && _pageState$props2$ite.patientReferal ? 1 : 0;
+    finished += (pageState === null || pageState === void 0 ? void 0 : (_pageState$props3 = pageState.props) === null || _pageState$props3 === void 0 ? void 0 : (_pageState$props3$ite = _pageState$props3.item) === null || _pageState$props3$ite === void 0 ? void 0 : _pageState$props3$ite.item16DescriptionOriginal) !== null ? 1 : 0;
     setForms([finished, 5 - finished]);
-  }, [pageState]);
+  }, [pageState === null || pageState === void 0 ? void 0 : (_pageState$props4 = pageState.props) === null || _pageState$props4 === void 0 ? void 0 : _pageState$props4.item]);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     setFormsChart();
   }, [forms]);
@@ -10055,27 +10651,27 @@ var PatientFileHeader = function PatientFileHeader() {
     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {});
   };
   var navigateTo = function navigateTo(fileForm) {
-    var _pageState$props3, _pageState$props4, _pageState$props4$ite, _pageState$props5, _pageState$props5$ite, _pageState$props6, _pageState$props6$ite, _pageState$props7, _pageState$props7$ite, _pageState$props8, _pageState$props8$ite;
-    if (!(pageState !== null && pageState !== void 0 && (_pageState$props3 = pageState.props) !== null && _pageState$props3 !== void 0 && _pageState$props3.item)) {
+    var _pageState$props5, _pageState$props6, _pageState$props6$ite, _pageState$props7, _pageState$props7$ite, _pageState$props8, _pageState$props8$ite, _pageState$props9, _pageState$props9$ite, _pageState$props10, _pageState$props10$it;
+    if (!(pageState !== null && pageState !== void 0 && (_pageState$props5 = pageState.props) !== null && _pageState$props5 !== void 0 && _pageState$props5.item)) {
       navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_4__.BASE_PATH, "/p_files/add"));
       return;
     }
     dispatch((0,_state_layout_layoutActions__WEBPACK_IMPORTED_MODULE_5__.setLoadingAction)(true));
     switch (fileForm) {
       case _constants__WEBPACK_IMPORTED_MODULE_4__.FILE_FORMS.FORM_1:
-        navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_4__.BASE_PATH, "/p_files/edit/form1/").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props4 = pageState.props) === null || _pageState$props4 === void 0 ? void 0 : (_pageState$props4$ite = _pageState$props4.item) === null || _pageState$props4$ite === void 0 ? void 0 : _pageState$props4$ite.id));
+        navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_4__.BASE_PATH, "/p_files/edit/form1/").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props6 = pageState.props) === null || _pageState$props6 === void 0 ? void 0 : (_pageState$props6$ite = _pageState$props6.item) === null || _pageState$props6$ite === void 0 ? void 0 : _pageState$props6$ite.id));
         return;
       case _constants__WEBPACK_IMPORTED_MODULE_4__.FILE_FORMS.FORM_2:
-        navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_4__.BASE_PATH, "/p_files/edit/form2/").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props5 = pageState.props) === null || _pageState$props5 === void 0 ? void 0 : (_pageState$props5$ite = _pageState$props5.item) === null || _pageState$props5$ite === void 0 ? void 0 : _pageState$props5$ite.id));
+        navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_4__.BASE_PATH, "/p_files/edit/form2/").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props7 = pageState.props) === null || _pageState$props7 === void 0 ? void 0 : (_pageState$props7$ite = _pageState$props7.item) === null || _pageState$props7$ite === void 0 ? void 0 : _pageState$props7$ite.id));
         return;
       case _constants__WEBPACK_IMPORTED_MODULE_4__.FILE_FORMS.FORM_3:
-        navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_4__.BASE_PATH, "/p_files/edit/form3/").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props6 = pageState.props) === null || _pageState$props6 === void 0 ? void 0 : (_pageState$props6$ite = _pageState$props6.item) === null || _pageState$props6$ite === void 0 ? void 0 : _pageState$props6$ite.id));
+        navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_4__.BASE_PATH, "/p_files/edit/form3/").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props8 = pageState.props) === null || _pageState$props8 === void 0 ? void 0 : (_pageState$props8$ite = _pageState$props8.item) === null || _pageState$props8$ite === void 0 ? void 0 : _pageState$props8$ite.id));
         return;
       case _constants__WEBPACK_IMPORTED_MODULE_4__.FILE_FORMS.FORM_4:
-        navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_4__.BASE_PATH, "/p_files/edit/form4/").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props7 = pageState.props) === null || _pageState$props7 === void 0 ? void 0 : (_pageState$props7$ite = _pageState$props7.item) === null || _pageState$props7$ite === void 0 ? void 0 : _pageState$props7$ite.id));
+        navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_4__.BASE_PATH, "/p_files/edit/form4/").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props9 = pageState.props) === null || _pageState$props9 === void 0 ? void 0 : (_pageState$props9$ite = _pageState$props9.item) === null || _pageState$props9$ite === void 0 ? void 0 : _pageState$props9$ite.id));
         return;
       case _constants__WEBPACK_IMPORTED_MODULE_4__.FILE_FORMS.FORM_5:
-        navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_4__.BASE_PATH, "/p_files/edit/form5/").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props8 = pageState.props) === null || _pageState$props8 === void 0 ? void 0 : (_pageState$props8$ite = _pageState$props8.item) === null || _pageState$props8$ite === void 0 ? void 0 : _pageState$props8$ite.id));
+        navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_4__.BASE_PATH, "/p_files/edit/form5/").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props10 = pageState.props) === null || _pageState$props10 === void 0 ? void 0 : (_pageState$props10$it = _pageState$props10.item) === null || _pageState$props10$it === void 0 ? void 0 : _pageState$props10$it.id));
         return;
     }
     dispatch((0,_state_layout_layoutActions__WEBPACK_IMPORTED_MODULE_5__.setLoadingAction)(false));
@@ -10095,7 +10691,7 @@ var PatientFileHeader = function PatientFileHeader() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
           className: "hd",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
-            children: pageState !== null && pageState !== void 0 && (_pageState$props9 = pageState.props) !== null && _pageState$props9 !== void 0 && _pageState$props9.item ? "".concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props10 = pageState.props) === null || _pageState$props10 === void 0 ? void 0 : (_pageState$props10$it = _pageState$props10.item) === null || _pageState$props10$it === void 0 ? void 0 : _pageState$props10$it.name, " ").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props11 = pageState.props) === null || _pageState$props11 === void 0 ? void 0 : (_pageState$props11$it = _pageState$props11.item) === null || _pageState$props11$it === void 0 ? void 0 : _pageState$props11$it.family, " - ").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props12 = pageState.props) === null || _pageState$props12 === void 0 ? void 0 : (_pageState$props12$it = _pageState$props12.item) === null || _pageState$props12$it === void 0 ? void 0 : _pageState$props12$it.fileNo) : layoutState !== null && layoutState !== void 0 && layoutState.loading ? "" : _constants_strings_fa__WEBPACK_IMPORTED_MODULE_3__.patientFilesHeader.newForm
+            children: pageState !== null && pageState !== void 0 && (_pageState$props11 = pageState.props) !== null && _pageState$props11 !== void 0 && _pageState$props11.item ? "".concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props12 = pageState.props) === null || _pageState$props12 === void 0 ? void 0 : (_pageState$props12$it = _pageState$props12.item) === null || _pageState$props12$it === void 0 ? void 0 : _pageState$props12$it.name, " ").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props13 = pageState.props) === null || _pageState$props13 === void 0 ? void 0 : (_pageState$props13$it = _pageState$props13.item) === null || _pageState$props13$it === void 0 ? void 0 : _pageState$props13$it.family, " - ").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props14 = pageState.props) === null || _pageState$props14 === void 0 ? void 0 : (_pageState$props14$it = _pageState$props14.item) === null || _pageState$props14$it === void 0 ? void 0 : _pageState$props14$it.fileNo) : layoutState !== null && layoutState !== void 0 && layoutState.loading ? "" : _constants_strings_fa__WEBPACK_IMPORTED_MODULE_3__.patientFilesHeader.newForm
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("h3", {
             children: (pageState === null || pageState === void 0 ? void 0 : pageState.page) === "AddPatientFile" || (pageState === null || pageState === void 0 ? void 0 : pageState.page) === "EditPatientFileForm1" ? _constants_strings_fa__WEBPACK_IMPORTED_MODULE_3__.patientFileForms.form1 : (pageState === null || pageState === void 0 ? void 0 : pageState.page) === "EditPatientFileForm2" ? _constants_strings_fa__WEBPACK_IMPORTED_MODULE_3__.patientFileForms.form2 : ""
           })]
@@ -11685,11 +12281,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "EditPatientFileForm1": () => (/* reexport safe */ _PatientFile_EditPatientFileForm1__WEBPACK_IMPORTED_MODULE_11__["default"]),
 /* harmony export */   "EditPatientFileForm2": () => (/* reexport safe */ _PatientFile_EditPatientFileForm2__WEBPACK_IMPORTED_MODULE_12__["default"]),
 /* harmony export */   "EditPatientFileForm3": () => (/* reexport safe */ _PatientFile_EditPatientFileForm3__WEBPACK_IMPORTED_MODULE_13__["default"]),
+/* harmony export */   "EditPatientFileForm4": () => (/* reexport safe */ _PatientFile_EditPatientFileForm4__WEBPACK_IMPORTED_MODULE_14__["default"]),
 /* harmony export */   "EditUser": () => (/* reexport safe */ _User_EditUser_EditUser__WEBPACK_IMPORTED_MODULE_4__["default"]),
 /* harmony export */   "Errors": () => (/* reexport safe */ _Error___WEBPACK_IMPORTED_MODULE_9__["default"]),
 /* harmony export */   "Login": () => (/* reexport safe */ _User_Login__WEBPACK_IMPORTED_MODULE_1__["default"]),
 /* harmony export */   "Notifications": () => (/* reexport safe */ _Notification_Notifications__WEBPACK_IMPORTED_MODULE_8__["default"]),
-/* harmony export */   "PatientFiles": () => (/* reexport safe */ _PatientFile_PatientFiles__WEBPACK_IMPORTED_MODULE_14__["default"]),
+/* harmony export */   "PatientFiles": () => (/* reexport safe */ _PatientFile_PatientFiles__WEBPACK_IMPORTED_MODULE_15__["default"]),
 /* harmony export */   "Users": () => (/* reexport safe */ _User_Users__WEBPACK_IMPORTED_MODULE_7__["default"])
 /* harmony export */ });
 /* harmony import */ var _Dashboard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Dashboard */ "./resources/js/resources/Pages/Dashboard/index.jsx");
@@ -11706,7 +12303,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _PatientFile_EditPatientFileForm1__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./PatientFile/EditPatientFileForm1 */ "./resources/js/resources/Pages/PatientFile/EditPatientFileForm1/index.jsx");
 /* harmony import */ var _PatientFile_EditPatientFileForm2__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./PatientFile/EditPatientFileForm2 */ "./resources/js/resources/Pages/PatientFile/EditPatientFileForm2/index.jsx");
 /* harmony import */ var _PatientFile_EditPatientFileForm3__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./PatientFile/EditPatientFileForm3 */ "./resources/js/resources/Pages/PatientFile/EditPatientFileForm3/index.jsx");
-/* harmony import */ var _PatientFile_PatientFiles__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./PatientFile/PatientFiles */ "./resources/js/resources/Pages/PatientFile/PatientFiles/index.jsx");
+/* harmony import */ var _PatientFile_EditPatientFileForm4__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./PatientFile/EditPatientFileForm4 */ "./resources/js/resources/Pages/PatientFile/EditPatientFileForm4/index.jsx");
+/* harmony import */ var _PatientFile_PatientFiles__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./PatientFile/PatientFiles */ "./resources/js/resources/Pages/PatientFile/PatientFiles/index.jsx");
+
 
 
 
@@ -12152,6 +12751,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var InputCheckboxColumn = function InputCheckboxColumn(_ref) {
+  var _document$getElementB2;
   var name = _ref.name,
     field = _ref.field,
     useForm = _ref.useForm,
@@ -12188,6 +12788,17 @@ var InputCheckboxColumn = function InputCheckboxColumn(_ref) {
       form === null || form === void 0 ? void 0 : form.setValue(field, checked);
     }
   }, [form]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    var _document$getElementB;
+    if ((_document$getElementB = document.getElementById(field)) !== null && _document$getElementB !== void 0 && _document$getElementB.checked && _onChange) {
+      _onChange({
+        target: {
+          id: field,
+          checked: true
+        }
+      });
+    }
+  }, [(_document$getElementB2 = document.getElementById(field)) === null || _document$getElementB2 === void 0 ? void 0 : _document$getElementB2.checked]);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", _objectSpread(_objectSpread({}, form === null || form === void 0 ? void 0 : form.register(name)), {}, {
       id: field,
@@ -13262,6 +13873,8 @@ var InputTextColumn = function InputTextColumn(_ref) {
     defaultValue = _ref$defaultValue === void 0 ? "" : _ref$defaultValue,
     _ref$showLabel = _ref.showLabel,
     showLabel = _ref$showLabel === void 0 ? false : _ref$showLabel,
+    _ref$subLabel = _ref.subLabel,
+    subLabel = _ref$subLabel === void 0 ? null : _ref$subLabel,
     _ref$textAlign = _ref.textAlign,
     textAlign = _ref$textAlign === void 0 ? "" : _ref$textAlign,
     _ref$direction = _ref.direction,
@@ -13383,6 +13996,9 @@ var InputTextColumn = function InputTextColumn(_ref) {
       children: [showLabel && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
         className: "input-info",
         children: label
+      }), subLabel && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        className: "input-info",
+        children: subLabel
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
         className: "input-text input-bg input-border  ".concat((messageState === null || messageState === void 0 ? void 0 : messageState.messageField) === field ? "error mb-40" : "mb-30", " ").concat(inputContainerClassName),
         children: [form && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
@@ -15814,6 +16430,9 @@ var renderAuthRoutes = function renderAuthRoutes() {
       path: "".concat(_constants__WEBPACK_IMPORTED_MODULE_2__.BASE_PATH, "/p_files/edit/form3/:patientFileId"),
       element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Pages__WEBPACK_IMPORTED_MODULE_3__.EditPatientFileForm3, {})
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
+      path: "".concat(_constants__WEBPACK_IMPORTED_MODULE_2__.BASE_PATH, "/p_files/edit/form4/:patientFileId"),
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Pages__WEBPACK_IMPORTED_MODULE_3__.EditPatientFileForm4, {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
       path: "".concat(_constants__WEBPACK_IMPORTED_MODULE_2__.BASE_PATH, "/p_files"),
       element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Pages__WEBPACK_IMPORTED_MODULE_3__.PatientFiles, {})
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
@@ -16408,9 +17027,51 @@ var editPatientFileForm3Schema = yup__WEBPACK_IMPORTED_MODULE_0__.object().shape
   resporate: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.resporate, null, 200, false),
   weight: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.weight, null, 200, false),
   height: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.height, null, 200, false),
-  bmi: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.bmi, null, 200, false)
+  bmi: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.bmi, null, 200, false),
+  fcaType: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.fcaType, "familialHistory", "fca", null, 200)
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (editPatientFileForm3Schema);
+
+/***/ }),
+
+/***/ "./resources/js/resources/validations/PatientFile/EditPatientFileForm4Schema.js":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/resources/validations/PatientFile/EditPatientFileForm4Schema.js ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! yup */ "./node_modules/yup/index.esm.js");
+/* harmony import */ var _CommonValidators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CommonValidators */ "./resources/js/resources/validations/CommonValidators/index.js");
+/* harmony import */ var _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../constants/strings/fa */ "./resources/js/constants/strings/fa.js");
+
+
+
+var editPatientFileForm4Schema = yup__WEBPACK_IMPORTED_MODULE_0__.object().shape({
+  faceAssymetry: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.faceAssymetry, null, 300),
+  facePigmentation: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.facePigmentation, null, 300),
+  faceOtherPathalogical: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.faceOtherPathalogical, null, 300),
+  neckAssymetry: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.neckAssymetry, null, 300),
+  neckTyExamination: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.neckTyExamination, null, 300),
+  lymphNodes: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.lymphNodes, null, 300),
+  otherSignsTMJDescription: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.otherSignsTMJDescription, "tomporomandibularJoint", "otherSignsTMJ", null, 200),
+  intraOralExamination: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.intraOralExamination, null, 300),
+  retromolarArea: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.retromolarArea, null, 300),
+  gums: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.gums, null, 300),
+  toothlessRidge: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.toothlessRidge, null, 300),
+  hardSoftPalate: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.hardSoftPalate, null, 300),
+  tongueDorsal: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.tongueDorsal, null, 300),
+  tongueVentral: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.tongueVentral, null, 300),
+  tonguePharyngeal: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.tonguePharyngeal, null, 300),
+  neurologicalChanges: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.neurologicalChanges, null, 300),
+  salivaryGrandExamination: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.salivaryGrandExamination, null, 300),
+  dentalChangesExamination: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.dentalChangesExamination, null, 300)
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (editPatientFileForm4Schema);
 
 /***/ }),
 
@@ -16587,6 +17248,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "editPatientFileForm1Schema": () => (/* reexport safe */ _PatientFile_EditPatientFileForm1Schema__WEBPACK_IMPORTED_MODULE_7__["default"]),
 /* harmony export */   "editPatientFileForm2Schema": () => (/* reexport safe */ _PatientFile_EditPatientFileForm2Schema__WEBPACK_IMPORTED_MODULE_8__["default"]),
 /* harmony export */   "editPatientFileForm3Schema": () => (/* reexport safe */ _PatientFile_EditPatientFileForm3Schema__WEBPACK_IMPORTED_MODULE_9__["default"]),
+/* harmony export */   "editPatientFileForm4Schema": () => (/* reexport safe */ _PatientFile_EditPatientFileForm4Schema__WEBPACK_IMPORTED_MODULE_10__["default"]),
 /* harmony export */   "editUserSchema": () => (/* reexport safe */ _User_EditUserSchema__WEBPACK_IMPORTED_MODULE_3__["default"]),
 /* harmony export */   "loginUserSchema": () => (/* reexport safe */ _User_LoginUserSchema__WEBPACK_IMPORTED_MODULE_0__["default"]),
 /* harmony export */   "searchPatientFileSchema": () => (/* reexport safe */ _PatientFile_SearchPatientFileSchema__WEBPACK_IMPORTED_MODULE_5__["default"]),
@@ -16602,6 +17264,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _PatientFile_EditPatientFileForm1Schema__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./PatientFile/EditPatientFileForm1Schema */ "./resources/js/resources/validations/PatientFile/EditPatientFileForm1Schema.js");
 /* harmony import */ var _PatientFile_EditPatientFileForm2Schema__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./PatientFile/EditPatientFileForm2Schema */ "./resources/js/resources/validations/PatientFile/EditPatientFileForm2Schema.js");
 /* harmony import */ var _PatientFile_EditPatientFileForm3Schema__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./PatientFile/EditPatientFileForm3Schema */ "./resources/js/resources/validations/PatientFile/EditPatientFileForm3Schema.js");
+/* harmony import */ var _PatientFile_EditPatientFileForm4Schema__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./PatientFile/EditPatientFileForm4Schema */ "./resources/js/resources/validations/PatientFile/EditPatientFileForm4Schema.js");
+
 
 
 

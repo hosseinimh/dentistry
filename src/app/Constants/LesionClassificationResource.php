@@ -17,6 +17,6 @@ abstract class LesionClassificationResource
     const SYNDROME = 'syndrome';
     const CERVICAL_LUMPS = 'cervicalLumps';
     const PROMINENT_LESION = 'prominentLesion';
-    const SALLIVARY_LESION = 'salivaryLesion';
+    const SALIVARY_LESION = 'salivaryLesion';
     const COMPLICATED_DISEASE = 'complicatedDisease';
 }

@@ -7,6 +7,7 @@ use App\Http\Requests\PatientFile\StorePatientFileRequest;
 use App\Http\Requests\PatientFile\UpdatePatientFileForm1Request;
 use App\Http\Requests\PatientFile\UpdatePatientFileForm2Request;
 use App\Http\Requests\PatientFile\UpdatePatientFileForm3Request;
+use App\Http\Requests\PatientFile\UpdatePatientFileForm4Request;
 use App\Models\PatientFile as Model;
 use App\Packages\JsonResponse;
 use App\Services\PatientFileService;
@@ -36,7 +37,7 @@ class PatientFileController extends Controller
             $request->education,
             $request->spouse_occupation,
             $request->spouse_relationship,
-            $request->childrenNo,
+            $request->children_no,
             $request->tel,
             $request->mobile,
             $request->relative_mobile,
@@ -63,7 +64,7 @@ class PatientFileController extends Controller
             $request->education,
             $request->spouse_occupation,
             $request->spouse_relationship,
-            $request->childrenNo,
+            $request->children_no,
             $request->tel,
             $request->mobile,
             $request->relative_mobile,
@@ -118,6 +119,34 @@ class PatientFileController extends Controller
             $request->weight,
             $request->height,
             $request->bmi,
+            $request->familial_history,
+            $request->fca_type,
+        ));
+    }
+
+    public function updateForm4(Model $model, UpdatePatientFileForm4Request $request): HttpJsonResponse
+    {
+        return $this->onUpdate($this->service->updateForm4(
+            $model,
+            $request->face_assymetry,
+            $request->face_pigmentation,
+            $request->face_other_pathalogical,
+            $request->neck_assymetry,
+            $request->neck_ty_examination,
+            $request->lymph_nodes,
+            $request->tomporomandibular_joint,
+            $request->other_signs_tmj_description,
+            $request->intra_oral_examination,
+            $request->retromolar_area,
+            $request->gums,
+            $request->toothless_ridge,
+            $request->hard_soft_palate,
+            $request->tongue_dorsal,
+            $request->tongue_ventral,
+            $request->tongue_pharyngeal,
+            $request->neurological_changes,
+            $request->salivary_grand_examination,
+            $request->dental_changes_examination,
         ));
     }
 }

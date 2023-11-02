@@ -154,6 +154,14 @@ const editPatientFileForm3Schema = yup.object().shape({
     weight: stringValidator(yup.string(), strings.weight, null, 200, false),
     height: stringValidator(yup.string(), strings.height, null, 200, false),
     bmi: stringValidator(yup.string(), strings.bmi, null, 200, false),
+    fcaType: conditionalStringValidator(
+        yup,
+        strings.fcaType,
+        "familialHistory",
+        "fca",
+        null,
+        200
+    ),
 });
 
 export default editPatientFileForm3Schema;

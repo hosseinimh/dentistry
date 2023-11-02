@@ -348,6 +348,14 @@ export const systemicDiseaseHistory = {
     item33: "آیا برای زندگی روزمره نیاز به کمک و همراهی فرد دیگری دارید؟",
 };
 
+export const familialHistory = {
+    tb: "سل",
+    fdb: "دیابت (مرض قند)",
+    fhp: "هپاتیت",
+    fhbp: "بالا بودن فشار خون",
+    fca: "سرطان",
+};
+
 export const notificationsPage = {
     _title: "اعلان‌ها",
     _subTitle: "فهرست اعلان‌ها",
@@ -391,6 +399,13 @@ export const patientFilesPage = {
     familyPlaceholder: "نام خانوادگی",
     nameFamily: "نام و نام خانوادگی",
     add: "ثبت پرونده",
+};
+
+export const tomporomandibularJoint = {
+    restrictionInOpening: "محدودیت در باز کردن دهان",
+    painOrDeviation: "درد یا انحراف فک حین باز کردن دهان",
+    jointSound: "صدای مفصل",
+    otherSignsTMJ: "سایر علائم",
 };
 
 export const addPatientFilePage = {
@@ -497,12 +512,12 @@ export const editPatientFileForm2 = {
     patientReferal: "فرد ارجاع‌دهنده بیمار",
     specializationType: "نوع تخصص",
     chiefCompliant: "شکایت اصلی بیمار",
-    chiefCompliantHistory: "تاریخ‌چه شکایت اصلی بیمار",
+    chiefCompliantHistory: "تاریخچه شکایت اصلی بیمار",
     timeInterval:
         "فاصله زمانی بین توجه به مشکل و اولین مراجعه به پزشک / دندانپزشک",
     referalHistory:
-        "تاریخ‌چه ارجاع به پزشکان / دندانپزشکان همراه با شرح تخصص آن‌ها",
-    treatmentHistory: "تاریخ‌چه اقدامات درمانی انجام‌شده",
+        "تاریخچه ارجاع به پزشکان / دندانپزشکان همراه با شرح تخصص آن‌ها",
+    treatmentHistory: "تاریخچه اقدامات درمانی انجام‌شده",
     submitted: "ویرایش اطلاعات بیمار با موفقیت انجام شد.",
 };
 
@@ -566,5 +581,66 @@ export const editPatientFileForm3 = {
     heightPlaceholder: "قد (متر)",
     bmi: "شاخص BMI",
     bmiPlaceholder: "شاخص BMI",
+    familialHistory: "تاریخچه خانوادگی بیمار",
+    familialHistoryDescription:
+        "آیا بستگان درجه یک شما به بیماری‌های زیر مبتلا شده‌اند؟",
+    fcaType: "نوع",
+    fcaTypePlaceholder: "نوع",
+    submitted: "ویرایش اطلاعات بیمار با موفقیت انجام شد.",
+};
+
+export const editPatientFileForm4 = {
+    _title: "پرونده بیمار - فرم چهار",
+    _subTitle: "پرونده بیمار را ویرایش کنید.",
+    extraOralExamination: "معاینات خارج دهانی",
+    face: "صورت",
+    faceAssymetry: "آسیمتری",
+    faceAssymetryPlaceholder: "آسیمتری",
+    facePigmentation: "پیگمانتاسیون",
+    facePigmentationPlaceholder: "پیگمانتاسیون",
+    faceOtherPathalogical: "تغییرات پاتولوژیک دیگر",
+    faceOtherPathalogicalPlaceholder: "تغییرات پاتولوژیک دیگر",
+    neck: "گردن",
+    neckAssymetry: "آسیمتری",
+    neckAssymetryPlaceholder: "آسیمتری",
+    neckTyExamination: "معاینه غده تیروئید",
+    neckTyExaminationPlaceholder: "معاینه غده تیروئید",
+    lymphNodes: "معاینه گره‌های لنفاوی",
+    lymphNodesPlaceholder: "معاینه گره‌های لنفاوی",
+    tomporomandibularJoint: "مفصل گیجگاهی فکی",
+    tomporomandibularJointDescriptipn:
+        "(حساسیت در لمس، تعیین حداکثر بازشدگی دهان، وجود انحراف و درد حین باز کردن دهان، نتیجه معاینه عضلات جونده، صدای مفصل و ...)",
+    otherSignsTMJDescription: "سایر علائم",
+    otherSignsTMJDescriptionPlaceholder: "سایر علائم",
+    intraOralExamination: "معاینه داخل دهانی (یافته‌های طبیعی و پاتولوژیک)",
+    intraOralExaminationPlaceholder:
+        "معاینه داخل دهانی (یافته‌های طبیعی و پاتولوژیک)",
+    retromolarArea: "لب، گونه، وستیبول و ناحیه رترومولر",
+    retromolarAreaPlaceholder: "لب، گونه، وستیبول و ناحیه رترومولر",
+    gums: "لثه",
+    gumsPlaceholder: "لثه",
+    toothlessRidge: "ریج بی‌دندانی",
+    toothlessRidgePlaceholder: "ریج بی‌دندانی",
+    hardSoftPalate: "کام سخت و کام نرم",
+    hardSoftPalatePlaceholder: "کام سخت و کام نرم",
+    tongueDorsal: "سطح دورسال و کناره طرفی زبان",
+    tongueDorsalPlaceholder: "سطح دورسال و کناره طرفی زبان",
+    tongueVentral: "سطح ونترال زبان و کف دهان",
+    tongueVentralPlaceholder: "سطح ونترال زبان و کف دهان",
+    tonguePharyngeal: "سطح فارنژیال زبان",
+    tonguePharyngealPlaceholder: "سطح فارنژیال زبان",
+    neurologicalChanges:
+        "تغییرات نورولوژیک مرتبط با ضایعه دهان، فک و صورت ( بی حسی، درد، گزگز، مورمور)",
+    neurologicalChangesPlaceholder:
+        "تغییرات نورولوژیک مرتبط با ضایعه دهان، فک و صورت ( بی حسی، درد، گزگز، مورمور)",
+    neurologicalChangesDescription: "لطفاً وسعت تغییرات حسی به تفضیل مشخص شود.",
+    salivaryGrandExamination: "معاینه غدد بزاقی و ترشحات آن‌ها",
+    salivaryGrandExaminationPlaceholder: "معاینه غدد بزاقی و ترشحات آن‌ها",
+    salivaryGrandExaminationDescription:
+        "اندازه‌گیری حجم بزاق غیرتحریکی و تحریکی، معاینه،milking غدد، بررسی نمای بالینی غدد مینور و",
+    dentalChangesExamination: "تغییرات دندانی",
+    dentalChangesExaminationPlaceholder: "تغییرات دندانی",
+    dentalChangesExaminationDescription:
+        "تغییرات دندانی غیرمرتبط یا مرتبط با دهان، فک و صورت، تغییرات دندانی غیرطبیعی لقی (حتما گرید مشخص شود)، وجود اختلال در شکل، تعداد، سایز و ساختارهای مینا و عاج، تیلت، پوسیدگی، از دست‌دادن دندان و مشکلات پالپ",
     submitted: "ویرایش اطلاعات بیمار با موفقیت انجام شد.",
 };

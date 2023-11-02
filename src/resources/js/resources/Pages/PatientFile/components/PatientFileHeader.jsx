@@ -23,8 +23,10 @@ const PatientFileHeader = () => {
         let finished = 0;
         finished += pageState?.props?.item?.name ? 1 : 0;
         finished += pageState?.props?.item?.patientReferal ? 1 : 0;
+        finished +=
+            pageState?.props?.item?.item16DescriptionOriginal !== null ? 1 : 0;
         setForms([finished, 5 - finished]);
-    }, [pageState]);
+    }, [pageState?.props?.item]);
 
     useEffect(() => {
         setFormsChart();

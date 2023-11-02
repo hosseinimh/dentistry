@@ -19,7 +19,7 @@ abstract class LesionClassification
     const SYNDROME = 'syndrome';
     const CERVICAL_LUMPS = 'cervical_lumps';
     const PROMINENT_LESION = 'prominent_lesion';
-    const SALLIVARY_LESION = 'salivary_lesion';
+    const SALIVARY_LESION = 'salivary_lesion';
     const COMPLICATED_DISEASE = 'complicated_disease';
 
     public static function toArray()

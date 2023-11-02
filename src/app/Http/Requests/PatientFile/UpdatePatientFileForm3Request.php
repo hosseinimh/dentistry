@@ -3,6 +3,7 @@
 namespace App\Http\Requests\PatientFile;
 
 use App\Constants\ErrorCode;
+use App\Constants\FamilialHistory;
 use App\Constants\SystemicDiseaseHistory;
 use Closure;
 use Illuminate\Contracts\Validation\Validator;
@@ -58,6 +59,17 @@ class UpdatePatientFileForm3Request extends FormRequest
             'weight' => 'max:200',
             'height' => 'max:200',
             'bmi' => 'max:200',
+            'familial_history' => [function (string $attribute, mixed $value, Closure $fail) {
+                if ($value !== null) {
+                    $items = explode('|', $value);
+                    foreach ($items as $item) {
+                        if (!in_array($item, FamilialHistory::toArray())) {
+                            $fail(__('patient_file.familial_history_in'));
+                        }
+                    }
+                }
+            },],
+            'fca_type' => str_contains($this->input('familial_history'), 'fca') ? 'required|max:200' : '',
         ];
     }
 
@@ -115,6 +127,8 @@ class UpdatePatientFileForm3Request extends FormRequest
             'weight.max' => __('patient_file.weight_max'),
             'height.max' => __('patient_file.height_max'),
             'bmi.max' => __('patient_file.bmi_max'),
+            'fca_type.required' => __('patient_file.fca_type_required'),
+            'fca_type.max' => __('patient_file.fca_type_max'),
         ];
     }
 }

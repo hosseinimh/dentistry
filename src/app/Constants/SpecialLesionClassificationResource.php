@@ -9,6 +9,6 @@ abstract class SpecialLesionClassificationResource
     const APHTHOUS = 'aphthous';
     const MRONJ = 'mronj';
     const SJOGRENS_SYNDROME = 'sjogrensSyndrome';
-    const RHEMATOID_ARTHRITIS = 'rheumatoidArthritis';
+    const RHEUMATOID_ARTHRITIS = 'rheumatoidArthritis';
     const CANCER_IN_O_PLACE = 'cancerInOPlace';
 }

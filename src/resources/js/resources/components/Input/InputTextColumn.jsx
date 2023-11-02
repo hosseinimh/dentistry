@@ -14,6 +14,7 @@ const InputTextColumn = ({
     inputStyle = {},
     defaultValue = "",
     showLabel = false,
+    subLabel = null,
     textAlign = "",
     direction = undefined,
     readonly = false,
@@ -124,6 +125,7 @@ const InputTextColumn = ({
             style={{ ...componentContainerStyle }}
         >
             {showLabel && <div className="input-info">{label}</div>}
+            {subLabel && <div className="input-info">{subLabel}</div>}
             <div
                 className={`input-text input-bg input-border  ${
                     messageState?.messageField === field

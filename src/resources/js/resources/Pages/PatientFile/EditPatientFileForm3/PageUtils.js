@@ -3,7 +3,11 @@ import { yupResolver } from "@hookform/resolvers/yup";
 
 import { PatientFile as Entity } from "../../../../http/entities";
 import { BasePageUtils } from "../../../../utils/BasePageUtils";
-import { BASE_PATH, SYSTEMIC_DISEASE_HISTORY } from "../../../../constants";
+import {
+    BASE_PATH,
+    FAMILIAL_HISTORY,
+    SYSTEMIC_DISEASE_HISTORY,
+} from "../../../../constants";
 import { setLoadingAction } from "../../../../state/layout/layoutActions";
 import { editPatientFileForm3Schema as schema } from "../../../validations";
 import { editPatientFileForm3 as strings } from "../../../../constants/strings/fa";
@@ -67,19 +71,68 @@ export class PageUtils extends BasePageUtils {
             "systemicDiseaseHistory",
             result.item.systemicDiseaseHistory
         );
-        this.useForm.setValue("patientReferal", result.item.patientReferal);
+        this.useForm.setValue("item8Description", result.item.item8Description);
         this.useForm.setValue(
-            "specialLesionClassification",
-            result.item.specialLesionClassification
+            "item15Description",
+            result.item.item15Description
         );
-        this.useForm.setValue("chiefCompliant", result.item.chiefCompliant);
         this.useForm.setValue(
-            "chiefCompliantHistory",
-            result.item.chiefCompliantHistory
+            "item16Description",
+            result.item.item16Description
         );
-        this.useForm.setValue("timeInterval", result.item.timeInterval);
-        this.useForm.setValue("referalHistory", result.item.referalHistory);
-        this.useForm.setValue("treatmentHistory", result.item.treatmentHistory);
+        this.useForm.setValue(
+            "item17Description",
+            result.item.item17Description
+        );
+        this.useForm.setValue(
+            "item20Description",
+            result.item.item20Description
+        );
+        this.useForm.setValue(
+            "item21Description",
+            result.item.item21Description
+        );
+        this.useForm.setValue(
+            "item25_1Description",
+            result.item.item25_1Description
+        );
+        this.useForm.setValue(
+            "item25_2Description",
+            result.item.item25_2Description
+        );
+        this.useForm.setValue(
+            "item25_3Description",
+            result.item.item25_3Description
+        );
+        this.useForm.setValue(
+            "item30Description",
+            result.item.item30Description
+        );
+        this.useForm.setValue(
+            "item32Description",
+            result.item.item32Description
+        );
+        this.useForm.setValue(
+            "item34Description",
+            result.item.item34Description
+        );
+        this.useForm.setValue("tobaccoUse", result.item.tobaccoUse);
+        this.useForm.setValue(
+            "useTobaccoDuration",
+            result.item.useTobaccoDuration
+        );
+        this.useForm.setValue("useTobaccoType", result.item.useTobaccoType);
+        this.useForm.setValue("drugUse", result.item.drugUse);
+        this.useForm.setValue("useDrugDuration", result.item.useDrugDuration);
+        this.useForm.setValue("useDrugType", result.item.useDrugType);
+        this.useForm.setValue("alcohol", result.item.alcohol);
+        this.useForm.setValue("pulse", result.item.pulse);
+        this.useForm.setValue("bodyTemp", result.item.bodyTemp);
+        this.useForm.setValue("resporate", result.item.resporate);
+        this.useForm.setValue("weight", result.item.weight);
+        this.useForm.setValue("height", result.item.height);
+        this.useForm.setValue("bmi", result.item.bmi);
+        this.useForm.setValue("familialHistory", result.item.familialHistory);
     }
 
     onSetItem(item, value) {
@@ -99,6 +152,18 @@ export class PageUtils extends BasePageUtils {
             systemicDiseaseHistory?.length > 0
                 ? systemicDiseaseHistory
                       .map((item) => SYSTEMIC_DISEASE_HISTORY[item])
+                      .join("|")
+                : null;
+        let familialHistory =
+            data.familialHistory?.length > 0
+                ? data.familialHistory.filter(
+                      (item) => item in FAMILIAL_HISTORY
+                  )
+                : null;
+        familialHistory =
+            familialHistory?.length > 0
+                ? familialHistory
+                      .map((item) => FAMILIAL_HISTORY[item])
                       .join("|")
                 : null;
         const promise = this.entity.updateForm3(
@@ -153,7 +218,9 @@ export class PageUtils extends BasePageUtils {
             data.resporate,
             data.weight,
             data.height,
-            data.bmi
+            data.bmi,
+            familialHistory,
+            familialHistory?.includes("fca") ? data.fcaType : ""
         );
         super.onModifySubmit(promise);
     }

@@ -65,16 +65,11 @@ export class PageUtils extends BasePageUtils {
         this.useForm.setValue("name", result.item.name);
         this.useForm.setValue("family", result.item.family);
         this.useForm.setValue("nationalNo", result.item.nationalNo);
-        this.useForm.setValue("homeAddress", result.item.homeAddress);
-        this.useForm.setValue("workAddress", result.item.workAddress);
-        this.useForm.setValue("workAddress", result.item.workAddress);
-        this.useForm.setValue("mobile", result.item.mobile);
-        this.useForm.setValue("relativeMobile", result.item.relativeMobile);
         this.useForm.setValue("birthDate", result.item.birthDate);
         this.useForm.setValue("birthPlace", result.item.birthPlace);
+        this.useForm.setValue("occupation", result.item.occupation);
         this.useForm.setValue("gender", result.item.gender);
         this.useForm.setValue("maritialStatus", result.item.maritialStatus);
-        this.useForm.setValue("occupation", result.item.occupation);
         this.useForm.setValue("ethnicity", result.item.ethnicity);
         this.useForm.setValue("education", result.item.education);
         this.useForm.setValue("spouseOccupation", result.item.spouseOccupation);
@@ -83,6 +78,11 @@ export class PageUtils extends BasePageUtils {
             result.item.spouseRelationship
         );
         this.useForm.setValue("childrenNo", result.item.childrenNo);
+        this.useForm.setValue("tel", result.item.tel);
+        this.useForm.setValue("mobile", result.item.mobile);
+        this.useForm.setValue("relativeMobile", result.item.relativeMobile);
+        this.useForm.setValue("homeAddress", result.item.homeAddress);
+        this.useForm.setValue("workAddress", result.item.workAddress);
     }
 
     async onSubmit(data) {
@@ -93,21 +93,21 @@ export class PageUtils extends BasePageUtils {
             data.name,
             data.family,
             data.nationalNo,
-            data.homeAddress,
-            data.workAddress,
-            data.tel,
-            data.mobile,
-            data.relativeMobile,
             data.birthDate.replaceAll("/", ""),
             data.birthPlace,
+            data.occupation,
             data.gender,
             data.maritialStatus,
-            data.occupation,
             data.ethnicity,
             data.education,
             data.spouseOccupation,
             data.spouseRelationship,
-            data.childrenNo
+            data.childrenNo,
+            data.tel,
+            data.mobile,
+            data.relativeMobile,
+            data.homeAddress,
+            data.workAddress
         );
         super.onModifySubmit(promise);
     }

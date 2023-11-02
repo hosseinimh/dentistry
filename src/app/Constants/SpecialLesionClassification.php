@@ -11,7 +11,7 @@ abstract class SpecialLesionClassification
     const APHTHOUS = 'aphthous';
     const MRONJ = 'mronj';
     const SJOGRENS_SYNDROME = 'sjogrens_syndrome';
-    const RHEMATOID_ARTHRITIS = 'rheumatoid_arthritis';
+    const RHEUMATOID_ARTHRITIS = 'rheumatoid_arthritis';
     const CANCER_IN_O_PLACE = 'cancer_in_o_place';
 
     public static function toArray()

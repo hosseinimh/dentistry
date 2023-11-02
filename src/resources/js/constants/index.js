@@ -14,6 +14,8 @@ import { GENDER_TYPES } from "./genderTypes";
 import { LESION_CLASSIFICATION } from "./lesionClassification";
 import { SPECIAL_LESION_CLASSIFICATION } from "./specialLesionClassification";
 import { SYSTEMIC_DISEASE_HISTORY } from "./systemicDiseaseHistory";
+import { FAMILIAL_HISTORY } from "./familialHistory";
+import { TOMPOROMANDIBULAR_JOINT } from "./tomporomandibularJoint";
 import {
     BASE_PATH,
     ASSETS_PATH,
@@ -50,4 +52,6 @@ export {
     LESION_CLASSIFICATION,
     SPECIAL_LESION_CLASSIFICATION,
     SYSTEMIC_DISEASE_HISTORY,
+    FAMILIAL_HISTORY,
+    TOMPOROMANDIBULAR_JOINT,
 };

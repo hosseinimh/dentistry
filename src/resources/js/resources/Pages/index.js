@@ -12,6 +12,7 @@ import AddPatientFile from "./PatientFile/AddPatientFile";
 import EditPatientFileForm1 from "./PatientFile/EditPatientFileForm1";
 import EditPatientFileForm2 from "./PatientFile/EditPatientFileForm2";
 import EditPatientFileForm3 from "./PatientFile/EditPatientFileForm3";
+import EditPatientFileForm4 from "./PatientFile/EditPatientFileForm4";
 import PatientFiles from "./PatientFile/PatientFiles";
 
 export {
@@ -29,5 +30,6 @@ export {
     EditPatientFileForm1,
     EditPatientFileForm2,
     EditPatientFileForm3,
+    EditPatientFileForm4,
     PatientFiles,
 };

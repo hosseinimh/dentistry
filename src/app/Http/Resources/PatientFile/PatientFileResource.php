@@ -2,9 +2,11 @@
 
 namespace App\Http\Resources\PatientFile;
 
+use App\Constants\FamilialHistory;
 use App\Constants\LesionClassification;
 use App\Constants\SpecialLesionClassification;
 use App\Constants\SystemicDiseaseHistory;
+use App\Constants\TomporomandibularJoint;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class PatientFileResource extends JsonResource
@@ -45,6 +47,7 @@ class PatientFileResource extends JsonResource
             'item8Description' => $this->item_8_description ?? '',
             'item15Description' => $this->item_15_description ?? '',
             'item16Description' => $this->item_16_description ?? '',
+            'item16DescriptionOriginal' => $this->item_16_description,
             'item17Description' => $this->item_17_description ?? '',
             'item20Description' => $this->item_20_description ?? '',
             'item21Description' => $this->item_21_description ?? '',
@@ -68,6 +71,27 @@ class PatientFileResource extends JsonResource
             'weight' => $this->weight ?? '',
             'height' => $this->height ?? '',
             'bmi' => $this->bmi ?? '',
+            'familialHistory' => $this->getFamilialHistory($this->familial_history),
+            'fcaType' => $this->fca_type ?? '',
+            'faceAssymetry' => $this->face_assymetry ?? '',
+            'facePigmentation' => $this->face_pigmentation ?? '',
+            'faceOtherPathalogical' => $this->face_other_pathalogical ?? '',
+            'neckAssymetry' => $this->neck_assymetry ?? '',
+            'neckTyExamination' => $this->neck_ty_examination ?? '',
+            'lymphNodes' => $this->lymph_nodes ?? '',
+            'tomporomandibularJoint' => $this->getTomporomandibularJoint($this->tomporomandibular_joint),
+            'otherSignsTMJDescription' => $this->other_signs_tmj_description ?? '',
+            'intraOralExamination' => $this->intra_oral_examination ?? '',
+            'retromolarArea' => $this->retromolar_area ?? '',
+            'gums' => $this->gums ?? '',
+            'toothlessRidge' => $this->toothless_ridge ?? '',
+            'hardSoftPalate' => $this->hard_soft_palate ?? '',
+            'tongueDorsal' => $this->tongue_dorsal ?? '',
+            'tongueVentral' => $this->tongue_ventral ?? '',
+            'tonguePharyngeal' => $this->tongue_pharyngeal ?? '',
+            'neurologicalChanges' => $this->neurological_changes ?? '',
+            'salivaryGrandExamination' => $this->salivary_grand_examination ?? '',
+            'dentalChangesExamination' => $this->dental_changes_examination ?? '',
         ];
     }
 
@@ -110,6 +134,36 @@ class PatientFileResource extends JsonResource
                 if (in_array($item, SystemicDiseaseHistory::toArray())) {
                     $item = strtoupper($item);
                     $result[] = \constant("\App\Constants\SystemicDiseaseHistoryResource::$item");
+                }
+            }
+        }
+        return $result;
+    }
+
+    private function getFamilialHistory($familialHistory)
+    {
+        $result = [];
+        if ($familialHistory !== null) {
+            $items = explode('|', $familialHistory);
+            foreach ($items as $item) {
+                if (in_array($item, FamilialHistory::toArray())) {
+                    $item = strtoupper($item);
+                    $result[] = \constant("\App\Constants\FamilialHistoryResource::$item");
+                }
+            }
+        }
+        return $result;
+    }
+
+    private function getTomporomandibularJoint($tomporomandibularJoint)
+    {
+        $result = [];
+        if ($tomporomandibularJoint !== null) {
+            $items = explode('|', $tomporomandibularJoint);
+            foreach ($items as $item) {
+                if (in_array($item, TomporomandibularJoint::toArray())) {
+                    $item = strtoupper($item);
+                    $result[] = \constant("\App\Constants\TomporomandibularJointResource::$item");
                 }
             }
         }

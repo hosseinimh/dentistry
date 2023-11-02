@@ -178,6 +178,8 @@ class PatientFileService
         ?string $weight,
         ?string $height,
         ?string $bmi,
+        ?string $familialHistory,
+        ?string $fcaType,
     ): mixed {
         $data = [
             'systemic_disease_history' => $systemicDiseaseHistory,
@@ -207,6 +209,55 @@ class PatientFileService
             'weight' => $weight ?? '',
             'height' => $height ?? '',
             'bmi' => $bmi ?? '',
+            'familial_history' => $familialHistory ?? '',
+            'fca_type' => $fcaType ?? '',
+
+        ];
+        return $model->update($data);
+    }
+
+    public function updateForm4(
+        Model $model,
+        ?string $faceAssymetry,
+        ?string $facePigmentation,
+        ?string $faceOtherPathalogical,
+        ?string $neckAssymetry,
+        ?string $neckTyExamination,
+        ?string $lymphNodes,
+        string $tomporomandibularJoint,
+        ?string $otherSignsTMJDescription,
+        ?string $intraOralExamination,
+        ?string $retromolarArea,
+        ?string $gums,
+        ?string $toothlessRidge,
+        ?string $hardSoftPalate,
+        ?string $tongueDorsal,
+        ?string $tongueVentral,
+        ?string $tonguePharyngeal,
+        ?string $neurologicalChanges,
+        ?string $salivaryGrandExamination,
+        ?string $dentalChangesExamination,
+    ): mixed {
+        $data = [
+            'face_assymetry' => $faceAssymetry ?? '',
+            'face_pigmentation' => $facePigmentation ?? '',
+            'face_other_pathalogical' => $faceOtherPathalogical ?? '',
+            'neck_assymetry' => $neckAssymetry ?? '',
+            'neck_ty_examination' => $neckTyExamination ?? '',
+            'lymph_nodes' => $lymphNodes ?? '',
+            'tomporomandibular_joint' => $tomporomandibularJoint,
+            'other_signs_tmj_description' => $otherSignsTMJDescription ?? '',
+            'intra_oral_examination' => $intraOralExamination ?? '',
+            'retromolar_area' => $retromolarArea ?? '',
+            'gums' => $gums ?? '',
+            'toothless_ridge' => $toothlessRidge ?? '',
+            'hard_soft_palate' => $hardSoftPalate ?? '',
+            'tongue_dorsal' => $tongueDorsal ?? '',
+            'tongue_ventral' => $tongueVentral ?? '',
+            'tongue_pharyngeal' => $tonguePharyngeal ?? '',
+            'neurological_changes' => $neurologicalChanges ?? '',
+            'salivary_grand_examination' => $salivaryGrandExamination ?? '',
+            'dental_changes_examination' => $dentalChangesExamination ?? '',
         ];
         return $model->update($data);
     }

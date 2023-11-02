@@ -22,6 +22,11 @@ const PatientFileFooter = ({ pageUtils }) => {
                     `${BASE_PATH}/p_files/edit/form2/${pageState?.params?.patientFileId}`
                 );
                 return;
+            case "EditPatientFileForm4":
+                navigate(
+                    `${BASE_PATH}/p_files/edit/form3/${pageState?.params?.patientFileId}`
+                );
+                return;
             default:
                 return;
         }
@@ -37,6 +42,11 @@ const PatientFileFooter = ({ pageUtils }) => {
             case "EditPatientFileForm2":
                 navigate(
                     `${BASE_PATH}/p_files/edit/form3/${pageState?.params?.patientFileId}`
+                );
+                return;
+            case "EditPatientFileForm3":
+                navigate(
+                    `${BASE_PATH}/p_files/edit/form4/${pageState?.params?.patientFileId}`
                 );
                 return;
             default:
