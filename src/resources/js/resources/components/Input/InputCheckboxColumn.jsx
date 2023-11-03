@@ -15,6 +15,7 @@ const InputCheckboxColumn = ({
         strings && field in strings ? strings[field] : ""
     );
     const [form, setForm] = useState(useForm);
+    const [element, setElement] = useState(null);
 
     useEffect(() => {
         if (!strings) {
@@ -38,10 +39,14 @@ const InputCheckboxColumn = ({
     }, [form]);
 
     useEffect(() => {
-        if (document.getElementById(field)?.checked && onChange) {
-            onChange({ target: { id: field, checked: true } });
+        if (element && onChange) {
+            onChange({ target: { id: field, checked: element.checked } });
         }
-    }, [document.getElementById(field)?.checked]);
+    }, [element?.checked]);
+
+    useEffect(() => {
+        setElement(document.getElementById(field));
+    }, []);
 
     return (
         <div>
@@ -52,11 +57,6 @@ const InputCheckboxColumn = ({
                 value={field}
                 type="checkbox"
                 disabled={layoutState?.loading}
-                onChange={(e) => {
-                    if (onChange) {
-                        onChange(e);
-                    }
-                }}
             />
             <label htmlFor={field}>{label}</label>
         </div>

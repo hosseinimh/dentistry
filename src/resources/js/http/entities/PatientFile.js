@@ -145,18 +145,18 @@ export class PatientFile extends Entity {
     async updateForm3(
         id,
         systemicDiseaseHistory,
-        item8Description,
-        item15Description,
-        item16Description,
-        item17Description,
-        item20Description,
-        item21Description,
-        item25_1Description,
-        item25_2Description,
-        item25_3Description,
-        item30Description,
-        item32Description,
-        item34Description,
+        bloodDiseaseType,
+        hospitalizationReason,
+        continuingDrug,
+        weeklyDrug,
+        cancerType,
+        radiationPlace,
+        pregnancyWeek,
+        pregnancyNum,
+        pregnancyRank,
+        adExplanation,
+        sleepStatus,
+        functionalCapacity,
         tobaccoUse,
         useTobaccoDuration,
         useTobaccoType,
@@ -178,18 +178,18 @@ export class PatientFile extends Entity {
             `${BASE_URL}/a/p_files/update_form_3/${id}`,
             {
                 systemic_disease_history: systemicDiseaseHistory,
-                item_8_description: item8Description,
-                item_15_description: item15Description,
-                item_16_description: item16Description,
-                item_17_description: item17Description,
-                item_20_description: item20Description,
-                item_21_description: item21Description,
-                item_25_1_description: item25_1Description,
-                item_25_2_description: item25_2Description,
-                item_25_3_description: item25_3Description,
-                item_30_description: item30Description,
-                item_32_description: item32Description,
-                item_34_description: item34Description,
+                blood_disease_type: bloodDiseaseType,
+                hospitalization_reason: hospitalizationReason,
+                continuing_drug: continuingDrug,
+                weekly_drug: weeklyDrug,
+                cancer_type: cancerType,
+                radiation_place: radiationPlace,
+                pregnancy_week: pregnancyWeek,
+                pregnancy_num: pregnancyNum,
+                pregnancy_rank: pregnancyRank,
+                ad_explanation: adExplanation,
+                sleep_status: sleepStatus,
+                functional_capacity: functionalCapacity,
                 tobacco_use: tobaccoUse,
                 use_tobacco_duration: useTobaccoDuration,
                 use_tobacco_type: useTobaccoType,
@@ -230,31 +230,73 @@ export class PatientFile extends Entity {
         tonguePharyngeal,
         neurologicalChanges,
         salivaryGrandExamination,
-        dentalChangesExamination
+        dentalChangesExamination,
+        dentitionFile,
+        dentitionFileAction,
+        adultDmft,
+        adultD,
+        adultM,
+        adultT,
+        decidiousFile,
+        decidiousFileAction,
+        decidiousDmft,
+        decidiousD,
+        decidiousM,
+        decidiousT,
+        priodontalExamination,
+        bop,
+        radiographicEvidence,
+        paraclinicalEvidence,
+        consultationDeps,
+        probableDiagnosis,
+        differntialDiagnosis,
+        difinitiveDiagnosis,
+        systemicConsiderations
     ) {
-        return await this.handlePost(
+        let data = new FormData();
+        data.append("face_assymetry", faceAssymetry);
+        data.append("face_pigmentation", facePigmentation);
+        data.append("face_other_pathalogical", faceOtherPathalogical);
+        data.append("neck_assymetry", neckAssymetry);
+        data.append("neck_ty_examination", neckTyExamination);
+        data.append("lymph_nodes", lymphNodes);
+        data.append("tomporomandibular_joint", tomporomandibularJoint);
+        data.append("other_signs_tmj_description", otherSignsTMJDescription);
+        data.append("intra_oral_examination", intraOralExamination);
+        data.append("retromolar_area", retromolarArea);
+        data.append("gums", gums);
+        data.append("toothless_ridge", toothlessRidge);
+        data.append("hard_soft_palate", hardSoftPalate);
+        data.append("tongue_dorsal", tongueDorsal);
+        data.append("tongue_ventral", tongueVentral);
+        data.append("tongue_pharyngeal", tonguePharyngeal);
+        data.append("neurological_changes", neurologicalChanges);
+        data.append("salivary_grand_examination", salivaryGrandExamination);
+        data.append("dental_changes_examination", dentalChangesExamination);
+        data.append("dentition_file", dentitionFile);
+        data.append("dentition_file_action", dentitionFileAction);
+        data.append("adult_dmft", adultDmft);
+        data.append("adult_d", adultD);
+        data.append("adult_m", adultM);
+        data.append("adult_t", adultT);
+        data.append("decidious_file", decidiousFile);
+        data.append("decidious_file_action", decidiousFileAction);
+        data.append("decidious_dmft", decidiousDmft);
+        data.append("decidious_d", decidiousD);
+        data.append("decidious_m", decidiousM);
+        data.append("decidious_t", decidiousT);
+        data.append("priodontal_examination", priodontalExamination);
+        data.append("bop", bop);
+        data.append("radiographic_evidence", radiographicEvidence);
+        data.append("paraclinical_evidence", paraclinicalEvidence);
+        data.append("consultation_deps", consultationDeps);
+        data.append("probable_diagnosis", probableDiagnosis);
+        data.append("differntial_diagnosis", differntialDiagnosis);
+        data.append("difinitive_diagnosis", difinitiveDiagnosis);
+        data.append("systemic_considerations", systemicConsiderations);
+        return await this.handlePostFile(
             `${BASE_URL}/a/p_files/update_form_4/${id}`,
-            {
-                face_assymetry: faceAssymetry,
-                face_pigmentation: facePigmentation,
-                face_other_pathalogical: faceOtherPathalogical,
-                neck_assymetry: neckAssymetry,
-                neck_ty_examination: neckTyExamination,
-                lymph_nodes: lymphNodes,
-                tomporomandibular_joint: tomporomandibularJoint,
-                other_signs_tmj_description: otherSignsTMJDescription,
-                intra_oral_examination: intraOralExamination,
-                retromolar_area: retromolarArea,
-                gums,
-                toothless_ridge: toothlessRidge,
-                hard_soft_palate: hardSoftPalate,
-                tongue_dorsal: tongueDorsal,
-                tongue_ventral: tongueVentral,
-                tongue_pharyngeal: tonguePharyngeal,
-                neurological_changes: neurologicalChanges,
-                salivary_grand_examination: salivaryGrandExamination,
-                dental_changes_examination: dentalChangesExamination,
-            }
+            data
         );
     }
 }

@@ -9,7 +9,7 @@ abstract class FamilialHistory
     const TB = 'tb';
     const FDB = 'fdb';
     const FHP = 'fhp';
-    const FHDP = 'fhdp';
+    const FHBP = 'fhbp';
     const FCA = 'fca';
 
     public static function toArray()

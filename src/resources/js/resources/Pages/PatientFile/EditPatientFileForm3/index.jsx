@@ -32,44 +32,44 @@ const EditPatientFileForm3 = () => {
                     <InputCheckboxContainer>
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item1"
+                            field="heartDisease"
                             strings={systemicDiseaseHistory}
                         />
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item2"
+                            field="nervousIllness"
                             strings={systemicDiseaseHistory}
                         />
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item3"
+                            field="abnormalBleeding"
                             strings={systemicDiseaseHistory}
                         />
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item4"
+                            field="abnormalBloodPressure"
                             strings={systemicDiseaseHistory}
                         />
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item5"
+                            field="respiratoryDisease"
                             strings={systemicDiseaseHistory}
                         />
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item6"
+                            field="hepatitDisease"
                             strings={systemicDiseaseHistory}
                         />
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item7"
+                            field="sinusitis"
                             strings={systemicDiseaseHistory}
                         />
                     </InputCheckboxContainer>
                     <InputCheckboxContainer>
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item8"
+                            field="bloodDisease"
                             strings={systemicDiseaseHistory}
                             onChange={(e) =>
                                 pageUtils.onSetItem(
@@ -78,11 +78,11 @@ const EditPatientFileForm3 = () => {
                                 )
                             }
                         />
-                        {pageState?.props?.item8 && (
+                        {pageState?.props?.bloodDisease && (
                             <InputTextColumn
                                 componentContainerClassName="grow-1"
                                 inputContainerClassName="mb-0"
-                                field="item8Description"
+                                field="bloodDiseaseType"
                                 fullRow={false}
                             />
                         )}
@@ -93,39 +93,44 @@ const EditPatientFileForm3 = () => {
                     <InputCheckboxContainer>
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item9"
+                            field="bloodBorneDisease"
                             strings={systemicDiseaseHistory}
                         />
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item10"
+                            field="injectingContaminatedBlood"
                             strings={systemicDiseaseHistory}
                         />
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item11"
+                            field="epilepsy"
                             strings={systemicDiseaseHistory}
                         />
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item12"
+                            field="kidneyDisease"
                             strings={systemicDiseaseHistory}
                         />
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item13"
+                            field="diabetes"
                             strings={systemicDiseaseHistory}
                         />
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item14"
+                            field="thyroid"
+                            strings={systemicDiseaseHistory}
+                        />
+                        <InputCheckboxColumn
+                            name="systemicDiseaseHistory"
+                            field="fmAllergy"
                             strings={systemicDiseaseHistory}
                         />
                     </InputCheckboxContainer>
                     <InputCheckboxContainer>
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item15"
+                            field="hospitalizationHistory"
                             strings={systemicDiseaseHistory}
                             onChange={(e) =>
                                 pageUtils.onSetItem(
@@ -134,11 +139,11 @@ const EditPatientFileForm3 = () => {
                                 )
                             }
                         />
-                        {pageState?.props?.item15 && (
+                        {pageState?.props?.hospitalizationHistory && (
                             <InputTextColumn
                                 componentContainerClassName="grow-1"
                                 inputContainerClassName="mb-0"
-                                field="item15Description"
+                                field="hospitalizationReason"
                                 fullRow={false}
                             />
                         )}
@@ -147,27 +152,27 @@ const EditPatientFileForm3 = () => {
                         </div>
                     </InputCheckboxContainer>
                     <InputRow>
-                        <InputTextColumn field="item16Description" showLabel />
+                        <InputTextColumn field="continuingDrug" showLabel />
                     </InputRow>
                     <InputRow>
-                        <InputTextColumn field="item17Description" showLabel />
+                        <InputTextColumn field="weeklyDrug" showLabel />
                     </InputRow>
                     <InputCheckboxContainer>
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item18"
+                            field="weightLoss"
                             strings={systemicDiseaseHistory}
                         />
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item19"
+                            field="immuneDisease"
                             strings={systemicDiseaseHistory}
                         />
                     </InputCheckboxContainer>
                     <InputCheckboxContainer>
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item20"
+                            field="cancer"
                             strings={systemicDiseaseHistory}
                             onChange={(e) =>
                                 pageUtils.onSetItem(
@@ -176,11 +181,11 @@ const EditPatientFileForm3 = () => {
                                 )
                             }
                         />
-                        {pageState?.props?.item20 && (
+                        {pageState?.props?.cancer && (
                             <InputTextColumn
                                 componentContainerClassName="grow-1"
                                 inputContainerClassName="mb-0"
-                                field="item20Description"
+                                field="cancerType"
                                 fullRow={false}
                             />
                         )}
@@ -191,7 +196,7 @@ const EditPatientFileForm3 = () => {
                     <InputCheckboxContainer>
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item21"
+                            field="chemotherapy"
                             strings={systemicDiseaseHistory}
                             onChange={(e) =>
                                 pageUtils.onSetItem(
@@ -200,11 +205,11 @@ const EditPatientFileForm3 = () => {
                                 )
                             }
                         />
-                        {pageState?.props?.item21 && (
+                        {pageState?.props?.chemotherapy && (
                             <InputTextColumn
                                 componentContainerClassName="grow-1"
                                 inputContainerClassName="mb-0"
-                                field="item21Description"
+                                field="radiationPlace"
                                 fullRow={false}
                             />
                         )}
@@ -215,24 +220,24 @@ const EditPatientFileForm3 = () => {
                     <InputCheckboxContainer>
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item22"
+                            field="boneDisaese"
                             strings={systemicDiseaseHistory}
                         />
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item23"
+                            field="skinDisease"
                             strings={systemicDiseaseHistory}
                         />
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item24"
+                            field="digestiveDisease"
                             strings={systemicDiseaseHistory}
                         />
                     </InputCheckboxContainer>
                     <InputCheckboxContainer>
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item25"
+                            field="pregnancy"
                             strings={systemicDiseaseHistory}
                             onChange={(e) =>
                                 pageUtils.onSetItem(
@@ -242,10 +247,10 @@ const EditPatientFileForm3 = () => {
                             }
                         />
                     </InputCheckboxContainer>
-                    {pageState?.props?.item25 && (
+                    {pageState?.props?.pregnancy && (
                         <InputRow containerStyle={{ alignItems: "center" }}>
                             <div style={{ flex: "none", marginLeft: "2rem" }}>
-                                {pageUtils?.strings?.item25Description}
+                                {pageUtils?.strings?.pregnancy}
                             </div>
                             <InputTextColumn
                                 componentContainerStyle={{
@@ -253,7 +258,7 @@ const EditPatientFileForm3 = () => {
                                     width: "100px",
                                 }}
                                 inputContainerClassName="mb-0"
-                                field="item25_1Description"
+                                field="pregnancyWeek"
                                 fullRow={false}
                             />
                             <InputTextColumn
@@ -262,7 +267,7 @@ const EditPatientFileForm3 = () => {
                                     width: "100px",
                                 }}
                                 inputContainerClassName="mb-0"
-                                field="item25_2Description"
+                                field="pregnancyNum"
                                 fullRow={false}
                             />
                             <InputTextColumn
@@ -271,7 +276,7 @@ const EditPatientFileForm3 = () => {
                                     width: "100px",
                                 }}
                                 inputContainerClassName="mb-0"
-                                field="item25_3Description"
+                                field="pregnancyRank"
                                 fullRow={false}
                             />
                             <div className="d-flex d-flex-column xs-grow-1">
@@ -282,29 +287,29 @@ const EditPatientFileForm3 = () => {
                     <InputCheckboxContainer>
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item26"
+                            field="pms"
                             strings={systemicDiseaseHistory}
                         />
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item27"
+                            field="temporomandibular"
                             strings={systemicDiseaseHistory}
                         />
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item28"
+                            field="dentistryProblem"
                             strings={systemicDiseaseHistory}
                         />
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item29"
+                            field="addiction"
                             strings={systemicDiseaseHistory}
                         />
                     </InputCheckboxContainer>
                     <InputCheckboxContainer>
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item30"
+                            field="artificialDevice"
                             strings={systemicDiseaseHistory}
                             onChange={(e) =>
                                 pageUtils.onSetItem(
@@ -313,11 +318,11 @@ const EditPatientFileForm3 = () => {
                                 )
                             }
                         />
-                        {pageState?.props?.item30 && (
+                        {pageState?.props?.artificialDevice && (
                             <InputTextColumn
                                 componentContainerClassName="grow-1"
                                 inputContainerClassName="mb-0"
-                                field="item30Description"
+                                field="adExplanation"
                                 fullRow={false}
                             />
                         )}
@@ -328,47 +333,24 @@ const EditPatientFileForm3 = () => {
                     <InputCheckboxContainer>
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item31"
+                            field="bruxism"
                             strings={systemicDiseaseHistory}
                         />
                         <InputCheckboxColumn
                             name="systemicDiseaseHistory"
-                            field="item32"
-                            strings={systemicDiseaseHistory}
-                            onChange={(e) =>
-                                pageUtils.onSetItem(
-                                    e.target.id,
-                                    e.target.checked
-                                )
-                            }
-                        />
-                        {pageState?.props?.item32 && (
-                            <InputTextColumn
-                                componentContainerClassName="grow-1"
-                                inputContainerClassName="mb-0"
-                                field="item32Description"
-                                fullRow={false}
-                            />
-                        )}
-                        <div className="d-flex d-flex-column xs-grow-1">
-                            <div className="input-text input-bg mb-0"></div>
-                        </div>
-                    </InputCheckboxContainer>
-                    <InputCheckboxContainer>
-                        <InputCheckboxColumn
-                            name="systemicDiseaseHistory"
-                            field="item33"
+                            field="helpLiving"
                             strings={systemicDiseaseHistory}
                         />
                     </InputCheckboxContainer>
+                    <InputTextColumn field="sleepStatus" showLabel />
                     <InputRow>
-                        <InputTextColumn field="item34Description" showLabel />
+                        <InputTextColumn field="functionalCapacity" showLabel />
                     </InputRow>
                     <div className="block-border"></div>
                     <h3 className="text">{strings.patientHabits}</h3>
                     <InputCheckboxContainer>
                         <InputCheckboxColumn
-                            name="tobaccoUse"
+                            name="tobaccoUsage"
                             field="tobaccoUse"
                             onChange={(e) =>
                                 pageUtils.onSetItem(
@@ -402,7 +384,7 @@ const EditPatientFileForm3 = () => {
                     </InputCheckboxContainer>
                     <InputCheckboxContainer>
                         <InputCheckboxColumn
-                            name="drugUse"
+                            name="drugUsage"
                             field="drugUse"
                             onChange={(e) =>
                                 pageUtils.onSetItem(
@@ -435,7 +417,10 @@ const EditPatientFileForm3 = () => {
                         </div>
                     </InputCheckboxContainer>
                     <InputCheckboxContainer>
-                        <InputCheckboxColumn name="alcohol" field="alcohol" />
+                        <InputCheckboxColumn
+                            name="alcoholUsage"
+                            field="alcohol"
+                        />
                     </InputCheckboxContainer>
                     <div className="block-border"></div>
                     <h3 className="text mb-30">{strings.vitalSigns}</h3>

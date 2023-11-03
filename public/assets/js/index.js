@@ -4408,6 +4408,25 @@ var UPLOADED_FILE = {
 
 /***/ }),
 
+/***/ "./resources/js/constants/bopTypes.js":
+/*!********************************************!*\
+  !*** ./resources/js/constants/bopTypes.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "BOP_TYPES": () => (/* binding */ BOP_TYPES)
+/* harmony export */ });
+var BOP_TYPES = {
+  LES_TEN: "less_ten",
+  BETWEEN_TEN_THIRTY: "between_ten_thirty",
+  MORE_THIRTY: "more_thirty"
+};
+
+/***/ }),
+
 /***/ "./resources/js/constants/educationTypes.js":
 /*!**************************************************!*\
   !*** ./resources/js/constants/educationTypes.js ***!
@@ -4444,18 +4463,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 var ETHNICITY_TYPES = {
   FARS: "fars",
-  // فارس
   LOR: "lor",
-  // لر
   KORD: "kord",
-  // کرد
   TORK: "tork",
-  // ترک
   ARAB: "arab",
-  // عرب
   BALOUCH: "balouch",
-  // بلوچ
-  OTHER: "other" // سایر
+  OTHER: "other"
 };
 
 /***/ }),
@@ -4515,8 +4528,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 var GENDER_TYPES = {
   MALE: "male",
-  // مذکر
-  FEMALE: "female" // مونث
+  FEMALE: "female"
 };
 
 /***/ }),
@@ -4530,31 +4542,32 @@ var GENDER_TYPES = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ASSETS_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_18__.ASSETS_PATH),
-/* harmony export */   "BASE_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_18__.BASE_PATH),
+/* harmony export */   "ASSETS_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_19__.ASSETS_PATH),
+/* harmony export */   "BASE_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_19__.BASE_PATH),
 /* harmony export */   "BASE_URL": () => (/* binding */ BASE_URL),
+/* harmony export */   "BOP_TYPES": () => (/* reexport safe */ _bopTypes__WEBPACK_IMPORTED_MODULE_18__.BOP_TYPES),
 /* harmony export */   "EDUCATION_TYPES": () => (/* reexport safe */ _educationTypes__WEBPACK_IMPORTED_MODULE_10__.EDUCATION_TYPES),
 /* harmony export */   "ETHNICITY_TYPES": () => (/* reexport safe */ _ethnicityTypes__WEBPACK_IMPORTED_MODULE_9__.ETHNICITY_TYPES),
 /* harmony export */   "FAMILIAL_HISTORY": () => (/* reexport safe */ _familialHistory__WEBPACK_IMPORTED_MODULE_16__.FAMILIAL_HISTORY),
 /* harmony export */   "FILE_FORMS": () => (/* reexport safe */ _fileForms__WEBPACK_IMPORTED_MODULE_8__.FILE_FORMS),
 /* harmony export */   "GENDER_TYPES": () => (/* reexport safe */ _genderTypes__WEBPACK_IMPORTED_MODULE_12__.GENDER_TYPES),
-/* harmony export */   "IMAGES_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_18__.IMAGES_PATH),
+/* harmony export */   "IMAGES_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_19__.IMAGES_PATH),
 /* harmony export */   "LESION_CLASSIFICATION": () => (/* reexport safe */ _lesionClassification__WEBPACK_IMPORTED_MODULE_13__.LESION_CLASSIFICATION),
 /* harmony export */   "MARITIAL_STATUSES": () => (/* reexport safe */ _maritialStatuses__WEBPACK_IMPORTED_MODULE_11__.MARITIAL_STATUSES),
 /* harmony export */   "MESSAGE_CODES": () => (/* reexport safe */ _messageCodes__WEBPACK_IMPORTED_MODULE_2__.MESSAGE_CODES),
 /* harmony export */   "MESSAGE_TYPES": () => (/* reexport safe */ _messageTypes__WEBPACK_IMPORTED_MODULE_1__.MESSAGE_TYPES),
 /* harmony export */   "NOTIFICATION_CATEGORIES": () => (/* reexport safe */ _notificationCategories__WEBPACK_IMPORTED_MODULE_5__.NOTIFICATION_CATEGORIES),
 /* harmony export */   "NOTIFICATION_SUB_CATEGORIES": () => (/* reexport safe */ _notificationSubCategories__WEBPACK_IMPORTED_MODULE_6__.NOTIFICATION_SUB_CATEGORIES),
-/* harmony export */   "PAGE_ITEMS": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_18__.PAGE_ITEMS),
+/* harmony export */   "PAGE_ITEMS": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_19__.PAGE_ITEMS),
 /* harmony export */   "SPECIAL_LESION_CLASSIFICATION": () => (/* reexport safe */ _specialLesionClassification__WEBPACK_IMPORTED_MODULE_14__.SPECIAL_LESION_CLASSIFICATION),
-/* harmony export */   "STORAGE_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_18__.STORAGE_PATH),
+/* harmony export */   "STORAGE_PATH": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_19__.STORAGE_PATH),
 /* harmony export */   "SYSTEMIC_DISEASE_HISTORY": () => (/* reexport safe */ _systemicDiseaseHistory__WEBPACK_IMPORTED_MODULE_15__.SYSTEMIC_DISEASE_HISTORY),
-/* harmony export */   "THEMES": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_18__.THEMES),
+/* harmony export */   "THEMES": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_19__.THEMES),
 /* harmony export */   "TOMPOROMANDIBULAR_JOINT": () => (/* reexport safe */ _tomporomandibularJoint__WEBPACK_IMPORTED_MODULE_17__.TOMPOROMANDIBULAR_JOINT),
 /* harmony export */   "UPLOADED_FILE": () => (/* reexport safe */ _UploadedFile__WEBPACK_IMPORTED_MODULE_3__.UPLOADED_FILE),
 /* harmony export */   "USER_ROLES": () => (/* reexport safe */ _userRoles__WEBPACK_IMPORTED_MODULE_4__.USER_ROLES),
 /* harmony export */   "USER_VERIFICATION_REJECT_REASON": () => (/* reexport safe */ _userVerificationRejectReason__WEBPACK_IMPORTED_MODULE_7__.USER_VERIFICATION_REJECT_REASON),
-/* harmony export */   "themes": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_18__.themes)
+/* harmony export */   "themes": () => (/* reexport safe */ _theme__WEBPACK_IMPORTED_MODULE_19__.themes)
 /* harmony export */ });
 /* harmony import */ var _server_config_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../server-config.json */ "./server-config.json");
 /* harmony import */ var _messageTypes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./messageTypes */ "./resources/js/constants/messageTypes.js");
@@ -4574,7 +4587,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _systemicDiseaseHistory__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./systemicDiseaseHistory */ "./resources/js/constants/systemicDiseaseHistory.js");
 /* harmony import */ var _familialHistory__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./familialHistory */ "./resources/js/constants/familialHistory.js");
 /* harmony import */ var _tomporomandibularJoint__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./tomporomandibularJoint */ "./resources/js/constants/tomporomandibularJoint.js");
-/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./theme */ "./resources/js/constants/theme.js");
+/* harmony import */ var _bopTypes__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./bopTypes */ "./resources/js/constants/bopTypes.js");
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./theme */ "./resources/js/constants/theme.js");
+
 
 
 
@@ -4627,6 +4642,34 @@ var LESION_CLASSIFICATION = {
   salivaryLesion: "salivary_lesion",
   complicatedDisease: "complicated_disease"
 };
+
+/***/ }),
+
+/***/ "./resources/js/constants/lists/bopTypes.js":
+/*!**************************************************!*\
+  !*** ./resources/js/constants/lists/bopTypes.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "bopTypes": () => (/* binding */ bopTypes)
+/* harmony export */ });
+/* harmony import */ var _bopTypes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../bopTypes */ "./resources/js/constants/bopTypes.js");
+/* harmony import */ var _strings_fa__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../strings/fa */ "./resources/js/constants/strings/fa.js");
+
+
+var bopTypes = [{
+  id: _bopTypes__WEBPACK_IMPORTED_MODULE_0__.BOP_TYPES.LES_TEN,
+  value: _strings_fa__WEBPACK_IMPORTED_MODULE_1__.bopTypes.lessTen
+}, {
+  id: _bopTypes__WEBPACK_IMPORTED_MODULE_0__.BOP_TYPES.BETWEEN_TEN_THIRTY,
+  value: _strings_fa__WEBPACK_IMPORTED_MODULE_1__.bopTypes.betweenTenThirty
+}, {
+  id: _bopTypes__WEBPACK_IMPORTED_MODULE_0__.BOP_TYPES.MORE_THIRTY,
+  value: _strings_fa__WEBPACK_IMPORTED_MODULE_1__.bopTypes.moreThirty
+}];
 
 /***/ }),
 
@@ -4744,6 +4787,7 @@ var genderTypes = [{
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "bopTypes": () => (/* reexport safe */ _bopTypes__WEBPACK_IMPORTED_MODULE_5__.bopTypes),
 /* harmony export */   "educationTypes": () => (/* reexport safe */ _educationTypes__WEBPACK_IMPORTED_MODULE_3__.educationTypes),
 /* harmony export */   "ethnicityTypes": () => (/* reexport safe */ _ethnicityTypes__WEBPACK_IMPORTED_MODULE_2__.ethnicityTypes),
 /* harmony export */   "genderTypes": () => (/* reexport safe */ _genderTypes__WEBPACK_IMPORTED_MODULE_0__.genderTypes),
@@ -4755,6 +4799,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ethnicityTypes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ethnicityTypes */ "./resources/js/constants/lists/ethnicityTypes.js");
 /* harmony import */ var _educationTypes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./educationTypes */ "./resources/js/constants/lists/educationTypes.js");
 /* harmony import */ var _patientReferals__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./patientReferals */ "./resources/js/constants/lists/patientReferals.js");
+/* harmony import */ var _bopTypes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./bopTypes */ "./resources/js/constants/lists/bopTypes.js");
+
 
 
 
@@ -4907,7 +4953,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 var NOTIFICATION_CATEGORIES = {
   ACCOUNT: 1,
-  TICKET: 2,
   SYSTEM: 9
 };
 
@@ -4931,11 +4976,7 @@ var NOTIFICATION_SUB_CATEGORIES = {
   USER_EMAIL_VERIFIED: 121,
   USER_VERIFICATION_REQUESTED: 122,
   USER_VERIFICATION_VERIFIED: 123,
-  USER_VERIFICATION_REJECTED: 124,
-  TICKET_USER_REGISTERED: 211,
-  TICKET_ADMINISTRATOR_REGISTERED: 212,
-  TICKET_THREAD_USER_REGISTERED: 213,
-  TICKET_THREAD_ADMINISTRATOR_REGISTERED: 214
+  USER_VERIFICATION_REJECTED: 124
 };
 
 /***/ }),
@@ -4996,6 +5037,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "addPatientFilePage": () => (/* binding */ addPatientFilePage),
 /* harmony export */   "addUserPage": () => (/* binding */ addUserPage),
+/* harmony export */   "bopTypes": () => (/* binding */ bopTypes),
 /* harmony export */   "changePasswordUserPage": () => (/* binding */ changePasswordUserPage),
 /* harmony export */   "dashboardPage": () => (/* binding */ dashboardPage),
 /* harmony export */   "date": () => (/* binding */ date),
@@ -5325,37 +5367,37 @@ var patientReferals = {
   specialitDentist: "دندانپزشک متخصص"
 };
 var systemicDiseaseHistory = {
-  item1: "سابقه بیماری قلبی یا جراحی بر روی قلب",
-  item2: "بیماری عصبی و روحی (افسردگی، اضطراب یا مشکلات ذهنی روانی)",
-  item3: "سابقه خونریزی غیرطبیعی مثلا پس از کشیدن دندان",
-  item4: "سابقه فشار خون غیرطبیعی (بالاتر یا پایین‌تر از حد طبیعی)",
-  item5: "سابقه آسم یا بیماری‌های تنفسی (سل، برونشیت)",
-  item6: "سابقه زردی، هپاتیت D ,C ,B یا سایر بیماری‌های کبدی",
-  item7: "سابقه سینوزیت، عفونت گوش و سردردهای مزمن",
-  item8: "سابقه کم‌خونی یا سایر بیماری‌های خونی یا بیماری خاص نظیر تالاسمی، هموفیلی و سرطان",
-  item9: "سابقه بیماری منتقله از راه خون (ایدز-HIV-HTLV1)",
-  item10: "سابقه تزریق خون و فرآورده‌های عفونی",
-  item11: "سابقه صرع، تشنج",
-  item12: "سابقه دیابت (بیماری قند خون)",
-  item13: "سابقه گواتر یا بیماری تیروئید",
-  item14: "سابقه حساسیت به دارو یا غذای خاص",
-  item15: "سابقه بستری در بیمارستان",
-  item18: "کاهش یا افزایش وزن قابل ملاحظه به صورت ناگهانی",
-  item19: "بیماری‌های سیستم ایمنی و روماتیسم",
-  item20: "سابقه سرطان",
-  item21: "سابقه شیمی‌درمانی یا اشعه‌درمانی",
-  item22: "سابقه پوکی استخوان یا سایر بیماری‌های استخوانی",
-  item23: "سابقه بیماری پوستی",
-  item24: "سابقه بیماری‌های گوارشی (نظیر زخم معده، یبوست، اسهال و ...)",
-  item25: "(در مورد خانم‌ها: دوران بارداری و شیردهی) مشکل در ارتباط با بارداری: دیابت، فشار خون، مسمومیت حاملگی، سقط، خونریزی غیرطبیعی و ...",
-  item26: "مشکلات مربوط به قاعدگی",
-  item27: "سابقه کلیک (صدای مفصل) یا مشکل در مفصل گیجگاهی فکی یا مشکل در باز‌نگه‌داشتن طولانی دهان و محدودیت باز‌کردن دهان",
-  item28: "سابقه بی‌حسی دشوار (دیر بی‌حس‌شدن)، افت فشار، از دست‌رفتن هوشیاری، خونریزی غیرطبیعی، حساسیت به ماده بی‌حسی، تهوع شدید، دررفتگی فک حین انجام درمان‌های دندانپزشکی",
-  item29: "عادت به مصرف سیگار، قلیان، مواد مخدر، روانگردان و یا سپری‌کردن دوران ترک اعتیاد",
-  item30: "آیا در بدن خود وسیله مصنوعی دارید؟ (مفصل، دریچه، باطری قلبی، ...)",
-  item31: "آیا دچار دندان قروچه یا تنفس دهانی هستید؟",
-  item32: "وضعیت خواب شما چطور است؟",
-  item33: "آیا برای زندگی روزمره نیاز به کمک و همراهی فرد دیگری دارید؟"
+  heartDisease: "سابقه بیماری قلبی یا جراحی بر روی قلب",
+  nervousIllness: "بیماری عصبی و روحی (افسردگی، اضطراب یا مشکلات ذهنی روانی)",
+  abnormalBleeding: "سابقه خونریزی غیرطبیعی مثلا پس از کشیدن دندان",
+  abnormalBloodPressure: "سابقه فشار خون غیرطبیعی (بالاتر یا پایین‌تر از حد طبیعی)",
+  respiratoryDisease: "سابقه آسم یا بیماری‌های تنفسی (سل، برونشیت)",
+  hepatitDisease: "سابقه زردی، هپاتیت D ,C ,B یا سایر بیماری‌های کبدی",
+  sinusitis: "سابقه سینوزیت، عفونت گوش و سردردهای مزمن",
+  bloodDisease: "سابقه کم‌خونی یا سایر بیماری‌های خونی یا بیماری خاص نظیر تالاسمی، هموفیلی و سرطان",
+  bloodBorneDisease: "سابقه بیماری منتقله از راه خون (ایدز-HIV-HTLV1)",
+  injectingContaminatedBlood: "سابقه تزریق خون و فرآورده‌های عفونی",
+  epilepsy: "سابقه صرع، تشنج",
+  kidneyDisease: "سابقه بیماری کلیوی یا دیالیز",
+  diabetes: "سابقه دیابت (بیماری قند خون)",
+  thyroid: "سابقه گواتر یا بیماری تیروئید",
+  fmAllergy: "سابقه حساسیت به دارو یا غذای خاص",
+  hospitalizationHistory: "سابقه بستری در بیمارستان",
+  weightLoss: "کاهش یا افزایش وزن قابل ملاحظه به صورت ناگهانی",
+  immuneDisease: "بیماری‌های سیستم ایمنی و روماتیسم",
+  cancer: "سابقه سرطان",
+  chemotherapy: "سابقه شیمی‌درمانی یا اشعه‌درمانی",
+  boneDisaese: "سابقه پوکی استخوان یا سایر بیماری‌های استخوانی",
+  skinDisease: "سابقه بیماری پوستی",
+  digestiveDisease: "سابقه بیماری‌های گوارشی (نظیر زخم معده، یبوست، اسهال و ...)",
+  pregnancy: "(در مورد خانم‌ها: دوران بارداری و شیردهی) مشکل در ارتباط با بارداری: دیابت، فشار خون، مسمومیت حاملگی، سقط، خونریزی غیرطبیعی و ...",
+  pms: "مشکلات مربوط به قاعدگی",
+  temporomandibular: "سابقه کلیک (صدای مفصل) یا مشکل در مفصل گیجگاهی فکی یا مشکل در باز‌نگه‌داشتن طولانی دهان و محدودیت باز‌کردن دهان",
+  dentistryProblem: "سابقه بی‌حسی دشوار (دیر بی‌حس‌شدن)، افت فشار، از دست‌رفتن هوشیاری، خونریزی غیرطبیعی، حساسیت به ماده بی‌حسی، تهوع شدید، دررفتگی فک حین انجام درمان‌های دندانپزشکی",
+  addiction: "عادت به مصرف سیگار، قلیان، مواد مخدر، روانگردان و یا سپری‌کردن دوران ترک اعتیاد",
+  artificialDevice: "آیا در بدن خود وسیله مصنوعی دارید؟ (مفصل، دریچه، باطری قلبی، ...)",
+  bruxism: "آیا دچار دندان قروچه یا تنفس دهانی هستید؟",
+  helpLiving: "آیا برای زندگی روزمره نیاز به کمک و همراهی فرد دیگری دارید؟"
 };
 var familialHistory = {
   tb: "سل",
@@ -5364,12 +5406,16 @@ var familialHistory = {
   fhbp: "بالا بودن فشار خون",
   fca: "سرطان"
 };
+var bopTypes = {
+  lessTen: "کمتر از 10 درصد",
+  betweenTenThirty: "بین 10 تا 30 درصد",
+  moreThirty: "بیشتر از 30 درصد"
+};
 var notificationsPage = {
   _title: "اعلان‌ها",
   _subTitle: "فهرست اعلان‌ها",
   allNotificaions: "همه اعلان‌ها",
   accountNotifications: "اعلان‌های حساب",
-  ticketNotifications: "اعلان‌های تیکت پشتیبانی",
   systemNotificaions: "اعلان‌های سیستمی",
   title: "عنوان",
   body: "متن",
@@ -5523,31 +5569,31 @@ var editPatientFileForm3 = {
   _title: "پرونده بیمار - فرم سه",
   _subTitle: "پرونده بیمار را ویرایش کنید.",
   systemicDiseaseHistory: "در کادر زیر، بیماری‌های سیستمیک را مشخص نمایید:",
-  item8Description: "نوع",
-  item8DescriptionPlaceholder: "نوع",
-  item15Description: "علت و نتیجه بستری",
-  item15DescriptionPlaceholder: "علت و نتیجه بستری",
-  item16Description: "در صورتی که دارویی را به طور مداوم استفاده می‌کنید نام ببرید.",
-  item16DescriptionPlaceholder: "در صورتی که دارویی را به طور مداوم استفاده می‌کنید نام ببرید.",
-  item17Description: "چنانچه دارویی را به صورت هفتگی و یا ماهانه در فرم خوراکی یا تزریقی مصرف می‌کنید، نام ببرید. (داروهایی نظیر داروهای اصلاح‌کننده ضربان قلب، استخوان‌ساز یا آمپول‌های تقویتی)",
-  item17DescriptionPlaceholder: "چنانچه دارویی را به صورت هفتگی و یا ماهانه در فرم خوراکی یا تزریقی مصرف می‌کنید، نام ببرید.",
-  item20Description: "نوع",
-  item20DescriptionPlaceholder: "نوع",
-  item21Description: "محل تابش اشعه",
-  item21DescriptionPlaceholder: "محل تابش اشعه",
-  item25Description: "بارداری",
-  item25_1Description: "هفته",
-  item25_1DescriptionPlaceholder: "هفته",
-  item25_2Description: "فرزند",
-  item25_2DescriptionPlaceholder: "فرزند",
-  item25_3Description: "رتبه",
-  item25_3DescriptionPlaceholder: "رتبه",
-  item30Description: "توضیح",
-  item30DescriptionPlaceholder: "توضیح",
-  item32Description: "وضعیت خواب شما چطور است؟",
-  item32DescriptionPlaceholder: "وضعیت خواب شما چطور است؟",
-  item34Description: "ظرفیت عملکردی بیمار (تکمیل توسط پزشک)",
-  item34DescriptionPlaceholder: "ظرفیت عملکردی بیمار (تکمیل توسط پزشک)",
+  bloodDiseaseType: "نوع",
+  bloodDiseaseTypePlaceholder: "نوع",
+  hospitalizationReason: "علت و نتیجه بستری",
+  hospitalizationReasonPlaceholder: "علت و نتیجه بستری",
+  continuingDrug: "در صورتی که دارویی را به طور مداوم استفاده می‌کنید نام ببرید.",
+  continuingDrugPlaceholder: "در صورتی که دارویی را به طور مداوم استفاده می‌کنید نام ببرید.",
+  weeklyDrug: "چنانچه دارویی را به صورت هفتگی و یا ماهانه در فرم خوراکی یا تزریقی مصرف می‌کنید، نام ببرید. (داروهایی نظیر داروهای اصلاح‌کننده ضربان قلب، استخوان‌ساز یا آمپول‌های تقویتی)",
+  weeklyDrugPlaceholder: "چنانچه دارویی را به صورت هفتگی و یا ماهانه در فرم خوراکی یا تزریقی مصرف می‌کنید، نام ببرید.",
+  cancerType: "نوع",
+  cancerTypePlaceholder: "نوع",
+  radiationPlace: "محل تابش اشعه",
+  radiationPlacePlaceholder: "محل تابش اشعه",
+  pregnancy: "بارداری",
+  pregnancyWeek: "هفته",
+  pregnancyWeekPlaceholder: "هفته",
+  pregnancyNum: "فرزند",
+  pregnancyNumPlaceholder: "فرزند",
+  pregnancyRank: "رتبه",
+  pregnancyRankPlaceholder: "رتبه",
+  adExplanation: "توضیح",
+  adExplanationPlaceholder: "توضیح",
+  sleepStatus: "وضعیت خواب شما چطور است؟",
+  sleepStatusPlaceholder: "وضعیت خواب شما چطور است؟",
+  functionalCapacity: "ظرفیت عملکردی بیمار (تکمیل توسط پزشک)",
+  functionalCapacityPlaceholder: "ظرفیت عملکردی بیمار (تکمیل توسط پزشک)",
   patientHabits: "عادات بیمار",
   tobaccoUse: "سابقه استعمال دخانیات",
   useTobaccoDuration: "مدت زمان مصرف",
@@ -5628,6 +5674,45 @@ var editPatientFileForm4 = {
   dentalChangesExamination: "تغییرات دندانی",
   dentalChangesExaminationPlaceholder: "تغییرات دندانی",
   dentalChangesExaminationDescription: "تغییرات دندانی غیرمرتبط یا مرتبط با دهان، فک و صورت، تغییرات دندانی غیرطبیعی لقی (حتما گرید مشخص شود)، وجود اختلال در شکل، تعداد، سایز و ساختارهای مینا و عاج، تیلت، پوسیدگی، از دست‌دادن دندان و مشکلات پالپ",
+  permanentDentition: "Permanent Dentition",
+  dentitionFileProperties: "تصویر Permanent Dentition با فرمت jpg یا png و حداکثر سایز 4 مگابایت",
+  dentitionFile: "تصویر پیوست",
+  adultDmft: "DMFT",
+  adultDmftPlaceholder: "DMFT",
+  adultD: "دندان‌های پوسیده",
+  adultDPlaceholder: "دندان‌های پوسیده",
+  adultM: "دندان‌های از دست‌رفته",
+  adultMPlaceholder: "دندان‌های از دست‌رفته",
+  adultT: "دندان‌های دارای ترمیم",
+  adultTPlaceholder: "دندان‌های دارای ترمیم",
+  decidiousDentition: "Decidious Dentition",
+  decidiousFileProperties: "تصویر Decidious Dentition با فرمت jpg یا png و حداکثر سایز 4 مگابایت",
+  decidiousFile: "تصویر پیوست",
+  decidiousDmft: "DMFT",
+  decidiousDmftPlaceholder: "DMFT",
+  decidiousD: "دندان‌های پوسیده",
+  decidiousDPlaceholder: "دندان‌های پوسیده",
+  decidiousM: "دندان‌های از دست‌رفته",
+  decidiousMPlaceholder: "دندان‌های از دست‌رفته",
+  decidiousT: "دندان‌های دارای ترمیم",
+  decidiousTPlaceholder: "دندان‌های دارای ترمیم",
+  priodontalExamination: "سلامت پریودنشیوم (در صورت نیاز تکمیل شود)",
+  priodontalExaminationPlaceholder: "سلامت پریودنشیوم (در صورت نیاز تکمیل شود)",
+  bop: "BOP تمامی دندان‌ها و بررسی چهار سطح دندان",
+  radiographicEvidence: "یافته‌های رادیوگرافیک",
+  radiographicEvidencePlaceholder: "یافته‌های رادیوگرافیک",
+  paraclinicalEvidence: "یافته‌های پاراکلینیک",
+  paraclinicalEvidencePlaceholder: "یافته‌های پاراکلینیک",
+  consultationDeps: "نتیجه مشاوره با بخش‌های داخل یا خارج دانشکده",
+  consultationDepsPlaceholder: "نتیجه مشاوره با بخش‌های داخل یا خارج دانشکده",
+  probableDiagnosis: "تشخیص احتمالی",
+  probableDiagnosisPlaceholder: "تشخیص احتمالی",
+  differntialDiagnosis: "تشخیص افتراقی",
+  differntialDiagnosisPlaceholder: "تشخیص افتراقی",
+  difinitiveDiagnosis: "تشخیص قطعی (بعد از قطعی‌شدن تشخیص و نتایج آزمایشگاهی قید شود)",
+  difinitiveDiagnosisPlaceholder: "تشخیص قطعی (بعد از قطعی‌شدن تشخیص و نتایج آزمایشگاهی قید شود)",
+  systemicConsiderations: "ملاحظات دندانپزشکی و تغییرات طرح درمان دندانپزشکی (در مورد بیماران سیستمیک)",
+  systemicConsiderationsPlaceholder: "ملاحظات دندانپزشکی و تغییرات طرح درمان دندانپزشکی (در مورد بیماران سیستمیک)",
   submitted: "ویرایش اطلاعات بیمار با موفقیت انجام شد."
 };
 
@@ -5645,39 +5730,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "SYSTEMIC_DISEASE_HISTORY": () => (/* binding */ SYSTEMIC_DISEASE_HISTORY)
 /* harmony export */ });
 var SYSTEMIC_DISEASE_HISTORY = {
-  item1: "item_1",
-  item2: "item_2",
-  item3: "item_3",
-  item4: "item_4",
-  item5: "item_5",
-  item6: "item_6",
-  item7: "item_7",
-  item8: "item_8",
-  item9: "item_9",
-  item10: "item_10",
-  item11: "item_11",
-  item12: "item_12",
-  item13: "item_13",
-  item14: "item_14",
-  item15: "item_15",
-  item16: "item_16",
-  item17: "item_17",
-  item18: "item_18",
-  item19: "item_19",
-  item20: "item_20",
-  item21: "item_21",
-  item22: "item_22",
-  item23: "item_23",
-  item24: "item_24",
-  item25: "item_25",
-  item26: "item_26",
-  item27: "item_27",
-  item28: "item_28",
-  item29: "item_29",
-  item30: "item_30",
-  item31: "item_31",
-  item32: "item_32",
-  item33: "item_33"
+  heartDisease: "heart_disease",
+  nervousIllness: "nervous_illness",
+  abnormalBleeding: "abnormal_bleeding",
+  abnormalBloodPressure: "abnormal_blood_pressure",
+  respiratoryDisease: "respiratory_disease",
+  hepatitDisease: "hepatit_disease",
+  sinusitis: "sinusitis",
+  bloodDisease: "blood_disease",
+  bloodBorneDisease: "blood_borne_disease",
+  injectingContaminatedBlood: "injecting_contaminated_blood",
+  epilepsy: "epilepsy",
+  kidneyDisease: "kidney_disease",
+  diabetes: "diabetes",
+  thyroid: "thyroid",
+  fmAllergy: "fm_allergy",
+  hospitalizationHistory: "hospitalization_history",
+  weightLoss: "weight_loss",
+  immuneDisease: "immune_disease",
+  cancer: "cancer",
+  chemotherapy: "chemotherapy",
+  boneDisaese: "bone_disaese",
+  skinDisease: "skin_disease",
+  digestiveDisease: "digestive_disease",
+  pregnancy: "pregnancy",
+  pms: "pms",
+  temporomandibular: "temporomandibular",
+  dentistryProblem: "dentistry_problem",
+  addiction: "addiction",
+  artificialDevice: "artificial_device",
+  bruxism: "bruxism",
+  helpLiving: "help_living"
 };
 
 /***/ }),
@@ -6609,25 +6692,25 @@ var PatientFile = /*#__PURE__*/function (_Entity) {
   }, {
     key: "updateForm3",
     value: function () {
-      var _updateForm3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6(id, systemicDiseaseHistory, item8Description, item15Description, item16Description, item17Description, item20Description, item21Description, item25_1Description, item25_2Description, item25_3Description, item30Description, item32Description, item34Description, tobaccoUse, useTobaccoDuration, useTobaccoType, drugUse, useDrugDuration, useDrugType, alcohol, pulse, bodyTemp, bloodPressure, resporate, weight, height, bmi, familialHistory, fcaType) {
+      var _updateForm3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6(id, systemicDiseaseHistory, bloodDiseaseType, hospitalizationReason, continuingDrug, weeklyDrug, cancerType, radiationPlace, pregnancyWeek, pregnancyNum, pregnancyRank, adExplanation, sleepStatus, functionalCapacity, tobaccoUse, useTobaccoDuration, useTobaccoType, drugUse, useDrugDuration, useDrugType, alcohol, pulse, bodyTemp, bloodPressure, resporate, weight, height, bmi, familialHistory, fcaType) {
         return _regeneratorRuntime().wrap(function _callee6$(_context6) {
           while (1) switch (_context6.prev = _context6.next) {
             case 0:
               _context6.next = 2;
               return this.handlePost("".concat(_constants__WEBPACK_IMPORTED_MODULE_0__.BASE_URL, "/a/p_files/update_form_3/").concat(id), {
                 systemic_disease_history: systemicDiseaseHistory,
-                item_8_description: item8Description,
-                item_15_description: item15Description,
-                item_16_description: item16Description,
-                item_17_description: item17Description,
-                item_20_description: item20Description,
-                item_21_description: item21Description,
-                item_25_1_description: item25_1Description,
-                item_25_2_description: item25_2Description,
-                item_25_3_description: item25_3Description,
-                item_30_description: item30Description,
-                item_32_description: item32Description,
-                item_34_description: item34Description,
+                blood_disease_type: bloodDiseaseType,
+                hospitalization_reason: hospitalizationReason,
+                continuing_drug: continuingDrug,
+                weekly_drug: weeklyDrug,
+                cancer_type: cancerType,
+                radiation_place: radiationPlace,
+                pregnancy_week: pregnancyWeek,
+                pregnancy_num: pregnancyNum,
+                pregnancy_rank: pregnancyRank,
+                ad_explanation: adExplanation,
+                sleep_status: sleepStatus,
+                functional_capacity: functionalCapacity,
                 tobacco_use: tobaccoUse,
                 use_tobacco_duration: useTobaccoDuration,
                 use_tobacco_type: useTobaccoType,
@@ -6661,41 +6744,63 @@ var PatientFile = /*#__PURE__*/function (_Entity) {
   }, {
     key: "updateForm4",
     value: function () {
-      var _updateForm4 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee7(id, faceAssymetry, facePigmentation, faceOtherPathalogical, neckAssymetry, neckTyExamination, lymphNodes, tomporomandibularJoint, otherSignsTMJDescription, intraOralExamination, retromolarArea, gums, toothlessRidge, hardSoftPalate, tongueDorsal, tongueVentral, tonguePharyngeal, neurologicalChanges, salivaryGrandExamination, dentalChangesExamination) {
+      var _updateForm4 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee7(id, faceAssymetry, facePigmentation, faceOtherPathalogical, neckAssymetry, neckTyExamination, lymphNodes, tomporomandibularJoint, otherSignsTMJDescription, intraOralExamination, retromolarArea, gums, toothlessRidge, hardSoftPalate, tongueDorsal, tongueVentral, tonguePharyngeal, neurologicalChanges, salivaryGrandExamination, dentalChangesExamination, dentitionFile, dentitionFileAction, adultDmft, adultD, adultM, adultT, decidiousFile, decidiousFileAction, decidiousDmft, decidiousD, decidiousM, decidiousT, priodontalExamination, bop, radiographicEvidence, paraclinicalEvidence, consultationDeps, probableDiagnosis, differntialDiagnosis, difinitiveDiagnosis, systemicConsiderations) {
+        var data;
         return _regeneratorRuntime().wrap(function _callee7$(_context7) {
           while (1) switch (_context7.prev = _context7.next) {
             case 0:
-              _context7.next = 2;
-              return this.handlePost("".concat(_constants__WEBPACK_IMPORTED_MODULE_0__.BASE_URL, "/a/p_files/update_form_4/").concat(id), {
-                face_assymetry: faceAssymetry,
-                face_pigmentation: facePigmentation,
-                face_other_pathalogical: faceOtherPathalogical,
-                neck_assymetry: neckAssymetry,
-                neck_ty_examination: neckTyExamination,
-                lymph_nodes: lymphNodes,
-                tomporomandibular_joint: tomporomandibularJoint,
-                other_signs_tmj_description: otherSignsTMJDescription,
-                intra_oral_examination: intraOralExamination,
-                retromolar_area: retromolarArea,
-                gums: gums,
-                toothless_ridge: toothlessRidge,
-                hard_soft_palate: hardSoftPalate,
-                tongue_dorsal: tongueDorsal,
-                tongue_ventral: tongueVentral,
-                tongue_pharyngeal: tonguePharyngeal,
-                neurological_changes: neurologicalChanges,
-                salivary_grand_examination: salivaryGrandExamination,
-                dental_changes_examination: dentalChangesExamination
-              });
-            case 2:
+              data = new FormData();
+              data.append("face_assymetry", faceAssymetry);
+              data.append("face_pigmentation", facePigmentation);
+              data.append("face_other_pathalogical", faceOtherPathalogical);
+              data.append("neck_assymetry", neckAssymetry);
+              data.append("neck_ty_examination", neckTyExamination);
+              data.append("lymph_nodes", lymphNodes);
+              data.append("tomporomandibular_joint", tomporomandibularJoint);
+              data.append("other_signs_tmj_description", otherSignsTMJDescription);
+              data.append("intra_oral_examination", intraOralExamination);
+              data.append("retromolar_area", retromolarArea);
+              data.append("gums", gums);
+              data.append("toothless_ridge", toothlessRidge);
+              data.append("hard_soft_palate", hardSoftPalate);
+              data.append("tongue_dorsal", tongueDorsal);
+              data.append("tongue_ventral", tongueVentral);
+              data.append("tongue_pharyngeal", tonguePharyngeal);
+              data.append("neurological_changes", neurologicalChanges);
+              data.append("salivary_grand_examination", salivaryGrandExamination);
+              data.append("dental_changes_examination", dentalChangesExamination);
+              data.append("dentition_file", dentitionFile);
+              data.append("dentition_file_action", dentitionFileAction);
+              data.append("adult_dmft", adultDmft);
+              data.append("adult_d", adultD);
+              data.append("adult_m", adultM);
+              data.append("adult_t", adultT);
+              data.append("decidious_file", decidiousFile);
+              data.append("decidious_file_action", decidiousFileAction);
+              data.append("decidious_dmft", decidiousDmft);
+              data.append("decidious_d", decidiousD);
+              data.append("decidious_m", decidiousM);
+              data.append("decidious_t", decidiousT);
+              data.append("priodontal_examination", priodontalExamination);
+              data.append("bop", bop);
+              data.append("radiographic_evidence", radiographicEvidence);
+              data.append("paraclinical_evidence", paraclinicalEvidence);
+              data.append("consultation_deps", consultationDeps);
+              data.append("probable_diagnosis", probableDiagnosis);
+              data.append("differntial_diagnosis", differntialDiagnosis);
+              data.append("difinitive_diagnosis", difinitiveDiagnosis);
+              data.append("systemic_considerations", systemicConsiderations);
+              _context7.next = 43;
+              return this.handlePostFile("".concat(_constants__WEBPACK_IMPORTED_MODULE_0__.BASE_URL, "/a/p_files/update_form_4/").concat(id), data);
+            case 43:
               return _context7.abrupt("return", _context7.sent);
-            case 3:
+            case 44:
             case "end":
               return _context7.stop();
           }
         }, _callee7, this);
       }));
-      function updateForm4(_x85, _x86, _x87, _x88, _x89, _x90, _x91, _x92, _x93, _x94, _x95, _x96, _x97, _x98, _x99, _x100, _x101, _x102, _x103, _x104) {
+      function updateForm4(_x85, _x86, _x87, _x88, _x89, _x90, _x91, _x92, _x93, _x94, _x95, _x96, _x97, _x98, _x99, _x100, _x101, _x102, _x103, _x104, _x105, _x106, _x107, _x108, _x109, _x110, _x111, _x112, _x113, _x114, _x115, _x116, _x117, _x118, _x119, _x120, _x121, _x122, _x123, _x124, _x125) {
         return _updateForm4.apply(this, arguments);
       }
       return updateForm4;
@@ -7954,14 +8059,6 @@ var Notifications = function Notifications() {
         },
         disabled: layoutState === null || layoutState === void 0 ? void 0 : layoutState.loading,
         children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_4__.notificationsPage.accountNotifications
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("button", {
-        className: "checked-item tab-item tab-page-item",
-        "data-tab-content": _constants__WEBPACK_IMPORTED_MODULE_6__.NOTIFICATION_CATEGORIES.TICKET,
-        onClick: function onClick(e) {
-          return onChangeTabContent(e);
-        },
-        disabled: layoutState === null || layoutState === void 0 ? void 0 : layoutState.loading,
-        children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_4__.notificationsPage.ticketNotifications
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("button", {
         className: "checked-item tab-item tab-page-item",
         "data-tab-content": _constants__WEBPACK_IMPORTED_MODULE_6__.NOTIFICATION_CATEGORIES.SYSTEM,
@@ -9227,32 +9324,34 @@ var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
       }));
       this.dispatch((0,_state_page_pageActions__WEBPACK_IMPORTED_MODULE_7__.setPageTitleAction)("".concat(_constants_strings_fa__WEBPACK_IMPORTED_MODULE_6__.editPatientFileForm3._title, " [ ").concat(result.item.name, " ").concat(result.item.family, " - ").concat(result.item.fileNo, " ]"), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_6__.editPatientFileForm3._subTitle));
       this.useForm.setValue("systemicDiseaseHistory", result.item.systemicDiseaseHistory);
-      this.useForm.setValue("item8Description", result.item.item8Description);
-      this.useForm.setValue("item15Description", result.item.item15Description);
-      this.useForm.setValue("item16Description", result.item.item16Description);
-      this.useForm.setValue("item17Description", result.item.item17Description);
-      this.useForm.setValue("item20Description", result.item.item20Description);
-      this.useForm.setValue("item21Description", result.item.item21Description);
-      this.useForm.setValue("item25_1Description", result.item.item25_1Description);
-      this.useForm.setValue("item25_2Description", result.item.item25_2Description);
-      this.useForm.setValue("item25_3Description", result.item.item25_3Description);
-      this.useForm.setValue("item30Description", result.item.item30Description);
-      this.useForm.setValue("item32Description", result.item.item32Description);
-      this.useForm.setValue("item34Description", result.item.item34Description);
-      this.useForm.setValue("tobaccoUse", result.item.tobaccoUse);
+      this.useForm.setValue("bloodDiseaseType", result.item.bloodDiseaseType);
+      this.useForm.setValue("hospitalizationReason", result.item.hospitalizationReason);
+      this.useForm.setValue("continuingDrug", result.item.continuingDrug);
+      this.useForm.setValue("weeklyDrug", result.item.weeklyDrug);
+      this.useForm.setValue("cancerType", result.item.cancerType);
+      this.useForm.setValue("radiationPlace", result.item.radiationPlace);
+      this.useForm.setValue("pregnancyWeek", result.item.pregnancyWeek);
+      this.useForm.setValue("pregnancyNum", result.item.pregnancyNum);
+      this.useForm.setValue("pregnancyRank", result.item.pregnancyRank);
+      this.useForm.setValue("adExplanation", result.item.adExplanation);
+      this.useForm.setValue("sleepStatus", result.item.sleepStatus);
+      this.useForm.setValue("functionalCapacity", result.item.item35Description);
+      this.useForm.setValue("tobaccoUsage", result.item.tobaccoUse);
       this.useForm.setValue("useTobaccoDuration", result.item.useTobaccoDuration);
       this.useForm.setValue("useTobaccoType", result.item.useTobaccoType);
-      this.useForm.setValue("drugUse", result.item.drugUse);
+      this.useForm.setValue("drugUsage", result.item.drugUse);
       this.useForm.setValue("useDrugDuration", result.item.useDrugDuration);
       this.useForm.setValue("useDrugType", result.item.useDrugType);
-      this.useForm.setValue("alcohol", result.item.alcohol);
+      this.useForm.setValue("alcoholUsage", result.item.alcohol);
       this.useForm.setValue("pulse", result.item.pulse);
       this.useForm.setValue("bodyTemp", result.item.bodyTemp);
+      this.useForm.setValue("bloodPressure", result.item.bloodPressure);
       this.useForm.setValue("resporate", result.item.resporate);
       this.useForm.setValue("weight", result.item.weight);
       this.useForm.setValue("height", result.item.height);
       this.useForm.setValue("bmi", result.item.bmi);
       this.useForm.setValue("familialHistory", result.item.familialHistory);
+      this.useForm.setValue("fcaType", result.item.fcaType);
     }
   }, {
     key: "onSetItem",
@@ -9266,7 +9365,7 @@ var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
     key: "onSubmit",
     value: function () {
       var _onSubmit = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(data) {
-        var _data$systemicDisease, _systemicDiseaseHisto, _data$familialHistory, _familialHistory, _systemicDiseaseHisto2, _systemicDiseaseHisto3, _systemicDiseaseHisto4, _systemicDiseaseHisto5, _systemicDiseaseHisto6, _systemicDiseaseHisto7, _systemicDiseaseHisto8, _systemicDiseaseHisto9, _systemicDiseaseHisto10, _systemicDiseaseHisto11, _systemicDiseaseHisto12, _systemicDiseaseHisto13, _familialHistory2;
+        var _data$systemicDisease, _systemicDiseaseHisto, _data$familialHistory, _familialHistory, _systemicDiseaseHisto2, _systemicDiseaseHisto3, _systemicDiseaseHisto4, _systemicDiseaseHisto5, _systemicDiseaseHisto6, _systemicDiseaseHisto7, _systemicDiseaseHisto8, _systemicDiseaseHisto9, _familialHistory2;
         var systemicDiseaseHistory, familialHistory, promise;
         return _regeneratorRuntime().wrap(function _callee3$(_context3) {
           while (1) switch (_context3.prev = _context3.next) {
@@ -9283,7 +9382,7 @@ var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
               familialHistory = ((_familialHistory = familialHistory) === null || _familialHistory === void 0 ? void 0 : _familialHistory.length) > 0 ? familialHistory.map(function (item) {
                 return _constants__WEBPACK_IMPORTED_MODULE_3__.FAMILIAL_HISTORY[item];
               }).join("|") : null;
-              promise = this.entity.updateForm3(this.pageState.params.patientFileId, systemicDiseaseHistory, (_systemicDiseaseHisto2 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto2 !== void 0 && _systemicDiseaseHisto2.includes("item_8") ? data.item8Description : "", (_systemicDiseaseHisto3 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto3 !== void 0 && _systemicDiseaseHisto3.includes("item_15") ? data.item15Description : "", (_systemicDiseaseHisto4 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto4 !== void 0 && _systemicDiseaseHisto4.includes("item_16") ? data.item16Description : "", (_systemicDiseaseHisto5 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto5 !== void 0 && _systemicDiseaseHisto5.includes("item_17") ? data.item17Description : "", (_systemicDiseaseHisto6 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto6 !== void 0 && _systemicDiseaseHisto6.includes("item_20") ? data.item20Description : "", (_systemicDiseaseHisto7 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto7 !== void 0 && _systemicDiseaseHisto7.includes("item_21") ? data.item21Description : "", (_systemicDiseaseHisto8 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto8 !== void 0 && _systemicDiseaseHisto8.includes("item_25") ? data.item25_1Description : "", (_systemicDiseaseHisto9 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto9 !== void 0 && _systemicDiseaseHisto9.includes("item_25") ? data.item25_2Description : "", (_systemicDiseaseHisto10 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto10 !== void 0 && _systemicDiseaseHisto10.includes("item_25") ? data.item25_3Description : "", (_systemicDiseaseHisto11 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto11 !== void 0 && _systemicDiseaseHisto11.includes("item_30") ? data.item30Description : "", (_systemicDiseaseHisto12 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto12 !== void 0 && _systemicDiseaseHisto12.includes("item_32") ? data.item32Description : "", (_systemicDiseaseHisto13 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto13 !== void 0 && _systemicDiseaseHisto13.includes("item_34") ? data.item34Description : "", data.tobaccoUse ? 1 : 0, data.tobaccoUse ? data.useTobaccoDuration : "", data.tobaccoUse ? data.useTobaccoType : "", data.drugUse ? 1 : 0, data.drugUse ? data.useDrugDuration : "", data.drugUse ? data.useDrugType : "", data.alcohol ? 1 : 0, data.pulse, data.bodyTemp, data.bloodPressure, data.resporate, data.weight, data.height, data.bmi, familialHistory, (_familialHistory2 = familialHistory) !== null && _familialHistory2 !== void 0 && _familialHistory2.includes("fca") ? data.fcaType : "");
+              promise = this.entity.updateForm3(this.pageState.params.patientFileId, systemicDiseaseHistory, (_systemicDiseaseHisto2 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto2 !== void 0 && _systemicDiseaseHisto2.includes("blood_disease") ? data.bloodDiseaseType : "", (_systemicDiseaseHisto3 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto3 !== void 0 && _systemicDiseaseHisto3.includes("hospitalization_history") ? data.hospitalizationReason : "", data.continuingDrug, data.weeklyDrug, (_systemicDiseaseHisto4 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto4 !== void 0 && _systemicDiseaseHisto4.includes("cancer") ? data.cancerType : "", (_systemicDiseaseHisto5 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto5 !== void 0 && _systemicDiseaseHisto5.includes("chemotherapy") ? data.radiationPlace : "", (_systemicDiseaseHisto6 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto6 !== void 0 && _systemicDiseaseHisto6.includes("pregnancy") ? data.pregnancyWeek : "", (_systemicDiseaseHisto7 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto7 !== void 0 && _systemicDiseaseHisto7.includes("pregnancy") ? data.pregnancyNum : "", (_systemicDiseaseHisto8 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto8 !== void 0 && _systemicDiseaseHisto8.includes("pregnancy") ? data.pregnancyRank : "", (_systemicDiseaseHisto9 = systemicDiseaseHistory) !== null && _systemicDiseaseHisto9 !== void 0 && _systemicDiseaseHisto9.includes("artificial_device") ? data.adExplanation : "", data.sleepStatus, data.functionalCapacity, data.tobaccoUsage ? 1 : 0, data.tobaccoUsage ? data.useTobaccoDuration : "", data.tobaccoUsage ? data.useTobaccoType : "", data.drugUsage ? 1 : 0, data.drugUsage ? data.useDrugDuration : "", data.drugUsage ? data.useDrugType : "", data.alcoholUsage ? 1 : 0, data.pulse, data.bodyTemp, data.bloodPressure, data.resporate, data.weight, data.height, data.bmi, familialHistory, (_familialHistory2 = familialHistory) !== null && _familialHistory2 !== void 0 && _familialHistory2.includes("fca") ? data.fcaType : "");
               _get(_getPrototypeOf(PageUtils.prototype), "onModifySubmit", this).call(this, promise);
             case 6:
             case "end":
@@ -9333,7 +9432,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var EditPatientFileForm3 = function EditPatientFileForm3() {
-  var _pageState$props, _pageState$props2, _pageState$props3, _pageState$props4, _pageState$props5, _pageUtils$strings, _pageState$props6, _pageState$props7, _pageState$props8, _pageState$props9, _pageState$props10;
+  var _pageState$props, _pageState$props2, _pageState$props3, _pageState$props4, _pageState$props5, _pageUtils$strings, _pageState$props6, _pageState$props7, _pageState$props8, _pageState$props9;
   var pageState = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) {
     return state.pageReducer;
   });
@@ -9350,45 +9449,45 @@ var EditPatientFileForm3 = function EditPatientFileForm3() {
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item1",
+            field: "heartDisease",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item2",
+            field: "nervousIllness",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item3",
+            field: "abnormalBleeding",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item4",
+            field: "abnormalBloodPressure",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item5",
+            field: "respiratoryDisease",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item6",
+            field: "hepatitDisease",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item7",
+            field: "sinusitis",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item8",
+            field: "bloodDisease",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory,
             onChange: function onChange(e) {
               return pageUtils.onSetItem(e.target.id, e.target.checked);
             }
-          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props = pageState.props) === null || _pageState$props === void 0 ? void 0 : _pageState$props.item8) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props = pageState.props) === null || _pageState$props === void 0 ? void 0 : _pageState$props.bloodDisease) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
             componentContainerClassName: "grow-1",
             inputContainerClassName: "mb-0",
-            field: "item8Description",
+            field: "bloodDiseaseType",
             fullRow: false
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
             className: "d-flex d-flex-column xs-grow-1",
@@ -9399,41 +9498,45 @@ var EditPatientFileForm3 = function EditPatientFileForm3() {
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item9",
+            field: "bloodBorneDisease",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item10",
+            field: "injectingContaminatedBlood",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item11",
+            field: "epilepsy",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item12",
+            field: "kidneyDisease",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item13",
+            field: "diabetes",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item14",
+            field: "thyroid",
+            strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
+            name: "systemicDiseaseHistory",
+            field: "fmAllergy",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item15",
+            field: "hospitalizationHistory",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory,
             onChange: function onChange(e) {
               return pageUtils.onSetItem(e.target.id, e.target.checked);
             }
-          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props2 = pageState.props) === null || _pageState$props2 === void 0 ? void 0 : _pageState$props2.item15) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props2 = pageState.props) === null || _pageState$props2 === void 0 ? void 0 : _pageState$props2.hospitalizationHistory) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
             componentContainerClassName: "grow-1",
             inputContainerClassName: "mb-0",
-            field: "item15Description",
+            field: "hospitalizationReason",
             fullRow: false
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
             className: "d-flex d-flex-column xs-grow-1",
@@ -9443,36 +9546,36 @@ var EditPatientFileForm3 = function EditPatientFileForm3() {
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputRow, {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
-            field: "item16Description",
+            field: "continuingDrug",
             showLabel: true
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputRow, {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
-            field: "item17Description",
+            field: "weeklyDrug",
             showLabel: true
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item18",
+            field: "weightLoss",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item19",
+            field: "immuneDisease",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item20",
+            field: "cancer",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory,
             onChange: function onChange(e) {
               return pageUtils.onSetItem(e.target.id, e.target.checked);
             }
-          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props3 = pageState.props) === null || _pageState$props3 === void 0 ? void 0 : _pageState$props3.item20) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props3 = pageState.props) === null || _pageState$props3 === void 0 ? void 0 : _pageState$props3.cancer) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
             componentContainerClassName: "grow-1",
             inputContainerClassName: "mb-0",
-            field: "item20Description",
+            field: "cancerType",
             fullRow: false
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
             className: "d-flex d-flex-column xs-grow-1",
@@ -9483,15 +9586,15 @@ var EditPatientFileForm3 = function EditPatientFileForm3() {
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item21",
+            field: "chemotherapy",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory,
             onChange: function onChange(e) {
               return pageUtils.onSetItem(e.target.id, e.target.checked);
             }
-          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props4 = pageState.props) === null || _pageState$props4 === void 0 ? void 0 : _pageState$props4.item21) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props4 = pageState.props) === null || _pageState$props4 === void 0 ? void 0 : _pageState$props4.chemotherapy) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
             componentContainerClassName: "grow-1",
             inputContainerClassName: "mb-0",
-            field: "item21Description",
+            field: "radiationPlace",
             fullRow: false
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
             className: "d-flex d-flex-column xs-grow-1",
@@ -9502,27 +9605,27 @@ var EditPatientFileForm3 = function EditPatientFileForm3() {
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item22",
+            field: "boneDisaese",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item23",
+            field: "skinDisease",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item24",
+            field: "digestiveDisease",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item25",
+            field: "pregnancy",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory,
             onChange: function onChange(e) {
               return pageUtils.onSetItem(e.target.id, e.target.checked);
             }
           })
-        }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props5 = pageState.props) === null || _pageState$props5 === void 0 ? void 0 : _pageState$props5.item25) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputRow, {
+        }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props5 = pageState.props) === null || _pageState$props5 === void 0 ? void 0 : _pageState$props5.pregnancy) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputRow, {
           containerStyle: {
             alignItems: "center"
           },
@@ -9531,14 +9634,14 @@ var EditPatientFileForm3 = function EditPatientFileForm3() {
               flex: "none",
               marginLeft: "2rem"
             },
-            children: pageUtils === null || pageUtils === void 0 ? void 0 : (_pageUtils$strings = pageUtils.strings) === null || _pageUtils$strings === void 0 ? void 0 : _pageUtils$strings.item25Description
+            children: pageUtils === null || pageUtils === void 0 ? void 0 : (_pageUtils$strings = pageUtils.strings) === null || _pageUtils$strings === void 0 ? void 0 : _pageUtils$strings.pregnancy
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
             componentContainerStyle: {
               flex: "none",
               width: "100px"
             },
             inputContainerClassName: "mb-0",
-            field: "item25_1Description",
+            field: "pregnancyWeek",
             fullRow: false
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
             componentContainerStyle: {
@@ -9546,7 +9649,7 @@ var EditPatientFileForm3 = function EditPatientFileForm3() {
               width: "100px"
             },
             inputContainerClassName: "mb-0",
-            field: "item25_2Description",
+            field: "pregnancyNum",
             fullRow: false
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
             componentContainerStyle: {
@@ -9554,7 +9657,7 @@ var EditPatientFileForm3 = function EditPatientFileForm3() {
               width: "100px"
             },
             inputContainerClassName: "mb-0",
-            field: "item25_3Description",
+            field: "pregnancyRank",
             fullRow: false
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
             className: "d-flex d-flex-column xs-grow-1",
@@ -9565,33 +9668,33 @@ var EditPatientFileForm3 = function EditPatientFileForm3() {
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item26",
+            field: "pms",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item27",
+            field: "temporomandibular",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item28",
+            field: "dentistryProblem",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item29",
+            field: "addiction",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item30",
+            field: "artificialDevice",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory,
             onChange: function onChange(e) {
               return pageUtils.onSetItem(e.target.id, e.target.checked);
             }
-          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props6 = pageState.props) === null || _pageState$props6 === void 0 ? void 0 : _pageState$props6.item30) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props6 = pageState.props) === null || _pageState$props6 === void 0 ? void 0 : _pageState$props6.artificialDevice) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
             componentContainerClassName: "grow-1",
             inputContainerClassName: "mb-0",
-            field: "item30Description",
+            field: "adExplanation",
             fullRow: false
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
             className: "d-flex d-flex-column xs-grow-1",
@@ -9602,35 +9705,19 @@ var EditPatientFileForm3 = function EditPatientFileForm3() {
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item31",
+            field: "bruxism",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "systemicDiseaseHistory",
-            field: "item32",
-            strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory,
-            onChange: function onChange(e) {
-              return pageUtils.onSetItem(e.target.id, e.target.checked);
-            }
-          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props7 = pageState.props) === null || _pageState$props7 === void 0 ? void 0 : _pageState$props7.item32) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
-            componentContainerClassName: "grow-1",
-            inputContainerClassName: "mb-0",
-            field: "item32Description",
-            fullRow: false
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-            className: "d-flex d-flex-column xs-grow-1",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
-              className: "input-text input-bg mb-0"
-            })
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
-            name: "systemicDiseaseHistory",
-            field: "item33",
+            field: "helpLiving",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.systemicDiseaseHistory
-          })
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "sleepStatus",
+          showLabel: true
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputRow, {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
-            field: "item34Description",
+            field: "functionalCapacity",
             showLabel: true
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
@@ -9640,12 +9727,12 @@ var EditPatientFileForm3 = function EditPatientFileForm3() {
           children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm3.patientHabits
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
-            name: "tobaccoUse",
+            name: "tobaccoUsage",
             field: "tobaccoUse",
             onChange: function onChange(e) {
               return pageUtils.onSetItem(e.target.id, e.target.checked);
             }
-          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props8 = pageState.props) === null || _pageState$props8 === void 0 ? void 0 : _pageState$props8.tobaccoUse) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
+          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props7 = pageState.props) === null || _pageState$props7 === void 0 ? void 0 : _pageState$props7.tobaccoUse) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
               componentContainerClassName: "grow-1",
               inputContainerClassName: "mb-0",
@@ -9670,12 +9757,12 @@ var EditPatientFileForm3 = function EditPatientFileForm3() {
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
-            name: "drugUse",
+            name: "drugUsage",
             field: "drugUse",
             onChange: function onChange(e) {
               return pageUtils.onSetItem(e.target.id, e.target.checked);
             }
-          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props9 = pageState.props) === null || _pageState$props9 === void 0 ? void 0 : _pageState$props9.drugUse) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
+          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props8 = pageState.props) === null || _pageState$props8 === void 0 ? void 0 : _pageState$props8.drugUse) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
               componentContainerClassName: "grow-1",
               inputContainerClassName: "mb-0",
@@ -9700,7 +9787,7 @@ var EditPatientFileForm3 = function EditPatientFileForm3() {
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
-            name: "alcohol",
+            name: "alcoholUsage",
             field: "alcohol"
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
@@ -9765,7 +9852,7 @@ var EditPatientFileForm3 = function EditPatientFileForm3() {
             onChange: function onChange(e) {
               return pageUtils.onSetItem(e.target.id, e.target.checked);
             }
-          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props10 = pageState.props) === null || _pageState$props10 === void 0 ? void 0 : _pageState$props10.fca) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props9 = pageState.props) === null || _pageState$props9 === void 0 ? void 0 : _pageState$props9.fca) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
             componentContainerClassName: "grow-1",
             inputContainerClassName: "mb-0",
             field: "fcaType",
@@ -9810,6 +9897,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _constants_strings_fa__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../constants/strings/fa */ "./resources/js/constants/strings/fa.js");
 /* harmony import */ var _state_page_pageActions__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../state/page/pageActions */ "./resources/js/state/page/pageActions.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
@@ -9949,6 +10039,14 @@ var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
       this.useForm.setValue("neurologicalChanges", result.item.neurologicalChanges);
       this.useForm.setValue("salivaryGrandExamination", result.item.salivaryGrandExamination);
       this.useForm.setValue("dentalChangesExamination", result.item.dentalChangesExamination);
+      this.useForm.setValue("adultDmft", result.item.adultDmft);
+      this.useForm.setValue("adultD", result.item.adultD);
+      this.useForm.setValue("adultM", result.item.adultM);
+      this.useForm.setValue("adultT", result.item.adultT);
+      this.useForm.setValue("decidiousDmft", result.item.decidiousDmft);
+      this.useForm.setValue("decidiousD", result.item.decidiousD);
+      this.useForm.setValue("decidiousM", result.item.decidiousM);
+      this.useForm.setValue("decidiousT", result.item.decidiousT);
     }
   }, {
     key: "onSetItem",
@@ -9957,6 +10055,28 @@ var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
       var props = (_this$pageState = this.pageState) === null || _this$pageState === void 0 ? void 0 : _this$pageState.props;
       props[item] = value;
       this.dispatch((0,_state_page_pageActions__WEBPACK_IMPORTED_MODULE_7__.setPagePropsAction)(props));
+    }
+  }, {
+    key: "onRemoveDentitionFile",
+    value: function onRemoveDentitionFile() {
+      var _this$useForm;
+      (_this$useForm = this.useForm) === null || _this$useForm === void 0 ? void 0 : _this$useForm.setValue("dentitionFileAction", "deleted");
+      this.dispatch((0,_state_page_pageActions__WEBPACK_IMPORTED_MODULE_7__.setPagePropsAction)({
+        item: _objectSpread(_objectSpread({}, this.pageState.props.item), {}, {
+          dentitionFile: null
+        })
+      }));
+    }
+  }, {
+    key: "onRemoveDecidiousFile",
+    value: function onRemoveDecidiousFile() {
+      var _this$useForm2;
+      (_this$useForm2 = this.useForm) === null || _this$useForm2 === void 0 ? void 0 : _this$useForm2.setValue("decidiousFileAction", "deleted");
+      this.dispatch((0,_state_page_pageActions__WEBPACK_IMPORTED_MODULE_7__.setPagePropsAction)({
+        item: _objectSpread(_objectSpread({}, this.pageState.props.item), {}, {
+          decidiousFile: null
+        })
+      }));
     }
   }, {
     key: "onSubmit",
@@ -9973,7 +10093,7 @@ var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
               tomporomandibularJoint = ((_tomporomandibularJoi = tomporomandibularJoint) === null || _tomporomandibularJoi === void 0 ? void 0 : _tomporomandibularJoi.length) > 0 ? tomporomandibularJoint.map(function (item) {
                 return _constants__WEBPACK_IMPORTED_MODULE_3__.TOMPOROMANDIBULAR_JOINT[item];
               }).join("|") : null;
-              promise = this.entity.updateForm4(this.pageState.params.patientFileId, data.faceAssymetry, data.facePigmentation, data.faceOtherPathalogical, data.neckAssymetry, data.neckTyExamination, data.lymphNodes, tomporomandibularJoint, (_tomporomandibularJoi2 = tomporomandibularJoint) !== null && _tomporomandibularJoi2 !== void 0 && _tomporomandibularJoi2.includes("other_signs_tmj") ? data.otherSignsTMJDescription : "", data.intraOralExamination, data.retromolarArea, data.gums, data.toothlessRidge, data.hardSoftPalate, data.tongueDorsal, data.tongueVentral, data.tonguePharyngeal, data.neurologicalChanges, data.salivaryGrandExamination, data.dentalChangesExamination);
+              promise = this.entity.updateForm4(this.pageState.params.patientFileId, data.faceAssymetry, data.facePigmentation, data.faceOtherPathalogical, data.neckAssymetry, data.neckTyExamination, data.lymphNodes, tomporomandibularJoint, (_tomporomandibularJoi2 = tomporomandibularJoint) !== null && _tomporomandibularJoi2 !== void 0 && _tomporomandibularJoi2.includes("other_signs_tmj") ? data.otherSignsTMJDescription : "", data.intraOralExamination, data.retromolarArea, data.gums, data.toothlessRidge, data.hardSoftPalate, data.tongueDorsal, data.tongueVentral, data.tonguePharyngeal, data.neurologicalChanges, data.salivaryGrandExamination, data.dentalChangesExamination, data.dentitionFile, data.dentitionFileAction, data.adultDmft, data.adultD, data.adultM, data.adultT, data.decidiousFile, data.decidiousFileAction, data.decidiousDmft, data.decidiousD, data.decidiousM, data.decidiousT, data.priodontalExamination, data.bop, data.radiographicEvidence, data.paraclinicalEvidence, data.consultationDeps, data.probableDiagnosis, data.differntialDiagnosis, data.difinitiveDiagnosis, data.systemicConsiderations);
               _get(_getPrototypeOf(PageUtils.prototype), "onModifySubmit", this).call(this, promise);
             case 4:
             case "end":
@@ -10011,7 +10131,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_PatientFileHeader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/PatientFileHeader */ "./resources/js/resources/Pages/PatientFile/components/PatientFileHeader.jsx");
 /* harmony import */ var _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../constants/strings/fa */ "./resources/js/constants/strings/fa.js");
 /* harmony import */ var _components_PatientFileFooter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/PatientFileFooter */ "./resources/js/resources/Pages/PatientFile/components/PatientFileFooter.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../constants */ "./resources/js/constants/index.js");
+/* harmony import */ var _constants_lists__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../constants/lists */ "./resources/js/constants/lists/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
 
 
 
@@ -10022,122 +10152,436 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var EditPatientFileForm4 = function EditPatientFileForm4() {
-  var _pageState$props;
+  var _pageState$props, _pageState$props2, _pageState$props2$ite, _pageState$props3, _pageState$props3$ite;
   var pageState = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) {
     return state.pageReducer;
   });
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    _useState2 = _slicedToArray(_useState, 2),
+    dentitionFileSelected = _useState2[0],
+    setDentitionFileSelected = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    _useState4 = _slicedToArray(_useState3, 2),
+    decidiousFileSelected = _useState4[0],
+    setDecidiousFileSelected = _useState4[1];
   var pageUtils = new _PageUtils__WEBPACK_IMPORTED_MODULE_3__.PageUtils();
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.BlankPage, {
+  var onChangeDentitionFile = function onChangeDentitionFile(e) {
+    var _e$target;
+    var file = e === null || e === void 0 ? void 0 : (_e$target = e.target) === null || _e$target === void 0 ? void 0 : _e$target.files[0];
+    if (file) {
+      if (["image/jpeg", "image/png"].includes(file.type)) {
+        var imgPreview = document.querySelector("#img-preview-dentition");
+        imgPreview.src = URL.createObjectURL(file);
+      }
+      setDentitionFileSelected(true);
+      pageUtils.useForm.setValue("dentitionFile", file);
+    }
+  };
+  var onChangeDecidiousFile = function onChangeDecidiousFile(e) {
+    var _e$target2;
+    var file = e === null || e === void 0 ? void 0 : (_e$target2 = e.target) === null || _e$target2 === void 0 ? void 0 : _e$target2.files[0];
+    if (file) {
+      if (["image/jpeg", "image/png"].includes(file.type)) {
+        var imgPreview = document.querySelector("#img-preview-decidious");
+        imgPreview.src = URL.createObjectURL(file);
+      }
+      setDecidiousFileSelected(true);
+      pageUtils.useForm.setValue("decidiousFile", file);
+    }
+  };
+  var removeDentitionFile = function removeDentitionFile() {
+    var action = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+    document.querySelector(".img-input.dentition").value = "";
+    var imgPreview = document.querySelector("#img-preview-dentition");
+    imgPreview.src = "";
+    setDentitionFileSelected(false);
+    pageUtils.useForm.setValue("dentitionFile", null);
+    if (action === "deleted") {
+      pageUtils.onRemoveDentitionFile();
+    }
+  };
+  var removeDecidiousFile = function removeDecidiousFile() {
+    var action = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+    document.querySelector(".img-input.decidious").value = "";
+    var imgPreview = document.querySelector("#img-preview-decidious");
+    imgPreview.src = "";
+    setDecidiousFileSelected(false);
+    pageUtils.useForm.setValue("decidiousFile", null);
+    if (action === "deleted") {
+      pageUtils.onRemoveDecidiousFile();
+    }
+  };
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    if (dentitionFileSelected === null) {
+      return;
+    }
+    var uploadImage = document.querySelector(".upload-img.dentition");
+    var imgPreview = document.querySelector(".img-preview.dentition");
+    if (dentitionFileSelected) {
+      uploadImage.style.opacity = "0";
+      imgPreview.style.display = "flex";
+      setTimeout(function () {
+        uploadImage.style.display = "none";
+        imgPreview.style.opacity = "1";
+      }, 400);
+    } else if (dentitionFileSelected === false) {
+      imgPreview.style.opacity = "0";
+      uploadImage.style.display = "flex";
+      setTimeout(function () {
+        imgPreview.style.display = "none";
+        uploadImage.style.opacity = "1";
+      }, 400);
+    }
+  }, [dentitionFileSelected]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    if (decidiousFileSelected === null) {
+      return;
+    }
+    var uploadImage = document.querySelector(".upload-img.decidious");
+    var imgPreview = document.querySelector(".img-preview.decidious");
+    if (decidiousFileSelected) {
+      uploadImage.style.opacity = "0";
+      imgPreview.style.display = "flex";
+      setTimeout(function () {
+        uploadImage.style.display = "none";
+        imgPreview.style.opacity = "1";
+      }, 400);
+    } else if (decidiousFileSelected === false) {
+      imgPreview.style.opacity = "0";
+      uploadImage.style.display = "flex";
+      setTimeout(function () {
+        imgPreview.style.display = "none";
+        uploadImage.style.opacity = "1";
+      }, 400);
+    }
+  }, [decidiousFileSelected]);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.BlankPage, {
     pageUtils: pageUtils,
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
       className: "section fix-mr15",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_PatientFileHeader__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_PatientFileHeader__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
         className: "block pd-30",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h3", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h3", {
           className: "text mb-30",
           children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.extraOralExamination
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
-          className: "mb-30",
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h4", {
+          className: "text mb-10",
           children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.face
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
           field: "faceAssymetry",
           showLabel: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
           field: "facePigmentation",
           showLabel: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
           field: "faceOtherPathalogical",
           showLabel: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
-          className: "mt-20 mb-30",
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h4", {
+          className: "text mt-20 mb-10",
           children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.neck
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
           field: "neckAssymetry",
           showLabel: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
           field: "neckTyExamination",
           showLabel: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
           field: "lymphNodes",
           showLabel: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h4", {
-          className: "mt-20",
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("h4", {
+          className: "mt-20 mb-10",
           children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.tomporomandibularJoint
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("p", {
-          className: "mb-30",
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
           children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.tomporomandibularJointDescriptipn
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "tomporomandibularJoint",
             field: "restrictionInOpening",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.tomporomandibularJoint
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "tomporomandibularJoint",
             field: "painOrDeviation",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.tomporomandibularJoint
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "tomporomandibularJoint",
             field: "jointSound",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.tomporomandibularJoint
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
             name: "tomporomandibularJoint",
             field: "otherSignsTMJ",
             strings: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.tomporomandibularJoint,
             onChange: function onChange(e) {
               return pageUtils.onSetItem(e.target.id, e.target.checked);
             }
-          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props = pageState.props) === null || _pageState$props === void 0 ? void 0 : _pageState$props.otherSignsTMJ) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          }), (pageState === null || pageState === void 0 ? void 0 : (_pageState$props = pageState.props) === null || _pageState$props === void 0 ? void 0 : _pageState$props.otherSignsTMJ) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
             componentContainerClassName: "grow-1",
             inputContainerClassName: "mb-0",
             field: "otherSignsTMJDescription",
             fullRow: false
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
             className: "d-flex d-flex-column xs-grow-1",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
               className: "input-text input-bg mb-0"
             })
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
           field: "intraOralExamination",
           showLabel: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
           field: "retromolarArea",
           showLabel: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
           field: "gums",
           showLabel: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
           field: "toothlessRidge",
           showLabel: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
           field: "hardSoftPalate",
           showLabel: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
           field: "tongueDorsal",
           showLabel: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
           field: "tongueVentral",
           showLabel: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
           field: "tonguePharyngeal",
           showLabel: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
           field: "neurologicalChanges",
           showLabel: true,
           subLabel: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.neurologicalChangesDescription
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
           field: "salivaryGrandExamination",
           showLabel: true,
           subLabel: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.salivaryGrandExaminationDescription
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
           field: "dentalChangesExamination",
           showLabel: true,
           subLabel: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.dentalChangesExaminationDescription
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
           className: "block-border"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_components_PatientFileFooter__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+          children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.permanentDentition
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+          className: "d-flex-wrap mb-20",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+            className: "upload-box",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputHiddenElement, {
+              field: "dentitionFileAction"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+              className: "upload-img-box",
+              children: [(pageState === null || pageState === void 0 ? void 0 : (_pageState$props2 = pageState.props) === null || _pageState$props2 === void 0 ? void 0 : (_pageState$props2$ite = _pageState$props2.item) === null || _pageState$props2$ite === void 0 ? void 0 : _pageState$props2$ite.dentitionFile) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+                className: "img-preview d-flex",
+                style: {
+                  opacity: "1"
+                },
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+                  className: "img",
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("a", {
+                    href: "".concat(_constants__WEBPACK_IMPORTED_MODULE_7__.STORAGE_PATH, "/p_files/").concat(pageState.props.item.dentitionFile),
+                    target: "_blank",
+                    rel: "noreferrer",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("img", {
+                      alt: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.dentitionFile,
+                      src: "".concat(_constants__WEBPACK_IMPORTED_MODULE_7__.STORAGE_PATH, "/p_files/").concat(pageState.props.item.dentitionFile)
+                    })
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+                  className: "remove-file",
+                  onClick: function onClick() {
+                    removeDentitionFile("deleted");
+                  },
+                  title: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.general.remove,
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("i", {
+                    className: "icon-trash"
+                  })
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+                className: "img-preview dentition",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+                  className: "img",
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("img", {
+                    id: "img-preview-dentition",
+                    alt: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.dmft
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+                  className: "remove-file",
+                  onClick: removeDentitionFile,
+                  title: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.general.remove,
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("i", {
+                    className: "icon-trash"
+                  })
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+                className: "upload-img dentition",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
+                  children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.dentitionFileProperties
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("input", {
+                  accept: "image/jpeg,image/png",
+                  type: "file",
+                  className: "img-input dentition",
+                  onChange: function onChange(e) {
+                    return onChangeDentitionFile(e);
+                  }
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("button", {
+                  children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.dentitionFile
+                })]
+              })]
+            })]
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputRow, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+            field: "adultDmft",
+            showLabel: true,
+            fullRow: false
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+            field: "adultD",
+            showLabel: true,
+            fullRow: false
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+            field: "adultM",
+            showLabel: true,
+            fullRow: false
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+            field: "adultT",
+            showLabel: true,
+            fullRow: false
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+          className: "block-border"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("p", {
+          children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.decidiousDentition
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+          className: "d-flex-wrap mb-20",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+            className: "upload-box",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputHiddenElement, {
+              field: "decidiousFileAction"
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+              className: "upload-img-box",
+              children: [(pageState === null || pageState === void 0 ? void 0 : (_pageState$props3 = pageState.props) === null || _pageState$props3 === void 0 ? void 0 : (_pageState$props3$ite = _pageState$props3.item) === null || _pageState$props3$ite === void 0 ? void 0 : _pageState$props3$ite.decidiousFile) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+                className: "img-preview d-flex",
+                style: {
+                  opacity: "1"
+                },
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+                  className: "img",
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("a", {
+                    href: "".concat(_constants__WEBPACK_IMPORTED_MODULE_7__.STORAGE_PATH, "/p_files/").concat(pageState.props.item.decidiousFile),
+                    target: "_blank",
+                    rel: "noreferrer",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("img", {
+                      alt: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.decidiousFile,
+                      src: "".concat(_constants__WEBPACK_IMPORTED_MODULE_7__.STORAGE_PATH, "/p_files/").concat(pageState.props.item.decidiousFile)
+                    })
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+                  className: "remove-file",
+                  onClick: function onClick() {
+                    removeDecidiousFile("deleted");
+                  },
+                  title: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.general.remove,
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("i", {
+                    className: "icon-trash"
+                  })
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+                className: "img-preview decidious",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+                  className: "img",
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("img", {
+                    id: "img-preview-decidious",
+                    alt: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.decidiousDmft
+                  })
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+                  className: "remove-file",
+                  onClick: removeDecidiousFile,
+                  title: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.general.remove,
+                  children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("i", {
+                    className: "icon-trash"
+                  })
+                })]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)("div", {
+                className: "upload-img decidious",
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("span", {
+                  children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.decidiousFileProperties
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("input", {
+                  accept: "image/jpeg,image/png",
+                  type: "file",
+                  className: "img-input decidious",
+                  onChange: function onChange(e) {
+                    return onChangeDecidiousFile(e);
+                  }
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("button", {
+                  children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editPatientFileForm4.decidiousFile
+                })]
+              })]
+            })]
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputRow, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+            field: "decidiousDmft",
+            showLabel: true,
+            fullRow: false
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+            field: "decidiousD",
+            showLabel: true,
+            fullRow: false
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+            field: "decidiousM",
+            showLabel: true,
+            fullRow: false
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+            field: "decidiousT",
+            showLabel: true,
+            fullRow: false
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+          className: "block-border"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputRow, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+            field: "priodontalExamination",
+            showLabel: true,
+            fullRow: false
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputSelectColumn, {
+            field: "bop",
+            showLabel: true,
+            items: _constants_lists__WEBPACK_IMPORTED_MODULE_8__.bopTypes,
+            fullRow: false
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+            className: "d-flex d-flex-column xs-grow-1",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+              className: "input-text input-bg mb-0"
+            })
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "radiographicEvidence",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "paraclinicalEvidence",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "consultationDeps",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "probableDiagnosis",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "differntialDiagnosis",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "difinitiveDiagnosis",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputTextColumn, {
+          field: "systemicConsiderations",
+          showLabel: true
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("div", {
+          className: "block-border"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_components_PatientFileFooter__WEBPACK_IMPORTED_MODULE_6__["default"], {
           pageUtils: pageUtils
         })]
       })]
@@ -10530,18 +10974,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var react_apexcharts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-apexcharts */ "./node_modules/react-apexcharts/dist/react-apexcharts.min.js");
 /* harmony import */ var _constants_strings_fa__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../constants/strings/fa */ "./resources/js/constants/strings/fa.js");
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../constants */ "./resources/js/constants/index.js");
 /* harmony import */ var _state_layout_layoutActions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../state/layout/layoutActions */ "./resources/js/state/layout/layoutActions.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _utils_Utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../utils/Utils */ "./resources/js/utils/Utils.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -10560,7 +11006,7 @@ var PatientFileHeader = function PatientFileHeader() {
   var pageState = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) {
     return state.pageReducer;
   });
-  var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_7__.useNavigate)();
+  var navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_8__.useNavigate)();
   var dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([0, 5]),
     _useState2 = _slicedToArray(_useState, 2),
@@ -10577,9 +11023,9 @@ var PatientFileHeader = function PatientFileHeader() {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     var _pageState$props, _pageState$props$item, _pageState$props2, _pageState$props2$ite, _pageState$props3, _pageState$props3$ite;
     var finished = 0;
-    finished += pageState !== null && pageState !== void 0 && (_pageState$props = pageState.props) !== null && _pageState$props !== void 0 && (_pageState$props$item = _pageState$props.item) !== null && _pageState$props$item !== void 0 && _pageState$props$item.name ? 1 : 0;
-    finished += pageState !== null && pageState !== void 0 && (_pageState$props2 = pageState.props) !== null && _pageState$props2 !== void 0 && (_pageState$props2$ite = _pageState$props2.item) !== null && _pageState$props2$ite !== void 0 && _pageState$props2$ite.patientReferal ? 1 : 0;
-    finished += (pageState === null || pageState === void 0 ? void 0 : (_pageState$props3 = pageState.props) === null || _pageState$props3 === void 0 ? void 0 : (_pageState$props3$ite = _pageState$props3.item) === null || _pageState$props3$ite === void 0 ? void 0 : _pageState$props3$ite.item16DescriptionOriginal) !== null ? 1 : 0;
+    finished += _utils_Utils__WEBPACK_IMPORTED_MODULE_6__["default"].hasValue(pageState === null || pageState === void 0 ? void 0 : (_pageState$props = pageState.props) === null || _pageState$props === void 0 ? void 0 : (_pageState$props$item = _pageState$props.item) === null || _pageState$props$item === void 0 ? void 0 : _pageState$props$item.name) ? 1 : 0;
+    finished += _utils_Utils__WEBPACK_IMPORTED_MODULE_6__["default"].hasValue(pageState === null || pageState === void 0 ? void 0 : (_pageState$props2 = pageState.props) === null || _pageState$props2 === void 0 ? void 0 : (_pageState$props2$ite = _pageState$props2.item) === null || _pageState$props2$ite === void 0 ? void 0 : _pageState$props2$ite.patientReferal) ? 1 : 0;
+    finished += _utils_Utils__WEBPACK_IMPORTED_MODULE_6__["default"].hasValue(pageState === null || pageState === void 0 ? void 0 : (_pageState$props3 = pageState.props) === null || _pageState$props3 === void 0 ? void 0 : (_pageState$props3$ite = _pageState$props3.item) === null || _pageState$props3$ite === void 0 ? void 0 : _pageState$props3$ite.continuingDrugOriginal) ? 1 : 0;
     setForms([finished, 5 - finished]);
   }, [pageState === null || pageState === void 0 ? void 0 : (_pageState$props4 = pageState.props) === null || _pageState$props4 === void 0 ? void 0 : _pageState$props4.item]);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
@@ -10637,9 +11083,9 @@ var PatientFileHeader = function PatientFileHeader() {
   };
   var renderFormsChart = function renderFormsChart() {
     if (formsChartOptions && formsSeries) {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
         className: "chart",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_apexcharts__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_apexcharts__WEBPACK_IMPORTED_MODULE_2__["default"], {
           type: "donut",
           options: formsChartOptions,
           series: formsSeries,
@@ -10648,7 +11094,7 @@ var PatientFileHeader = function PatientFileHeader() {
         })
       });
     }
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {});
+    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {});
   };
   var navigateTo = function navigateTo(fileForm) {
     var _pageState$props5, _pageState$props6, _pageState$props6$ite, _pageState$props7, _pageState$props7$ite, _pageState$props8, _pageState$props8$ite, _pageState$props9, _pageState$props9$ite, _pageState$props10, _pageState$props10$it;
@@ -10676,110 +11122,110 @@ var PatientFileHeader = function PatientFileHeader() {
     }
     dispatch((0,_state_layout_layoutActions__WEBPACK_IMPORTED_MODULE_5__.setLoadingAction)(false));
   };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
     className: "block pd-20 mb-20",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
       className: "main-wallet d-flex-wrap align-center just-start",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
         id: "walletChart",
         style: {
           minWidth: "9rem"
         },
         children: renderFormsChart()
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
         className: "info",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
           className: "hd",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
             children: pageState !== null && pageState !== void 0 && (_pageState$props11 = pageState.props) !== null && _pageState$props11 !== void 0 && _pageState$props11.item ? "".concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props12 = pageState.props) === null || _pageState$props12 === void 0 ? void 0 : (_pageState$props12$it = _pageState$props12.item) === null || _pageState$props12$it === void 0 ? void 0 : _pageState$props12$it.name, " ").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props13 = pageState.props) === null || _pageState$props13 === void 0 ? void 0 : (_pageState$props13$it = _pageState$props13.item) === null || _pageState$props13$it === void 0 ? void 0 : _pageState$props13$it.family, " - ").concat(pageState === null || pageState === void 0 ? void 0 : (_pageState$props14 = pageState.props) === null || _pageState$props14 === void 0 ? void 0 : (_pageState$props14$it = _pageState$props14.item) === null || _pageState$props14$it === void 0 ? void 0 : _pageState$props14$it.fileNo) : layoutState !== null && layoutState !== void 0 && layoutState.loading ? "" : _constants_strings_fa__WEBPACK_IMPORTED_MODULE_3__.patientFilesHeader.newForm
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("h3", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h3", {
             children: (pageState === null || pageState === void 0 ? void 0 : pageState.page) === "AddPatientFile" || (pageState === null || pageState === void 0 ? void 0 : pageState.page) === "EditPatientFileForm1" ? _constants_strings_fa__WEBPACK_IMPORTED_MODULE_3__.patientFileForms.form1 : (pageState === null || pageState === void 0 ? void 0 : pageState.page) === "EditPatientFileForm2" ? _constants_strings_fa__WEBPACK_IMPORTED_MODULE_3__.patientFileForms.form2 : ""
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
           className: "chart-legends d-flex-wrap",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
             className: "item",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
               className: "chart-value",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
                 className: "bg-success"
               }), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_3__.patientFilesHeader.finishedPercentage]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
             className: "item",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
               className: "chart-value",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
                 className: "bg-dark-warning"
               }), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_3__.patientFilesHeader.remainedPercentage]
             })
           })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
         className: "steps step-steps",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
           className: "item step-num ".concat((pageState === null || pageState === void 0 ? void 0 : pageState.page) === "AddPatientFile" || (pageState === null || pageState === void 0 ? void 0 : pageState.page) === "EditPatientFileForm1" ? "active" : ""),
           onClick: function onClick() {
             return navigateTo(_constants__WEBPACK_IMPORTED_MODULE_4__.FILE_FORMS.FORM_1);
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
             className: "icon",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("i", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("i", {
               className: "icon-frame5"
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
             children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_3__.patientFilesHeader.form1
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
           className: "item step-num ".concat((pageState === null || pageState === void 0 ? void 0 : pageState.page) === "EditPatientFileForm2" ? "active" : ""),
           onClick: function onClick() {
             return navigateTo(_constants__WEBPACK_IMPORTED_MODULE_4__.FILE_FORMS.FORM_2);
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
             className: "icon",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("i", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("i", {
               className: "icon-frame5"
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
             children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_3__.patientFilesHeader.form2
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
           className: "item step-num ".concat((pageState === null || pageState === void 0 ? void 0 : pageState.page) === "EditPatientFileForm3" ? "active" : ""),
           onClick: function onClick() {
             return navigateTo(_constants__WEBPACK_IMPORTED_MODULE_4__.FILE_FORMS.FORM_3);
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
             className: "icon",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("i", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("i", {
               className: "icon-frame5"
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
             children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_3__.patientFilesHeader.form3
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
           className: "item step-num ".concat((pageState === null || pageState === void 0 ? void 0 : pageState.page) === "EditPatientFileForm4" ? "active" : ""),
           onClick: function onClick() {
             return navigateTo(_constants__WEBPACK_IMPORTED_MODULE_4__.FILE_FORMS.FORM_4);
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
             className: "icon",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("i", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("i", {
               className: "icon-frame5"
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
             children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_3__.patientFilesHeader.form4
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
           className: "item step-num ".concat((pageState === null || pageState === void 0 ? void 0 : pageState.page) === "EditPatientFileForm5" ? "active" : ""),
           onClick: function onClick() {
             return navigateTo(_constants__WEBPACK_IMPORTED_MODULE_4__.FILE_FORMS.FORM_5);
           },
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
             className: "icon",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("i", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("i", {
               className: "icon-frame5"
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("span", {
             children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_3__.patientFilesHeader.form5
           })]
         })]
@@ -11545,7 +11991,7 @@ var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
       this.useForm.setValue("name", result.item.name);
       this.useForm.setValue("family", result.item.family);
       this.useForm.setValue("email", result.item.email);
-      this.useForm.setValue("isActive", result.item.isActive);
+      this.useForm.setValue("isActiveContainer", result.item.isActive);
       this.useForm.setValue(result.item.role === _constants__WEBPACK_IMPORTED_MODULE_5__.USER_ROLES.ADMINISTRATOR ? "administrator" : "user", "on");
       this.dispatch((0,_state_page_pageActions__WEBPACK_IMPORTED_MODULE_3__.setPageTitleAction)("".concat(this.strings._title, " [ ").concat(result.item.name, " ").concat(result.item.family, " - ").concat(result.item.username, " ]"), this.strings._subTitle));
     }
@@ -11664,14 +12110,16 @@ var BaseEditUser = function BaseEditUser(_ref) {
     }), (userState === null || userState === void 0 ? void 0 : (_userState$user6 = userState.user) === null || _userState$user6 === void 0 ? void 0 : _userState$user6.role) === _constants__WEBPACK_IMPORTED_MODULE_4__.USER_ROLES.ADMINISTRATOR && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxContainer, {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputCheckboxColumn, {
+          name: "isActiveContainer",
           field: "isActive",
           checked: true
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_components__WEBPACK_IMPORTED_MODULE_2__.InputRadioContainer, {
         label: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.editUserPage.type,
+        containerClassName: "d-flex-column",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputRadioColumn, {
-          field: "administrator",
           name: "type",
+          field: "administrator",
           checked: true
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_components__WEBPACK_IMPORTED_MODULE_2__.InputRadioColumn, {
           field: "user",
@@ -12001,14 +12449,6 @@ var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
       }));
     }
   }, {
-    key: "onTickets",
-    value: function onTickets(item) {
-      this.dispatch((0,_state_page_pageActions__WEBPACK_IMPORTED_MODULE_2__.setPagePropsAction)({
-        action: "TICKETS",
-        item: item
-      }));
-    }
-  }, {
     key: "onAction",
     value: function onAction(props) {
       var _this$useForm$getValu, _this$useForm$getValu2, _this$useForm$getValu3, _this$useForm$getValu4;
@@ -12024,9 +12464,6 @@ var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
             family: (_this$useForm$getValu3 = this.useForm.getValues("family")) !== null && _this$useForm$getValu3 !== void 0 ? _this$useForm$getValu3 : "",
             email: (_this$useForm$getValu4 = this.useForm.getValues("email")) !== null && _this$useForm$getValu4 !== void 0 ? _this$useForm$getValu4 : ""
           });
-          break;
-        case "TICKETS":
-          this.ticketsAction(props.item);
           break;
       }
       _get(_getPrototypeOf(PageUtils.prototype), "onAction", this).call(this, props);
@@ -12050,14 +12487,6 @@ var PageUtils = /*#__PURE__*/function (_BasePageUtils) {
       var id = _ref2.id;
       if (_utils_Utils__WEBPACK_IMPORTED_MODULE_5__["default"].isId(id)) {
         this.navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_4__.BASE_PATH, "/users/change_password/").concat(id));
-      }
-    }
-  }, {
-    key: "ticketsAction",
-    value: function ticketsAction(_ref3) {
-      var id = _ref3.id;
-      if (_utils_Utils__WEBPACK_IMPORTED_MODULE_5__["default"].isId(id)) {
-        this.navigate("".concat(_constants__WEBPACK_IMPORTED_MODULE_4__.BASE_PATH, "/tickets/").concat(id));
       }
     }
   }, {
@@ -12167,9 +12596,6 @@ var Users = function Users() {
         },
         children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.usersPage.username
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
-        style: {
-          width: "150px"
-        },
         children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.usersPage.nameFamily
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
         style: {
@@ -12187,6 +12613,9 @@ var Users = function Users() {
         },
         children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.usersPage.status
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("th", {
+        style: {
+          width: "200px"
+        },
         children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.general.actions
       })]
     });
@@ -12224,15 +12653,6 @@ var Users = function Users() {
             title: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.usersPage.changePassword,
             disabled: layoutState === null || layoutState === void 0 ? void 0 : layoutState.loading,
             children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.usersPage.changePassword
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("button", {
-            type: "button",
-            className: "btn btn-primary mx-5",
-            onClick: function onClick() {
-              return pageUtils.onTickets(item);
-            },
-            title: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.usersPage.tickets,
-            disabled: layoutState === null || layoutState === void 0 ? void 0 : layoutState.loading,
-            children: _constants_strings_fa__WEBPACK_IMPORTED_MODULE_5__.usersPage.tickets
           })]
         })]
       }, item.id);
@@ -12751,14 +13171,13 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 var InputCheckboxColumn = function InputCheckboxColumn(_ref) {
-  var _document$getElementB2;
   var name = _ref.name,
     field = _ref.field,
     useForm = _ref.useForm,
     strings = _ref.strings,
     checked = _ref.checked,
     _ref$onChange = _ref.onChange,
-    _onChange = _ref$onChange === void 0 ? null : _ref$onChange;
+    onChange = _ref$onChange === void 0 ? null : _ref$onChange;
   var layoutState = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) {
     return state.layoutReducer;
   });
@@ -12773,6 +13192,10 @@ var InputCheckboxColumn = function InputCheckboxColumn(_ref) {
     _useState4 = _slicedToArray(_useState3, 2),
     form = _useState4[0],
     setForm = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    _useState6 = _slicedToArray(_useState5, 2),
+    element = _useState6[0],
+    setElement = _useState6[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     if (!strings) {
       var _pageState$pageUtils, _pageState$pageUtils2;
@@ -12789,28 +13212,25 @@ var InputCheckboxColumn = function InputCheckboxColumn(_ref) {
     }
   }, [form]);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    var _document$getElementB;
-    if ((_document$getElementB = document.getElementById(field)) !== null && _document$getElementB !== void 0 && _document$getElementB.checked && _onChange) {
-      _onChange({
+    if (element && onChange) {
+      onChange({
         target: {
           id: field,
-          checked: true
+          checked: element.checked
         }
       });
     }
-  }, [(_document$getElementB2 = document.getElementById(field)) === null || _document$getElementB2 === void 0 ? void 0 : _document$getElementB2.checked]);
+  }, [element === null || element === void 0 ? void 0 : element.checked]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    setElement(document.getElementById(field));
+  }, []);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", _objectSpread(_objectSpread({}, form === null || form === void 0 ? void 0 : form.register(name)), {}, {
       id: field,
       name: name,
       value: field,
       type: "checkbox",
-      disabled: layoutState === null || layoutState === void 0 ? void 0 : layoutState.loading,
-      onChange: function onChange(e) {
-        if (_onChange) {
-          _onChange(e);
-        }
-      }
+      disabled: layoutState === null || layoutState === void 0 ? void 0 : layoutState.loading
     })), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("label", {
       htmlFor: field,
       children: label
@@ -12840,8 +13260,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var InputCheckboxContainer = function InputCheckboxContainer(_ref) {
   var children = _ref.children,
-    label = _ref.label;
+    label = _ref.label,
+    _ref$containerClassNa = _ref.containerClassName,
+    containerClassName = _ref$containerClassNa === void 0 ? "" : _ref$containerClassNa;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+    className: containerClassName,
     children: [label && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
       className: "input-info",
       children: label
@@ -13338,9 +13761,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var InputRadioContainer = function InputRadioContainer(_ref) {
   var children = _ref.children,
-    label = _ref.label;
+    label = _ref.label,
+    _ref$containerClassNa = _ref.containerClassName,
+    containerClassName = _ref$containerClassNa === void 0 ? "" : _ref$containerClassNa;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-    className: "list-input",
+    className: "list-input ".concat(containerClassName),
     children: [label && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
       className: "input-info",
       children: label
@@ -16637,12 +17062,12 @@ var fileValidator = function fileValidator(schema, field) {
     }
     return true;
   }).test("fileSize", _constants_strings_fa__WEBPACK_IMPORTED_MODULE_1__.validation.fileMaxSizeMessage.replace(":field", field), function (file) {
-    if ((file === null || file === void 0 ? void 0 : file.size) < max) {
+    if (!(file !== null && file !== void 0 && file.size) || file.size < max) {
       return true;
     }
     return false;
   }).test("fileType", _constants_strings_fa__WEBPACK_IMPORTED_MODULE_1__.validation.fileTypeMessage, function (file) {
-    if (!extensions || (extensions === null || extensions === void 0 ? void 0 : extensions.length) === 0) {
+    if (!file || !extensions || (extensions === null || extensions === void 0 ? void 0 : extensions.length) === 0) {
       return true;
     }
     try {
@@ -16653,6 +17078,9 @@ var fileValidator = function fileValidator(schema, field) {
     } catch (_unused) {}
     return false;
   });
+  if (!required) {
+    schema = schema.nullable();
+  }
   return schema;
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (fileValidator);
@@ -17005,18 +17433,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var editPatientFileForm3Schema = yup__WEBPACK_IMPORTED_MODULE_0__.object().shape({
-  item8Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item8Description, "systemicDiseaseHistory", "item8", null, 200),
-  item15Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item15Description, "systemicDiseaseHistory", "item15", null, 200),
-  item16Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item16Description, "systemicDiseaseHistory", "item16", null, 200),
-  item17Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item17Description, "systemicDiseaseHistory", "item17", null, 200),
-  item20Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item20Description, "systemicDiseaseHistory", "item20", null, 200),
-  item21Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item21Description, "systemicDiseaseHistory", "item21", null, 200),
-  item25_1Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item25_1Description, "systemicDiseaseHistory", "item25", null, 200),
-  item25_2Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item25_2Description, "systemicDiseaseHistory", "item25", null, 200),
-  item25_3Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item25_3Description, "systemicDiseaseHistory", "item25", null, 200),
-  item30Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item30Description, "systemicDiseaseHistory", "item30", null, 200),
-  item32Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item32Description, "systemicDiseaseHistory", "item32", null, 200),
-  item34Description: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.item34Description, "systemicDiseaseHistory", "item34", null, 200),
+  bloodDiseaseType: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.bloodDiseaseType, "systemicDiseaseHistory", "blood_disease", null, 200),
+  hospitalizationReason: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.hospitalizationReason, "systemicDiseaseHistory", "hospitalization_history", null, 200),
+  continuingDrug: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.continuingDrug, null, 200, false),
+  weeklyDrug: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.weeklyDrug, null, 200, false),
+  cancerType: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.cancerType, "systemicDiseaseHistory", "cancer", null, 200),
+  radiationPlace: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.radiationPlace, "systemicDiseaseHistory", "chemotherapy", null, 200),
+  pregnancyWeek: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.pregnancyWeek, "systemicDiseaseHistory", "pregnancy", null, 200),
+  pregnancyNum: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.pregnancyNum, "systemicDiseaseHistory", "pregnancy", null, 200),
+  pregnancyRank: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.pregnancyRank, "systemicDiseaseHistory", "pregnancy", null, 200),
+  adExplanation: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.adExplanation, "systemicDiseaseHistory", "artificial_device", null, 200),
+  sleepStatus: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.sleepStatus, null, 200, false),
+  functionalCapacity: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.functionalCapacity, null, 200, false),
   useTobaccoDuration: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.useTobaccoDuration, "tobaccoUse", "tobaccoUse", null, 200),
   useTobaccoType: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.useTobaccoType, "tobaccoUse", "tobaccoUse", null, 200),
   useDrugDuration: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.conditionalStringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__, _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm3.useDrugDuration, "drugUse", "drugUse", null, 200),
@@ -17069,7 +17497,26 @@ var editPatientFileForm4Schema = yup__WEBPACK_IMPORTED_MODULE_0__.object().shape
   tonguePharyngeal: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.tonguePharyngeal, null, 300),
   neurologicalChanges: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.neurologicalChanges, null, 300),
   salivaryGrandExamination: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.salivaryGrandExamination, null, 300),
-  dentalChangesExamination: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.dentalChangesExamination, null, 300)
+  dentalChangesExamination: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.dentalChangesExamination, null, 300),
+  dentitionFile: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.fileValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.mixed(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.dentitionFile, 4 * 1024 * 1024, ["jpg", "jpeg", "png"], false),
+  adultDmft: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.adultDmft, null, 200, false),
+  adultD: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.adultD, null, 200, false),
+  adultM: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.adultM, null, 200, false),
+  adultT: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.adultT, null, 200, false),
+  decidiousFile: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.fileValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.mixed(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.decidiousFile, 4 * 1024 * 1024, ["jpg", "jpeg", "png"], false),
+  decidiousDmft: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.decidiousDmft, null, 200, false),
+  decidiousD: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.decidiousD, null, 200, false),
+  decidiousM: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.decidiousM, null, 200, false),
+  decidiousT: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.decidiousT, null, 200, false),
+  priodontalExamination: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.priodontalExamination, null, 200, false),
+  bop: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.bop, null, 50),
+  radiographicEvidence: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.radiographicEvidence, null, 300, false),
+  paraclinicalEvidence: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.paraclinicalEvidence, null, 300, false),
+  consultationDeps: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.consultationDeps, null, 300, false),
+  probableDiagnosis: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.probableDiagnosis, null, 300, false),
+  differntialDiagnosis: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.differntialDiagnosis, null, 300, false),
+  difinitiveDiagnosis: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.difinitiveDiagnosis, null, 300, false),
+  systemicConsiderations: (0,_CommonValidators__WEBPACK_IMPORTED_MODULE_1__.stringValidator)(yup__WEBPACK_IMPORTED_MODULE_0__.string(), _constants_strings_fa__WEBPACK_IMPORTED_MODULE_2__.editPatientFileForm4.systemicConsiderations, null, 300, false)
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (editPatientFileForm4Schema);
 
@@ -19352,6 +19799,9 @@ var getTimezoneDate = function getTimezoneDate(date, locale) {
 var getExtension = function getExtension(filename) {
   return /[.]/.exec(filename) ? /[^.]+$/.exec(filename) : undefined;
 };
+var hasValue = function hasValue(item) {
+  return item === undefined || item === null ? false : true;
+};
 var utils = {
   isValidMobile: isValidMobile,
   validateMobile: validateMobile,
@@ -19381,7 +19831,8 @@ var utils = {
   toLocaleDateString: toLocaleDateString,
   toNumericLocaleDateString: toNumericLocaleDateString,
   getTimezoneDate: getTimezoneDate,
-  getExtension: getExtension
+  getExtension: getExtension,
+  hasValue: hasValue
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (utils);
 

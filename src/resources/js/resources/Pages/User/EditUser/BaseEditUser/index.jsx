@@ -63,12 +63,19 @@ const BaseEditUser = ({ userId }) => {
             {userState?.user?.role === USER_ROLES.ADMINISTRATOR && (
                 <>
                     <InputCheckboxContainer>
-                        <InputCheckboxColumn field="isActive" checked={true} />
+                        <InputCheckboxColumn
+                            name="isActiveContainer"
+                            field="isActive"
+                            checked={true}
+                        />
                     </InputCheckboxContainer>
-                    <InputRadioContainer label={strings.type}>
+                    <InputRadioContainer
+                        label={strings.type}
+                        containerClassName="d-flex-column"
+                    >
                         <InputRadioColumn
-                            field="administrator"
                             name="type"
+                            field="administrator"
                             checked={true}
                         />
                         <InputRadioColumn field="user" name="type" />

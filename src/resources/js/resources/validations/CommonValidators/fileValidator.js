@@ -17,8 +17,10 @@ const fileValidator = (
                     if (!required) {
                         return true;
                     }
+
                     return false;
                 }
+
                 return true;
             }
         )
@@ -26,14 +28,15 @@ const fileValidator = (
             "fileSize",
             validation.fileMaxSizeMessage.replace(":field", field),
             (file) => {
-                if (file?.size < max) {
+                if (!file?.size || file.size < max) {
                     return true;
                 }
+
                 return false;
             }
         )
         .test("fileType", validation.fileTypeMessage, (file) => {
-            if (!extensions || extensions?.length === 0) {
+            if (!file || !extensions || extensions?.length === 0) {
                 return true;
             }
             try {
@@ -44,10 +47,15 @@ const fileValidator = (
                 ) {
                     return true;
                 }
+
                 return false;
             } catch {}
+
             return false;
         });
+    if (!required) {
+        schema = schema.nullable();
+    }
     return schema;
 };
 

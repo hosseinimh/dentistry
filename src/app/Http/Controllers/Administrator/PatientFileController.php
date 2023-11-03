@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\Administrator;
 
+use App\Constants\StoragePath;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\FileUploaderController;
 use App\Http\Requests\PatientFile\StorePatientFileRequest;
 use App\Http\Requests\PatientFile\UpdatePatientFileForm1Request;
 use App\Http\Requests\PatientFile\UpdatePatientFileForm2Request;
@@ -93,18 +95,18 @@ class PatientFileController extends Controller
         return $this->onUpdate($this->service->updateForm3(
             $model,
             $request->systemic_disease_history,
-            $request->item_8_description,
-            $request->item_15_description,
-            $request->item_16_description,
-            $request->item_17_description,
-            $request->item_20_description,
-            $request->item_21_description,
-            $request->item_25_1_description,
-            $request->item_25_2_description,
-            $request->item_25_3_description,
-            $request->item_30_description,
-            $request->item_32_description,
-            $request->item_34_description,
+            $request->blood_disease_type,
+            $request->hospitalization_reason,
+            $request->continuing_drug,
+            $request->weekly_drug,
+            $request->cancer_type,
+            $request->radiation_place,
+            $request->pregnancy_week,
+            $request->pregnancy_num,
+            $request->pregnancy_rank,
+            $request->ad_explanation,
+            $request->sleep_status,
+            $request->functional_capacity,
             $request->tobacco_use,
             $request->use_tobacco_duration,
             $request->use_tobacco_type,
@@ -126,6 +128,14 @@ class PatientFileController extends Controller
 
     public function updateForm4(Model $model, UpdatePatientFileForm4Request $request): HttpJsonResponse
     {
+        if ($request->dentition_file_action === 'deleted') {
+            $this->service->removeDentitionFile($model);
+        }
+        if ($request->decidious_file_action === 'deleted') {
+            $this->service->removeDecidiousFile($model);
+        }
+        (new FileUploaderController(StoragePath::PATIENT_FILE))->uploadFile($model, $request, 'dentition_file', 'dentition_file', 4 * 1024 * 1024, ['image/jpeg', 'image/png']);
+        (new FileUploaderController(StoragePath::PATIENT_FILE))->uploadFile($model, $request, 'decidious_file', 'decidious_file', 4 * 1024 * 1024, ['image/jpeg', 'image/png']);
         return $this->onUpdate($this->service->updateForm4(
             $model,
             $request->face_assymetry,
@@ -147,6 +157,23 @@ class PatientFileController extends Controller
             $request->neurological_changes,
             $request->salivary_grand_examination,
             $request->dental_changes_examination,
+            $request->adult_dmft,
+            $request->adult_d,
+            $request->adult_m,
+            $request->adult_t,
+            $request->decidious_dmft,
+            $request->decidious_d,
+            $request->decidious_m,
+            $request->decidious_t,
+            $request->priodontal_examination,
+            $request->bop,
+            $request->radiographic_evidence,
+            $request->paraclinical_evidence,
+            $request->consultation_deps,
+            $request->probable_diagnosis,
+            $request->differntial_diagnosis,
+            $request->difinitive_diagnosis,
+            $request->systemic_considerations,
         ));
     }
 }

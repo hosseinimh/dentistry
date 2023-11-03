@@ -13,10 +13,6 @@ abstract class NotificationSubCaegory
     const USER_VERIFICATION_REQUESTED = 122;
     const USER_VERIFICATION_VERIFIED = 123;
     const USER_VERIFICATION_REJECTED = 124;
-    const TICKET_USER_REGISTERED = 211;
-    const TICKET_ADMINISTRATOR_REGISTERED = 212;
-    const TICKET_THREAD_USER_REGISTERED = 213;
-    const TICKET_THREAD_ADMINISTRATOR_REGISTERED = 214;
 
     public static function toArray()
     {

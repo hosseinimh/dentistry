@@ -7,101 +7,97 @@ import {
 import { editPatientFileForm3 as strings } from "../../../constants/strings/fa";
 
 const editPatientFileForm3Schema = yup.object().shape({
-    item8Description: conditionalStringValidator(
+    bloodDiseaseType: conditionalStringValidator(
         yup,
-        strings.item8Description,
+        strings.bloodDiseaseType,
         "systemicDiseaseHistory",
-        "item8",
+        "blood_disease",
         null,
         200
     ),
-    item15Description: conditionalStringValidator(
+    hospitalizationReason: conditionalStringValidator(
         yup,
-        strings.item15Description,
+        strings.hospitalizationReason,
         "systemicDiseaseHistory",
-        "item15",
+        "hospitalization_history",
         null,
         200
     ),
-    item16Description: conditionalStringValidator(
+    continuingDrug: stringValidator(
+        yup.string(),
+        strings.continuingDrug,
+        null,
+        200,
+        false
+    ),
+    weeklyDrug: stringValidator(
+        yup.string(),
+        strings.weeklyDrug,
+        null,
+        200,
+        false
+    ),
+    cancerType: conditionalStringValidator(
         yup,
-        strings.item16Description,
+        strings.cancerType,
         "systemicDiseaseHistory",
-        "item16",
+        "cancer",
         null,
         200
     ),
-    item17Description: conditionalStringValidator(
+    radiationPlace: conditionalStringValidator(
         yup,
-        strings.item17Description,
+        strings.radiationPlace,
         "systemicDiseaseHistory",
-        "item17",
+        "chemotherapy",
         null,
         200
     ),
-    item20Description: conditionalStringValidator(
+    pregnancyWeek: conditionalStringValidator(
         yup,
-        strings.item20Description,
+        strings.pregnancyWeek,
         "systemicDiseaseHistory",
-        "item20",
+        "pregnancy",
         null,
         200
     ),
-    item21Description: conditionalStringValidator(
+    pregnancyNum: conditionalStringValidator(
         yup,
-        strings.item21Description,
+        strings.pregnancyNum,
         "systemicDiseaseHistory",
-        "item21",
+        "pregnancy",
         null,
         200
     ),
-    item25_1Description: conditionalStringValidator(
+    pregnancyRank: conditionalStringValidator(
         yup,
-        strings.item25_1Description,
+        strings.pregnancyRank,
         "systemicDiseaseHistory",
-        "item25",
+        "pregnancy",
         null,
         200
     ),
-    item25_2Description: conditionalStringValidator(
+    adExplanation: conditionalStringValidator(
         yup,
-        strings.item25_2Description,
+        strings.adExplanation,
         "systemicDiseaseHistory",
-        "item25",
+        "artificial_device",
         null,
         200
     ),
-    item25_3Description: conditionalStringValidator(
-        yup,
-        strings.item25_3Description,
-        "systemicDiseaseHistory",
-        "item25",
+    sleepStatus: stringValidator(
+        yup.string(),
+        strings.sleepStatus,
         null,
-        200
+        200,
+        false
     ),
-    item30Description: conditionalStringValidator(
-        yup,
-        strings.item30Description,
-        "systemicDiseaseHistory",
-        "item30",
+    functionalCapacity: stringValidator(
+        yup.string(),
+        strings.functionalCapacity,
         null,
-        200
-    ),
-    item32Description: conditionalStringValidator(
-        yup,
-        strings.item32Description,
-        "systemicDiseaseHistory",
-        "item32",
-        null,
-        200
-    ),
-    item34Description: conditionalStringValidator(
-        yup,
-        strings.item34Description,
-        "systemicDiseaseHistory",
-        "item34",
-        null,
-        200
+        200,
+        false
     ),
     useTobaccoDuration: conditionalStringValidator(
         yup,

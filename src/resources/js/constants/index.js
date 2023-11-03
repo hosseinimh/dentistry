@@ -16,6 +16,7 @@ import { SPECIAL_LESION_CLASSIFICATION } from "./specialLesionClassification";
 import { SYSTEMIC_DISEASE_HISTORY } from "./systemicDiseaseHistory";
 import { FAMILIAL_HISTORY } from "./familialHistory";
 import { TOMPOROMANDIBULAR_JOINT } from "./tomporomandibularJoint";
+import { BOP_TYPES } from "./bopTypes";
 import {
     BASE_PATH,
     ASSETS_PATH,
@@ -54,4 +55,5 @@ export {
     SYSTEMIC_DISEASE_HISTORY,
     FAMILIAL_HISTORY,
     TOMPOROMANDIBULAR_JOINT,
+    BOP_TYPES,
 };

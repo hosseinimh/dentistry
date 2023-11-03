@@ -315,37 +315,45 @@ export const patientReferals = {
 };
 
 export const systemicDiseaseHistory = {
-    item1: "سابقه بیماری قلبی یا جراحی بر روی قلب",
-    item2: "بیماری عصبی و روحی (افسردگی، اضطراب یا مشکلات ذهنی روانی)",
-    item3: "سابقه خونریزی غیرطبیعی مثلا پس از کشیدن دندان",
-    item4: "سابقه فشار خون غیرطبیعی (بالاتر یا پایین‌تر از حد طبیعی)",
-    item5: "سابقه آسم یا بیماری‌های تنفسی (سل، برونشیت)",
-    item6: "سابقه زردی، هپاتیت D ,C ,B یا سایر بیماری‌های کبدی",
-    item7: "سابقه سینوزیت، عفونت گوش و سردردهای مزمن",
-    item8: "سابقه کم‌خونی یا سایر بیماری‌های خونی یا بیماری خاص نظیر تالاسمی، هموفیلی و سرطان",
-    item9: "سابقه بیماری منتقله از راه خون (ایدز-HIV-HTLV1)",
-    item10: "سابقه تزریق خون و فرآورده‌های عفونی",
-    item11: "سابقه صرع، تشنج",
-    item12: "سابقه دیابت (بیماری قند خون)",
-    item13: "سابقه گواتر یا بیماری تیروئید",
-    item14: "سابقه حساسیت به دارو یا غذای خاص",
-    item15: "سابقه بستری در بیمارستان",
-    item18: "کاهش یا افزایش وزن قابل ملاحظه به صورت ناگهانی",
-    item19: "بیماری‌های سیستم ایمنی و روماتیسم",
-    item20: "سابقه سرطان",
-    item21: "سابقه شیمی‌درمانی یا اشعه‌درمانی",
-    item22: "سابقه پوکی استخوان یا سایر بیماری‌های استخوانی",
-    item23: "سابقه بیماری پوستی",
-    item24: "سابقه بیماری‌های گوارشی (نظیر زخم معده، یبوست، اسهال و ...)",
-    item25: "(در مورد خانم‌ها: دوران بارداری و شیردهی) مشکل در ارتباط با بارداری: دیابت، فشار خون، مسمومیت حاملگی، سقط، خونریزی غیرطبیعی و ...",
-    item26: "مشکلات مربوط به قاعدگی",
-    item27: "سابقه کلیک (صدای مفصل) یا مشکل در مفصل گیجگاهی فکی یا مشکل در باز‌نگه‌داشتن طولانی دهان و محدودیت باز‌کردن دهان",
-    item28: "سابقه بی‌حسی دشوار (دیر بی‌حس‌شدن)، افت فشار، از دست‌رفتن هوشیاری، خونریزی غیرطبیعی، حساسیت به ماده بی‌حسی، تهوع شدید، دررفتگی فک حین انجام درمان‌های دندانپزشکی",
-    item29: "عادت به مصرف سیگار، قلیان، مواد مخدر، روانگردان و یا سپری‌کردن دوران ترک اعتیاد",
-    item30: "آیا در بدن خود وسیله مصنوعی دارید؟ (مفصل، دریچه، باطری قلبی، ...)",
-    item31: "آیا دچار دندان قروچه یا تنفس دهانی هستید؟",
-    item32: "وضعیت خواب شما چطور است؟",
-    item33: "آیا برای زندگی روزمره نیاز به کمک و همراهی فرد دیگری دارید؟",
+    heartDisease: "سابقه بیماری قلبی یا جراحی بر روی قلب",
+    nervousIllness: "بیماری عصبی و روحی (افسردگی، اضطراب یا مشکلات ذهنی روانی)",
+    abnormalBleeding: "سابقه خونریزی غیرطبیعی مثلا پس از کشیدن دندان",
+    abnormalBloodPressure:
+        "سابقه فشار خون غیرطبیعی (بالاتر یا پایین‌تر از حد طبیعی)",
+    respiratoryDisease: "سابقه آسم یا بیماری‌های تنفسی (سل، برونشیت)",
+    hepatitDisease: "سابقه زردی، هپاتیت D ,C ,B یا سایر بیماری‌های کبدی",
+    sinusitis: "سابقه سینوزیت، عفونت گوش و سردردهای مزمن",
+    bloodDisease:
+        "سابقه کم‌خونی یا سایر بیماری‌های خونی یا بیماری خاص نظیر تالاسمی، هموفیلی و سرطان",
+    bloodBorneDisease: "سابقه بیماری منتقله از راه خون (ایدز-HIV-HTLV1)",
+    injectingContaminatedBlood: "سابقه تزریق خون و فرآورده‌های عفونی",
+    epilepsy: "سابقه صرع، تشنج",
+    kidneyDisease: "سابقه بیماری کلیوی یا دیالیز",
+    diabetes: "سابقه دیابت (بیماری قند خون)",
+    thyroid: "سابقه گواتر یا بیماری تیروئید",
+    fmAllergy: "سابقه حساسیت به دارو یا غذای خاص",
+    hospitalizationHistory: "سابقه بستری در بیمارستان",
+    weightLoss: "کاهش یا افزایش وزن قابل ملاحظه به صورت ناگهانی",
+    immuneDisease: "بیماری‌های سیستم ایمنی و روماتیسم",
+    cancer: "سابقه سرطان",
+    chemotherapy: "سابقه شیمی‌درمانی یا اشعه‌درمانی",
+    boneDisaese: "سابقه پوکی استخوان یا سایر بیماری‌های استخوانی",
+    skinDisease: "سابقه بیماری پوستی",
+    digestiveDisease:
+        "سابقه بیماری‌های گوارشی (نظیر زخم معده، یبوست، اسهال و ...)",
+    pregnancy:
+        "(در مورد خانم‌ها: دوران بارداری و شیردهی) مشکل در ارتباط با بارداری: دیابت، فشار خون، مسمومیت حاملگی، سقط، خونریزی غیرطبیعی و ...",
+    pms: "مشکلات مربوط به قاعدگی",
+    temporomandibular:
+        "سابقه کلیک (صدای مفصل) یا مشکل در مفصل گیجگاهی فکی یا مشکل در باز‌نگه‌داشتن طولانی دهان و محدودیت باز‌کردن دهان",
+    dentistryProblem:
+        "سابقه بی‌حسی دشوار (دیر بی‌حس‌شدن)، افت فشار، از دست‌رفتن هوشیاری، خونریزی غیرطبیعی، حساسیت به ماده بی‌حسی، تهوع شدید، دررفتگی فک حین انجام درمان‌های دندانپزشکی",
+    addiction:
+        "عادت به مصرف سیگار، قلیان، مواد مخدر، روانگردان و یا سپری‌کردن دوران ترک اعتیاد",
+    artificialDevice:
+        "آیا در بدن خود وسیله مصنوعی دارید؟ (مفصل، دریچه، باطری قلبی، ...)",
+    bruxism: "آیا دچار دندان قروچه یا تنفس دهانی هستید؟",
+    helpLiving: "آیا برای زندگی روزمره نیاز به کمک و همراهی فرد دیگری دارید؟",
 };
 
 export const familialHistory = {
@@ -356,12 +364,17 @@ export const familialHistory = {
     fca: "سرطان",
 };
 
+export const bopTypes = {
+    lessTen: "کمتر از 10 درصد",
+    betweenTenThirty: "بین 10 تا 30 درصد",
+    moreThirty: "بیشتر از 30 درصد",
+};
+
 export const notificationsPage = {
     _title: "اعلان‌ها",
     _subTitle: "فهرست اعلان‌ها",
     allNotificaions: "همه اعلان‌ها",
     accountNotifications: "اعلان‌های حساب",
-    ticketNotifications: "اعلان‌های تیکت پشتیبانی",
     systemNotificaions: "اعلان‌های سیستمی",
     title: "عنوان",
     body: "متن",
@@ -525,35 +538,35 @@ export const editPatientFileForm3 = {
     _title: "پرونده بیمار - فرم سه",
     _subTitle: "پرونده بیمار را ویرایش کنید.",
     systemicDiseaseHistory: "در کادر زیر، بیماری‌های سیستمیک را مشخص نمایید:",
-    item8Description: "نوع",
-    item8DescriptionPlaceholder: "نوع",
-    item15Description: "علت و نتیجه بستری",
-    item15DescriptionPlaceholder: "علت و نتیجه بستری",
-    item16Description:
+    bloodDiseaseType: "نوع",
+    bloodDiseaseTypePlaceholder: "نوع",
+    hospitalizationReason: "علت و نتیجه بستری",
+    hospitalizationReasonPlaceholder: "علت و نتیجه بستری",
+    continuingDrug:
         "در صورتی که دارویی را به طور مداوم استفاده می‌کنید نام ببرید.",
-    item16DescriptionPlaceholder:
+    continuingDrugPlaceholder:
         "در صورتی که دارویی را به طور مداوم استفاده می‌کنید نام ببرید.",
-    item17Description:
+    weeklyDrug:
         "چنانچه دارویی را به صورت هفتگی و یا ماهانه در فرم خوراکی یا تزریقی مصرف می‌کنید، نام ببرید. (داروهایی نظیر داروهای اصلاح‌کننده ضربان قلب، استخوان‌ساز یا آمپول‌های تقویتی)",
-    item17DescriptionPlaceholder:
+    weeklyDrugPlaceholder:
         "چنانچه دارویی را به صورت هفتگی و یا ماهانه در فرم خوراکی یا تزریقی مصرف می‌کنید، نام ببرید.",
-    item20Description: "نوع",
-    item20DescriptionPlaceholder: "نوع",
-    item21Description: "محل تابش اشعه",
-    item21DescriptionPlaceholder: "محل تابش اشعه",
-    item25Description: "بارداری",
-    item25_1Description: "هفته",
-    item25_1DescriptionPlaceholder: "هفته",
-    item25_2Description: "فرزند",
-    item25_2DescriptionPlaceholder: "فرزند",
-    item25_3Description: "رتبه",
-    item25_3DescriptionPlaceholder: "رتبه",
-    item30Description: "توضیح",
-    item30DescriptionPlaceholder: "توضیح",
-    item32Description: "وضعیت خواب شما چطور است؟",
-    item32DescriptionPlaceholder: "وضعیت خواب شما چطور است؟",
-    item34Description: "ظرفیت عملکردی بیمار (تکمیل توسط پزشک)",
-    item34DescriptionPlaceholder: "ظرفیت عملکردی بیمار (تکمیل توسط پزشک)",
+    cancerType: "نوع",
+    cancerTypePlaceholder: "نوع",
+    radiationPlace: "محل تابش اشعه",
+    radiationPlacePlaceholder: "محل تابش اشعه",
+    pregnancy: "بارداری",
+    pregnancyWeek: "هفته",
+    pregnancyWeekPlaceholder: "هفته",
+    pregnancyNum: "فرزند",
+    pregnancyNumPlaceholder: "فرزند",
+    pregnancyRank: "رتبه",
+    pregnancyRankPlaceholder: "رتبه",
+    adExplanation: "توضیح",
+    adExplanationPlaceholder: "توضیح",
+    sleepStatus: "وضعیت خواب شما چطور است؟",
+    sleepStatusPlaceholder: "وضعیت خواب شما چطور است؟",
+    functionalCapacity: "ظرفیت عملکردی بیمار (تکمیل توسط پزشک)",
+    functionalCapacityPlaceholder: "ظرفیت عملکردی بیمار (تکمیل توسط پزشک)",
     patientHabits: "عادات بیمار",
     tobaccoUse: "سابقه استعمال دخانیات",
     useTobaccoDuration: "مدت زمان مصرف",
@@ -642,5 +655,51 @@ export const editPatientFileForm4 = {
     dentalChangesExaminationPlaceholder: "تغییرات دندانی",
     dentalChangesExaminationDescription:
         "تغییرات دندانی غیرمرتبط یا مرتبط با دهان، فک و صورت، تغییرات دندانی غیرطبیعی لقی (حتما گرید مشخص شود)، وجود اختلال در شکل، تعداد، سایز و ساختارهای مینا و عاج، تیلت، پوسیدگی، از دست‌دادن دندان و مشکلات پالپ",
+    permanentDentition: "Permanent Dentition",
+    dentitionFileProperties:
+        "تصویر Permanent Dentition با فرمت jpg یا png و حداکثر سایز 4 مگابایت",
+    dentitionFile: "تصویر پیوست",
+    adultDmft: "DMFT",
+    adultDmftPlaceholder: "DMFT",
+    adultD: "دندان‌های پوسیده",
+    adultDPlaceholder: "دندان‌های پوسیده",
+    adultM: "دندان‌های از دست‌رفته",
+    adultMPlaceholder: "دندان‌های از دست‌رفته",
+    adultT: "دندان‌های دارای ترمیم",
+    adultTPlaceholder: "دندان‌های دارای ترمیم",
+    decidiousDentition: "Decidious Dentition",
+    decidiousFileProperties:
+        "تصویر Decidious Dentition با فرمت jpg یا png و حداکثر سایز 4 مگابایت",
+    decidiousFile: "تصویر پیوست",
+    decidiousDmft: "DMFT",
+    decidiousDmftPlaceholder: "DMFT",
+    decidiousD: "دندان‌های پوسیده",
+    decidiousDPlaceholder: "دندان‌های پوسیده",
+    decidiousM: "دندان‌های از دست‌رفته",
+    decidiousMPlaceholder: "دندان‌های از دست‌رفته",
+    decidiousT: "دندان‌های دارای ترمیم",
+    decidiousTPlaceholder: "دندان‌های دارای ترمیم",
+    priodontalExamination: "سلامت پریودنشیوم (در صورت نیاز تکمیل شود)",
+    priodontalExaminationPlaceholder:
+        "سلامت پریودنشیوم (در صورت نیاز تکمیل شود)",
+    bop: "BOP تمامی دندان‌ها و بررسی چهار سطح دندان",
+    radiographicEvidence: "یافته‌های رادیوگرافیک",
+    radiographicEvidencePlaceholder: "یافته‌های رادیوگرافیک",
+    paraclinicalEvidence: "یافته‌های پاراکلینیک",
+    paraclinicalEvidencePlaceholder: "یافته‌های پاراکلینیک",
+    consultationDeps: "نتیجه مشاوره با بخش‌های داخل یا خارج دانشکده",
+    consultationDepsPlaceholder: "نتیجه مشاوره با بخش‌های داخل یا خارج دانشکده",
+    probableDiagnosis: "تشخیص احتمالی",
+    probableDiagnosisPlaceholder: "تشخیص احتمالی",
+    differntialDiagnosis: "تشخیص افتراقی",
+    differntialDiagnosisPlaceholder: "تشخیص افتراقی",
+    difinitiveDiagnosis:
+        "تشخیص قطعی (بعد از قطعی‌شدن تشخیص و نتایج آزمایشگاهی قید شود)",
+    difinitiveDiagnosisPlaceholder:
+        "تشخیص قطعی (بعد از قطعی‌شدن تشخیص و نتایج آزمایشگاهی قید شود)",
+    systemicConsiderations:
+        "ملاحظات دندانپزشکی و تغییرات طرح درمان دندانپزشکی (در مورد بیماران سیستمیک)",
+    systemicConsiderationsPlaceholder:
+        "ملاحظات دندانپزشکی و تغییرات طرح درمان دندانپزشکی (در مورد بیماران سیستمیک)",
     submitted: "ویرایش اطلاعات بیمار با موفقیت انجام شد.",
 };

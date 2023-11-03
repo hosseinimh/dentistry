@@ -59,11 +59,11 @@ const Users = () => {
     const renderHeader = () => (
         <tr>
             <th style={{ width: "150px" }}>{strings.username}</th>
-            <th style={{ width: "150px" }}>{strings.nameFamily}</th>
+            <th>{strings.nameFamily}</th>
             <th style={{ width: "150px" }}>{strings.email}</th>
             <th style={{ width: "150px" }}>{strings.role}</th>
             <th style={{ width: "100px" }}>{strings.status}</th>
-            <th>{general.actions}</th>
+            <th style={{ width: "200px" }}>{general.actions}</th>
         </tr>
     );
 
@@ -99,15 +99,6 @@ const Users = () => {
                         disabled={layoutState?.loading}
                     >
                         {strings.changePassword}
-                    </button>
-                    <button
-                        type="button"
-                        className="btn btn-primary mx-5"
-                        onClick={() => pageUtils.onTickets(item)}
-                        title={strings.tickets}
-                        disabled={layoutState?.loading}
-                    >
-                        {strings.tickets}
                     </button>
                 </td>
             </tr>

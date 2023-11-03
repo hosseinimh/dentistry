@@ -605,6 +605,10 @@ const getExtension = (filename) => {
     return /[.]/.exec(filename) ? /[^.]+$/.exec(filename) : undefined;
 };
 
+const hasValue = (item) => {
+    return item === undefined || item === null ? false : true;
+};
+
 const utils = {
     isValidMobile,
     validateMobile,
@@ -635,6 +639,7 @@ const utils = {
     toNumericLocaleDateString,
     getTimezoneDate,
     getExtension,
+    hasValue,
 };
 
 export default utils;

@@ -1,8 +1,12 @@
 import React from "react";
 
-const InputCheckboxContainer = ({ children, label }) => {
+const InputCheckboxContainer = ({
+    children,
+    label,
+    containerClassName = "",
+}) => {
     return (
-        <div>
+        <div className={containerClassName}>
             {label && <div className="input-info">{label}</div>}
             <div className="d-flex-wrap align-center input-radio mb-30 gap-2">
                 {children}

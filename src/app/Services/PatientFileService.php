@@ -152,18 +152,18 @@ class PatientFileService
     public function updateForm3(
         Model $model,
         ?string $systemicDiseaseHistory,
-        ?string $item8Description,
-        ?string $item15Description,
-        ?string $item16Description,
-        ?string $item17Description,
-        ?string $item20Description,
-        ?string $item21Description,
-        ?string $item25_1Description,
-        ?string $item25_2Description,
-        ?string $item25_3Description,
-        ?string $item30Description,
-        ?string $item32Description,
-        ?string $item34Description,
+        ?string $bloodDiseaseType,
+        ?string $hospitalizationReason,
+        ?string $continuingDrug,
+        ?string $weeklyDrug,
+        ?string $cancerType,
+        ?string $radiationPlace,
+        ?string $pregnancyWeek,
+        ?string $pregnancyNum,
+        ?string $pregnancyRank,
+        ?string $adExplanation,
+        ?string $sleepStatus,
+        ?string $functionalCapacity,
         int $tobaccoUse,
         ?string $useTobaccoDuration,
         ?string $useTobaccoType,
@@ -180,21 +180,22 @@ class PatientFileService
         ?string $bmi,
         ?string $familialHistory,
         ?string $fcaType,
+
     ): mixed {
         $data = [
             'systemic_disease_history' => $systemicDiseaseHistory,
-            'item_8_description' => $item8Description ?? '',
-            'item_15_description' => $item15Description ?? '',
-            'item_16_description' => $item16Description ?? '',
-            'item_17_description' => $item17Description ?? '',
-            'item_20_description' => $item20Description ?? '',
-            'item_21_description' => $item21Description ?? '',
-            'item_25_1_description' => $item25_1Description ?? '',
-            'item_25_2_description' => $item25_2Description ?? '',
-            'item_25_3_description' => $item25_3Description ?? '',
-            'item_30_description' => $item30Description ?? '',
-            'item_32_description' => $item32Description ?? '',
-            'item_34_description' => $item34Description ?? '',
+            'blood_disease_type' => $bloodDiseaseType ?? '',
+            'hospitalization_reason' => $weeklyDrug ?? '',
+            'continuing_drug' => $hospitalizationReason ?? '',
+            'weekly_drug' => $continuingDrug ?? '',
+            'cancer_type' => $cancerType ?? '',
+            'radiation_place' => $radiationPlace ?? '',
+            'pregnancy_week' => $pregnancyWeek ?? '',
+            'pregnancy_num' => $pregnancyNum ?? '',
+            'pregnancy_rank' => $pregnancyRank ?? '',
+            'ad_explanation' => $adExplanation ?? '',
+            'sleep_status' => $sleepStatus ?? '',
+            'functional_capacity' => $functionalCapacity ?? '',
             'tobacco_use' => $tobaccoUse,
             'use_tobacco_duration' => $useTobaccoDuration ?? '',
             'use_tobacco_type' => $useTobaccoType ?? '',
@@ -211,7 +212,6 @@ class PatientFileService
             'bmi' => $bmi ?? '',
             'familial_history' => $familialHistory ?? '',
             'fca_type' => $fcaType ?? '',
-
         ];
         return $model->update($data);
     }
@@ -237,6 +237,23 @@ class PatientFileService
         ?string $neurologicalChanges,
         ?string $salivaryGrandExamination,
         ?string $dentalChangesExamination,
+        ?string $adultDmft,
+        ?string $adultD,
+        ?string $adultM,
+        ?string $adultT,
+        ?string $decidiousDmft,
+        ?string $decidiousD,
+        ?string $decidiousM,
+        ?string $decidiousT,
+        ?string $priodontalExamination,
+        string $bop,
+        ?string $radiographicEvidence,
+        ?string $paraclinicalEvidence,
+        ?string $consultationDeps,
+        ?string $probableDiagnosis,
+        ?string $differntialDiagnosis,
+        ?string $difinitiveDiagnosis,
+        ?string $systemicConsiderations,
     ): mixed {
         $data = [
             'face_assymetry' => $faceAssymetry ?? '',
@@ -258,6 +275,47 @@ class PatientFileService
             'neurological_changes' => $neurologicalChanges ?? '',
             'salivary_grand_examination' => $salivaryGrandExamination ?? '',
             'dental_changes_examination' => $dentalChangesExamination ?? '',
+            'adult_dmft' => $adultDmft ?? '',
+            'adult_d' => $adultD ?? '',
+            'adult_m' => $adultM ?? '',
+            'adult_t' => $adultT ?? '',
+            'decidious_dmft' => $decidiousDmft ?? '',
+            'decidious_d' => $decidiousD ?? '',
+            'decidious_m' => $decidiousM ?? '',
+            'decidious_t' => $decidiousT ?? '',
+            'priodontal_examination' => $priodontalExamination ?? '',
+            'bop' => $bop,
+            'radiographic_evidence' => $radiographicEvidence ?? '',
+            'paraclinical_evidence' => $paraclinicalEvidence ?? '',
+            'consultation_deps' => $consultationDeps ?? '',
+            'probable_diagnosis' => $probableDiagnosis ?? '',
+            'differntial_diagnosis' => $differntialDiagnosis ?? '',
+            'difinitive_diagnosis' => $difinitiveDiagnosis ?? '',
+            'systemic_considerations' => $systemicConsiderations ?? '',
+        ];
+        return $model->update($data);
+    }
+
+    public function removeDentitionFile(
+        Model $model,
+    ): mixed {
+        if ($model->dentition_file) {
+            @unlink(storage_path('app') . '/public/storage/p_files/' . $model->dentition_file);
+        }
+        $data = [
+            'dentition_file' => null,
+        ];
+        return $model->update($data);
+    }
+
+    public function removeDecidiousFile(
+        Model $model,
+    ): mixed {
+        if ($model->decidious_file) {
+            @unlink(storage_path('app') . '/public/storage/p_files/' . $model->decidious_file);
+        }
+        $data = [
+            'decidious_file' => null,
         ];
         return $model->update($data);
     }

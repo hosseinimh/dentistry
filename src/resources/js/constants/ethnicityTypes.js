@@ -1,9 +1,9 @@
 export const ETHNICITY_TYPES = {
-    FARS: "fars", // فارس
-    LOR: "lor", // لر
-    KORD: "kord", // کرد
-    TORK: "tork", // ترک
-    ARAB: "arab", // عرب
-    BALOUCH: "balouch", // بلوچ
-    OTHER: "other", // سایر
+    FARS: "fars",
+    LOR: "lor",
+    KORD: "kord",
+    TORK: "tork",
+    ARAB: "arab",
+    BALOUCH: "balouch",
+    OTHER: "other",
 };

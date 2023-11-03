@@ -50,6 +50,23 @@ class UpdatePatientFileForm4Request extends FormRequest
             'neurological_changes' => 'max:300',
             'salivary_grand_examination' => 'max:300',
             'dental_changes_examination' => 'max:300',
+            'adult_dmft' => 'max:200',
+            'adult_d' => 'max:200',
+            'adult_m' => 'max:200',
+            'adult_t' => 'max:200',
+            'decidious_dmft' => 'max:200',
+            'decidious_d' => 'max:200',
+            'decidious_m' => 'max:200',
+            'decidious_t' => 'max:200',
+            'priodontal_examination' => 'max:200',
+            'bop' => 'max:200',
+            'radiographic_evidence' => 'max:300',
+            'paraclinical_evidence' => 'max:300',
+            'consultation_deps' => 'max:300',
+            'probable_diagnosis' => 'max:300',
+            'differntial_diagnosis' => 'max:300',
+            'difinitive_diagnosis' => 'max:300',
+            'systemic_considerations' => 'max:300',
         ];
     }
 
@@ -73,6 +90,14 @@ class UpdatePatientFileForm4Request extends FormRequest
             'neurological_changes.max' => __('patient_file.neurological_changes_max'),
             'salivary_grand_examination.max' => __('patient_file.salivary_grand_examination_max'),
             'dental_changes_examination.max' => __('patient_file.dental_changes_examination_max'),
+            'adult_dmft.max' => __('patient_file.adult_dmft_max'),
+            'adult_d.max' => __('patient_file.adult_d_max'),
+            'adult_m.max' => __('patient_file.adult_m_max'),
+            'adult_t.max' => __('patient_file.adult_t_max'),
+            'decidious_dmft.max' => __('patient_file.decidious_dmft_max'),
+            'decidious_d.max' => __('patient_file.decidious_d_max'),
+            'decidious_m.max' => __('patient_file.decidious_m_max'),
+            'decidious_t.max' => __('patient_file.decidious_t_max'),
         ];
     }
 }

@@ -39,15 +39,6 @@ export class PageUtils extends BasePageUtils {
         );
     }
 
-    onTickets(item) {
-        this.dispatch(
-            setPagePropsAction({
-                action: "TICKETS",
-                item,
-            })
-        );
-    }
-
     onAction(props) {
         switch (props.action) {
             case "CHANGE_PASSWORD":
@@ -62,10 +53,6 @@ export class PageUtils extends BasePageUtils {
                     family: this.useForm.getValues("family") ?? "",
                     email: this.useForm.getValues("email") ?? "",
                 });
-
-                break;
-            case "TICKETS":
-                this.ticketsAction(props.item);
 
                 break;
         }
@@ -86,12 +73,6 @@ export class PageUtils extends BasePageUtils {
     changePasswordAction({ id }) {
         if (utils.isId(id)) {
             this.navigate(`${BASE_PATH}/users/change_password/${id}`);
-        }
-    }
-
-    ticketsAction({ id }) {
-        if (utils.isId(id)) {
-            this.navigate(`${BASE_PATH}/tickets/${id}`);
         }
     }
 

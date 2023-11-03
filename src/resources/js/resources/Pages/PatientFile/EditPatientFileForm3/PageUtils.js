@@ -71,68 +71,43 @@ export class PageUtils extends BasePageUtils {
             "systemicDiseaseHistory",
             result.item.systemicDiseaseHistory
         );
-        this.useForm.setValue("item8Description", result.item.item8Description);
+        this.useForm.setValue("bloodDiseaseType", result.item.bloodDiseaseType);
         this.useForm.setValue(
-            "item15Description",
-            result.item.item15Description
+            "hospitalizationReason",
+            result.item.hospitalizationReason
         );
+        this.useForm.setValue("continuingDrug", result.item.continuingDrug);
+        this.useForm.setValue("weeklyDrug", result.item.weeklyDrug);
+        this.useForm.setValue("cancerType", result.item.cancerType);
+        this.useForm.setValue("radiationPlace", result.item.radiationPlace);
+        this.useForm.setValue("pregnancyWeek", result.item.pregnancyWeek);
+        this.useForm.setValue("pregnancyNum", result.item.pregnancyNum);
+        this.useForm.setValue("pregnancyRank", result.item.pregnancyRank);
+        this.useForm.setValue("adExplanation", result.item.adExplanation);
+        this.useForm.setValue("sleepStatus", result.item.sleepStatus);
         this.useForm.setValue(
-            "item16Description",
-            result.item.item16Description
+            "functionalCapacity",
+            result.item.item35Description
         );
-        this.useForm.setValue(
-            "item17Description",
-            result.item.item17Description
-        );
-        this.useForm.setValue(
-            "item20Description",
-            result.item.item20Description
-        );
-        this.useForm.setValue(
-            "item21Description",
-            result.item.item21Description
-        );
-        this.useForm.setValue(
-            "item25_1Description",
-            result.item.item25_1Description
-        );
-        this.useForm.setValue(
-            "item25_2Description",
-            result.item.item25_2Description
-        );
-        this.useForm.setValue(
-            "item25_3Description",
-            result.item.item25_3Description
-        );
-        this.useForm.setValue(
-            "item30Description",
-            result.item.item30Description
-        );
-        this.useForm.setValue(
-            "item32Description",
-            result.item.item32Description
-        );
-        this.useForm.setValue(
-            "item34Description",
-            result.item.item34Description
-        );
-        this.useForm.setValue("tobaccoUse", result.item.tobaccoUse);
+        this.useForm.setValue("tobaccoUsage", result.item.tobaccoUse);
         this.useForm.setValue(
             "useTobaccoDuration",
             result.item.useTobaccoDuration
         );
         this.useForm.setValue("useTobaccoType", result.item.useTobaccoType);
-        this.useForm.setValue("drugUse", result.item.drugUse);
+        this.useForm.setValue("drugUsage", result.item.drugUse);
         this.useForm.setValue("useDrugDuration", result.item.useDrugDuration);
         this.useForm.setValue("useDrugType", result.item.useDrugType);
-        this.useForm.setValue("alcohol", result.item.alcohol);
+        this.useForm.setValue("alcoholUsage", result.item.alcohol);
         this.useForm.setValue("pulse", result.item.pulse);
         this.useForm.setValue("bodyTemp", result.item.bodyTemp);
+        this.useForm.setValue("bloodPressure", result.item.bloodPressure);
         this.useForm.setValue("resporate", result.item.resporate);
         this.useForm.setValue("weight", result.item.weight);
         this.useForm.setValue("height", result.item.height);
         this.useForm.setValue("bmi", result.item.bmi);
         this.useForm.setValue("familialHistory", result.item.familialHistory);
+        this.useForm.setValue("fcaType", result.item.fcaType);
     }
 
     onSetItem(item, value) {
@@ -169,49 +144,39 @@ export class PageUtils extends BasePageUtils {
         const promise = this.entity.updateForm3(
             this.pageState.params.patientFileId,
             systemicDiseaseHistory,
-            systemicDiseaseHistory?.includes("item_8")
-                ? data.item8Description
+            systemicDiseaseHistory?.includes("blood_disease")
+                ? data.bloodDiseaseType
                 : "",
-            systemicDiseaseHistory?.includes("item_15")
-                ? data.item15Description
+            systemicDiseaseHistory?.includes("hospitalization_history")
+                ? data.hospitalizationReason
                 : "",
-            systemicDiseaseHistory?.includes("item_16")
-                ? data.item16Description
+            data.continuingDrug,
+            data.weeklyDrug,
+            systemicDiseaseHistory?.includes("cancer") ? data.cancerType : "",
+            systemicDiseaseHistory?.includes("chemotherapy")
+                ? data.radiationPlace
                 : "",
-            systemicDiseaseHistory?.includes("item_17")
-                ? data.item17Description
+            systemicDiseaseHistory?.includes("pregnancy")
+                ? data.pregnancyWeek
                 : "",
-            systemicDiseaseHistory?.includes("item_20")
-                ? data.item20Description
+            systemicDiseaseHistory?.includes("pregnancy")
+                ? data.pregnancyNum
                 : "",
-            systemicDiseaseHistory?.includes("item_21")
-                ? data.item21Description
+            systemicDiseaseHistory?.includes("pregnancy")
+                ? data.pregnancyRank
                 : "",
-            systemicDiseaseHistory?.includes("item_25")
-                ? data.item25_1Description
+            systemicDiseaseHistory?.includes("artificial_device")
+                ? data.adExplanation
                 : "",
-            systemicDiseaseHistory?.includes("item_25")
-                ? data.item25_2Description
-                : "",
-            systemicDiseaseHistory?.includes("item_25")
-                ? data.item25_3Description
-                : "",
-            systemicDiseaseHistory?.includes("item_30")
-                ? data.item30Description
-                : "",
-            systemicDiseaseHistory?.includes("item_32")
-                ? data.item32Description
-                : "",
-            systemicDiseaseHistory?.includes("item_34")
-                ? data.item34Description
-                : "",
-            data.tobaccoUse ? 1 : 0,
-            data.tobaccoUse ? data.useTobaccoDuration : "",
-            data.tobaccoUse ? data.useTobaccoType : "",
-            data.drugUse ? 1 : 0,
-            data.drugUse ? data.useDrugDuration : "",
-            data.drugUse ? data.useDrugType : "",
-            data.alcohol ? 1 : 0,
+            data.sleepStatus,
+            data.functionalCapacity,
+            data.tobaccoUsage ? 1 : 0,
+            data.tobaccoUsage ? data.useTobaccoDuration : "",
+            data.tobaccoUsage ? data.useTobaccoType : "",
+            data.drugUsage ? 1 : 0,
+            data.drugUsage ? data.useDrugDuration : "",
+            data.drugUsage ? data.useDrugType : "",
+            data.alcoholUsage ? 1 : 0,
             data.pulse,
             data.bodyTemp,
             data.bloodPressure,

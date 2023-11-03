@@ -2,6 +2,7 @@ import * as yup from "yup";
 
 import {
     conditionalStringValidator,
+    fileValidator,
     stringValidator,
 } from "../CommonValidators";
 import { editPatientFileForm4 as strings } from "../../../constants/strings/fa";
@@ -106,6 +107,115 @@ const editPatientFileForm4Schema = yup.object().shape({
         strings.dentalChangesExamination,
         null,
         300
+    ),
+    dentitionFile: fileValidator(
+        yup.mixed(),
+        strings.dentitionFile,
+        4 * 1024 * 1024,
+        ["jpg", "jpeg", "png"],
+        false
+    ),
+    adultDmft: stringValidator(
+        yup.string(),
+        strings.adultDmft,
+        null,
+        200,
+        false
+    ),
+    adultD: stringValidator(yup.string(), strings.adultD, null, 200, false),
+    adultM: stringValidator(yup.string(), strings.adultM, null, 200, false),
+    adultT: stringValidator(yup.string(), strings.adultT, null, 200, false),
+    decidiousFile: fileValidator(
+        yup.mixed(),
+        strings.decidiousFile,
+        4 * 1024 * 1024,
+        ["jpg", "jpeg", "png"],
+        false
+    ),
+    decidiousDmft: stringValidator(
+        yup.string(),
+        strings.decidiousDmft,
+        null,
+        200,
+        false
+    ),
+    decidiousD: stringValidator(
+        yup.string(),
+        strings.decidiousD,
+        null,
+        200,
+        false
+    ),
+    decidiousM: stringValidator(
+        yup.string(),
+        strings.decidiousM,
+        null,
+        200,
+        false
+    ),
+    decidiousT: stringValidator(
+        yup.string(),
+        strings.decidiousT,
+        null,
+        200,
+        false
+    ),
+    priodontalExamination: stringValidator(
+        yup.string(),
+        strings.priodontalExamination,
+        null,
+        200,
+        false
+    ),
+    bop: stringValidator(yup.string(), strings.bop, null, 50),
+    radiographicEvidence: stringValidator(
+        yup.string(),
+        strings.radiographicEvidence,
+        null,
+        300,
+        false
+    ),
+    paraclinicalEvidence: stringValidator(
+        yup.string(),
+        strings.paraclinicalEvidence,
+        null,
+        300,
+        false
+    ),
+    consultationDeps: stringValidator(
+        yup.string(),
+        strings.consultationDeps,
+        null,
+        300,
+        false
+    ),
+    probableDiagnosis: stringValidator(
+        yup.string(),
+        strings.probableDiagnosis,
+        null,
+        300,
+        false
+    ),
+    differntialDiagnosis: stringValidator(
+        yup.string(),
+        strings.differntialDiagnosis,
+        null,
+        300,
+        false
+    ),
+    difinitiveDiagnosis: stringValidator(
+        yup.string(),
+        strings.difinitiveDiagnosis,
+        null,
+        300,
+        false
+    ),
+    systemicConsiderations: stringValidator(
+        yup.string(),
+        strings.systemicConsiderations,
+        null,
+        300,
+        false
     ),
 });
 

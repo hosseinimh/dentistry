@@ -70,7 +70,7 @@ export class PageUtils extends BasePageUtils {
         this.useForm.setValue("name", result.item.name);
         this.useForm.setValue("family", result.item.family);
         this.useForm.setValue("email", result.item.email);
-        this.useForm.setValue("isActive", result.item.isActive);
+        this.useForm.setValue("isActiveContainer", result.item.isActive);
         this.useForm.setValue(
             result.item.role === USER_ROLES.ADMINISTRATOR
                 ? "administrator"

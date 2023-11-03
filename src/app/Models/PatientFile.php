@@ -42,18 +42,18 @@ class PatientFile extends Model
         'referal_history',
         'treatment_history',
         'systemic_disease_history',
-        'item_8_description',
-        'item_15_description',
-        'item_16_description',
-        'item_17_description',
-        'item_20_description',
-        'item_21_description',
-        'item_25_1_description',
-        'item_25_2_description',
-        'item_25_3_description',
-        'item_30_description',
-        'item_32_description',
-        'item_34_description',
+        'blood_disease_type',
+        'hospitalization_reason',
+        'continuing_drug',
+        'weekly_drug',
+        'cancer_type',
+        'radiation_place',
+        'pregnancy_week',
+        'pregnancy_num',
+        'pregnancy_rank',
+        'ad_explanation',
+        'sleep_status',
+        'functional_capacity',
         'tobacco_use',
         'use_tobacco_duration',
         'use_tobacco_type',
@@ -90,5 +90,36 @@ class PatientFile extends Model
         'neurological_changes',
         'salivary_grand_examination',
         'dental_changes_examination',
+        'dentition_file',
+        'adult_dmft',
+        'adult_d',
+        'adult_m',
+        'adult_t',
+        'decidious_file',
+        'decidious_dmft',
+        'decidious_d',
+        'decidious_m',
+        'decidious_t',
+        'priodontal_examination',
+        'bop',
+        'radiographic_evidence',
+        'paraclinical_evidence',
+        'consultation_deps',
+        'probable_diagnosis',
+        'differntial_diagnosis',
+        'difinitive_diagnosis',
+        'systemic_considerations',
     ];
+
+    protected static function booted()
+    {
+        static::deleting(function ($patientFile) {
+            if ($patientFile->dentition_file) {
+                @unlink(storage_path('app') . '/public/storage/p_files/' . $patientFile->dentition_file);
+            }
+            if ($patientFile->decidious_file) {
+                @unlink(storage_path('app') . '/public/storage/p_files/' . $patientFile->decidious_file);
+            }
+        });
+    }
 }

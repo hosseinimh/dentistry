@@ -9,6 +9,7 @@ import {
 } from "../../../../constants/strings/fa";
 import { BASE_PATH, FILE_FORMS } from "../../../../constants";
 import { setLoadingAction } from "../../../../state/layout/layoutActions";
+import utils from "../../../../utils/Utils";
 
 const PatientFileHeader = () => {
     const layoutState = useSelector((state) => state.layoutReducer);
@@ -21,10 +22,15 @@ const PatientFileHeader = () => {
 
     useEffect(() => {
         let finished = 0;
-        finished += pageState?.props?.item?.name ? 1 : 0;
-        finished += pageState?.props?.item?.patientReferal ? 1 : 0;
-        finished +=
-            pageState?.props?.item?.item16DescriptionOriginal !== null ? 1 : 0;
+        finished += utils.hasValue(pageState?.props?.item?.name) ? 1 : 0;
+        finished += utils.hasValue(pageState?.props?.item?.patientReferal)
+            ? 1
+            : 0;
+        finished += utils.hasValue(
+            pageState?.props?.item?.continuingDrugOriginal
+        )
+            ? 1
+            : 0;
         setForms([finished, 5 - finished]);
     }, [pageState?.props?.item]);
 

@@ -106,12 +106,38 @@ export class PageUtils extends BasePageUtils {
             "dentalChangesExamination",
             result.item.dentalChangesExamination
         );
+        this.useForm.setValue("adultDmft", result.item.adultDmft);
+        this.useForm.setValue("adultD", result.item.adultD);
+        this.useForm.setValue("adultM", result.item.adultM);
+        this.useForm.setValue("adultT", result.item.adultT);
+        this.useForm.setValue("decidiousDmft", result.item.decidiousDmft);
+        this.useForm.setValue("decidiousD", result.item.decidiousD);
+        this.useForm.setValue("decidiousM", result.item.decidiousM);
+        this.useForm.setValue("decidiousT", result.item.decidiousT);
     }
 
     onSetItem(item, value) {
         let props = this.pageState?.props;
         props[item] = value;
         this.dispatch(setPagePropsAction(props));
+    }
+
+    onRemoveDentitionFile() {
+        this.useForm?.setValue("dentitionFileAction", "deleted");
+        this.dispatch(
+            setPagePropsAction({
+                item: { ...this.pageState.props.item, dentitionFile: null },
+            })
+        );
+    }
+
+    onRemoveDecidiousFile() {
+        this.useForm?.setValue("decidiousFileAction", "deleted");
+        this.dispatch(
+            setPagePropsAction({
+                item: { ...this.pageState.props.item, decidiousFile: null },
+            })
+        );
     }
 
     async onSubmit(data) {
@@ -149,7 +175,28 @@ export class PageUtils extends BasePageUtils {
             data.tonguePharyngeal,
             data.neurologicalChanges,
             data.salivaryGrandExamination,
-            data.dentalChangesExamination
+            data.dentalChangesExamination,
+            data.dentitionFile,
+            data.dentitionFileAction,
+            data.adultDmft,
+            data.adultD,
+            data.adultM,
+            data.adultT,
+            data.decidiousFile,
+            data.decidiousFileAction,
+            data.decidiousDmft,
+            data.decidiousD,
+            data.decidiousM,
+            data.decidiousT,
+            data.priodontalExamination,
+            data.bop,
+            data.radiographicEvidence,
+            data.paraclinicalEvidence,
+            data.consultationDeps,
+            data.probableDiagnosis,
+            data.differntialDiagnosis,
+            data.difinitiveDiagnosis,
+            data.systemicConsiderations
         );
         super.onModifySubmit(promise);
     }
