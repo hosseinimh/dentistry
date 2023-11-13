@@ -63,9 +63,11 @@ export const setDropDownElementAction = (element) => async (dispatch) => {
     });
 };
 
-export const setShownModalAction = (modal) => async (dispatch) => {
-    dispatch({
-        type: SET_SHOWN_MODAL_ACTION,
-        payload: modal,
-    });
-};
+export const setShownModalAction =
+    (modal, props = null) =>
+    async (dispatch) => {
+        dispatch({
+            type: SET_SHOWN_MODAL_ACTION,
+            payload: { modal, props },
+        });
+    };

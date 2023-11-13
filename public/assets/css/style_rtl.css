@@ -39,11 +39,12 @@
   --dark: #0b0e12;
   --body: #141a22;
   --light-body: #2f343b;
-  --link: #0042a0;
+  --link: #0752bc;
   --success: #00a66a;
   --danger: #d55252;
   --primary: #0042a0;
   --primary-light: #4983d7;
+  --primary-dark: #023780;
   --warning: #ffe03a;
   --dark-warning: #e8a700;
   --placeholder: #8f959e;
@@ -415,6 +416,10 @@ a.btn {
 .btn-primary-light {
   color: var(--text);
   background: var(--primary-light);
+}
+.btn-primary-dark {
+  color: var(--text);
+  background: var(--primary-dark);
 }
 .btn-dark-warning {
   color: var(--text);
@@ -1022,7 +1027,7 @@ input[type="radio"] ~ span.error {
 }
 .dropdown-menu ul li a {
   color: var(--text);
-  padding: 2px 1.25rem;
+  padding: 3px 1.25rem;
   display: block;
   line-height: 1.775rem;
   text-align: right;
@@ -1269,7 +1274,7 @@ input[type="radio"] ~ span.error {
   justify-content: flex-end;
   list-style: none;
   border-radius: 0.25rem;
-  padding: 0 0 0.625rem;
+  padding: 0.5rem 0 0.625rem;
 }
 .page-item {
   all: unset !important;
@@ -10848,4 +10853,9 @@ div.dataTables_wrapper {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 20px;
+}
+.list-image {
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 0.625rem;
 }

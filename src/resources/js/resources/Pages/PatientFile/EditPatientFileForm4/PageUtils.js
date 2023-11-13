@@ -59,7 +59,7 @@ export class PageUtils extends BasePageUtils {
         );
         this.dispatch(
             setPageTitleAction(
-                `${strings._title} [ ${result.item.name} ${result.item.family} - ${result.item.fileNo} ]`,
+                `${strings._title} [ ${result.item.fileNo} - ${result.item.name} ${result.item.family}, ${result.item.nationalNo} ]`,
                 strings._subTitle
             )
         );
@@ -114,6 +114,44 @@ export class PageUtils extends BasePageUtils {
         this.useForm.setValue("decidiousD", result.item.decidiousD);
         this.useForm.setValue("decidiousM", result.item.decidiousM);
         this.useForm.setValue("decidiousT", result.item.decidiousT);
+        this.useForm.setValue(
+            "priodontalExamination",
+            result.item.priodontalExamination
+        );
+        this.useForm.setValue("bop", result.item.bop);
+        this.useForm.setValue(
+            "paraclinicalEvidence",
+            result.item.paraclinicalEvidence
+        );
+        this.useForm.setValue("consultationDeps", result.item.consultationDeps);
+        this.useForm.setValue(
+            "probableDiagnosis",
+            result.item.probableDiagnosis
+        );
+        this.useForm.setValue(
+            "differntialDiagnosis",
+            result.item.differntialDiagnosis
+        );
+        this.useForm.setValue(
+            "difinitiveDiagnosis",
+            result.item.difinitiveDiagnosis
+        );
+        this.useForm.setValue(
+            "systemicConsiderations",
+            result.item.systemicConsiderations
+        );
+        this.useForm.setValue(
+            "initialTreatmentPlan",
+            result.item.initialTreatmentPlan
+        );
+        this.useForm.setValue(
+            "finalTreatmentPlan",
+            result.item.finalTreatmentPlan
+        );
+        this.useForm.setValue("student", result.item.student);
+        this.useForm.setValue("assistant", result.item.assistant);
+        this.useForm.setValue("master", result.item.master);
+        this.useForm.setValue("completedDate", result.item.completedDate);
     }
 
     onSetItem(item, value) {
@@ -190,13 +228,18 @@ export class PageUtils extends BasePageUtils {
             data.decidiousT,
             data.priodontalExamination,
             data.bop,
-            data.radiographicEvidence,
             data.paraclinicalEvidence,
             data.consultationDeps,
             data.probableDiagnosis,
             data.differntialDiagnosis,
             data.difinitiveDiagnosis,
-            data.systemicConsiderations
+            data.systemicConsiderations,
+            data.initialTreatmentPlan,
+            data.finalTreatmentPlan,
+            data.student,
+            data.assistant,
+            data.master,
+            data.completedDate
         );
         super.onModifySubmit(promise);
     }

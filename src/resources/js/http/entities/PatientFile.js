@@ -8,7 +8,7 @@ export class PatientFile extends Entity {
 
     async getPaginate(fileNo, name, family, _pn = 1, _pi = PAGE_ITEMS) {
         return await this.handlePost(`${BASE_URL}/u/p_files`, {
-            fileNo,
+            file_no: fileNo,
             name,
             family,
             _pn,
@@ -245,13 +245,18 @@ export class PatientFile extends Entity {
         decidiousT,
         priodontalExamination,
         bop,
-        radiographicEvidence,
         paraclinicalEvidence,
         consultationDeps,
         probableDiagnosis,
         differntialDiagnosis,
         difinitiveDiagnosis,
-        systemicConsiderations
+        systemicConsiderations,
+        initialTreatmentPlan,
+        finalTreatmentPlan,
+        student,
+        assistant,
+        master,
+        completedDate
     ) {
         let data = new FormData();
         data.append("face_assymetry", faceAssymetry);
@@ -260,7 +265,9 @@ export class PatientFile extends Entity {
         data.append("neck_assymetry", neckAssymetry);
         data.append("neck_ty_examination", neckTyExamination);
         data.append("lymph_nodes", lymphNodes);
-        data.append("tomporomandibular_joint", tomporomandibularJoint);
+        if (tomporomandibularJoint) {
+            data.append("tomporomandibular_joint", tomporomandibularJoint);
+        }
         data.append("other_signs_tmj_description", otherSignsTMJDescription);
         data.append("intra_oral_examination", intraOralExamination);
         data.append("retromolar_area", retromolarArea);
@@ -287,16 +294,25 @@ export class PatientFile extends Entity {
         data.append("decidious_t", decidiousT);
         data.append("priodontal_examination", priodontalExamination);
         data.append("bop", bop);
-        data.append("radiographic_evidence", radiographicEvidence);
         data.append("paraclinical_evidence", paraclinicalEvidence);
         data.append("consultation_deps", consultationDeps);
         data.append("probable_diagnosis", probableDiagnosis);
         data.append("differntial_diagnosis", differntialDiagnosis);
         data.append("difinitive_diagnosis", difinitiveDiagnosis);
         data.append("systemic_considerations", systemicConsiderations);
+        data.append("initial_treatment_plan", initialTreatmentPlan);
+        data.append("final_treatment_plan", finalTreatmentPlan);
+        data.append("student", student);
+        data.append("assistant", assistant);
+        data.append("master", master);
+        data.append("completed_date", completedDate);
         return await this.handlePostFile(
             `${BASE_URL}/a/p_files/update_form_4/${id}`,
             data
         );
+    }
+
+    async delete(id) {
+        return await this.handlePost(`${BASE_URL}/a/p_files/delete/${id}`);
     }
 }

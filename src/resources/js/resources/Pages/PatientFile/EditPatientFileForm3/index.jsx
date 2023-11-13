@@ -248,7 +248,12 @@ const EditPatientFileForm3 = () => {
                         />
                     </InputCheckboxContainer>
                     {pageState?.props?.pregnancy && (
-                        <InputRow containerStyle={{ alignItems: "center" }}>
+                        <InputRow
+                            containerStyle={{
+                                alignItems: "center",
+                                marginBottom: "1.25rem",
+                            }}
+                        >
                             <div style={{ flex: "none", marginLeft: "2rem" }}>
                                 {pageUtils?.strings?.pregnancy}
                             </div>

@@ -364,6 +364,13 @@ export const familialHistory = {
     fca: "سرطان",
 };
 
+export const tomporomandibularJoint = {
+    restrictionInOpening: "محدودیت در باز کردن دهان",
+    painOrDeviation: "درد یا انحراف فک حین باز کردن دهان",
+    jointSound: "صدای مفصل",
+    otherSignsTMJ: "سایر علائم",
+};
+
 export const bopTypes = {
     lessTen: "کمتر از 10 درصد",
     betweenTenThirty: "بین 10 تا 30 درصد",
@@ -402,7 +409,7 @@ export const patientFilesHeader = {
 };
 
 export const patientFilesPage = {
-    _title: "پرونده‌ها",
+    _title: "پرونده‌های بیماران",
     _subTitle: "فهرست پرونده‌های بیماران",
     fileNo: "شماره پرونده",
     fileNoPlaceholder: "شماره پرونده",
@@ -410,15 +417,12 @@ export const patientFilesPage = {
     namePlaceholder: "نام",
     family: "نام خانوادگی",
     familyPlaceholder: "نام خانوادگی",
-    nameFamily: "نام و نام خانوادگی",
+    nameFamilyNationalNo: "نام و نام خانوادگی - شماره ملی",
     add: "ثبت پرونده",
-};
-
-export const tomporomandibularJoint = {
-    restrictionInOpening: "محدودیت در باز کردن دهان",
-    painOrDeviation: "درد یا انحراف فک حین باز کردن دهان",
-    jointSound: "صدای مفصل",
-    otherSignsTMJ: "سایر علائم",
+    excel: "خروجی اکسل",
+    radiographicEvidences: "یافته‌های رادیوگرافیک",
+    patientFollowUps: "نتایج پیگیری پرونده",
+    removeMessageTitle: "آیا مطمئن به حذف اطلاعات این پرونده بیمار می‌باشید؟",
 };
 
 export const addPatientFilePage = {
@@ -671,8 +675,8 @@ export const editPatientFileForm4 = {
     decidiousFileProperties:
         "تصویر Decidious Dentition با فرمت jpg یا png و حداکثر سایز 4 مگابایت",
     decidiousFile: "تصویر پیوست",
-    decidiousDmft: "DMFT",
-    decidiousDmftPlaceholder: "DMFT",
+    decidiousDmft: "dmft",
+    decidiousDmftPlaceholder: "dmft",
     decidiousD: "دندان‌های پوسیده",
     decidiousDPlaceholder: "دندان‌های پوسیده",
     decidiousM: "دندان‌های از دست‌رفته",
@@ -683,8 +687,6 @@ export const editPatientFileForm4 = {
     priodontalExaminationPlaceholder:
         "سلامت پریودنشیوم (در صورت نیاز تکمیل شود)",
     bop: "BOP تمامی دندان‌ها و بررسی چهار سطح دندان",
-    radiographicEvidence: "یافته‌های رادیوگرافیک",
-    radiographicEvidencePlaceholder: "یافته‌های رادیوگرافیک",
     paraclinicalEvidence: "یافته‌های پاراکلینیک",
     paraclinicalEvidencePlaceholder: "یافته‌های پاراکلینیک",
     consultationDeps: "نتیجه مشاوره با بخش‌های داخل یا خارج دانشکده",
@@ -701,5 +703,75 @@ export const editPatientFileForm4 = {
         "ملاحظات دندانپزشکی و تغییرات طرح درمان دندانپزشکی (در مورد بیماران سیستمیک)",
     systemicConsiderationsPlaceholder:
         "ملاحظات دندانپزشکی و تغییرات طرح درمان دندانپزشکی (در مورد بیماران سیستمیک)",
+    initialTreatmentPlan: "طرح درمان اولیه",
+    initialTreatmentPlanPlaceholder: "طرح درمان اولیه",
+    finalTreatmentPlan: "طرح درمان نهایی",
+    finalTreatmentPlanPlaceholder: "طرح درمان نهایی",
+    student: "نام و نام خانوادگی دانشجو",
+    studentPlaceholder: "نام و نام خانوادگی دانشجو",
+    assistant: "نام و نام خانوادگی آسیستان",
+    assistantPlaceholder: "نام و نام خانوادگی آسیستان",
+    completedDate: "تاریخ تکمیل پرونده نهایی و ایام هفته",
+    completedDatePlaceholder: "تاریخ تکمیل پرونده نهایی و ایام هفته",
+    master: "نام و نام خانوادگی استاد",
+    masterPlaceholder: "نام و نام خانوادگی استاد",
     submitted: "ویرایش اطلاعات بیمار با موفقیت انجام شد.",
+};
+
+export const patientFollowUpsPage = {
+    _title: "نتایج پیگیری بیمار",
+    _subTitle: "فهرست نتایج پیگیری بیمار",
+    date: "تاریخ",
+    result: "نتیجه پیگیری",
+    add: "ثبت نتیجه پیگیری",
+    removeMessageTitle: "آیا مطمئن به حذف اطلاعات این پیگیری می‌باشید؟",
+};
+
+export const addPatientFollowUpPage = {
+    _title: "ثبت نتیجه پیگیری بیمار",
+    _subTitle: "نتیجه پیگیری بیمار را ثبت کنید.",
+    date: "تاریخ",
+    datePlaceholder: "تاریخ",
+    result: "نتیجه پیگیری",
+    resultPlaceholder: "نتیجه پیگیری",
+    submitted: "ثبت نتیجه پیگیری بیمار با موفقیت انجام شد.",
+};
+
+export const editPatientFollowUpPage = {
+    _title: "ویرایش نتیجه پیگیری بیمار",
+    _subTitle: "نتیجه پیگیری بیمار را ویرایش کنید.",
+    date: "تاریخ",
+    datePlaceholder: "تاریخ",
+    result: "نتیجه پیگیری",
+    resultPlaceholder: "نتیجه پیگیری",
+    submitted: "ویرایش نتیجه پیگیری بیمار با موفقیت انجام شد.",
+};
+
+export const radiographicEvidencesPage = {
+    _title: "یافته‌های رادیوگرافیک",
+    _subTitle: "فهرست یافته‌های رادیوگرافیک",
+    radiographicEvidence: "یافته‌های رادیوگرافیک",
+    file: "تصویر",
+    add: "ثبت یافته‌های رادیوگرافیک",
+    removeMessageTitle: "آیا مطمئن به حذف این اطلاعات می‌باشید؟",
+};
+
+export const addRadiographicEvidencePage = {
+    _title: "ثبت یافته‌های رادیوگرافیک",
+    _subTitle: "یافته‌های رادیوگرافیک را ثبت کنید.",
+    radiographicEvidence: "یافته‌های رادیوگرافیک",
+    radiographicEvidencePlaceholder: "یافته‌های رادیوگرافیک",
+    file: "تصویر (حداکثراندازه تصویر 4MB می‌باشد)",
+    filePlaceholder: "تصویر (حداکثراندازه تصویر 4MB می‌باشد)",
+    submitted: "ثبت یافته‌های رادیوگرافیک با موفقیت انجام شد.",
+};
+
+export const editRadiographicEvidencePage = {
+    _title: "ویرایش یافته‌های رادیوگرافیک",
+    _subTitle: "یافته‌های رادیوگرافیک را ویرایش کنید.",
+    radiographicEvidence: "یافته‌های رادیوگرافیک",
+    radiographicEvidencePlaceholder: "یافته‌های رادیوگرافیک",
+    file: "تصویر (حداکثراندازه تصویر 4MB می‌باشد)",
+    filePlaceholder: "تصویر (حداکثراندازه تصویر 4MB می‌باشد)",
+    submitted: "ویرایش یافته‌های رادیوگرافیک با موفقیت انجام شد.",
 };

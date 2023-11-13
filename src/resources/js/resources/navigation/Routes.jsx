@@ -51,6 +51,18 @@ const renderAuthRoutes = () => (
             element={<Pages.EditPatientFileForm4 />}
         />
         <Route path={`${BASE_PATH}/p_files`} element={<Pages.PatientFiles />} />
+        <Route
+            path={`${BASE_PATH}/p_f_ups/add/:patientFileId`}
+            element={<Pages.AddPatientFile />}
+        />
+        <Route
+            path={`${BASE_PATH}/p_f_ups/:patientFileId`}
+            element={<Pages.PatientFollowUps />}
+        />
+        <Route
+            path={`${BASE_PATH}/r_evidences/:patientFileId`}
+            element={<Pages.RadiographicEvidences />}
+        />
         <Route path={`${BASE_PATH}`} element={<Pages.Dashboard />} />
         <Route path="*" element={<Navigate to={BASE_PATH} />} />
     </>
@@ -58,6 +70,22 @@ const renderAuthRoutes = () => (
 
 const renderAdministratorRoutes = () => (
     <>
+        <Route
+            path={`${BASE_PATH}/p_f_ups/add/:patientFileId`}
+            element={<Pages.AddPatientFollowUp />}
+        />
+        <Route
+            path={`${BASE_PATH}/p_f_ups/edit/:patientFollowUpId`}
+            element={<Pages.EditPatientFollowUp />}
+        />
+        <Route
+            path={`${BASE_PATH}/r_evidences/add/:patientFileId`}
+            element={<Pages.AddRadiographicEvidence />}
+        />
+        <Route
+            path={`${BASE_PATH}/r_evidences/edit/:radiographicEvidenceId`}
+            element={<Pages.EditRadiographicEvidence />}
+        />
         <Route
             path={`${BASE_PATH}/users/change_password/:userId`}
             element={<Pages.ChangePasswordUser />}

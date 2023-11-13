@@ -14,6 +14,12 @@ import EditPatientFileForm2 from "./PatientFile/EditPatientFileForm2";
 import EditPatientFileForm3 from "./PatientFile/EditPatientFileForm3";
 import EditPatientFileForm4 from "./PatientFile/EditPatientFileForm4";
 import PatientFiles from "./PatientFile/PatientFiles";
+import AddPatientFollowUp from "./PatientFollowUp/AddPatientFollowUp";
+import EditPatientFollowUp from "./PatientFollowUp/EditPatientFollowUp";
+import PatientFollowUps from "./PatientFollowUp/PatientFollowUps";
+import AddRadiographicEvidence from "./RadiographicEvidence/AddRadiographicEvidence";
+import EditRadiographicEvidence from "./RadiographicEvidence/EditRadiographicEvidence";
+import RadiographicEvidences from "./RadiographicEvidence/RadiographicEvidences";
 
 export {
     Dashboard,
@@ -32,4 +38,10 @@ export {
     EditPatientFileForm3,
     EditPatientFileForm4,
     PatientFiles,
+    AddPatientFollowUp,
+    EditPatientFollowUp,
+    PatientFollowUps,
+    AddRadiographicEvidence,
+    EditRadiographicEvidence,
+    RadiographicEvidences,
 };

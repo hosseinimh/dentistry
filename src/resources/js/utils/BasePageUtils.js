@@ -274,11 +274,11 @@ export class BasePageUtils {
         return this.handleModifyResultAndNavigate(result);
     }
 
-    async onSelfSubmit(promise) {
+    async onSelfSubmit(promise, data = null) {
         this.onSendRequest();
         const result = await promise;
         this.handleModifyResult(result);
-        this.fillForm();
+        this.fillForm(data);
     }
 
     onSubmit(data = null) {

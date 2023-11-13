@@ -420,6 +420,10 @@ const setTheme = (theme) => {
         theme.colors.primaryLight
     );
     document.documentElement.style.setProperty(
+        "--primary-dark",
+        theme.colors.primaryDark
+    );
+    document.documentElement.style.setProperty(
         "--warning",
         theme.colors.warning
     );
@@ -573,24 +577,13 @@ const toLocaleDateString = (date, locale) => {
     return new Date(date).toLocaleDateString(locale, options);
 };
 
-const toNumericLocaleDateString = (date, locale, fullNumeric = true) => {
+const toNumericLocaleDateString = (date, locale = "fa-IR") => {
     let options = {
         year: "numeric",
         month: "numeric",
         day: "numeric",
     };
-    const dateString = new Date(date).toLocaleDateString(locale, options);
-    if (!fullNumeric) {
-        return dateString;
-    }
-    const parts = dateString.split("/");
-    if (parts[1].length === 1) {
-        parts[1] = `0${parts[1]}`;
-    }
-    if (parts[2].length === 1) {
-        parts[2] = `0${parts[2]}`;
-    }
-    return utils.convertNumberToEnglish(parts.join("/"));
+    return new Date(date).toLocaleDateString(locale, options);
 };
 
 const getTimezoneDate = (date, locale) => {

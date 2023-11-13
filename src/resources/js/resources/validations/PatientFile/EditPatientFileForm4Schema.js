@@ -168,13 +168,6 @@ const editPatientFileForm4Schema = yup.object().shape({
         false
     ),
     bop: stringValidator(yup.string(), strings.bop, null, 50),
-    radiographicEvidence: stringValidator(
-        yup.string(),
-        strings.radiographicEvidence,
-        null,
-        300,
-        false
-    ),
     paraclinicalEvidence: stringValidator(
         yup.string(),
         strings.paraclinicalEvidence,
@@ -215,6 +208,30 @@ const editPatientFileForm4Schema = yup.object().shape({
         strings.systemicConsiderations,
         null,
         300,
+        false
+    ),
+    initialTreatmentPlan: stringValidator(
+        yup.string(),
+        strings.initialTreatmentPlan,
+        null,
+        1000,
+        false
+    ),
+    finalTreatmentPlan: stringValidator(
+        yup.string(),
+        strings.finalTreatmentPlan,
+        null,
+        1000,
+        false
+    ),
+    student: stringValidator(yup.string(), strings.student, null, 200),
+    assistant: stringValidator(yup.string(), strings.assistant, null, 200),
+    master: stringValidator(yup.string(), strings.master, null, 200),
+    completedDate: stringValidator(
+        yup.string(),
+        strings.completedDate,
+        null,
+        200,
         false
     ),
 });

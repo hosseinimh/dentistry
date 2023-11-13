@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers\User;
 
+use App\Exports\PatientFilesExport;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\PatientFile\IndexPatientFilesRequest;
 use App\Packages\JsonResponse;
 use App\Models\PatientFile as Model;
 use App\Services\PatientFileService;
 use Illuminate\Http\JsonResponse as HttpJsonResponse;
+use Maatwebsite\Excel\Excel;
 
 class PatientFileController extends Controller
 {
@@ -24,5 +26,11 @@ class PatientFileController extends Controller
     public function show(Model $model): HttpJsonResponse
     {
         return $this->onItem($this->service->get($model->id));
+    }
+
+    public function excel(IndexPatientFilesRequest $request, Excel $excel)
+    {
+        $patientFileExport = new PatientFilesExport($request->file_no, $request->name, $request->family);
+        return $excel->download($patientFileExport, 'patient_files.xlsx');
     }
 }

@@ -2,9 +2,11 @@
 
 namespace App\Http\Requests\PatientFile;
 
+use App\Constants\BOPTypes;
 use App\Constants\ErrorCode;
 use App\Constants\TomporomandibularJoint;
 use Closure;
+use Illuminate\Validation\Rule;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Response;
@@ -59,14 +61,19 @@ class UpdatePatientFileForm4Request extends FormRequest
             'decidious_m' => 'max:200',
             'decidious_t' => 'max:200',
             'priodontal_examination' => 'max:200',
-            'bop' => 'max:200',
-            'radiographic_evidence' => 'max:300',
+            'bop' => ['required', Rule::in(BOPTypes::toArray())],
             'paraclinical_evidence' => 'max:300',
             'consultation_deps' => 'max:300',
             'probable_diagnosis' => 'max:300',
             'differntial_diagnosis' => 'max:300',
             'difinitive_diagnosis' => 'max:300',
             'systemic_considerations' => 'max:300',
+            'initial_treatment_plan' => 'max:1000',
+            'final_treatment_plan' => 'max:1000',
+            'student' => 'required|max:200',
+            'assistant' => 'required|max:200',
+            'master' => 'required|max:200',
+            'completed_date' => 'max:200',
         ];
     }
 
@@ -98,6 +105,23 @@ class UpdatePatientFileForm4Request extends FormRequest
             'decidious_d.max' => __('patient_file.decidious_d_max'),
             'decidious_m.max' => __('patient_file.decidious_m_max'),
             'decidious_t.max' => __('patient_file.decidious_t_max'),
+            'priodontal_examination.max' => __('patient_file.priodontal_examination_max'),
+            'bop.in' => __('patient_file.bop_in'),
+            'paraclinical_evidence.max' => __('patient_file.paraclinical_evidence_max'),
+            'consultation_deps.max' => __('patient_file.consultation_deps_max'),
+            'probable_diagnosis.max' => __('patient_file.probable_diagnosis_max'),
+            'differntial_diagnosis.max' => __('patient_file.differntial_diagnosis_max'),
+            'difinitive_diagnosis.max' => __('patient_file.difinitive_diagnosis_max'),
+            'systemic_considerations.max' => __('patient_file.systemic_considerations_max'),
+            'initial_treatment_plan.max' => __('patient_file.initial_treatment_plan_max'),
+            'final_treatment_plan.max' => __('patient_file.final_treatment_plan_max'),
+            'student.required' => __('patient_file.student_required'),
+            'student.max' => __('patient_file.student_max'),
+            'assistant.required' => __('patient_file.assistant_required'),
+            'assistant.max' => __('patient_file.assistant_max'),
+            'master.required' => __('patient_file.master_required'),
+            'master.max' => __('patient_file.master_max'),
+            'completed_date.max' => __('patient_file.completed_date_max'),
         ];
     }
 }

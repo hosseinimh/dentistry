@@ -63,7 +63,7 @@ export class PageUtils extends BasePageUtils {
         );
         this.dispatch(
             setPageTitleAction(
-                `${strings._title} [ ${result.item.name} ${result.item.family} - ${result.item.fileNo} ]`,
+                `${strings._title} [ ${result.item.fileNo} - ${result.item.name} ${result.item.family}, ${result.item.nationalNo} ]`,
                 strings._subTitle
             )
         );

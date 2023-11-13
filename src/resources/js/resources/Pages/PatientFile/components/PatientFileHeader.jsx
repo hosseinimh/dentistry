@@ -16,7 +16,7 @@ const PatientFileHeader = () => {
     const pageState = useSelector((state) => state.pageReducer);
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const [forms, setForms] = useState([0, 5]);
+    const [forms, setForms] = useState([0, 4]);
     const [formsChartOptions, setFormsChartOptions] = useState(null);
     const [formsSeries, setFormsSeries] = useState(null);
 
@@ -31,7 +31,8 @@ const PatientFileHeader = () => {
         )
             ? 1
             : 0;
-        setForms([finished, 5 - finished]);
+        finished += utils.hasValue(pageState?.props?.item?.bop) ? 1 : 0;
+        setForms([finished, 4 - finished]);
     }, [pageState?.props?.item]);
 
     useEffect(() => {
@@ -87,7 +88,7 @@ const PatientFileHeader = () => {
             tooltip: {
                 enabled: true,
                 y: {
-                    formatter: (value) => `${value * 20} %`,
+                    formatter: (value) => `${value * 25} %`,
                 },
             },
         });
@@ -138,11 +139,6 @@ const PatientFileHeader = () => {
                     `${BASE_PATH}/p_files/edit/form4/${pageState?.props?.item?.id}`
                 );
                 return;
-            case FILE_FORMS.FORM_5:
-                navigate(
-                    `${BASE_PATH}/p_files/edit/form5/${pageState?.props?.item?.id}`
-                );
-                return;
         }
         dispatch(setLoadingAction(false));
     };
@@ -157,7 +153,7 @@ const PatientFileHeader = () => {
                     <div className="hd">
                         <span>
                             {pageState?.props?.item
-                                ? `${pageState?.props?.item?.name} ${pageState?.props?.item?.family} - ${pageState?.props?.item?.fileNo}`
+                                ? `${pageState?.props?.item?.fileNo} - ${pageState?.props?.item?.name} ${pageState?.props?.item?.family}, ${pageState?.props?.item?.nationalNo}`
                                 : layoutState?.loading
                                 ? ""
                                 : strings.newForm}
@@ -240,19 +236,6 @@ const PatientFileHeader = () => {
                             <i className="icon-frame5"></i>
                         </div>
                         <span>{strings.form4}</span>
-                    </div>
-                    <div
-                        className={`item step-num ${
-                            pageState?.page === "EditPatientFileForm5"
-                                ? "active"
-                                : ""
-                        }`}
-                        onClick={() => navigateTo(FILE_FORMS.FORM_5)}
-                    >
-                        <div className="icon">
-                            <i className="icon-frame5"></i>
-                        </div>
-                        <span>{strings.form5}</span>
                     </div>
                 </div>
             </div>

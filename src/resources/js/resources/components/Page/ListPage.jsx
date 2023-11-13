@@ -3,15 +3,18 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 
 import { PageLayout, Table } from "../";
-import { general } from "../../../constants/strings/fa";
+import { general as strings } from "../../../constants/strings/fa";
 
 const ListPage = ({
     pageUtils,
     children,
-    table,
+    renderTopList = null,
     hasAdd = true,
     backUrl = null,
-    renderTopList = null,
+    renderButtons = null,
+    table,
+    tableContainerClassName = "",
+    tableDataTableClassName = "",
 }) => {
     const navigate = useNavigate();
     const layoutState = useSelector((state) => state.layoutReducer);
@@ -22,8 +25,8 @@ const ListPage = ({
                 {renderTopList && (
                     <div style={{ margin: "1rem 0" }}>{renderTopList()}</div>
                 )}
-                {(hasAdd || backUrl) && (
-                    <div style={{ margin: "1rem" }}>
+                {(hasAdd || backUrl || renderButtons) && (
+                    <div style={{ margin: "1rem", marginTop: "1.875rem" }}>
                         {hasAdd && (
                             <button
                                 className="btn btn-primary mx-rdir-10"
@@ -39,13 +42,14 @@ const ListPage = ({
                             <button
                                 className="btn btn-border mx-rdir-10"
                                 type="button"
-                                title={general.back}
+                                title={strings.back}
                                 onClick={() => navigate(backUrl)}
                                 disabled={layoutState?.loading}
                             >
-                                {general.back}
+                                {strings.back}
                             </button>
                         )}
+                        {renderButtons ? renderButtons() : <></>}
                     </div>
                 )}
                 {children}
@@ -54,6 +58,8 @@ const ListPage = ({
                         renderHeader={table.renderHeader}
                         renderItems={table.renderItems}
                         renderFooter={table?.renderFooter}
+                        containerClassName={tableContainerClassName}
+                        dataTableClassName={tableDataTableClassName}
                     />
                 </div>
             </div>

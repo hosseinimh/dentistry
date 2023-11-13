@@ -13,11 +13,10 @@ const fileValidator = (
             "required",
             validation.requiredMessage.replace(":field", field),
             (file) => {
-                if (!file || file.size === 0) {
+                if (!file || file.length === 0 || file.size === 0) {
                     if (!required) {
                         return true;
                     }
-
                     return false;
                 }
 
@@ -31,7 +30,6 @@ const fileValidator = (
                 if (!file?.size || file.size < max) {
                     return true;
                 }
-
                 return false;
             }
         )
@@ -42,15 +40,13 @@ const fileValidator = (
             try {
                 if (
                     extensions.includes(
-                        utils.getExtension(file?.name)[0].toLowerCase()
+                        utils.getExtension(file[0]?.name)[0].toLowerCase()
                     )
                 ) {
                     return true;
                 }
-
                 return false;
             } catch {}
-
             return false;
         });
     if (!required) {

@@ -6,7 +6,11 @@ import { BasePageUtils } from "../../../../utils/BasePageUtils";
 import { BASE_PATH } from "../../../../constants";
 import utils from "../../../../utils/Utils";
 import { searchPatientFileSchema as schema } from "../../../validations";
-import { patientFilesPage as strings } from "../../../../constants/strings/fa";
+import {
+    general,
+    patientFilesPage as strings,
+} from "../../../../constants/strings/fa";
+import { setShownModalAction } from "../../../../state/layout/layoutActions";
 
 export class PageUtils extends BasePageUtils {
     constructor() {
@@ -21,7 +25,12 @@ export class PageUtils extends BasePageUtils {
             item: null,
             items: null,
             action: null,
+            fileNo: "",
+            name: "",
+            family: "",
         };
+        this.onExcel = this.onExcel.bind(this);
+        this.handlePromptSubmit = this.handlePromptSubmit.bind(this);
     }
 
     onLoad() {
@@ -34,7 +43,7 @@ export class PageUtils extends BasePageUtils {
             case "SET_PAGE":
                 props.action = null;
                 this.onSubmit({
-                    username: this.useForm.getValues("fileNo") ?? "",
+                    fileNo: this.useForm.getValues("fileNo") ?? "",
                     name: this.useForm.getValues("name") ?? "",
                     family: this.useForm.getValues("family") ?? "",
                 });
@@ -43,6 +52,37 @@ export class PageUtils extends BasePageUtils {
         }
 
         super.onAction(props);
+    }
+
+    onExcel() {
+        window
+            .open(
+                `${BASE_PATH}/excel/p_files/?file_no=${this.pageState?.props?.fileNo}&name=${this.pageState?.props?.name}&family=${this.pageState?.props?.family}`,
+                "_blank"
+            )
+            .focus();
+    }
+
+    onRemove(e, item) {
+        e.stopPropagation();
+        this.promptItem = item;
+        this.dispatch(
+            setShownModalAction("promptModal", {
+                title: strings.removeMessageTitle,
+                description: `${item.name} ${item.family} - ${item.nationalNo}`,
+                submitTitle: general.yes,
+                cancelTitle: general.no,
+                onSubmit: this.handlePromptSubmit,
+            })
+        );
+    }
+
+    onRadiographicEvidences(item) {
+        this.navigate(`${BASE_PATH}/r_evidences/${item.id}`);
+    }
+
+    onPatientFollowUps(item) {
+        this.navigate(`${BASE_PATH}/p_f_ups/${item.id}`);
     }
 
     addAction() {
@@ -56,6 +96,7 @@ export class PageUtils extends BasePageUtils {
     }
 
     async fillForm(data = null) {
+        this.data = data;
         const promise = this.entity.getPaginate(
             data?.fileNo ?? "",
             data?.name ?? "",
@@ -63,5 +104,26 @@ export class PageUtils extends BasePageUtils {
             this.pageState.props?.pageNumber ?? 1
         );
         super.fillForm(promise);
+    }
+
+    propsIfOK(result) {
+        try {
+            return {
+                items: result.items,
+                itemsCount: result.count,
+                fileNo: this.data?.fileNo ?? "",
+                name: this.data?.name ?? "",
+                family: this.data?.family ?? "",
+            };
+        } catch {}
+    }
+
+    handlePromptSubmit(result) {
+        if (result === true) {
+            const promise = this.entity.delete(this.promptItem?.id);
+            super.onSelfSubmit(promise, {
+                pageNumber: 1,
+            });
+        }
     }
 }

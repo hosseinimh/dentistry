@@ -102,6 +102,20 @@ class PatientFileResource extends JsonResource
             'decidiousD' => $this->decidious_d ?? '',
             'decidiousM' => $this->decidious_m ?? '',
             'decidiousT' => $this->decidious_t ?? '',
+            'priodontalExamination' => $this->priodontal_examination ?? '',
+            'bop' => $this->bop,
+            'paraclinicalEvidence' => $this->paraclinical_evidence ?? '',
+            'consultationDeps' => $this->consultation_deps ?? '',
+            'probableDiagnosis' => $this->probable_diagnosis ?? '',
+            'differntialDiagnosis' => $this->differntial_diagnosis ?? '',
+            'difinitiveDiagnosis' => $this->difinitive_diagnosis ?? '',
+            'systemicConsiderations' => $this->systemic_considerations ?? '',
+            'initialTreatmentPlan' => $this->initial_treatment_plan ?? '',
+            'finalTreatmentPlan' => $this->final_treatment_plan ?? '',
+            'student' => $this->student ?? '',
+            'assistant' => $this->assistant ?? '',
+            'master' => $this->master ?? '',
+            'completedDate' => $this->completed_date ?? '',
         ];
     }
 

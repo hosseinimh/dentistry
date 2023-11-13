@@ -4,11 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class PatientFile extends Model
 {
-    use HasFactory, SoftDeletes;
+    use HasFactory;
 
     protected $table = 'tbl_patient_files';
 
@@ -102,24 +103,27 @@ class PatientFile extends Model
         'decidious_t',
         'priodontal_examination',
         'bop',
-        'radiographic_evidence',
         'paraclinical_evidence',
         'consultation_deps',
         'probable_diagnosis',
         'differntial_diagnosis',
         'difinitive_diagnosis',
         'systemic_considerations',
+        'initial_treatment_plan',
+        'final_treatment_plan',
+        'student',
+        'assistant',
+        'master',
+        'completed_date',
     ];
 
-    protected static function booted()
+    public function radiographicEvidences(): HasMany
     {
-        static::deleting(function ($patientFile) {
-            if ($patientFile->dentition_file) {
-                @unlink(storage_path('app') . '/public/storage/p_files/' . $patientFile->dentition_file);
-            }
-            if ($patientFile->decidious_file) {
-                @unlink(storage_path('app') . '/public/storage/p_files/' . $patientFile->decidious_file);
-            }
-        });
+        return $this->hasMany(RadiographicEvidence::class);
+    }
+
+    public function patientFollowUps(): HasMany
+    {
+        return $this->hasMany(PatientFollowUp::class);
     }
 }

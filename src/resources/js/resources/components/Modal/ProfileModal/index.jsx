@@ -1,11 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-import Modal from "./Modal";
-import InputTextColumn from "../Input/InputTextColumn";
-import { profileModal as strings } from "../../../constants/strings/fa";
-import utils from "../../../utils/Utils";
-import { STORAGE_PATH, USER_ROLES } from "../../../constants";
+import Modal from "../Modal";
+import InputTextColumn from "../../Input/InputTextColumn";
+import { profileModal as strings } from "../../../../constants/strings/fa";
+import utils from "../../../../utils/Utils";
+import { USER_ROLES } from "../../../../constants";
 
 function ProfileModal() {
     const userState = useSelector((state) => state.userReducer);
@@ -128,59 +128,11 @@ function ProfileModal() {
                         <div className="input-info">
                             {strings.selfieFileModal}
                         </div>
-                        {userState?.user?.selfieFile && (
-                            <div className="input-img input-bg input-border mb-30">
-                                <a
-                                    href={`${STORAGE_PATH}/users/selfies/${userState?.user?.selfieFile}`}
-                                    target="_blank"
-                                    rel="noReferrer"
-                                >
-                                    <img
-                                        className="m-15"
-                                        src={`${STORAGE_PATH}/users/selfies/${userState?.user?.selfieFile}`}
-                                    />
-                                </a>
-                            </div>
-                        )}
-                        {!userState?.user?.selfieFile && (
-                            <InputTextColumn
-                                field="selfieFileModal"
-                                readonly={true}
-                                strings={strings}
-                                icon="icon-gallery4"
-                                value={strings.notUploaded}
-                                inputStyle={{ opacity: "1" }}
-                            />
-                        )}
                     </div>
                     <div className="d-flex d-flex-column">
                         <div className="input-info">
                             {strings.identityFileModal}
                         </div>
-                        {userState?.user?.identityFile && (
-                            <div className="input-img input-bg input-border mb-30">
-                                <a
-                                    href={`${STORAGE_PATH}/users/identities/${userState?.user?.identityFile}`}
-                                    target="_blank"
-                                    rel="noReferrer"
-                                >
-                                    <img
-                                        className="m-15"
-                                        src={`${STORAGE_PATH}/users/identities/${userState?.user?.identityFile}`}
-                                    />
-                                </a>
-                            </div>
-                        )}
-                        {!userState?.user?.identityFile && (
-                            <InputTextColumn
-                                field="identityFileModal"
-                                readonly={true}
-                                strings={strings}
-                                icon="icon-gallery4"
-                                value={strings.notUploaded}
-                                inputStyle={{ opacity: "1" }}
-                            />
-                        )}
                     </div>
                 </>
             )}

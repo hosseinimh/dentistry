@@ -220,13 +220,13 @@ const EditPatientFileForm4 = () => {
                                     >
                                         <div className="img">
                                             <a
-                                                href={`${STORAGE_PATH}/p_files/${pageState.props.item.dentitionFile}`}
+                                                href={`${STORAGE_PATH.dentition}/${pageState.props.item.dentitionFile}`}
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
                                                 <img
                                                     alt={strings.dentitionFile}
-                                                    src={`${STORAGE_PATH}/p_files/${pageState.props.item.dentitionFile}`}
+                                                    src={`${STORAGE_PATH.dentition}/${pageState.props.item.dentitionFile}`}
                                                 />
                                             </a>
                                         </div>
@@ -308,13 +308,13 @@ const EditPatientFileForm4 = () => {
                                     >
                                         <div className="img">
                                             <a
-                                                href={`${STORAGE_PATH}/p_files/${pageState.props.item.decidiousFile}`}
+                                                href={`${STORAGE_PATH.decidious}/${pageState.props.item.decidiousFile}`}
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
                                                 <img
                                                     alt={strings.decidiousFile}
-                                                    src={`${STORAGE_PATH}/p_files/${pageState.props.item.decidiousFile}`}
+                                                    src={`${STORAGE_PATH.decidious}/${pageState.props.item.decidiousFile}`}
                                                 />
                                             </a>
                                         </div>
@@ -396,17 +396,35 @@ const EditPatientFileForm4 = () => {
                             items={bopTypes}
                             fullRow={false}
                         />
-                        <div className="d-flex d-flex-column xs-grow-1">
-                            <div className="input-text input-bg mb-0"></div>
-                        </div>
+                        <div></div>
+                        <div></div>
                     </InputRow>
-                    <InputTextColumn field="radiographicEvidence" showLabel />
                     <InputTextColumn field="paraclinicalEvidence" showLabel />
                     <InputTextColumn field="consultationDeps" showLabel />
                     <InputTextColumn field="probableDiagnosis" showLabel />
                     <InputTextColumn field="differntialDiagnosis" showLabel />
                     <InputTextColumn field="difinitiveDiagnosis" showLabel />
                     <InputTextColumn field="systemicConsiderations" showLabel />
+                    <InputTextColumn field="initialTreatmentPlan" showLabel />
+                    <InputTextColumn field="finalTreatmentPlan" showLabel />
+                    <InputRow>
+                        <InputTextColumn
+                            field="student"
+                            showLabel
+                            fullRow={false}
+                        />
+                        <InputTextColumn
+                            field="assistant"
+                            showLabel
+                            fullRow={false}
+                        />
+                        <InputTextColumn
+                            field="master"
+                            showLabel
+                            fullRow={false}
+                        />
+                    </InputRow>
+                    <InputTextColumn field="completedDate" showLabel />
                     <div className="block-border"></div>
                     <PatientFileFooter pageUtils={pageUtils} />
                 </div>

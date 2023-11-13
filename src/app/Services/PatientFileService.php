@@ -23,6 +23,11 @@ class PatientFileService
         return Model::where('file_no', 'LIKE', '%' . $fileNo . '%')->where('name', 'LIKE', '%' . $name . '%')->where('family', 'LIKE', '%' . $family . '%')->orderBy('file_no', 'DESC')->orderBy('id', 'DESC')->skip(($page - 1) * $pageItems)->take($pageItems)->get();
     }
 
+    public function paginatedQuery(?string $fileNo, ?string $name, ?string $family): mixed
+    {
+        return Model::query()->where('file_no', 'LIKE', '%' . $fileNo . '%')->where('name', 'LIKE', '%' . $name . '%')->where('family', 'LIKE', '%' . $family . '%')->orderBy('file_no', 'DESC')->orderBy('id', 'DESC');
+    }
+
     public function store(
         string $fileNo,
         string $firstVisitDate,
@@ -224,7 +229,7 @@ class PatientFileService
         ?string $neckAssymetry,
         ?string $neckTyExamination,
         ?string $lymphNodes,
-        string $tomporomandibularJoint,
+        ?string $tomporomandibularJoint,
         ?string $otherSignsTMJDescription,
         ?string $intraOralExamination,
         ?string $retromolarArea,
@@ -247,13 +252,18 @@ class PatientFileService
         ?string $decidiousT,
         ?string $priodontalExamination,
         string $bop,
-        ?string $radiographicEvidence,
         ?string $paraclinicalEvidence,
         ?string $consultationDeps,
         ?string $probableDiagnosis,
         ?string $differntialDiagnosis,
         ?string $difinitiveDiagnosis,
         ?string $systemicConsiderations,
+        ?string $initialTreatmentPlan,
+        ?string $finalTreatmentPlan,
+        ?string $student,
+        ?string $assistant,
+        ?string $master,
+        ?string $completedDate,
     ): mixed {
         $data = [
             'face_assymetry' => $faceAssymetry ?? '',
@@ -285,13 +295,18 @@ class PatientFileService
             'decidious_t' => $decidiousT ?? '',
             'priodontal_examination' => $priodontalExamination ?? '',
             'bop' => $bop,
-            'radiographic_evidence' => $radiographicEvidence ?? '',
             'paraclinical_evidence' => $paraclinicalEvidence ?? '',
             'consultation_deps' => $consultationDeps ?? '',
             'probable_diagnosis' => $probableDiagnosis ?? '',
             'differntial_diagnosis' => $differntialDiagnosis ?? '',
             'difinitive_diagnosis' => $difinitiveDiagnosis ?? '',
             'systemic_considerations' => $systemicConsiderations ?? '',
+            'initial_treatment_plan' => $initialTreatmentPlan ?? '',
+            'final_treatment_plan' => $finalTreatmentPlan ?? '',
+            'student' => $student ?? '',
+            'assistant' => $assistant ?? '',
+            'master' => $master ?? '',
+            'completed_date' => $completedDate ?? '',
         ];
         return $model->update($data);
     }
@@ -318,6 +333,24 @@ class PatientFileService
             'decidious_file' => null,
         ];
         return $model->update($data);
+    }
+
+    public function delete(Model $model): bool
+    {
+        if ($model->dentition_file) {
+            @unlink(storage_path('app') . '/public/storage/p_files/dentition/' . $model->dentition_file);
+        }
+        if ($model->decidious_file) {
+            @unlink(storage_path('app') . '/public/storage/p_files/decidious/' . $model->decidious_file);
+        }
+        $radiographicEvidenceService = new RadiographicEvidenceService();
+        foreach ($model->radiographicEvidences as $radiographicEvidence) {
+            $radiographicEvidenceService->delete($radiographicEvidence);
+        }
+        foreach ($model->patientFollowUps as $patientFollowUp) {
+            $patientFollowUp->delete();
+        }
+        return $model->delete();
     }
 
     public function count(?string $fileNo, ?string $name, ?string $family): int

@@ -5,7 +5,7 @@ import { UPLOADED_FILE } from "./UploadedFile";
 import { USER_ROLES } from "./userRoles";
 import { NOTIFICATION_CATEGORIES } from "./notificationCategories";
 import { NOTIFICATION_SUB_CATEGORIES } from "./notificationSubCategories";
-import { USER_VERIFICATION_REJECT_REASON } from "./userVerificationRejectReason";
+import { MODAL_RESULT } from "./modalResult";
 import { FILE_FORMS } from "./fileForms";
 import { ETHNICITY_TYPES } from "./ethnicityTypes";
 import { EDUCATION_TYPES } from "./educationTypes";
@@ -44,7 +44,7 @@ export {
     USER_ROLES,
     NOTIFICATION_CATEGORIES,
     NOTIFICATION_SUB_CATEGORIES,
-    USER_VERIFICATION_REJECT_REASON,
+    MODAL_RESULT,
     FILE_FORMS,
     ETHNICITY_TYPES,
     EDUCATION_TYPES,

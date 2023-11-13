@@ -36,6 +36,7 @@ import TopLoadingBar from "./Loading/TopLoadingBar";
 // Modal
 import Modal from "./Modal/Modal";
 import ProfileModal from "./Modal/ProfileModal";
+import PromptModal from "./Modal/PromptModal";
 
 // Page
 import BlankPage from "./Page/BlankPage";
@@ -85,6 +86,7 @@ export {
     TopLoadingBar,
     Modal,
     ProfileModal,
+    PromptModal,
     BlankPage,
     ListPage,
     FormPage,

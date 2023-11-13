@@ -134,8 +134,8 @@ class PatientFileController extends Controller
         if ($request->decidious_file_action === 'deleted') {
             $this->service->removeDecidiousFile($model);
         }
-        (new FileUploaderController(StoragePath::PATIENT_FILE))->uploadFile($model, $request, 'dentition_file', 'dentition_file', 4 * 1024 * 1024, ['image/jpeg', 'image/png']);
-        (new FileUploaderController(StoragePath::PATIENT_FILE))->uploadFile($model, $request, 'decidious_file', 'decidious_file', 4 * 1024 * 1024, ['image/jpeg', 'image/png']);
+        (new FileUploaderController(StoragePath::PATIENT_DENTITION_FILE))->uploadFile($model, $request, 'dentition_file', 'dentition_file', 4 * 1024 * 1024, ['image/jpeg', 'image/png']);
+        (new FileUploaderController(StoragePath::PATIENT_DECIDIOUS_FILE))->uploadFile($model, $request, 'decidious_file', 'decidious_file', 4 * 1024 * 1024, ['image/jpeg', 'image/png']);
         return $this->onUpdate($this->service->updateForm4(
             $model,
             $request->face_assymetry,
@@ -167,13 +167,23 @@ class PatientFileController extends Controller
             $request->decidious_t,
             $request->priodontal_examination,
             $request->bop,
-            $request->radiographic_evidence,
             $request->paraclinical_evidence,
             $request->consultation_deps,
             $request->probable_diagnosis,
             $request->differntial_diagnosis,
             $request->difinitive_diagnosis,
             $request->systemic_considerations,
+            $request->initial_treatment_plan,
+            $request->final_treatment_plan,
+            $request->student,
+            $request->assistant,
+            $request->master,
+            $request->completed_date,
         ));
+    }
+
+    public function delete(Model $model): HttpJsonResponse
+    {
+        return $this->onDelete($this->service->delete($model));
     }
 }

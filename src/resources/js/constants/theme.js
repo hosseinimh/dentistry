@@ -1,7 +1,8 @@
+import { STORAGE_PATH } from "./storagePath";
+
 const BASE_PATH = `/panel`;
 const ASSETS_PATH = "/assets";
 const IMAGES_PATH = "/assets/images";
-const STORAGE_PATH = "/storage";
 const PAGE_ITEMS = 10;
 const THEMES = {
     DARK: "dark",
@@ -17,11 +18,12 @@ const themes = [
             dark: "#0b0e12",
             body: "#141a22",
             lightBody: "#2f343b",
-            link: "#0042a0",
+            link: "#0752bc",
             success: "#00a66a",
             danger: "#d55252",
             primary: "#0042a0",
             primaryLight: "#4983d7",
+            primaryDark: "#023780",
             warning: "#ffe03a",
             darkWarning: "#e8a700",
             placeholder: "#8f959e",
@@ -60,6 +62,7 @@ const themes = [
             danger: "#d55252",
             primary: "#9dc7d8",
             primaryLight: "#4983d7",
+            primaryDark: "#9bc3fb",
             warning: "#ffe03a",
             darkWarning: "#e8a700",
             placeholder: "#3a3a3a",

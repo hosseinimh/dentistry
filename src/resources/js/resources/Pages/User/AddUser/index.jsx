@@ -92,14 +92,23 @@ const AddUser = () => {
                     fullRow={false}
                     icon={"icon-personalcard4"}
                 />
+                <div></div>
+                <div></div>
             </InputRow>
             <InputCheckboxContainer>
-                <InputCheckboxColumn field="isActive" checked={true} />
+                <InputCheckboxColumn
+                    name="isActiveContainer"
+                    field="isActive"
+                    checked={true}
+                />
             </InputCheckboxContainer>
-            <InputRadioContainer label={strings.type}>
+            <InputRadioContainer
+                label={strings.type}
+                containerClassName="d-flex-column"
+            >
                 <InputRadioColumn
-                    field="administrator"
                     name="type"
+                    field="administrator"
                     checked={true}
                 />
                 <InputRadioColumn field="user" name="type" />

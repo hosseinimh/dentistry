@@ -4,6 +4,8 @@ use App\Http\Controllers\User\DashboardController;
 use App\Http\Controllers\User\ErrorController;
 use App\Http\Controllers\User\NotificationController;
 use App\Http\Controllers\User\PatientFileController;
+use App\Http\Controllers\User\PatientFollowUpController;
+use App\Http\Controllers\User\RadiographicEvidenceController;
 use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -36,4 +38,10 @@ Route::middleware(['auth:sanctum', 'auth.logged'])->group(function () {
 
     Route::post('p_files', [PatientFileController::class, 'index']);
     Route::post('p_files/show/{model}', [PatientFileController::class, 'show']);
+
+    Route::post('p_f_ups/{patientFile}', [PatientFollowUpController::class, 'index']);
+    Route::post('p_f_ups/show/{model}', [PatientFollowUpController::class, 'show']);
+
+    Route::post('r_evidences/{patientFile}', [RadiographicEvidenceController::class, 'index']);
+    Route::post('r_evidences/show/{model}', [RadiographicEvidenceController::class, 'show']);
 });
