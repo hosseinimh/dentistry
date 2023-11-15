@@ -297,7 +297,7 @@ export const lesionClassification = {
 
 export const specialLesionClassification = {
     oralLichen: "لیکن پلان دهانی",
-    scc: "سرطان دهان(SCC)",
+    scc: "سرطان دهان (SCC)",
     aphthous: "آفت",
     mronj: "مرونژ",
     sjogrensSyndrome: "شوگرن",
@@ -393,7 +393,6 @@ export const patientFileForms = {
     form2: "فرم دو",
     form3: "فرم سه",
     form4: "فرم چهار",
-    form5: "فرم پنج",
 };
 
 export const patientFilesHeader = {
@@ -405,7 +404,6 @@ export const patientFilesHeader = {
     form2: "فرم دو",
     form3: "فرم سه",
     form4: "فرم چهار",
-    form5: "فرم پنج",
 };
 
 export const patientFilesPage = {

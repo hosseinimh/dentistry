@@ -194,7 +194,7 @@ const PatientFiles = () => {
                 />
             </InputCheckboxContainer>
             <div className="block-border"></div>
-            <h3 className="text mb-30">{strings.systemicDiseaseHistory}</h3>
+            <p className="mb-30">{strings.systemicDiseaseHistory}</p>
             <InputCheckboxContainer>
                 <InputCheckboxColumn
                     name="systemicDiseaseHistory"
@@ -500,7 +500,7 @@ const PatientFiles = () => {
                 <InputTextColumn field="functionalCapacity" />
             </InputRow>
             <div className="block-border"></div>
-            <h3 className="text">{strings.patientHabits}</h3>
+            <p>{strings.patientHabits}</p>
             <InputCheckboxContainer>
                 <InputCheckboxColumn
                     name="tobaccoUsage"
@@ -567,7 +567,7 @@ const PatientFiles = () => {
                 <InputCheckboxColumn name="alcoholUsage" field="alcohol" />
             </InputCheckboxContainer>
             <div className="block-border"></div>
-            <h4 className="mt-20 mb-10">{strings.intraOralExamination}</h4>
+            <p className="mt-20 mb-10">{strings.intraOralExamination}</p>
             <InputRow>
                 <InputTextColumn field="retromolarArea" fullRow={false} />
                 <InputTextColumn field="gums" fullRow={false} />
