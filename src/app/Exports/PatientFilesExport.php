@@ -12,8 +12,49 @@ class PatientFilesExport implements FromQuery, WithMapping, WithHeadings, Should
 {
     private int $index;
 
-    public function __construct(private ?string $fileNo, private ?string $name, private  ?string $family)
-    {
+    public function __construct(
+        private ?string $fileNo,
+        private ?string $name,
+        private ?string $family,
+        private ?string $birthDate,
+        private ?string $lesionClassification,
+        private ?string $specialLesionClassification,
+        private ?string $systemicDiseaseHistory,
+        private ?string $bloodDiseaseType,
+        private ?string $hospitalizationReason,
+        private ?string $continuingDrug,
+        private ?string $weeklyDrug,
+        private ?string $cancerType,
+        private ?string $radiationPlace,
+        private ?string $pregnancyWeek,
+        private ?string $pregnancyNum,
+        private ?string $pregnancyRank,
+        private ?string $adExplanation,
+        private ?string $sleepStatus,
+        private ?string $functionalCapacity,
+        private int $tobaccoUse,
+        private ?string $useTobaccoDuration,
+        private ?string $useTobaccoType,
+        private int $drugUse,
+        private ?string $useDrugDuration,
+        private ?string $useDrugType,
+        private int $alcohol,
+        private ?string $retromolarArea,
+        private ?string $gums,
+        private ?string $toothlessRidge,
+        private ?string $hardSoftPalate,
+        private ?string $tongueDorsal,
+        private ?string $tongueVentral,
+        private ?string $tonguePharyngeal,
+        private ?string $neurologicalChanges,
+        private ?string $salivaryGrandExamination,
+        private ?string $dentalChangesExamination,
+        private ?string $probableDiagnosis,
+        private ?string $difinitiveDiagnosis,
+        private ?string $finalTreatmentPlan,
+        private ?string $assistant,
+        private ?string $master,
+    ) {
         $this->index = 1;
     }
 
@@ -25,6 +66,8 @@ class PatientFilesExport implements FromQuery, WithMapping, WithHeadings, Should
             __('patient_file.excel_first_visit_date'),
             __('patient_file.excel_name'),
             __('patient_file.excel_family'),
+            __('patient_file.excel_assistant'),
+            __('patient_file.excel_master'),
         ];
     }
 
@@ -49,6 +92,8 @@ class PatientFilesExport implements FromQuery, WithMapping, WithHeadings, Should
             $item->first_visit_date,
             $item->name,
             $item->family,
+            $item->assistant,
+            $item->master,
         ];
     }
 }

@@ -11,7 +11,7 @@ const editPatientFileForm3Schema = yup.object().shape({
         yup,
         strings.bloodDiseaseType,
         "systemicDiseaseHistory",
-        "blood_disease",
+        "bloodDisease",
         null,
         200
     ),
@@ -19,7 +19,7 @@ const editPatientFileForm3Schema = yup.object().shape({
         yup,
         strings.hospitalizationReason,
         "systemicDiseaseHistory",
-        "hospitalization_history",
+        "hospitalizationHistory",
         null,
         200
     ),
@@ -81,7 +81,7 @@ const editPatientFileForm3Schema = yup.object().shape({
         yup,
         strings.adExplanation,
         "systemicDiseaseHistory",
-        "artificial_device",
+        "artificialDevice",
         null,
         200
     ),

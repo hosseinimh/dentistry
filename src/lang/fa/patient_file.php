@@ -139,6 +139,7 @@ return [
     'final_treatment_plan_max' => $maxStringMessage('طرح درمان نهایی', 1000),
     'student_required' => $requiredMessage('نام و نام خانوادگی دانشجو'),
     'student_max' => $maxStringMessage('نام و نام خانوادگی دانشجو', 200),
+    'assistant_required' => $requiredMessage('نام و نام خانوادگی آسیستان'),
     'assistant_max' => $requiredMessage('نام و نام خانوادگی آسیستان'),
     'assistant_max' => $maxStringMessage('نام و نام خانوادگی آسیستان', 200),
     'master_required' => $requiredMessage('نام و نام خانوادگی استاد'),
@@ -150,5 +151,7 @@ return [
     'excel_file_no' => 'شماره پرونده',
     'excel_name' => 'نام',
     'excel_family' => 'نام خانوادگی',
+    'excel_assistant' => 'نام و نام خانوادگی آسیستان',
+    'excel_master' => 'نام و نام خانوادگی استاد',
 
 ];

@@ -5,6 +5,7 @@ namespace App\Services;
 use App\Constants\ErrorCode;
 use App\Models\PatientFile as Model;
 use Exception;
+use Illuminate\Database\Eloquent\Builder;
 
 class PatientFileService
 {
@@ -18,9 +19,94 @@ class PatientFileService
         return Model::where('file_no', $fileNo)->first();
     }
 
-    public function getPaginate(?string $fileNo, ?string $name, ?string $family, int $page, int $pageItems): mixed
-    {
-        return Model::where('file_no', 'LIKE', '%' . $fileNo . '%')->where('name', 'LIKE', '%' . $name . '%')->where('family', 'LIKE', '%' . $family . '%')->orderBy('file_no', 'DESC')->orderBy('id', 'DESC')->skip(($page - 1) * $pageItems)->take($pageItems)->get();
+    public function getPaginate(
+        ?string $fileNo,
+        ?string $name,
+        ?string $family,
+        ?string $birthDate,
+        ?string $lesionClassification,
+        ?string $specialLesionClassification,
+        ?string $systemicDiseaseHistory,
+        ?string $bloodDiseaseType,
+        ?string $hospitalizationReason,
+        ?string $continuingDrug,
+        ?string $weeklyDrug,
+        ?string $cancerType,
+        ?string $radiationPlace,
+        ?string $pregnancyWeek,
+        ?string $pregnancyNum,
+        ?string $pregnancyRank,
+        ?string $adExplanation,
+        ?string $sleepStatus,
+        ?string $functionalCapacity,
+        int $tobaccoUse,
+        ?string $useTobaccoDuration,
+        ?string $useTobaccoType,
+        int $drugUse,
+        ?string $useDrugDuration,
+        ?string $useDrugType,
+        int $alcohol,
+        ?string $retromolarArea,
+        ?string $gums,
+        ?string $toothlessRidge,
+        ?string $hardSoftPalate,
+        ?string $tongueDorsal,
+        ?string $tongueVentral,
+        ?string $tonguePharyngeal,
+        ?string $neurologicalChanges,
+        ?string $salivaryGrandExamination,
+        ?string $dentalChangesExamination,
+        ?string $probableDiagnosis,
+        ?string $difinitiveDiagnosis,
+        ?string $finalTreatmentPlan,
+        ?string $assistant,
+        ?string $master,
+        int $page,
+        int $pageItems
+    ): mixed {
+        return $this->createPaginateQuery(
+            $fileNo,
+            $name,
+            $family,
+            $birthDate,
+            $lesionClassification,
+            $specialLesionClassification,
+            $systemicDiseaseHistory,
+            $bloodDiseaseType,
+            $hospitalizationReason,
+            $continuingDrug,
+            $weeklyDrug,
+            $cancerType,
+            $radiationPlace,
+            $pregnancyWeek,
+            $pregnancyNum,
+            $pregnancyRank,
+            $adExplanation,
+            $sleepStatus,
+            $functionalCapacity,
+            $tobaccoUse,
+            $useTobaccoDuration,
+            $useTobaccoType,
+            $drugUse,
+            $useDrugDuration,
+            $useDrugType,
+            $alcohol,
+            $retromolarArea,
+            $gums,
+            $toothlessRidge,
+            $hardSoftPalate,
+            $tongueDorsal,
+            $tongueVentral,
+            $tonguePharyngeal,
+            $neurologicalChanges,
+            $salivaryGrandExamination,
+            $dentalChangesExamination,
+            $probableDiagnosis,
+            $difinitiveDiagnosis,
+            $finalTreatmentPlan,
+            $assistant,
+            $master
+        )->orderBy('file_no', 'DESC')->orderBy('id', 'DESC')->skip(($page - 1) * $pageItems)->take($pageItems)->get();
     }
 
     public function paginatedQuery(?string $fileNo, ?string $name, ?string $family): mixed
@@ -351,9 +437,213 @@ class PatientFileService
         return $model->delete();
     }
 
-    public function count(?string $fileNo, ?string $name, ?string $family): int
-    {
-        return Model::where('file_no', 'LIKE', '%' . $fileNo . '%')->where('name', 'LIKE', '%' . $name . '%')->where('family', 'LIKE', '%' . $family . '%')->count();
+    public function count(
+        ?string $fileNo,
+        ?string $name,
+        ?string $family,
+        ?string $birthDate,
+        ?string $lesionClassification,
+        ?string $specialLesionClassification,
+        ?string $systemicDiseaseHistory,
+        ?string $bloodDiseaseType,
+        ?string $hospitalizationReason,
+        ?string $continuingDrug,
+        ?string $weeklyDrug,
+        ?string $cancerType,
+        ?string $radiationPlace,
+        ?string $pregnancyWeek,
+        ?string $pregnancyNum,
+        ?string $pregnancyRank,
+        ?string $adExplanation,
+        ?string $sleepStatus,
+        ?string $functionalCapacity,
+        int $tobaccoUse,
+        ?string $useTobaccoDuration,
+        ?string $useTobaccoType,
+        int $drugUse,
+        ?string $useDrugDuration,
+        ?string $useDrugType,
+        int $alcohol,
+        ?string $retromolarArea,
+        ?string $gums,
+        ?string $toothlessRidge,
+        ?string $hardSoftPalate,
+        ?string $tongueDorsal,
+        ?string $tongueVentral,
+        ?string $tonguePharyngeal,
+        ?string $neurologicalChanges,
+        ?string $salivaryGrandExamination,
+        ?string $dentalChangesExamination,
+        ?string $probableDiagnosis,
+        ?string $difinitiveDiagnosis,
+        ?string $finalTreatmentPlan,
+        ?string $assistant,
+        ?string $master,
+    ): int {
+        return $this->createPaginateQuery(
+            $fileNo,
+            $name,
+            $family,
+            $birthDate,
+            $lesionClassification,
+            $specialLesionClassification,
+            $systemicDiseaseHistory,
+            $bloodDiseaseType,
+            $hospitalizationReason,
+            $continuingDrug,
+            $weeklyDrug,
+            $cancerType,
+            $radiationPlace,
+            $pregnancyWeek,
+            $pregnancyNum,
+            $pregnancyRank,
+            $adExplanation,
+            $sleepStatus,
+            $functionalCapacity,
+            $tobaccoUse,
+            $useTobaccoDuration,
+            $useTobaccoType,
+            $drugUse,
+            $useDrugDuration,
+            $useDrugType,
+            $alcohol,
+            $retromolarArea,
+            $gums,
+            $toothlessRidge,
+            $hardSoftPalate,
+            $tongueDorsal,
+            $tongueVentral,
+            $tonguePharyngeal,
+            $neurologicalChanges,
+            $salivaryGrandExamination,
+            $dentalChangesExamination,
+            $probableDiagnosis,
+            $difinitiveDiagnosis,
+            $finalTreatmentPlan,
+            $assistant,
+            $master
+        )->count();
+    }
+
+    private function createPaginateQuery(
+        ?string $fileNo,
+        ?string $name,
+        ?string $family,
+        ?string $birthDate,
+        ?string $lesionClassification,
+        ?string $specialLesionClassification,
+        ?string $systemicDiseaseHistory,
+        ?string $bloodDiseaseType,
+        ?string $hospitalizationReason,
+        ?string $continuingDrug,
+        ?string $weeklyDrug,
+        ?string $cancerType,
+        ?string $radiationPlace,
+        ?string $pregnancyWeek,
+        ?string $pregnancyNum,
+        ?string $pregnancyRank,
+        ?string $adExplanation,
+        ?string $sleepStatus,
+        ?string $functionalCapacity,
+        int $tobaccoUse,
+        ?string $useTobaccoDuration,
+        ?string $useTobaccoType,
+        int $drugUse,
+        ?string $useDrugDuration,
+        ?string $useDrugType,
+        int $alcohol,
+        ?string $retromolarArea,
+        ?string $gums,
+        ?string $toothlessRidge,
+        ?string $hardSoftPalate,
+        ?string $tongueDorsal,
+        ?string $tongueVentral,
+        ?string $tonguePharyngeal,
+        ?string $neurologicalChanges,
+        ?string $salivaryGrandExamination,
+        ?string $dentalChangesExamination,
+        ?string $probableDiagnosis,
+        ?string $difinitiveDiagnosis,
+        ?string $finalTreatmentPlan,
+        ?string $assistant,
+        ?string $master,
+    ): Builder {
+        $birthDate = $birthDate ? substr($birthDate, 0, 4) . "/" . substr($birthDate, 4, 2) . "/" . substr($birthDate, 6) : null;
+        $lesionClassificationItems = $lesionClassification ? explode('|', $lesionClassification) : [];
+        $specialLesionClassificationItems = $specialLesionClassification ? explode('|', $specialLesionClassification) : [];
+        $systemicDiseaseHistoryItems = $systemicDiseaseHistory ? explode('|', $systemicDiseaseHistory) : [];
+        $query = Model::where('file_no', 'LIKE', '%' . $fileNo . '%')->where('name', 'LIKE', '%' . $name . '%')->where('family', 'LIKE', '%' . $family . '%')->where('birth_date', 'LIKE', '%' . $birthDate . '%');
+        if (count($lesionClassificationItems) > 0) {
+            $query->where(function ($query) use ($lesionClassificationItems) {
+                foreach ($lesionClassificationItems as $item) {
+                    $query->orWhere('lesion_classification', 'LIKE', '%' . $item . '%');
+                }
+            });
+        }
+        if (count($specialLesionClassificationItems) > 0) {
+            $query->where(function ($query) use ($specialLesionClassificationItems) {
+                foreach ($specialLesionClassificationItems as $item) {
+                    $query->orWhere('special_lesion_classification', 'LIKE', '%' . $item . '%');
+                }
+            });
+        }
+        if (count($systemicDiseaseHistoryItems) > 0) {
+            $query->where(function ($query) use ($systemicDiseaseHistoryItems) {
+                foreach ($systemicDiseaseHistoryItems as $item) {
+                    $query->orWhere('systemic_disease_history', 'LIKE', '%' . $item . '%');
+                }
+            });
+            if (in_array('blood_disease', $systemicDiseaseHistoryItems)) {
+                $query->where('blood_disease_type', 'LIKE', '%' . $bloodDiseaseType . '%');
+            }
+            if (in_array('hospitalization_history', $systemicDiseaseHistoryItems)) {
+                $query->where('hospitalization_reason', 'LIKE', '%' . $hospitalizationReason . '%');
+            }
+            if (in_array('cancer', $systemicDiseaseHistoryItems)) {
+                $query->where('cancer_type', 'LIKE', '%' . $cancerType . '%');
+            }
+            if (in_array('chemotherapy', $systemicDiseaseHistoryItems)) {
+                $query->where('radiation_place', 'LIKE', '%' . $radiationPlace . '%');
+            }
+            if (in_array('pregnancy', $systemicDiseaseHistoryItems)) {
+                $query->where('pregnancy_week', 'LIKE', '%' . $pregnancyWeek . '%')
+                    ->where('pregnancy_num', 'LIKE', '%' . $pregnancyNum . '%')
+                    ->where('pregnancy_rank', 'LIKE', '%' . $pregnancyRank . '%');
+            }
+            if (in_array('artificial_device', $systemicDiseaseHistoryItems)) {
+                $query->where('ad_explanation', 'LIKE', '%' . $adExplanation . '%');
+            }
+        }
+        $query->where('continuing_drug', 'LIKE', '%' . $continuingDrug . '%')
+            ->where('weekly_drug', 'LIKE', '%' . $weeklyDrug . '%')
+            ->where('sleep_status', 'LIKE', '%' . $sleepStatus . '%')
+            ->where('functional_capacity', 'LIKE', '%' . $functionalCapacity . '%')
+            ->where('tobacco_use', $tobaccoUse);
+        if ($tobaccoUse) {
+            $query->where('use_tobacco_duration', 'LIKE', '%' . $useTobaccoDuration . '%')
+                ->where('use_tobacco_type', 'LIKE', '%' . $useTobaccoType . '%');
+        }
+        $query->where('drug_use', $drugUse);
+        if ($drugUse) {
+            $query->where('use_drug_duration', 'LIKE', '%' . $useDrugDuration . '%')
+                ->where('use_drug_type', 'LIKE', '%' . $useDrugType . '%');
+        }
+        $query->where('alcohol', $alcohol);
+        return $query->where('retromolar_area', 'LIKE', '%' . $retromolarArea . '%')
+            ->where('gums', 'LIKE', '%' . $gums . '%')
+            ->where('toothless_ridge', 'LIKE', '%' . $toothlessRidge . '%')
+            ->where('hard_soft_palate', 'LIKE', '%' . $hardSoftPalate . '%')
+            ->where('tongue_dorsal', 'LIKE', '%' . $tongueDorsal . '%')
+            ->where('tongue_ventral', 'LIKE', '%' . $tongueVentral . '%')
+            ->where('tongue_pharyngeal', 'LIKE', '%' . $tonguePharyngeal . '%')
+            ->where('neurological_changes', 'LIKE', '%' . $neurologicalChanges . '%')
+            ->where('salivary_grand_examination', 'LIKE', '%' . $salivaryGrandExamination . '%')
+            ->where('dental_changes_examination', 'LIKE', '%' . $dentalChangesExamination . '%')
+            ->where('probable_diagnosis', 'LIKE', '%' . $probableDiagnosis . '%')
+            ->where('difinitive_diagnosis', 'LIKE', '%' . $difinitiveDiagnosis . '%')
+            ->where('final_treatment_plan', 'LIKE', '%' . $finalTreatmentPlan . '%')
+            ->where('assistant', 'LIKE', '%' . $assistant . '%')
+            ->where('master', 'LIKE', '%' . $master . '%');
     }
 
     private function throwIfFileNoNotUnique(string $fileNo, Model|null $targetModel = null)

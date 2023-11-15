@@ -47,12 +47,6 @@ const editPatientFileForm4Schema = yup.object().shape({
         null,
         200
     ),
-    intraOralExamination: stringValidator(
-        yup.string(),
-        strings.intraOralExamination,
-        null,
-        300
-    ),
     retromolarArea: stringValidator(
         yup.string(),
         strings.retromolarArea,
