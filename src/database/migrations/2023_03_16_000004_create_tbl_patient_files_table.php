@@ -80,7 +80,6 @@ return new class extends Migration
             $table->text('lymph_nodes')->nullable();
             $table->string('tomporomandibular_joint')->nullable();
             $table->string('other_signs_tmj_description')->nullable();
-            $table->text('intra_oral_examination')->nullable();
             $table->text('retromolar_area')->nullable();
             $table->text('gums')->nullable();
             $table->text('toothless_ridge')->nullable();

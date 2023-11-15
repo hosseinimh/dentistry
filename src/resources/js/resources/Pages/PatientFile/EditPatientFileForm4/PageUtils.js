@@ -19,9 +19,6 @@ export class PageUtils extends BasePageUtils {
         });
         super("EditPatientFileForm4", strings, form);
         this.entity = new Entity();
-        this.initialPageProps = {
-            item8: false,
-        };
         this.callbackUrl = `${BASE_PATH}/p_files`;
     }
 
@@ -203,7 +200,6 @@ export class PageUtils extends BasePageUtils {
             tomporomandibularJoint?.includes("other_signs_tmj")
                 ? data.otherSignsTMJDescription
                 : "",
-            data.intraOralExamination,
             data.retromolarArea,
             data.gums,
             data.toothlessRidge,

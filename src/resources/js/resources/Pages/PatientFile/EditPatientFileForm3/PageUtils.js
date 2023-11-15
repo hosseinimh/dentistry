@@ -23,9 +23,6 @@ export class PageUtils extends BasePageUtils {
         });
         super("EditPatientFileForm3", strings, form);
         this.entity = new Entity();
-        this.initialPageProps = {
-            item8: false,
-        };
         this.callbackUrl = `${BASE_PATH}/p_files`;
     }
 

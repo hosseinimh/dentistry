@@ -41,7 +41,6 @@ class UpdatePatientFileForm4Request extends FormRequest
                 }
             },],
             'other_signs_tmj_description' => str_contains($this->input('tomporomandibular_joint'), 'other_signs_tmj') ? 'required|max:200' : '',
-            'intra_oral_examination' => 'max:300',
             'retromolar_area' => 'max:300',
             'gums' => 'max:300',
             'toothless_ridge' => 'max:300',
@@ -86,7 +85,6 @@ class UpdatePatientFileForm4Request extends FormRequest
             'neck_assymetry.max' => __('patient_file.neck_assymetry_max'),
             'neck_ty_examination.max' => __('patient_file.neck_ty_examination_max'),
             'lymph_nodes.max' => __('patient_file.lymph_nodes_max'),
-            'intra_oral_examination.max' => __('patient_file.intra_oral_examination_max'),
             'retromolar_area.max' => __('patient_file.retromolar_area_max'),
             'gums.max' => __('patient_file.gums_max'),
             'toothless_ridge.max' => __('patient_file.toothless_ridge_max'),

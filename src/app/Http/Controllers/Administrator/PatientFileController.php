@@ -146,7 +146,6 @@ class PatientFileController extends Controller
             $request->lymph_nodes,
             $request->tomporomandibular_joint,
             $request->other_signs_tmj_description,
-            $request->intra_oral_examination,
             $request->retromolar_area,
             $request->gums,
             $request->toothless_ridge,

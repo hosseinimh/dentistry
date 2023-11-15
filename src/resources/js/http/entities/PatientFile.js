@@ -220,7 +220,6 @@ export class PatientFile extends Entity {
         lymphNodes,
         tomporomandibularJoint,
         otherSignsTMJDescription,
-        intraOralExamination,
         retromolarArea,
         gums,
         toothlessRidge,
@@ -269,7 +268,6 @@ export class PatientFile extends Entity {
             data.append("tomporomandibular_joint", tomporomandibularJoint);
         }
         data.append("other_signs_tmj_description", otherSignsTMJDescription);
-        data.append("intra_oral_examination", intraOralExamination);
         data.append("retromolar_area", retromolarArea);
         data.append("gums", gums);
         data.append("toothless_ridge", toothlessRidge);

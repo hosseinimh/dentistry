@@ -5,6 +5,9 @@ import { easeOutQuint } from "es6-easings";
 
 import {
     CustomLink,
+    InputCheckboxColumn,
+    InputCheckboxContainer,
+    InputDatePickerColumn,
     InputRow,
     InputTextColumn,
     ListPage,
@@ -18,6 +21,9 @@ import { PageUtils } from "./PageUtils";
 import {
     patientFilesPage as strings,
     general,
+    lesionClassification,
+    specialLesionClassification,
+    systemicDiseaseHistory,
 } from "../../../../constants/strings/fa";
 import { setDropDownElementAction } from "../../../../state/layout/layoutActions";
 
@@ -69,7 +75,535 @@ const PatientFiles = () => {
                     icon={"icon-personalcard4"}
                     fullRow={false}
                 />
+                <InputDatePickerColumn field="birthDate" fullRow={false} />
             </InputRow>
+            <div className="block-border"></div>
+            <InputCheckboxContainer label={strings.lesionClassification}>
+                <InputCheckboxColumn
+                    name="lesionClassification"
+                    field="ulcer"
+                    strings={lesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="lesionClassification"
+                    field="centralLesion"
+                    strings={lesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="lesionClassification"
+                    field="naturalChanges"
+                    strings={lesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="lesionClassification"
+                    field="painDisturbance"
+                    strings={lesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="lesionClassification"
+                    field="whiteLesion"
+                    strings={lesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="lesionClassification"
+                    field="infectiousLesion"
+                    strings={lesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="lesionClassification"
+                    field="dentalChanges"
+                    strings={lesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="lesionClassification"
+                    field="temporomandibularDisturbance"
+                    strings={lesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="lesionClassification"
+                    field="pigmantedLesion"
+                    strings={lesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="lesionClassification"
+                    field="gingivalHyperplasia"
+                    strings={lesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="lesionClassification"
+                    field="syndrome"
+                    strings={lesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="lesionClassification"
+                    field="cervicalLumps"
+                    strings={lesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="lesionClassification"
+                    field="prominentLesion"
+                    strings={lesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="lesionClassification"
+                    field="salivaryLesion"
+                    strings={lesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="lesionClassification"
+                    field={"complicatedDisease"}
+                    strings={lesionClassification}
+                />
+            </InputCheckboxContainer>
+            <div className="block-border"></div>
+            <InputCheckboxContainer label={strings.specialLesionClassification}>
+                <InputCheckboxColumn
+                    name="specialLesionClassification"
+                    field="oralLichen"
+                    strings={specialLesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="specialLesionClassification"
+                    field="scc"
+                    strings={specialLesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="specialLesionClassification"
+                    field="aphthous"
+                    strings={specialLesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="specialLesionClassification"
+                    field="mronj"
+                    strings={specialLesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="specialLesionClassification"
+                    field="sjogrensSyndrome"
+                    strings={specialLesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="specialLesionClassification"
+                    field="rheumatoidArthritis"
+                    strings={specialLesionClassification}
+                />
+                <InputCheckboxColumn
+                    name="specialLesionClassification"
+                    field="cancerInOPlace"
+                    strings={specialLesionClassification}
+                />
+            </InputCheckboxContainer>
+            <div className="block-border"></div>
+            <h3 className="text mb-30">{strings.systemicDiseaseHistory}</h3>
+            <InputCheckboxContainer>
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="heartDisease"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="nervousIllness"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="abnormalBleeding"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="abnormalBloodPressure"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="respiratoryDisease"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="hepatitDisease"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="sinusitis"
+                    strings={systemicDiseaseHistory}
+                />
+            </InputCheckboxContainer>
+            <InputCheckboxContainer>
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="bloodDisease"
+                    strings={systemicDiseaseHistory}
+                    onChange={(e) =>
+                        pageUtils.onSetItem(e.target.id, e.target.checked)
+                    }
+                />
+                {pageState?.props?.bloodDisease && (
+                    <InputTextColumn
+                        componentContainerClassName="grow-1"
+                        inputContainerClassName="mb-0"
+                        field="bloodDiseaseType"
+                        fullRow={false}
+                    />
+                )}
+                <div className="d-flex d-flex-column xs-grow-1">
+                    <div className="input-text input-bg mb-0"></div>
+                </div>
+            </InputCheckboxContainer>
+            <InputCheckboxContainer>
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="bloodBorneDisease"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="injectingContaminatedBlood"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="epilepsy"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="kidneyDisease"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="diabetes"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="thyroid"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="fmAllergy"
+                    strings={systemicDiseaseHistory}
+                />
+            </InputCheckboxContainer>
+            <InputCheckboxContainer>
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="hospitalizationHistory"
+                    strings={systemicDiseaseHistory}
+                    onChange={(e) =>
+                        pageUtils.onSetItem(e.target.id, e.target.checked)
+                    }
+                />
+                {pageState?.props?.hospitalizationHistory && (
+                    <InputTextColumn
+                        componentContainerClassName="grow-1"
+                        inputContainerClassName="mb-0"
+                        field="hospitalizationReason"
+                        fullRow={false}
+                    />
+                )}
+                <div className="d-flex d-flex-column xs-grow-1">
+                    <div className="input-text input-bg mb-0"></div>
+                </div>
+            </InputCheckboxContainer>
+            <InputRow>
+                <InputTextColumn field="continuingDrug" />
+            </InputRow>
+            <InputRow>
+                <InputTextColumn field="weeklyDrug" />
+            </InputRow>
+            <InputCheckboxContainer>
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="weightLoss"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="immuneDisease"
+                    strings={systemicDiseaseHistory}
+                />
+            </InputCheckboxContainer>
+            <InputCheckboxContainer>
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="cancer"
+                    strings={systemicDiseaseHistory}
+                    onChange={(e) =>
+                        pageUtils.onSetItem(e.target.id, e.target.checked)
+                    }
+                />
+                {pageState?.props?.cancer && (
+                    <InputTextColumn
+                        componentContainerClassName="grow-1"
+                        inputContainerClassName="mb-0"
+                        field="cancerType"
+                        fullRow={false}
+                    />
+                )}
+                <div className="d-flex d-flex-column xs-grow-1">
+                    <div className="input-text input-bg mb-0"></div>
+                </div>
+            </InputCheckboxContainer>
+            <InputCheckboxContainer>
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="chemotherapy"
+                    strings={systemicDiseaseHistory}
+                    onChange={(e) =>
+                        pageUtils.onSetItem(e.target.id, e.target.checked)
+                    }
+                />
+                {pageState?.props?.chemotherapy && (
+                    <InputTextColumn
+                        componentContainerClassName="grow-1"
+                        inputContainerClassName="mb-0"
+                        field="radiationPlace"
+                        fullRow={false}
+                    />
+                )}
+                <div className="d-flex d-flex-column xs-grow-1">
+                    <div className="input-text input-bg mb-0"></div>
+                </div>
+            </InputCheckboxContainer>
+            <InputCheckboxContainer>
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="boneDisaese"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="skinDisease"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="digestiveDisease"
+                    strings={systemicDiseaseHistory}
+                />
+            </InputCheckboxContainer>
+            <InputCheckboxContainer>
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="pregnancy"
+                    strings={systemicDiseaseHistory}
+                    onChange={(e) =>
+                        pageUtils.onSetItem(e.target.id, e.target.checked)
+                    }
+                />
+            </InputCheckboxContainer>
+            {pageState?.props?.pregnancy && (
+                <InputRow
+                    containerStyle={{
+                        alignItems: "center",
+                        marginBottom: "1.25rem",
+                    }}
+                >
+                    <div style={{ flex: "none", marginLeft: "2rem" }}>
+                        {pageUtils?.strings?.pregnancy}
+                    </div>
+                    <InputTextColumn
+                        componentContainerStyle={{
+                            flex: "none",
+                            width: "100px",
+                        }}
+                        inputContainerClassName="mb-0"
+                        field="pregnancyWeek"
+                        fullRow={false}
+                    />
+                    <InputTextColumn
+                        componentContainerStyle={{
+                            flex: "none",
+                            width: "100px",
+                        }}
+                        inputContainerClassName="mb-0"
+                        field="pregnancyNum"
+                        fullRow={false}
+                    />
+                    <InputTextColumn
+                        componentContainerStyle={{
+                            flex: "none",
+                            width: "100px",
+                        }}
+                        inputContainerClassName="mb-0"
+                        field="pregnancyRank"
+                        fullRow={false}
+                    />
+                    <div className="d-flex d-flex-column xs-grow-1">
+                        <div className="input-text input-bg mb-0"></div>
+                    </div>
+                </InputRow>
+            )}
+            <InputCheckboxContainer>
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="pms"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="temporomandibular"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="dentistryProblem"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="addiction"
+                    strings={systemicDiseaseHistory}
+                />
+            </InputCheckboxContainer>
+            <InputCheckboxContainer>
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="artificialDevice"
+                    strings={systemicDiseaseHistory}
+                    onChange={(e) =>
+                        pageUtils.onSetItem(e.target.id, e.target.checked)
+                    }
+                />
+                {pageState?.props?.artificialDevice && (
+                    <InputTextColumn
+                        componentContainerClassName="grow-1"
+                        inputContainerClassName="mb-0"
+                        field="adExplanation"
+                        fullRow={false}
+                    />
+                )}
+                <div className="d-flex d-flex-column xs-grow-1">
+                    <div className="input-text input-bg mb-0"></div>
+                </div>
+            </InputCheckboxContainer>
+            <InputCheckboxContainer>
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="bruxism"
+                    strings={systemicDiseaseHistory}
+                />
+                <InputCheckboxColumn
+                    name="systemicDiseaseHistory"
+                    field="helpLiving"
+                    strings={systemicDiseaseHistory}
+                />
+            </InputCheckboxContainer>
+            <InputTextColumn field="sleepStatus" />
+            <InputRow>
+                <InputTextColumn field="functionalCapacity" />
+            </InputRow>
+            <div className="block-border"></div>
+            <h3 className="text">{strings.patientHabits}</h3>
+            <InputCheckboxContainer>
+                <InputCheckboxColumn
+                    name="tobaccoUsage"
+                    field="tobaccoUse"
+                    onChange={(e) =>
+                        pageUtils.onSetItem(e.target.id, e.target.checked)
+                    }
+                />
+                {pageState?.props?.tobaccoUse && (
+                    <>
+                        <InputTextColumn
+                            componentContainerClassName="grow-1"
+                            inputContainerClassName="mb-0"
+                            field="useTobaccoDuration"
+                            fullRow={false}
+                        />
+                        <InputTextColumn
+                            componentContainerClassName="grow-1"
+                            inputContainerClassName="mb-0"
+                            field="useTobaccoType"
+                            fullRow={false}
+                        />
+                    </>
+                )}
+                <div className="d-flex d-flex-column xs-grow-1">
+                    <div className="input-text input-bg mb-0"></div>
+                </div>
+                <div className="d-flex d-flex-column xs-grow-1">
+                    <div className="input-text input-bg mb-0"></div>
+                </div>
+            </InputCheckboxContainer>
+            <InputCheckboxContainer>
+                <InputCheckboxColumn
+                    name="drugUsage"
+                    field="drugUse"
+                    onChange={(e) =>
+                        pageUtils.onSetItem(e.target.id, e.target.checked)
+                    }
+                />
+                {pageState?.props?.drugUse && (
+                    <>
+                        <InputTextColumn
+                            componentContainerClassName="grow-1"
+                            inputContainerClassName="mb-0"
+                            field="useDrugDuration"
+                            fullRow={false}
+                        />
+                        <InputTextColumn
+                            componentContainerClassName="grow-1"
+                            inputContainerClassName="mb-0"
+                            field="useDrugType"
+                            fullRow={false}
+                        />
+                    </>
+                )}
+                <div className="d-flex d-flex-column xs-grow-1">
+                    <div className="input-text input-bg mb-0"></div>
+                </div>
+                <div className="d-flex d-flex-column xs-grow-1">
+                    <div className="input-text input-bg mb-0"></div>
+                </div>
+            </InputCheckboxContainer>
+            <InputCheckboxContainer>
+                <InputCheckboxColumn name="alcoholUsage" field="alcohol" />
+            </InputCheckboxContainer>
+            <div className="block-border"></div>
+            <h4 className="mt-20 mb-10">{strings.intraOralExamination}</h4>
+            <InputRow>
+                <InputTextColumn field="retromolarArea" fullRow={false} />
+                <InputTextColumn field="gums" fullRow={false} />
+                <InputTextColumn field="toothlessRidge" fullRow={false} />
+            </InputRow>
+            <InputRow>
+                <InputTextColumn field="hardSoftPalate" fullRow={false} />
+                <InputTextColumn field="tongueDorsal" fullRow={false} />
+                <InputTextColumn field="tongueVentral" fullRow={false} />
+            </InputRow>
+            <InputRow>
+                <InputTextColumn field="tonguePharyngeal" fullRow={false} />
+                <InputTextColumn field="neurologicalChanges" fullRow={false} />
+            </InputRow>
+            <InputRow>
+                <InputTextColumn
+                    field="salivaryGrandExamination"
+                    fullRow={false}
+                />
+                <InputTextColumn
+                    field="dentalChangesExamination"
+                    fullRow={false}
+                />
+            </InputRow>
+            <div className="block-border"></div>
+            <InputRow>
+                <InputTextColumn field="probableDiagnosis" fullRow={false} />
+                <InputTextColumn field="difinitiveDiagnosis" fullRow={false} />
+                <InputTextColumn field="finalTreatmentPlan" fullRow={false} />
+            </InputRow>
+            <div className="block-border"></div>
+            <InputRow>
+                <InputTextColumn field="assistant" fullRow={false} />
+                <InputTextColumn field="master" fullRow={false} />
+            </InputRow>
+            <div className="block-border"></div>
         </SearchBox>
     );
 

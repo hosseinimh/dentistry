@@ -79,7 +79,6 @@ class PatientFile extends Model
         'lymph_nodes',
         'tomporomandibular_joint',
         'other_signs_tmj_description',
-        'intra_oral_examination',
         'retromolar_area',
         'gums',
         'toothless_ridge',

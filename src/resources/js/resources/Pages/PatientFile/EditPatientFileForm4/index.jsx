@@ -184,7 +184,9 @@ const EditPatientFileForm4 = () => {
                             <div className="input-text input-bg mb-0"></div>
                         </div>
                     </InputCheckboxContainer>
-                    <InputTextColumn field="intraOralExamination" showLabel />
+                    <h4 className="mt-20 mb-10">
+                        {strings.intraOralExamination}
+                    </h4>
                     <InputTextColumn field="retromolarArea" showLabel />
                     <InputTextColumn field="gums" showLabel />
                     <InputTextColumn field="toothlessRidge" showLabel />

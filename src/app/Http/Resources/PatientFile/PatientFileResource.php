@@ -81,7 +81,6 @@ class PatientFileResource extends JsonResource
             'lymphNodes' => $this->lymph_nodes ?? '',
             'tomporomandibularJoint' => $this->getTomporomandibularJoint($this->tomporomandibular_joint),
             'otherSignsTMJDescription' => $this->other_signs_tmj_description ?? '',
-            'intraOralExamination' => $this->intra_oral_examination ?? '',
             'retromolarArea' => $this->retromolar_area ?? '',
             'gums' => $this->gums ?? '',
             'toothlessRidge' => $this->toothless_ridge ?? '',
