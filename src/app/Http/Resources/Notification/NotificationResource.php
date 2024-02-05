@@ -2,7 +2,7 @@
 
 namespace App\Http\Resources\Notification;
 
-use App\Constants\NotificationSubCaegory;
+use App\Constants\NotificationSubCategory;
 use App\Constants\UserVerificationRejectReason;
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -29,7 +29,7 @@ class NotificationResource extends JsonResource
     private function getSubCategoryTitle(int $subCategory)
     {
         $text = __('notification.sub_category_undefined');
-        if (in_array($subCategory, NotificationSubCaegory::toArray())) {
+        if (in_array($subCategory, NotificationSubCategory::toArray())) {
             $text = __('notification.sub_category_' . $subCategory);
         }
         return $text;
@@ -38,7 +38,7 @@ class NotificationResource extends JsonResource
     private function getSubCategoryText(int $subCategory)
     {
         $text = __('notification.sub_category_text_undefined');
-        if (in_array($subCategory, NotificationSubCaegory::toArray())) {
+        if (in_array($subCategory, NotificationSubCategory::toArray())) {
             $text = __('notification.sub_category_text_' . $subCategory);
         }
         return $text;
@@ -46,12 +46,6 @@ class NotificationResource extends JsonResource
 
     private function getMessageFieldsText(string $messageFields, int $subCategory)
     {
-        if ($subCategory === NotificationSubCaegory::USER_VERIFICATION_REJECTED) {
-            $messageFieldsArray = explode('|', $messageFields);
-            if (count($messageFieldsArray) === 2) {
-                return implode('|', [$messageFieldsArray[0], $this->getUserVerificationRejectReasonText($messageFieldsArray[1])]);
-            }
-        }
         return $messageFields;
     }
 

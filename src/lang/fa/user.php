@@ -7,7 +7,7 @@ return [
     'user_already_logged_in' => 'کاربر قبلا وارد حساب کاربری شده است.',
     'email_not_found' => 'کاربری با این پست الکترونیک یافت نشد.',
     'username_required' => $requiredMessage('نام کاربری'),
-    'username_min' => $minStringMessage('نام کاربری', 6),
+    'username_min' => $minStringMessage('نام کاربری', 5),
     'username_max' => $maxStringMessage('نام کاربری', 50),
     'username_unique' => 'این نام کاربری قبلا ثبت‌نام کرده است.',
     'email_required' => $requiredMessage('پست الکترونیک'),

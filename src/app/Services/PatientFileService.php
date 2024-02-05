@@ -697,36 +697,71 @@ class PatientFileService
                 $query->where('ad_explanation', 'LIKE', '%' . $adExplanation . '%');
             }
         }
-        $query->where('continuing_drug', 'LIKE', '%' . $continuingDrug . '%')
-            ->where('weekly_drug', 'LIKE', '%' . $weeklyDrug . '%')
-            ->where('sleep_status', 'LIKE', '%' . $sleepStatus . '%')
-            ->where('functional_capacity', 'LIKE', '%' . $functionalCapacity . '%')
-            ->where('tobacco_use', $tobaccoUse);
+        if ($continuingDrug) {
+            $query->where('continuing_drug', 'LIKE', '%' . $continuingDrug . '%')
+                ->where('weekly_drug', 'LIKE', '%' . $weeklyDrug . '%')
+                ->where('sleep_status', 'LIKE', '%' . $sleepStatus . '%')
+                ->where('functional_capacity', 'LIKE', '%' . $functionalCapacity . '%')
+                ->where('tobacco_use', $tobaccoUse);
+        }
         if ($tobaccoUse) {
             $query->where('use_tobacco_duration', 'LIKE', '%' . $useTobaccoDuration . '%')
                 ->where('use_tobacco_type', 'LIKE', '%' . $useTobaccoType . '%');
         }
-        $query->where('drug_use', $drugUse);
         if ($drugUse) {
+            $query->where('drug_use', $drugUse);
             $query->where('use_drug_duration', 'LIKE', '%' . $useDrugDuration . '%')
                 ->where('use_drug_type', 'LIKE', '%' . $useDrugType . '%');
         }
-        $query->where('alcohol', $alcohol);
-        return $query->where('retromolar_area', 'LIKE', '%' . $retromolarArea . '%')
-            ->where('gums', 'LIKE', '%' . $gums . '%')
-            ->where('toothless_ridge', 'LIKE', '%' . $toothlessRidge . '%')
-            ->where('hard_soft_palate', 'LIKE', '%' . $hardSoftPalate . '%')
-            ->where('tongue_dorsal', 'LIKE', '%' . $tongueDorsal . '%')
-            ->where('tongue_ventral', 'LIKE', '%' . $tongueVentral . '%')
-            ->where('tongue_pharyngeal', 'LIKE', '%' . $tonguePharyngeal . '%')
-            ->where('neurological_changes', 'LIKE', '%' . $neurologicalChanges . '%')
-            ->where('salivary_grand_examination', 'LIKE', '%' . $salivaryGrandExamination . '%')
-            ->where('dental_changes_examination', 'LIKE', '%' . $dentalChangesExamination . '%')
-            ->where('probable_diagnosis', 'LIKE', '%' . $probableDiagnosis . '%')
-            ->where('difinitive_diagnosis', 'LIKE', '%' . $difinitiveDiagnosis . '%')
-            ->where('final_treatment_plan', 'LIKE', '%' . $finalTreatmentPlan . '%')
-            ->where('assistant', 'LIKE', '%' . $assistant . '%')
-            ->where('master', 'LIKE', '%' . $master . '%');
+        if ($alcohol) {
+            $query->where('alcohol', $alcohol);
+        }
+        if ($retromolarArea) {
+            $query->where('retromolar_area', 'LIKE', '%' . $retromolarArea . '%');
+        }
+        if ($gums) {
+            $query->where('gums', 'LIKE', '%' . $gums . '%');
+        }
+        if ($toothlessRidge) {
+            $query->where('toothless_ridge', 'LIKE', '%' . $toothlessRidge . '%');
+        }
+        if ($hardSoftPalate) {
+            $query->where('hard_soft_palate', 'LIKE', '%' . $hardSoftPalate . '%');
+        }
+        if ($tongueDorsal) {
+            $query->where('tongue_dorsal', 'LIKE', '%' . $tongueDorsal . '%');
+        }
+        if ($tongueVentral) {
+            $query->where('tongue_ventral', 'LIKE', '%' . $tongueVentral . '%');
+        }
+        if ($tonguePharyngeal) {
+            $query->where('tongue_pharyngeal', 'LIKE', '%' . $tonguePharyngeal . '%');
+        }
+        if ($neurologicalChanges) {
+            $query->where('neurological_changes', 'LIKE', '%' . $neurologicalChanges . '%');
+        }
+        if ($salivaryGrandExamination) {
+            $query->where('salivary_grand_examination', 'LIKE', '%' . $salivaryGrandExamination . '%');
+        }
+        if ($dentalChangesExamination) {
+            $query->where('dental_changes_examination', 'LIKE', '%' . $dentalChangesExamination . '%');
+        }
+        if ($probableDiagnosis) {
+            $query->where('probable_diagnosis', 'LIKE', '%' . $probableDiagnosis . '%');
+        }
+        if ($difinitiveDiagnosis) {
+            $query->where('difinitive_diagnosis', 'LIKE', '%' . $difinitiveDiagnosis . '%');
+        }
+        if ($finalTreatmentPlan) {
+            $query->where('final_treatment_plan', 'LIKE', '%' . $finalTreatmentPlan . '%');
+        }
+        if ($assistant) {
+            $query->where('assistant', 'LIKE', '%' . $assistant . '%');
+        }
+        if ($master) {
+            $query->where('master', 'LIKE', '%' . $master . '%');
+        }
+        return $query;
     }
 
     private function throwIfFileNoNotUnique(string $fileNo, Model|null $targetModel = null)

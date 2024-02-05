@@ -44,7 +44,7 @@ class CodeInit extends Command
         $this->info('');
 
         $this->comment('composer dump-autoload');
-        // app()->make(Composer::class)->run(['dump-autoload']);
+        app()->make(Composer::class)->run(['dump-autoload']);
 
         Artisan::call('cache:clear');
         Artisan::call('route:clear');
